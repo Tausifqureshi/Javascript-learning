@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Tausif",
+        "age" :24,
+        "city": "Mumbai"
+    },
+    {
+        "name": "QUreshi",
+        "age" :24,
+        "city": "Hydrabaad"
+    },
+    {
+        "name": "babu",
+        "age" :24,
+        "city": "Kodad"
+    }
+]
