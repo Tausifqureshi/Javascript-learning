@@ -114,6 +114,30 @@ h1.style.fontFamily = "Times New Roman,Times, serif"
 
 
 
+// console.log("First Execution");
+// setTimeout(() => {
+//     console.log("setTime out xall")
+// }, 3000);
+// console.log('Last Exzecution code')
+
+for(let i = 0; i < 10; i++){
+    console.log(i)
+}
+
+
+//This Keyword Arrow function ka thisKLeyword window hota hai ;
+let num = {
+    name: "Tausif",
+    age: 24,
+
+    // fun: ()=>{}
+    about: ()=>{
+    console.log(this)   //arrow function ka this window hota hai
+   console.log(this.name, this.perpertion)  //Arrow Function Me This Ki value Undefind Ati hai
+  
+
+}
+num.about()
 
 </script>
 <script src="Async-Await.js"></script>
