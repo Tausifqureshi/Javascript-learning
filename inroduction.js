@@ -1,4 +1,7 @@
-//Netscaps Navigater me brendan Eic work  kar re or ino ne hi javascript ko banya 1995 me only 10day me ?js ka naam ta first mocha fir is ka naam change kar ke liveScript kar diya gaya but livescript ka naam change kar ke javascript kar diya gaya q ke us time java language kafo popular ti is liye us ka naam change kiya gaya ?
+
+//==============Javascrip and EcmaScript Difference and History=========//
+
+//Netscaps Navigater me brendan Eic work  kar re te  ino ne hi javascript ko banya 1995 me only 10day me ?js ka naam ta first mocha fir is ka naam change kar ke liveScript kar diya gaya but livescript ka naam change kar ke javascript kar diya gaya q ke us time java language kafo popular ti is liye us ka naam change kiya gaya ?
 
 //ECMA---> ek internatainal organization hai jo stanterdize karti hai alag alag  technology ko ECMA desaid karti hai is tara se work kare gi ?
 
@@ -6,6 +9,13 @@
 
 //Javascript backward hai menas ---> jo feuture js me aaj aya hai or aaj se 20yers baad  bhi work kare ga?
 
+//Javascript forward nhi hai means ---> Hamne koi feuture aaj lunch kiya tu o 20 nyears baad nhi woirk kare ga?
+
+
 "use strict"   //ye developer ko mising karne se bachta hai ?
 
 
+// for (let i = 0; i < 10; i++) {
+//    console.log(i)
+    
+// }

@@ -36,10 +36,9 @@ let firstName = "Tausif";
 
 
 //template string use?
-
 let Name = "Tausif";
 let age = 24;
- console.log(`My name is ${Name} is My age ${age} years!`)
+ console.log(`My name is ${Name} This is My age ${age} years!`)
 
 
 
