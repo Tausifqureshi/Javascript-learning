@@ -17,7 +17,7 @@
 
 
 
-//Array ko clone karne ke tarike?
+//===================================Array ko clone karne ke tarike===================================//?
 // let array1 = ["item1","item2"]
 
 // let array2 = array1.slice(0); //first tarika clone kare ka sile method use 0 index means array1 ke item array2 me add hoge but dono array alag hoge is bolte hai clone 
@@ -43,6 +43,19 @@
 
 
 
+// array destructuring 
+const myArray = ["value1", "value2", "value3","value4"];
+// let myvar1 = myArray[0];
+// let myvar2 = myArray[1];
+// console.log("value of myvar1", myvar1);
+// console.log("value of myvar2", myvar2);
+let  myNewArray = myArray.slice(2);
+console.log(myNewArray)
+
+// let [myvar1, myvar2, ...myNewArray] = myArray;
+console.log("value of myvar1", myvar1);
+console.log("value of myvar2", myvar2);
+console.log(myNewArray);
 
 
 

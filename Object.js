@@ -74,6 +74,7 @@
 // console.log(newObject)
 
 
+
 // <------------------------------>Object destructuring chepter<-------------------------------->
 
 // const person = {
@@ -90,7 +91,7 @@
 
 
 
-//nested destructuring?
+//==============================nested destructuring object==========================================?
 // const users= [             // ek array me kuch object store user ke ?
 
 //           {userId: 1, firstName: "Tausif", gender:"Male"},
@@ -158,7 +159,7 @@
 //     gender: "Male",
 // }
 
-// function printDetails({firstName,lastName,age}){  //parameter desturcturing 
+// function printDetails({firstName,lastName,age}){ //parameter desturcturing aisa hi karna chaiye
 //     console.log(firstName)
 //     console.log(lastName)
 //     console.log(age)

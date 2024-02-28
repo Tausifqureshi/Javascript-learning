@@ -15,6 +15,9 @@
 // let num2 = 14n; //aise bhi bigint bana sakte hai?
 //  console.log(num1*num2)
 
+
+
+// =================================boolean========================================//
 //boolean----->ture are false retun karta hai?
 //  use comparison operator ke sath use hote hai boolean?
 // let x = 5;
@@ -60,9 +63,8 @@ let firstName = "tausif";
 // let store = age >=5 ? "coffe" : "milk";
 // console.log(store)
 
-// and or operator and && or||
- 
 
+// and or operator and && or||
 // let Name = "Tausif";
 // let age = 24;
 
@@ -74,33 +76,8 @@ let firstName = "tausif";
 // }
 
 
-// let a = 4;
-// let b = 7;
 
 
-
-
-function handelr(event){
-    event.preventDefault()
-    let inputName = document.getElementById("input-name").value
-    let inputAge = document.getElementById("input-age").value
-
-    if(inputName.trim() === '' && inputAge.trim() === ""){
-        alert("Please Enter Your Fullfil Details")
-
-    }
-    else if(inputName.trim() === ""){
-        alert("Please Enter Your Name")
-    }
-    
-    else if(inputAge.trim() === ""){
-        alert("Please Enter Your age")
-    }
-     
-
-
-
-}
 
 
 

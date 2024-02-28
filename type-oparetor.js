@@ -90,7 +90,7 @@ let mySelf = {
   lastname: "Qureshi",
   age: 24,
   hobbies: "Cricket"
-
+ 
 };
 
 console.log(" My Name is " + mySelf.firstname + " I Am " + mySelf.age + " Years Old" + " Favourite Game " + mySelf.hobbies);
@@ -111,11 +111,35 @@ console.log(typeof (mySelf));
 // string "Tausif"
 // number 2, 4, 5.6 
 // booleans 
-// undefined
+
+// undefined ---> 
+// let firstName;
+// console.log(typeof firstName);
+// firstName = "Tausif";
+// console.log(typeof firstName, firstName);
+
 // null 
-// BigInt
+// let myVariable = null;
+// console.log(myVariable);
+// myVariable = "Tausif";
+// console.log(myVariable, typeof myVariable);
+// console.log(typeof null);
+
+
+// BigInt  ---> ye javascript me abhi aya hai lets hai 2020 me aya hai? ye bigint number store karne ke liye 
+                //use hota hai ;
+
+// let myNumber = BigInt(12);
+// let sameMyNumber = 123n;
+// console.log(myNumber); 
+// console.log(Number.MAX_SAFE_INTEGER); // ye hame bata hai ham kitna bada number javascript store kar sakte hai?
+// console.log(myNumber+ sameMyNumber);
+
+
 // Symbol
 
+
+// Convert type off data 
 let age = 22;  // type of Number creating
 let firstName = "Tausif"; //type of string creating
 console.log(typeof age);

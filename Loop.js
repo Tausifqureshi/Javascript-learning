@@ -144,7 +144,7 @@
 // let array1 = ["apple","mango","banana","orange","kiwi"]
 // let i = 0;
 // while(i < array1.length){
-//     console.log(array1[i])
+//     console.log(array1[i].toUpperCase())
 //     i++
 // }
 
