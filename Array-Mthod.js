@@ -6,7 +6,6 @@
 // fruits.push("orange"); //arrary lenth change new lengt dega
 // console.log(fruits)
 
-
 // <------------------------------>Array Pop Method<-------------------------------->
 //pop ---> last se delete karta hai or ye orignal array ko change karta hai or ye remove item ko retun bhi karta hai?
 // let fruits = ["mango", "banana","apple"];
@@ -18,14 +17,12 @@
 // const store=fruits.pop() //or remove element bhi retrun karta hai?
 // console.log(store)
 
-
 // <------------------------------>Array Unshift Method<-------------------------------->
 //unshift ---> starting se adda karta hai ye or ek se jayda ko bhi add kar sakte hai?
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
 // fruits.unshift("grapes"); //start se add hora?
 // console.log(fruits);
-
 
 // <------------------------------>Array Shift Method<-------------------------------->
 // shift --->first element se delete karta hai ye? original array ko change karta hai ye delete item ko return karta hai?
@@ -37,7 +34,6 @@
 
 //  let removeitem = fruits.shift()   //or remove element bhi retrun karta hai?
 //  console.log(removeitem)
-
 
 // <------------------------------>Array ForEach Mthod<-------------------------------->
 //ForEach Method---->first ek call-back input leta hai means ek function lega?parametar me current value index or array leta hai means hame currnt VALIBLE KA NAAM? foreach first parameter hemsa number fir index leta hai ye new array nhi deta hai forech ek loop ki tara work karti hai?
@@ -74,7 +70,6 @@
 
 // })
 
-
 // <------------------------------>Array Map Method<-------------------------------->
 //Map Method---->Map method se array ke share ke sharew element pe opration perfom karne me use hota hai us ke jo result aya us se duasre array me store karta hai Map Method Example? ye bhi ek call back function leta hai ?Map function hemasa new array banta hai?agar ham retrun nhi karte hai console karte hai number* print hoga but ham kuch retrun nhi karate undefind ayega? loop ki tara kam karta hai but toda fark hai is me?original array ko change nhi karta hai ye ye paramert currentValue, index, arr?
 
@@ -83,7 +78,6 @@
 //      return number*number;  //jab bhi mfunction retrun karta hai us se kahai na kahi store karan padta hai jaise square varibal me store hori retiurn value ?
 //   console.log (number*number);z
 //  console.log(square2)
-
 
 //Example 2 Real life Use Map?
 // const users = [
@@ -99,7 +93,7 @@
 // console.log(returnValue)
 
 //<------------------------------>Array Filter Method<-------------------------------->
-//Filter Method---->ye method use hota hai ek element me se kuch bada ya chhote number nikalne keliye ?ye method new array deta hai?ye method bhi ek callback function leta hai? ye method original array ko change nhi karta hai m? ye method bhi 3 parameter leta hai currentValue index or array jo hamne defiend kiya hoga?    
+//Filter Method---->ye method use hota hai ek element me se kuch bada ya chhote number nikalne keliye ?ye method new array deta hai?ye method bhi ek callback function leta hai? ye method original array ko change nhi karta hai m? ye method bhi 3 parameter leta hai currentValue index or array jo hamne defiend kiya hoga?
 
 //Normal Exapmle kuch big number ko 18 > se bada tu new array me store karna?
 
@@ -111,16 +105,13 @@
 
 // console.log(arr1)
 
-
-
-//Example array object me se only potion nikalna filter use kar ke 
+//Example array object me se only potion nikalna filter use kar ke
 // const numbers = [1,2,3,4,5,6,7,8,9,10];
 
 // const evenNumbers = numbers.filter((number)=>{  //arrow function ye?
 //     return number % 2 === 0;
 // });
 // console.log(evenNumbers);
-
 
 // let tem =[
 //           {
@@ -140,23 +131,18 @@
 //             position: 'developer'
 //           },
 // ]
-    //  let devloper = tem.filter((val)=>{
-    //      return val.name ;
-    //     })
-    //     console.log(devloper)
-
-
-
-
-
+//  let devloper = tem.filter((val)=>{
+//      return val.name ;
+//     })
+//     console.log(devloper)
 
 // <------------------------------>Array Reduce Method<-------------------------------->
 //Reduce Method---->
 
 // Reduce Method? ye method bhi ek callback function leta hai?
 
-// const numbers = [1,2,3,4,5, 10];  
-// // in sub ka  : sum of all the numbers in array 
+// const numbers = [1,2,3,4,5, 10];
+// // in sub ka  : sum of all the numbers in array
 
 // const sum = numbers.reduce((accumulator, currentValue)=>{//pure reduce me de ek value dera hai? sub ka sum dera hai ye reduce method
 
@@ -170,27 +156,332 @@
 // 103              3             106
 // 106              4             110
 // 110              5             115
-// 115             10             125   total sum value 125 aye gi?                      
+// 115             10             125   total sum value 125 aye gi?
 
+// const userCart = [
+//   { productId: 1, productName: "mobile", price: 12000 },
+//   { productId: 2, productName: "laptop", price: 22000 },
+//   { productId: 3, productName: "tv", price: 15000 },
+// ];
 
+// const totalAmount = userCart.reduce((totalPrice, currentProduct) => {
+//   return totalPrice + currentProduct.price; //pure object se hame srif price chachiye or jo chahiye o retrun karwa sakte firstname product jo bhi?
+// }, 0);
 
+// console.log(totalAmount);
 
-const userCart = [
-  {productId: 1, productName: "mobile", price: 12000},
-  {productId: 2, productName: "laptop", price: 22000},
-  {productId: 3, productName: "tv", price: 15000},
-]
-
-const totalAmount = userCart.reduce((totalPrice, currentProduct)=>{ 
-  return totalPrice + currentProduct.price;    //pure object se hame srif price chachiye or jo chahiye o retrun karwa sakte firstname product jo bhi?
-}, 0)
-
-console.log(totalAmount);
-
-// total price      currentValue     return 
+// total price      currentValue     return
 // 0                {}                  12000   //current value first time pura object hoga
 // 12000            22000                34000
 // 34000            15000                49000
+
+// <------------------------------>Array sort Method<-------------------------------->
+// sort method ?
+// ASCII TABLE
+//char : ascii value
+
+//string me number ki ye position hoti hai?
+// '0' : 48
+// '1' : 49
+// '2' : 50
+// '3' : 51
+// '4' : 52
+// '5' : 53
+// '6' : 54
+// '7' : 55
+// '8' : 56
+// '9' : 57
+
+// ':' : 58
+// ';' : 59
+// '<' : 60
+// '=' : 61
+// '>' : 62
+// '?' : 63
+// '@' : 64
+
+// 'A' : 65
+// 'B' : 66
+// 'C' : 67
+// 'D' : 68
+// 'E' : 69
+// 'F' : 70
+// 'G' : 71
+// 'H' : 72
+// 'I' : 73
+// 'J' : 74
+// 'K' : 75
+// 'L' : 76
+// 'M' : 77
+// 'N' : 78
+// 'O' : 79
+// 'P' : 80
+// 'Q' : 81
+// 'R' : 82
+// 'S' : 83
+// 'T' : 84
+// 'U' : 85
+// 'V' : 86
+// 'W' : 87
+// 'X' : 88
+// 'Y' : 89
+// 'Z' : 90
+
+// '[' : 91
+// '\' : 92
+// ']' : 93
+// '^' : 94
+// '_' : 95
+// '`' : 96
+
+// 'a' : 97
+// 'b' : 98
+// 'c' : 99
+// 'd' : 100
+// 'e' : 101
+// 'f' : 102
+// 'g' : 103
+// 'h' : 104
+// 'i' : 105
+// 'j' : 106
+// 'k' : 107
+// 'l' : 108
+// 'm' : 109
+// 'n' : 110
+// 'o' : 111
+// 'p' : 112
+// 'q' : 113
+// 'r' : 114
+// 's' : 115
+// 't' : 116
+// 'u' : 117
+// 'v' : 118
+// 'w' : 119
+// 'x' : 120
+// 'y' : 121
+// 'z' : 122
+// '{' : 123
+// '|' : 124
+// '}' : 125
+
+// sort Method ?ye method origan array ko change karta hai meuted means change karna hota hai?ek callback function bhi leta hai ye sort method?
+
+// [5,9,3000,1200,400]
+//3000, 1200, 400, 9, 5 // desending sort bolte hai is se?
+// 5,9,400, 1200, 3000     //asending sort bolte hai us se?
+
+//Number Sort Example
+//js me jab ham sort method use karte tu js us se number samaj ke sort nhi karta hai string samaj ke sort karta hai?
+// const number =[5,9,1200, 400, 3000]
+// number.sort()
+// console.log(number)
+
+//["5", "9", "1200", "400", "3000"]    //js first sub element ko aisa string me karta hai?string ko sort karne ke liye js ACSII use karta hai google search karo? agar 1200 hai tu js 1200 nhi dheka ga only 1 dheyke ga us ke ACSII code jo hoga o print hoke aye ga?
+
+//Charachter Sort Example? is me jo first ata hai word us se first rahkta hai example? cde or bca but ye sort method first bca ko rahke ga fir cde ko?
+//agar capital letter ho ga firt o aye ga q ke ACSII code me ciptal letter kam number ke position kam hote hai?
+// const userNames = ['harshit', 'abcd', 'mohit', 'nitish', 'aabc', 'ABC', 'Harshit'];
+// userNames.sort();
+// console.log(userNames);
+
+const nam = ["cde", "bca"];
+console.log(nam.sort());
+
+//expected output example in sort method in numbers?
+const numbers = [5, 9, 1200, 410, 3000];
+numbers.sort((a, b) => {
+  //return a-b //asendin me sort ye
+  return b - a; //desending me sort ye
+});
+numbers.sort((a, b) => a - b);
+// console.log(numbers);
+//agar positive ata hai answer tu hame phele b ko rahkna hai nagitive me first a ko rahkna hai?
+// 1200,410
+// a-b ---> 790
+// a-b ---> postive (greater than 0) ---> b, a
+// 410 , 1200
+
+// a-b ---> negative ----> a,b
+// 5, 9 ---> -4
+
+// Real use case? Example jab ham ecommerce website pe jate hai tu ham opetion ata hai kam price ya low price wale?
+// price lowToHigh HighToLow
+const products = [
+  { productId: 1, produceName: "p1", price: 300 },
+  { productId: 2, produceName: "p2", price: 3000 },
+  { productId: 3, produceName: "p3", price: 200 },
+  { productId: 4, produceName: "p4", price: 8000 },
+  { productId: 5, produceName: "p5", price: 500 },
+];
+
+// lowToHigh
+const lowToHigh = products.slice(0).sort((a, b) => {
+  //slice use kaha se hame apni value start karna hai clone ke liye use?
+  return a.price - b.price; //kam price wale ke liye use
+});
+
+const highToLow = products.slice(0).sort((a, b) => {
+  return b.price - a.price; //jayda price wale ke liye use
+});
+// console.log(products) // slic use se produts clone hoge is se pure products upper nice nhi hoge jais hai line bye line ayeb ge
+
+//sort method charachter example? jo word first ata hai us se phle rahke ga jaise garima first aye ga q ke teble me g ki position jaldi ati hai is liye garima jaldi aye ga us baad harshit aise hi word two word work kare ge?
+// const users = [
+//     {firstName: "harshit", age: 23},
+//     {firstName: "mohit", age: 21},
+//     {firstName: "nitish", age: 22},
+//     {firstName: "garima", age: 20},
+// ]
+
+// users.sort((a,b)=>{
+//     if(a.firstName > b.firstName){
+//         return 1;
+//     }else{
+//         return -1;
+//     }
+// });
+
+// console.log(users);
+
+// <------------------------------>Array find Method<-------------------------------->
+//ye method true and false me answer deta hai koi element ki length check karna ya element hai ya nhi hai ya nhi dhakta hai ye method bhi ek call back function leta hai?
+
+// find method
+
+// const myArray = ["Hello", "catt", "lion"];
+
+// function isLength3(string){
+//     return string.length === 3;
+// }
+
+// const ans = myArray.find((string)=>string.length===3);
+// console.log(ans);
+
+const users = [
+  { userId: 1, userName: "harshit" },
+  { userId: 2, userName: "harsh" },
+  { userId: 3, userName: "nitish" },
+  { userId: 4, userName: "mohit" },
+  { userId: 5, userName: "aaditya" },
+];
+
+const myUser = users.find((user) => user.userId === 3);
+console.log(myUser);
+
+
+
+
+
+// <------------------------------>Array every Method<-------------------------------->
+
+// every metod bhi ek call back function lete hai or yr original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai warna false true and false me answer deta hai ye method ?
+
+// let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
+// let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi'];
+
+// const allHindi = school.every(function(student){
+//   return student === "Hindi";
+// });
+
+// console.log(allHindi);
+
+
+
+// const userCart = [
+//   {productId: 1, productName: "mobile", price: 12000},
+//   {productId: 2, productName: "laptop", price: 22000},
+//   {productId: 3, productName: "tv", price: 35000},
+// ]
+
+
+// const ans = userCart.every((cartItem)=>cartItem.price < 30000);//check kar ra hai har itme 30000 hazar ka hai ya nhi;
+// console.log(ans)
+
+
+
+// <------------------------------>Array some Method<-------------------------------->
+
+// some method bhi ek callback function leta hai or some method original array ko change nhi karta hai ? ye mthod use hota hai array ka ek bhi element satisfy hota hai true return karta hai jaise hi ek condition satisfy hohi true nata hai
+
+// let course = ['Hindi',"Urdu","English", 'Telgu'];
+
+// let urdu = course.some(function(leng){
+//   return leng === 'Hindi'
+// })
+// console.log(urdu)
+
+
+// let courses = ['Hindi', 'Urdu', 'English', 'Telugu'];
+// let isAnyCourseUrdu = courses.some(course => course === "Urdu");
+
+// console.log(isAnyCourseUrdu); // true if any course is "Urdu", false otherwise
+
+
+//===================some method  object using===============//
+// let student =[
+//    {name : 'Tausif', age : 24},
+//    {name : 'Qureshi', age : 25},
+//    {name : 'Javed', age : 23}
+// ]
+
+// let ret = student.some(function(matc){
+//   return matc.name ==='Tausif';
+// })
+
+// console.log(ret)
+
+// const userCart = [
+//   {productId: 1, productName: "mobile", price: 12000},
+//   {productId: 2, productName: "laptop", price: 22000},
+//   {productId: 3, productName: "tv", price: 35000},
+//   {productId: 3, productName: "macbook", price: 250000},
+// ]
+
+// const ans = userCart.some((cartItem)=>cartItem.price > 100000);// check kar re koi itme ki price 1 lahk ke upper hai ya nhi true ya false me answer aye ga?
+// console.log(ans);
+
+
+
+
+
+// <------------------------------>Array fill Method<-------------------------------->
+
+//Fill method se array ke element ko ek  value se overwrite kar sakte hai ? ye method original array ko overwrite kar deta hai or is me 3 parameter hote hai first value second start positon and thred end positon leta hai ye method ? 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+fruits.fill("Kiwi",2,4);
+console.log(fruits)
+
+// const myArray = [1,2,3,4,5,6,7,8];
+// myArray.fill(0,2,5); //o index se fill karna hai starat karna hai 2 se or end karna hai 5 tak menas  6number tak but 6 nhi aye ga 5 pe hi ruk jaye ga ye fill method ?
+// console.log(myArray);
+
+
+
+
+// <------------------------------>Array spilce Method<-------------------------------->
+
+// splice method add ya remove karta hai array ke element ko ye menth bhi overwirte karta hai orioginal array ko ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhiu position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
+
+const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+console.log(fruit)
+fruit.splice(1,3 ,"Hello",'Array') //1 se 3 index tak delete hore hai us ke baad add bhi kar sakte hai 
+console.log(fruit)
+
+
+// start , delete , add
+const myArray = ['item1', 'item2', 'item3'];
+console.log(myArray);
+// delete
+// const deletedItem = myArray.splice(1, 2);
+// console.log("delted item", deletedItem);
+
+// add
+// myArray.splice(1, 0,'inserted item');
+
+// add and delete 
+const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
+console.log("delted item", deletedItem);
 
 
 
