@@ -32,7 +32,16 @@
 
 // console.log(length);
 
+let mySet1 = new Set([1,2,3, 'Tausif',{name:'qureshi'}, true]); //set constructor bolte hai is me string array object boolean value sub dal ,sakte hai;
+console.log(mySet1) 
 
+for(let value of mySet1){
+  console.log(value)
+}
+
+mySet1.forEach((item)=>{ //foreach se bhi iterad kar sakte hai;
+  console.log(item)
+})
 
 
 ////////=================================================set Thap=====================
@@ -55,11 +64,11 @@ mySet.add(1);
 
 mySet.add(2);
 
-mySet.add("thapa");
+mySet.add("Tausif");
 
 mySet.add(4);
 
-mySet.add("vinod");
+mySet.add("Qureshi");
 
 
 
@@ -77,7 +86,7 @@ console.log(mySet.has(6));
 
 // Remove a value from the Set using delete method
 
-console.log(mySet.delete("thapa"));
+console.log(mySet.delete("Tausif"));
 
 
 
@@ -125,6 +134,5 @@ console.log("🚀 ~ file: sets.js:44 ~ myUniqueBatchNumber", myUniqueBatchNumber
 
 
 
-const myName = "vinod";
-
-console.log(new Set(myName)
+const myName = "Tausif";
+console.log(new Set(myName));
