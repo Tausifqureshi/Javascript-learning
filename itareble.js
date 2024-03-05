@@ -1,5 +1,5 @@
 
-//iterable ---> means hota hai jis pe ham loop laga sakte hai for of loop ho gaya jis jis pe ham for of loop laga sakte hai o iterable ho gaya hai samjo jaise Array hua or string hua ?
+//iterable ---> means hota hai jis pe ham loop laga sakte hai for of loop ho gaya jis jis pe ham for of loop laga sakte hai o iterable ho gaya hai samjo jaise Array hua or string sets?
 // iterables  Array String Sets
 // jispe hum for of loop laga sakein
 // string , array are iterable 

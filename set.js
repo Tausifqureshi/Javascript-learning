@@ -1,11 +1,22 @@
 
-//Sets ---> sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai 
-// Sets (it is iterable)
-// store data  
-// sets also have its own methodand cannot be repeated.s
+//Sets ---> sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubra nhi aye example 1 aya tu dubra nhi aye ga ?
+
+//set method
+// new set() --> is se set crete karte hai ?
+//add() --> set me value  add karne ke liye use hota hai ?
+//delete() --> set me se value delete karne ke liye use hota hai ?
+//has() --> set me koi property hai ya nhi check kiarne ke liye use hota hai ?
+//clear() --> set me se share element ko cleare karne ke liye use hota hai ?
+//size() --> set me element ki lenght check karne ke liyen  use hota hai ?
+
+
+// Sets (it is iterable hai)
+// store data  karta hai sets
+// sets also have its own methodand cannot be repeated
 // No index-based access 
-// Order is not guaranteed
+// Order is not guaranteed ---> 
 // unique items only (no duplicates allowed)
+
 // const items = ['item1', 'item2', 'item3'];
 // const numbers = new Set();
 // numbers.add(1);
@@ -15,27 +26,32 @@
 // numbers.add(5);
 // numbers.add(6);
 // numbers.add(items);
-// if(numbers.has(1)){
+
+// if(numbers.has(1)){  //if  else condition use sets pe 
 //     console.log("1 is present")
 // }else{
 //     console.log("1 is not present")
 // }
-// for(let number of numbers){
+
+// for(let number of numbers){ //for of loop use 
 //     console.log(number);
 // }
-// const myArray = [1,2,4,4,5,6,5,6];
-// const uniqueElements = new Set(myArray);
-// let length = 0;
-// for(let element of uniqueElements){
-//     length++;
-// }
 
-// console.log(length);
+const myArray = [1,2,4,4,5,6,5,6];  
+const uniqueElements = new Set(myArray);  //Array ko Sets me conveart karan ka tarika 
+let length = 0;
+for(let element of uniqueElements){
+    length++;
+}
+
+console.log(length);
+//=======================================================================//end harsit
+
 
 let mySet1 = new Set([1,2,3, 'Tausif',{name:'qureshi'}, true]); //set constructor bolte hai is me string array object boolean value sub dal ,sakte hai;
 console.log(mySet1) 
 
-for(let value of mySet1){
+for(let value of mySet1){ //set use for of loop ?
   console.log(value)
 }
 
@@ -44,7 +60,7 @@ mySet1.forEach((item)=>{ //foreach se bhi iterad kar sakte hai;
 })
 
 
-////////=================================================set Thap=====================
+//================================================set Thapa ka ========================================//
 // In JavaScript, a Set is a collection of unique values. It is similar to an array, but the values in a Set are not ordered and cannot be repeated.
 
 

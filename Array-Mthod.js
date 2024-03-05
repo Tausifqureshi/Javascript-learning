@@ -461,7 +461,7 @@ console.log(fruits)
 
 // <------------------------------>Array spilce Method<-------------------------------->
 
-// splice method add ya remove karta hai array ke element ko ye menth bhi overwirte karta hai orioginal array ko ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhiu position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
+// splice method add ya remove karta hai array ke element ko ye method bhi overwirte karta hai orioginal array ko changew karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
 
 const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 console.log(fruit)
