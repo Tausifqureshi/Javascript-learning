@@ -1,5 +1,5 @@
 
-// object bhi ek referance type hai?object bhi memory me aise hi strore hota haio jaise array hota hai share referance types ek hi tara se store hote hai memory me? obejct me indexing nhi hota hai?is me array bhi store kar sakte hai?
+// object bhi ek referance type hai?object bhi memory me aise hi strore hota haio jaise array hota hai share referance types ek hi tara se store hote hai memory me? obejct me indexing nhi hota hai?is me array bhi store kar sakte hai?Objecr itareble nhi hota hai
 // const key = "email"; //key add hori emails ki
 // let person = {
 //     name: 'Tauisf',
@@ -8,7 +8,7 @@
 //     hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"],
 // }
 
-// person.contec= 8429097693; //add peoperty object me p
+// person.contec= 8429097693; //add peoperty object me 
 // person[key]= "tausifqureshi@gaml.com" //aise key value add kar sakte key email aye gi
 // person.lastName = "javed"  //aise bhi add karte hai but ye normal add hoga is se?
 
@@ -169,7 +169,74 @@
 
 
 
+// <------------------------------>Object Creating Method<-------------------------------->
 
+// Object.keys();  ---> itared karne ke liye use hota hai ?
+// Object.values(); ---> 
+// Object.entries(); ---> 
+
+let myObj = {
+    name: 'Tausif',
+    age : 24,
+    perpation : 'Web Developer'
+}
+// console.log(myObj) /pura object print hoga?
+ 
+//  Object.keys(myObj).forEach(function(print){   //function eynunemus use jin ka name nhi hota us se bolte hai ?
+// //  console.log(print) // only key print hogi is se ?
+//  console.log(myObj[print]) // only value print hogi is se ?
+
+// //  console.log([print],myObj) // key Value  print hogi is se ?
+//  })
+
+ //Object.Value() Use; ----> Array ki fom me value data hai fir ham is me koi bhi oppressiom kar sakte hai loop arr pe chalna ho ya kcuh bhimarray ke method use karna ho ?
+//  let value = Object.values(myObj);
+//  console.log(value)
+//  console.log(Array.isArray(value)) //Checking Array True and false retrun This method ?
+
+
+// Object.entries() Use ---> Ye Pura ki pura array deta hai kitne array hai us ki length deta hai ? fir ham is me koi bhi oppressiom kar sakte hai loop arr pe chalna ho ya kcuh bhimarray ke method use karna ho ?
+let entries = Object.entries(myObj);
+// console.log(myObj) 
+console.log(entries[1]); //Key Value dono print hoge
+console.log(entries[1][1]); //only Value dono print hoge
+
+
+
+
+
+
+// <------------------------------>Object Cloning object assing<-------------------------------->
+//object.assing --> is se use kar ke object cloning kar sakte hai? is ko use karne se ek object me change tu dusre object me change nhi hoga q ke object refereance type hote hai ek me change tu dusre me change hota hai ? 
+
+// const obj = {
+//     key1 : 'value1',
+//     key2 : 'value2'
+// }
+// //  let obj1 = obj;
+// //  let obj1 = {...obj} //sperad operator use obj me add tu obj1 me add nhi hoga cloning bolte is se?
+// let obj1 = Object.assign({},obj) // is tarike se bhi cloning karte hai ?
+//  obj.ke3 = 'Value3' //ek me change tu dono me change hoga q ke object reference type hota hai?
+
+//  console.log(obj)
+//  console.log(obj1)
+
+
+
+
+
+
+// <------------------------------>Object option chaining<-------------------------------->
+
+let user ={
+    firstName: "Tausif",
+    // address: {houseNumber: 12334}, //object ke ander object hai ye ?
+}
+console.log(user.firstName);
+console.log(user?.address?.houseNumber)//line number 233 comment karne se bhi error nhi aye ga undefined q keis liye ham is se use kar re hai react me kafi use hota hai jab ham usestate ya useeffect karte hai ? is ka use hota hai hested object ke liye is hi option chaining bolte hai ?
+
+// console.log(user.address.houseNumber) //object ke ander ki value aise milti hai ?
+// console.log(user['firstName']) //aise bhi print karwa sakte hai ?
 
 
 

@@ -1,5 +1,5 @@
 
-//Sets ---> sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubra nhi aye example 1 aya tu dubra nhi aye ga ?
+//Sets --->data structure me ata hai ?sets object hai ?  sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubra nhi aye example 1 aya tu dubra nhi aye ga ?
 
 //set method
 // new set() --> is se set crete karte hai ?
@@ -38,7 +38,7 @@
 // }
 
 const myArray = [1,2,4,4,5,6,5,6];  
-const uniqueElements = new Set(myArray);  //Array ko Sets me conveart karan ka tarika 
+const uniqueElements = new Set(myArray);  //Array ko Sets me conveart karna ka tarika  ?
 let length = 0;
 for(let element of uniqueElements){
     length++;
@@ -49,7 +49,7 @@ console.log(length);
 
 
 let mySet1 = new Set([1,2,3, 'Tausif',{name:'qureshi'}, true]); //set constructor bolte hai is me string array object boolean value sub dal ,sakte hai;
-console.log(mySet1) 
+console.log(typeof mySet1) 
 
 for(let value of mySet1){ //set use for of loop ?
   console.log(value)
@@ -118,8 +118,6 @@ for (let setValue of mySet) {
 
 // You can also create a Set from an array by using the Set constructor:
 
-
-
 const array = [1, 2, 3, 3, 4, 4, 5, 6, 6, 6];
 
 const mySetArr = new Set(array);
@@ -135,8 +133,6 @@ console.log(mySetArr.size);
 
 
 // Note that the Set only keeps track of unique values, so if you pass an array with duplicate values to the Set constructor, it will only keep one copy of each value.
-
-
 
 // use case
 
