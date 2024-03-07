@@ -65,7 +65,8 @@ function myFunc(){  //function declaretion hai ye ?is function ka bhi this windo
 // Call,Apply,Bind Method ---> use hote hai jab bhi hame kisi object me function ke add karte hai us se methid bolte hai or add karne ke baad ham us function ke relative object ki property ko use karna ho tab Call,Apply,Bind Method ka use karte hai ?
 
 
-// Call --> Call function ye ek javascript ka inbuilt function hai ?Call function ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ? Call Apply Same work Karte hai ? Call Apply me itna fark hai jab Call Stap by Stap o apne argument ko call karwata hai Apply method me Sencod Argument Array me hota hai itna hi fark hai dono me Call ke ander ham koi Bhi Array ka use nhi karte hai ?
+// Call --> Call function ye ek javascript ka inbuilt function hai ?Call function ka use kar ke ek object ka dusre object ki property use karne ke liye work kiya jata hai ? Call Apply Same work Karte hai ? Call Apply me itna fark hai jab Call Stap by Stap o apne argument ko call karwata hai Apply method me Sencod Argument Array me hota hai itna hi fark hai dono me Call ke ander ham koi Bhi Array ka use nhi karte hai ?
+
 
 
 // let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise? parameter bhi de sakte hai
@@ -75,9 +76,9 @@ function myFunc(){  //function declaretion hai ye ?is function ka bhi this windo
 // let student1 = {
 //     fisrtName :"Tausif",
 //     lastName : 'qureshi',
-//     // fullName : function(){ //fullname key hai ? function ander bhi create kar sakte hai aise?
-//     //  return `${this.fisrtName} ${this.lastName}`
-//     // }
+// fullName : function(){   //fullname key hai function value? function ander bhi create kar sakte hai aise?
+// return `${this.fisrtName} ${this.lastName}`
+// }
 
 // }
 // console.log(student1.fullName()) //normal calling function ?
@@ -89,12 +90,31 @@ function myFunc(){  //function declaretion hai ye ?is function ka bhi this windo
 // }
 
 // console.log(fullName.call(student1, "Mumbai","India")) //bher function create tu aise call hoga ?
-// console.log(fullName.call(student2,student2.age,'Heydrabaad','India')) //bher function create tu aise call hoga ? 'Heydrabaad','India' argument hai ye ?  
+// console.log(fullName.call(student2,student2.age,'Heydrabaad','India')) //bher function create tu aise bhi call kar sakte hai ? 'Heydrabaad','India' argument hai ye ?  
 
-//console.log(student1.sumNumber.call(student2)) //Call function ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ?ander function defiend tu ais call ?
+//console.log(student1.sumNumber.call(student2)) //Call Method ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ?object ke ander function defiend tu ais call ?
 
-//  console.log(student1.fullName.call(student1))  //aisa bhi kar sakte hai
+//  console.log(student1.fullName.call(student1))  //aisa bhi call kar sakte hai ?
 
+
+//==============================harshi Start Call Method=============================================//
+
+function about(hobby, favMusician){
+    console.log(this.firstName, this.age, hobby, favMusician);
+}
+const user1 = {
+    firstName : "harshit",
+    age: 8,   
+}
+const user2 = {
+    firstName : "mohit",
+    age: 9,
+
+}
+
+// Call
+about.call(user1, "guitar", "bach");
+about.call(user2, "guitar", "bach");
 
 
 
@@ -104,38 +124,11 @@ function myFunc(){  //function declaretion hai ye ?is function ka bhi this windo
 //Apply --> is Apply me ham Array ki value Pass karte hai means Apply me argument ki second value ko ham Array me rahkte hai ?  Call Apply Same work Karte hai ?
 
 
-
 // let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise?
 //     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
 //    }
-
-// let student1 = {
-//     fisrtName :"Tausif",
-//     lastName : 'qureshi',
-  
-// }
-
-// let student2 = {
-//     fisrtName :"Javed",
-//     lastName : 'qureshi',
-//     age :24
-// }
-
-
-// console.log(fullName.apply(student1, ["Mumbai","India"])) //Applay me itna fark hai ecomf argument Array me dena hota hai ? Multipal Array lihk sakte hai yaha pe ?
-// console.log(fullName.apply(student2,[student2.age,],['Heydrabaad','India'])) 
-
-
-
-
-
-
-
-
-//Bind -->  Ye Method hame ek new function bana ke deta hai ?ye method hame ek new fiunction retrun karta hai ?or function ke result ko copy bana ke rahkta hai or baad me us se invok karne pe execute hote hai ? ye method function ke joind kar ke rahkta hai ? bind hamre result ko save kar ke rahkta hai ek varible me or us varible ko jab bhi ham invoke means function ko call karna hota hai ?
-
-let fullName = function(city,contry){ 
-    return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
+ function fullName (city,contry){ // function declaretion
+    console.log (`${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`);
    }
 
 let student1 = {
@@ -150,14 +143,79 @@ let student2 = {
     age :24
 }
 
-// console.log(fullName.bind(student1, "Mumbai","India")); //aise pura function return hoga ?
+fullName.apply(student1,["Mumbai","India"])//aisa bhi call kar sakte hai but return nhi console function me hi karna hoga?
 
-let bindCall = fullName.bind(student1, "Mumbai","India");
-console.log(bindCall()); // is ko bolte hai invoke karna Bind aise work karta hai
+// console.log(fullName.apply(student2, ["Mumbai","India"])) //Applay me itna fark hai second argument Array me dena hota hai ? Multipal Array lihk sakte hai yaha pe ? retrun wala function commit is tara se call tu undefiend ye ga?
 
-let bindCall2=fullName.bind(student2,student2.age,'Heydrabaad','India')
-console.log(bindCall2());
+// console.log(fullName.apply(student2,[student2.age,],['Heydrabaad','India'])) 
 
+
+//==============================harshi Start Apply Method=============================================//
+
+// function about(hobby, favMusician){
+//     console.log(this.firstName, this.age, hobby, favMusician);
+// }
+// const user1 = {
+//     firstName : "harshit",
+//     age: 8,   
+// }
+// const user2 = {
+//     firstName : "mohit",
+//     age: 9,
+
+// }
+
+// // apply
+// about.apply(user1, ["guitar", "bach"]);
+
+
+
+
+//Bind -->  Ye Method hame ek new function bana ke deta hai ?ye method hame ek new fiunction retrun karta hai ?or function ke result ko copy bana ke rahkta hai or baad me us se invok karne pe execute hote hai ? ye method function ke joind kar ke rahkta hai ? bind hamre result ko save kar ke rahkta hai ek varible me or us varible ko jab bhi ham invoke means function ko call karna hota hai ?
+
+// let fullName = function(city,contry){ 
+//     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
+//    }
+
+// let student1 = {
+//     fisrtName :"Tausif",
+//     lastName : 'qureshi',
+  
+// }
+
+// let student2 = {
+//     fisrtName :"Javed",
+//     lastName : 'qureshi',
+//     age :24
+// }
+
+// // console.log(fullName.bind(student1, "Mumbai","India")); //aise pura function return hoga ?
+
+// let bindCall = fullName.bind(student1, "Mumbai","India");
+// console.log(bindCall()); // is ko bolte hai invoke karna Bind aise work karta hai
+
+// let bindCall2=fullName.bind(student2,student2.age,'Heydrabaad','India')
+// console.log(bindCall2());
+
+
+//==============================harshi Start Bind Method=============================================//
+
+// function about(hobby, favMusician){
+//     console.log(this.firstName, this.age, hobby, favMusician);
+// }
+// const user1 = {
+//     firstName : "harshit",
+//     age: 8,   
+// }
+// const user2 = {
+//     firstName : "mohit",
+//     age: 9,
+
+// }
+
+// //Bind
+// const func = about.bind(user1, "guitar", "bach");
+// func();
 
 
 

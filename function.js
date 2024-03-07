@@ -56,6 +56,33 @@
 // const retrunValue = findTarget(arr,10)
 // console.log(retrunValue)
 
+// <------------------> Arrow function Oriented-programing chapter <------------------>
+// Arrow function ka this nhi hota hai ? Arrow function jo this leta hai apne surrounding se means Arrow function ka This jo hota hai window object hota hai globle bhi bolte hai ? Arrow Function ka This Change nhi kar sakte hai ? 
+
+const user1 = {
+  firstName : "harshit",
+  age: 8,
+  about: () => {
+    // console.log(this) //Window object aye ga? Arrow function ka This Window hota hai?
+    console.log(this.firstName, this.age);
+  }   
+}
+
+// user1.about(user1);
+user1.about.call(user1); //Arrow Function ka This Change nhi kar sakte hai ? 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // <------------------>function ke ander function defiend<------------------>
 // function myFun() {
@@ -126,7 +153,7 @@ function myApp(){
   console.log(firstName);
 }
 
-myApp();
+// myApp();
 
 
 // <------------------>function default parameter<------------------>
@@ -184,14 +211,15 @@ function myFun(){   //higyer order function
 
     function hello (){
     // console.log('hello world')
-      return 'hello world'
+      return 'hello world' //string retrun
     }
     return hello;   //function return
  }
-   const ans = myFun();
-   console.log(ans())  //pura function retrun hoga is se return ke sath use hello world warna console ke sathe pura function aye ga?
+   let ans = myFun();
+  //  console.log(ans)  //pura function retrun hoga aisa karne se ?
+  //  console.log(ans())  //Function retrun use karne se hello world aise hi print go jaye ga lin number 212 se ?
 
-//  ans();//console nhi karne se ye use karne se hello world print hoga q ke ans ek function ban gaya hai ab ?
+//  ans();//aisa use karne se hello world print hoga q ke ans ek function ban gaya hai ab ?
 
 
 
