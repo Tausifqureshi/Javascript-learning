@@ -7,37 +7,67 @@
 
 // this keyword --->  ka matlab hota hai us object ya variable ka reference this.firstName means object me jo firstName hai us se firstName lega us ka reference lege this ye hota hai ?
 
-function personInfo(){  //function bher create hai?
-    console.log(`person name is ${this.firstName} and age is ${this.age}`);
-}
+// function personInfo(){  //function bher create hai?
+//     console.log(`person name is ${this.firstName} and age is ${this.age}`);
+// }
 
-const person1 = {
-    firstName : "Tausif",
-    age: 24,
-    about: personInfo //object ke ander about key hai personInfo value hai jaisa object me hota  hai key value paira?
+// const person1 = {
+//     firstName : "Tausif",
+//     age: 24,
+//     about: personInfo //object ke ander about key hai personInfo value hai jaisa object me hota  hai key value paira?
 
     // about:function(){
     //  console.log(`person name is ${this.firstName} and age is ${this.age}`);
     // //aise bhi create kar sakte hai function ander hi?
     // }
-}
+// }
 
-const person2 = {
-    firstName : "Qureshi",
-    age: 18,
-    about: personInfo
-}
-const person3 = {
-    firstName : "Iqbal",
-    age: 17,
-    about: personInfo
-}
+// const person2 = {
+//     firstName : "Qureshi",
+//     age: 18,
+//     about: personInfo
+// }
+// const person3 = {
+//     firstName : "Iqbal",
+//     age: 17,
+//     about: personInfo
+// }
 
 // personInfo() ---> direct call karne se undefiend aye ga 
 
 // person1.about(); //function call hore jis bhi object ke sath function ke sath defiend hai us se sath call hore hai ?
 // person2.about();
 // person3.about();
+
+
+
+//=====================================Sort Method Chapter ========================================//
+//Sorta method ---> means hota hai object me sort tarike se function kaise banate hai ? 
+
+// const user1 = {
+//     firstName : "harshit",
+//     age: 8,
+//     about: function(){
+//         console.log(this.firstName, this.age);
+//     }   
+// }
+
+// const user1 = {
+//     firstName : "harshit",
+//     age: 8,
+//  about(){     //is ko bolte hai sort function object me ? key value pairs lihkne ki zarurt nhi hai ? abuot method 
+//               // create hau is me means function ban gaya about ab ?
+// console.log(this.firstName, this.age);
+//     }   
+// }
+
+
+
+// user1.about();
+
+
+
+
 
 
 
@@ -51,11 +81,11 @@ const person3 = {
 
 // console.log(window);
 
-"use strict"; //is ko use karne se function me jo this console hua hai us ki value ab undefiend aye gi use strict mood on karne se but is ko commit karne se this ki value window object hi print hogi? === interview quetion hai ye ?
+// "use strict"; //is ko use karne se function me jo this console hua hai us ki value ab undefiend aye gi use strict mood on karne se but is ko commit karne se this ki value window object hi print hogi? === interview quetion hai ye ?
 
-function myFunc(){  //function declaretion hai ye ?is function ka bhi this window object hota hai ?
-    console.log(this); 
-}
+// function myFunc(){  //function declaretion hai ye ?is function ka bhi this window object hota hai ?
+//     console.log(this); 
+// }
 // myFunc();
 
 
@@ -99,22 +129,22 @@ function myFunc(){  //function declaretion hai ye ?is function ka bhi this windo
 
 //==============================harshi Start Call Method=============================================//
 
-function about(hobby, favMusician){
-    console.log(this.firstName, this.age, hobby, favMusician);
-}
-const user1 = {
-    firstName : "harshit",
-    age: 8,   
-}
-const user2 = {
-    firstName : "mohit",
-    age: 9,
+// function about(hobby, favMusician){
+//     console.log(this.firstName, this.age, hobby, favMusician);
+// }
+// const user1 = {
+//     firstName : "harshit",
+//     age: 8,   
+// }
+// const user2 = {
+//     firstName : "mohit",
+//     age: 9,
 
-}
+// }
 
-// Call
-about.call(user1, "guitar", "bach");
-about.call(user2, "guitar", "bach");
+// // Call
+// about.call(user1, "guitar", "bach");
+// about.call(user2, "guitar", "bach");
 
 
 
@@ -127,23 +157,23 @@ about.call(user2, "guitar", "bach");
 // let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise?
 //     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
 //    }
- function fullName (city,contry){ // function declaretion
-    console.log (`${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`);
-   }
+//  function fullName (city,contry){ // function declaretion
+//     console.log (`${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`);
+//    }
 
-let student1 = {
-    fisrtName :"Tausif",
-    lastName : 'qureshi',
+// let student1 = {
+//     fisrtName :"Tausif",
+//     lastName : 'qureshi',
   
-}
+// }
 
-let student2 = {
-    fisrtName :"Javed",
-    lastName : 'qureshi',
-    age :24
-}
+// let student2 = {
+//     fisrtName :"Javed",
+//     lastName : 'qureshi',
+//     age :24
+// }
 
-fullName.apply(student1,["Mumbai","India"])//aisa bhi call kar sakte hai but return nhi console function me hi karna hoga?
+// fullName.apply(student1,["Mumbai","India"])//aisa bhi call kar sakte hai but return nhi console function me hi karna hoga?
 
 // console.log(fullName.apply(student2, ["Mumbai","India"])) //Applay me itna fark hai second argument Array me dena hota hai ? Multipal Array lihk sakte hai yaha pe ? retrun wala function commit is tara se call tu undefiend ye ga?
 
