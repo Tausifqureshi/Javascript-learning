@@ -30,7 +30,7 @@
 // person.set('firstName', 'Tausif'); //Add value Maps me hori hai
 // person.set('age', 7); //
 // person.set(1,'one');  //Number me key Add
-
+ 
 // person.set([1,2,3],'onetwothree'); // Array keys Values hai ye ? Array object hota hai object aye ga ?
 
 // person.set({1: 'one'},'onetwothree'); // Objects Key value hai ye ? 
@@ -39,7 +39,7 @@
 
 // console.log(person.get('firstName'));  //Get method se kon si key  and value hona mile gi is se?
 
-// console.log(person.get(1));  // 1 se on aye ga 
+// console.log(person.get(1));  // 1 se one aye ga 
 
 // console.log(person.keys("firstName"));  // is method se sirf key hi mile gi 
 
