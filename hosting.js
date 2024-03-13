@@ -19,7 +19,7 @@
 // emoloyes2.details(); //emoloyes2 ko first value dena? bad me  Employes class initialization karna is se bolte hai hosting ? class bhi Hosting Support nhi leta hai
 
 
-class Employes{ //Cretae Class
+class Employes{ //Cretae Class //This Chaptert learnVarn
     constructor(id,name){  //Create Object constructor use kar ke?
         this.id = id,
         this.name = name
