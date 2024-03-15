@@ -127,6 +127,9 @@
 //  console.log(student1.fullName.call(student1))  //aisa bhi call kar sakte hai ?
 
 
+
+
+
 //==============================harshi Start Call Method=============================================//
 
 // function about(hobby, favMusician){

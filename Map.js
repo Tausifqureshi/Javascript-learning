@@ -1,8 +1,9 @@
-//Map ---> Maps object ki tara hote hai Key value pairs store karte hai ?  but ham is me kisi bhi tara ki key ya value add kar sakte hai Exmple Function String Ek blank object bhi use kar sakte hai key ki tara ? Maps javascript ES6 me aya hai ? Maps pe for of loop se bhi key value paris get kar sakte hai ? Map bhi ek itareble hai ? Map me bhi duplicate kay nhi allow hai? Object or Mao me  different  Map me Key ki bhi type ki rahk sakte hai string number 
+//Map ---> Maps object ki tara hote hai Key value pairs store karte hai ?  but ham is me kisi bhi tara ki key ya value add kar sakte hai Exmple Function String Ek blank object bhi use kar sakte hai key ki tara ? Maps javascript ES6 me aya hai ? Maps pe for of loop se bhi key value paris get kar sakte hai ? Map bhi ek itareble hai ? Map me bhi duplicate kay nhi allow hai? Object or Map me  different  Map me Key ki bhi type ki rahk sakte hai string number 
 
 //  ====================================================Harsiht Cha========================================//
-// object literal me key string ya synbole me hoti hai jayda tara 99 presnt string me hi key hoti hai ?
+// object literal me key string ya symbole me hoti hai jayda tara 99 presnt string me hi key hoti hai ?
 // Simple Object Create ye ?
+
 // const person = {  // is ko object  Literals bhi bolte hai is ko ?
 //     firstName : "Tausif", //string key
 //     age: 7, 
@@ -53,7 +54,7 @@
 // }
 
 let cosArray = new Map([["fisrtName", "Tausif"],['age',24]]) //Maps me arary me array bhi use kar sakte hai?
-console.log(cosArray.values('firstName'))
+console.log(cosArray.values('firstName')) //FisrtName Key hai
 
 //================================Real Stick Exampel===============================//
 const person1 = {
@@ -74,6 +75,7 @@ console.log(person1.id); // dono object me se kuch bhi console karwa sakte hai ?
 console.log(extraInfo.get(person1)); //Pura object aye ga is se
 console.log(extraInfo.get(person1).gender); //Map use kar ke object 1 grender Print ?
 console.log(extraInfo.get(person2).gender); //Map use kar ke object 2 gender print?
+
 
 
 //===============================End Hirshit =====================///

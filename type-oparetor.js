@@ -1,6 +1,6 @@
 // primitive data type in javascript ? means hota hai ek variabe me chang value to dusre me chang nhi hoga primitive data types me 
 //String, Number, Booleans, Undefiend, Null,
-
+ 
 let num1 = 6;    
 let num2 = num1;
 console.log(num1);
@@ -54,16 +54,16 @@ console.log(typeof (nul));
 //Array object,function
 
 let array1 = ['item1', 'item2','item3'];   //array hai
-    let array2 = array1
+    let array2 = array1 //aisa karne se  array1 me add tu array 2 me bhi hoga q ke Array reference ?
     console.log(array1)
     console.log(array2)
-    array1.push('item4')   //array1 one me push lekin array2 me bhi effect hoga is se q ke ye reference type hai
+    array1.push('item4')  //array1 one me push lekin array2 me bhi effect hoga is se q ke ye reference type hai
     console.log(array1)
     console.log(array2)
 
 
- // let array1 = ['item1', 'item2','item3'];     ///aisa karne se reference types me bhi add nhi hoga?
-    // let array2 = ['item1', 'item2','item3'];
+ // let array1 = ['item1', 'item2','item3'];  //aisa karne se reference types me bhi add nhi hoga alag Array banane se?
+  // let array2 = ['item1', 'item2','item3']; //aisa karne se reference types me bhi add nhi hoga alag Array banane se?
     // console.log(array1)
     // console.log(array2)
     // array1.push('item4')
@@ -139,7 +139,7 @@ console.log(typeof (mySelf));
 // Symbol
 
 
-// Convert type off data 
+//Checking type off data 
 let age = 22;  // type of Number creating
 let firstName = "Tausif"; //type of string creating
 console.log(typeof age);

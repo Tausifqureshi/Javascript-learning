@@ -1,5 +1,5 @@
 
-//Sets --->data structure me ata hai ?sets object hai ?  sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubra nhi aye example 1 aya tu dubra nhi aye ga ?
+//Sets --->data structure me ata hai ?sets object hai ?  sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubara nhi aye example 1 aya tu dubra nhi aye ga ?
 
 //set method
 // new set() --> is se set crete karte hai ?
@@ -45,7 +45,7 @@ for(let element of uniqueElements){
 }
 
 console.log(length);
-//=======================================================================//end harsit
+//===================================================//end harsit==========================//
 
 
 let mySet1 = new Set([1,2,3, 'Tausif',{name:'qureshi'}, true]); //set constructor bolte hai is me string array object boolean value sub dal ,sakte hai;

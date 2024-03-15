@@ -15,15 +15,18 @@
 // console.log(Array.isArray(fruits)) // Array cheking method Ture and false me answer aye ga?
 // console.log(fruits.length) // Array ki length cheking method?
 
-
+ 
 
 //===================================Array ko clone karne ke tarike===================================//?
 // let array1 = ["item1","item2"]
 
-// let array2 = array1.slice(0); //first tarika clone kare ka sile method use 0 index means array1 ke item array2 me add hoge but dono array alag hoge is bolte hai clone 
+// let array2 = array1.slice(0); //first tarika clone kare ka sile method use 0 index means array1 ke item array2 me add hoge but dono array alag hoge is bolte hai clone ?
+
 // let array2 = [].concat(array1);  //dusra tarika add karne ka ?
-// let array2 = [...array1]; // tisra tarika clone karne ka spread operator use
-// array1.push("item3") //array one me add hora hai only dusre me add nhi hoga
+
+// let array2 = [...array1]; // tisra tarika clone karne ka spread operator use ?
+
+// array1.push("item3") //array one me add hora hai only dusre me add nhi hoga ?
 
 // console.log(array1===array2) //array alag hai hai check kar re hai ek me adda tu dusre me adda nhi hoga
 // console.log(array1)
