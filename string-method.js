@@ -13,7 +13,7 @@
 
 
 //================================== replace and replaceAll method =======================================//
-// Replace Method ---> ye method original string ko change nhi karta hai ? ye method 2 postion leta hai kis position ko change kar ke dusri value ko replace kar re ge ? ye method new string bhi retrun karta hai ?
+// Replace Method ---> ye method original string ko change nhi karta hai ? ye method 2 postion leta hai kis position ko change kar ke dusri value ko replace kar ne ke liye dusri position kon si value add karne ke liye hoti hai ? ye method new string bhi retrun karta hai ?
 
 // let firstName = 'Hello Tausif name';
 // console.log(firstName);
@@ -23,10 +23,10 @@
 
 // replaceAll method --->  ye method new string deta hai sub string ko replac kar ke ? original string ko change nhi karta ye method ? ye method 2021 me aya javascript me ? ye method nternet Explorer. work nhi karta hai ?
 
-let text = "I love cats. Cats are very easy to love. Cats are very popular."
-text = text.replaceAll("Cats","Dogs");
-text = text.replaceAll("cats","dogs");
-console.log(text)
+// let text = "I love cats. Cats are very easy to love. Cats are very popular."
+// text = text.replaceAll("Cats","Dogs");
+// text = text.replaceAll("cats","dogs");
+// console.log(text)
 
 //================================== trim method ==================================================//
 //Trim Method ---> Ye method space ko remove karne ke liye use hota hai ? ye oringinal string ko change nhi karta hai ?

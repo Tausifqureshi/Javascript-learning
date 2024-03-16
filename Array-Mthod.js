@@ -344,7 +344,7 @@
 // console.log(users);
 
 // <------------------------------>Array find Method<-------------------------------->
-//ye method true and false me answer deta hai koi element ki length check karna ya element hai ya nhi hai ya nhi dhakta hai ye method bhi ek call back function leta hai?
+//ye method true and false me answer deta hai ? koi element ki length check karne ? ya element hai ya nhi hai dhakta hai ? ye method bhi ek call back function leta hai?
 
 // find method
 
@@ -373,8 +373,7 @@
 
 
 // <------------------------------>Array every Method<-------------------------------->
-
-// every metod bhi ek call back function lete hai or yr original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai warna false true and false me answer deta hai ye method ?
+// every metod ---> bhi ek call back function lete hai ? or ye original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai ? warna true and false me answer deta hai ye method ?
 
 // let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
 // let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi'];
@@ -401,7 +400,7 @@
 
 // <------------------------------>Array some Method<-------------------------------->
 
-// some method bhi ek callback function leta hai or some method original array ko change nhi karta hai ? ye mthod use hota hai array ka ek bhi element satisfy hota hai true return karta hai jaise hi ek condition satisfy hohi true nata hai
+// some method bhi ek callback function leta hai ? or some method original array ko change nhi karta hai ? ye mthod use hota hai array ka ek bhi element satisfy hota hai true return karta hai jaise hi ek condition satisfy hohi true nata hai
 
 // let course = ['Hindi',"Urdu","English", 'Telgu'];
 
@@ -459,34 +458,45 @@
 
 
 // <------------------------------>Array spilce Method<-------------------------------->
-
-// splice method add ya remove karta hai array ke element ko ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
+// splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
 
 // const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 // console.log(fruit)
-// fruit.splice(1,3 ,"Hello",'Array') //1 se 3 index tak delete hore hai us ke baad add bhi kar sakte hai 
+// fruit.splice(1,3 ,"Hello",'Array') //1 se 3 index 'orange' se 'mango'  tak delete hore hai ?delete ke baad add hora hai ?
 // console.log(fruit)
 
+// let add = fruit.splice(1,3 ,"Hello",'Array')//jo delete karte hai us se return bhi karta hai ye method ? 
 
-// // start , delete , add
+// console.log(add,'deleteitem')
+
+// start , delete , add , position leta hai ye method ?
 // const myArray = ['item1', 'item2', 'item3'];
 // console.log(myArray);
+
 // delete
-// const deletedItem = myArray.splice(1, 2);
-// console.log("delted item", deletedItem);
+// myArray.splice(1,1); //1 jo hai 'item2' se delete karne ke liye durra 1 hai us se ek hi delete karna hai 'item2'?
+// console.log(myArray);
+
+// let deletedItem = myArray.splice(1,1); 
+// console.log("delted item", deletedItem); //jo delete karte hai us se return bhi karta hai ye method ?'item2',  hora 1index se or dusre 1 se ek hi item delete hoga ?
 
 // add
-// myArray.splice(1, 0,'inserted item');
+// myArray.splice(1, 0,'inserted item');//1 index se start hoga 0 ka matlab kuch nhi delete us ke baad value add hori hai ?
+// console.log(myArray)
 
 // add and delete 
-// const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
-// console.log("delted item", deletedItem);
+// let deletedItem =  myArray.splice(1, 2, "inserted item1","inserted item2")//jo delete karte hai us se return bhi karta hai ye method ? 'item2', 'item3' hore hai us ke baad value add hori hai ?
+// console.log( deletedItem);
+
+// myArray.splice(1, 2, "inserted item1","inserted item2") // 'item2', 'item3' hore hai us ke baad value add hori hai ?
+// console.log(myArray);
+
 
 
 
 // <------------------------------>Array toString Method<-------------------------------->
 
-// toString Method ---> ye method oringinal array ko change nhi karta hai ? ye method array ke element ko string me change karata hai ? string me change tu array ke koi bhi method use nhi kar skate hai is pe fit ? 
+// toString Method ---> ye method oringinal array ko change nhi karta hai ? ye method array ke element ko string me change karata hai ? string me change tu array ke koi bhi method use nhi kar skate hai is pe fir ? 
 // const string = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(Array.isArray (string))  //checking array hai ya nhi 
 // console.log(typeof string) // array ka type check object aye ga array ek object hota hai ? 
@@ -515,19 +525,47 @@
 
 
 
+// <------------------------------>Array concat Method<-------------------------------->
+// concat Method ---> ye method two array kop joind karne ke liye use hota hai ? ye method new array return karta hai joined array ka ? ye original array ko change nhi karta hai ye method ? array ki lenght bhim deta hai ye method ?
+
+// const arr1 = ["Cecilie", "Lone"];
+// const arr2 = ["Emil", "Tobias", "Linus"];
+// const children = arr1.concat(arr2);
+// console.log(children);
+
+// const arr3 = ["Cecilie", "Lone"];
+// const arr4 = ["Emil", "Tobias", "Linus"];
+// const arr5 = ["Robin"];
+// const children1 = arr3.concat(arr4, arr5); //multipel array bhi concat kar sakte hai ? 
+// console.log(children1) 
+
+
+
 // <------------------------------>Array join Method<-------------------------------->
-// join Method ---> ye method ye original array ko change nhi karta hai ? 
+// join Method ---> ye method array ke element ko string me return karti hai ? ye method ye original array ko change nhi karta hai ? 
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(typeof fruits);
+// console.log(Array.isArray( fruits));
+
+//let text = fruits.join();
+
+// let text = fruits.join("and"); //ye method array ke value ko string me deta hai
+// console.log(typeof text);
+// console.log(Array.isArray( text));
+
+
+// <------------------------------>Array slice Method<-------------------------------->
+// Slice-Method ---> ye method use hota hai ap ko kaha se kaha tak value chahye jaise muje 'banana',se 'Apple' tak hona lekin onlye 'lemon' tak hi pring hoga,q ke ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai ?  start or end position dena padta hai kaha se kaha tak value hona ? ye method two value leta hai start and end wali position ? ye method original Array ko change bhi nhi karta hai? ye method new array bhi deta hai ? 
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);
+// console.log(citrus)
 
 
 
-
-
-
-
-
-
-
-
+// <------------------------------>Array indexOf Method<-------------------------------->
+// indexOf Method ---> 
 
 
 
