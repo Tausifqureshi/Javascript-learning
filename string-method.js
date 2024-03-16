@@ -6,11 +6,13 @@
 
 // let firstName = 'Tausif';
 // let lastName = 'Qureshi';
-// let result = firstName.concat(lastName); String joind hori yaha se ?
+// let text = 'Hello'
+
+// let result = firstName.concat(lastName,text); //String joind hori yaha se ? kitni bhi string joind kr sakte hi
 // console.log(result)
 
 
-//================================== replace method =======================================//
+//================================== replace and replaceAll method =======================================//
 // Replace Method ---> ye method original string ko change nhi karta hai ? ye method 2 postion leta hai kis position ko change kar ke dusri value ko replace kar re ge ? ye method new string bhi retrun karta hai ?
 
 // let firstName = 'Hello Tausif name';
@@ -19,7 +21,12 @@
 // let result = firstName.replace('name','Qureshi'); //Replace hora yaha se ?
 // console.log(result);
 
+// replaceAll method --->  ye method new string deta hai sub string ko replac kar ke ? original string ko change nhi karta ye method ? ye method 2021 me aya javascript me ? ye method nternet Explorer. work nhi karta hai ?
 
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+text = text.replaceAll("Cats","Dogs");
+text = text.replaceAll("cats","dogs");
+console.log(text)
 
 //================================== trim method ==================================================//
 //Trim Method ---> Ye method space ko remove karne ke liye use hota hai ? ye oringinal string ko change nhi karta hai ?
@@ -47,8 +54,8 @@
 //================================== split method ===================================================//
 // Split Method ---> split method string ko ek ke kar ke nikal ke array me deta hai is split se string ke chotte chotte word ko tod sakte hai ? split method new array deta hai ? split method original string ko change nhi karta hai ? split method index se bhi split karta hai hame kaha se kon si value show karwna hai ? 
 
-let firsNtame = 'Hello Tausif Qureshi';
-console.log(firsNtame);
+// let firsNtame = 'Hello Tausif Qureshi';
+// console.log(firsNtame);
 
 // let result = firsNtame.split(""); //ek ek word ko tod ke array ke form me dega ye split ?
 // console.log(result);
@@ -59,8 +66,8 @@ console.log(firsNtame);
 // let result2 = firsNtame.split(" "); 
 // console.log(result2[1]); //aise karne se kon si index ki value hona ?
 
-let result3 = firsNtame.split(" " ,2); //aise karne se Kaha se kaha tak value chaiye ?
-console.log(result3)
+// let result3 = firsNtame.split(" " ,2); //aise karne se Kaha se kaha tak value chaiye ?
+// console.log(result3)
 
 
 
@@ -166,7 +173,7 @@ console.log(result3)
 
 
 //===================================== search method ======================================//
-// // search method ---> ye method use hota hai agar koi word mil jata hai us ki position retrun karta hai kis position pe hai o word ? agar is ko o word nhi milta hai tu -1 return karta hai
+//search method ---> ye method use hota hai agar koi word mil jata hai us ki position retrun karta hai kis position pe hai o word ? agar is ko o word nhi milta hai tu -1 return karta hai ?
 
 // let text = "Mr Blue has a blue house";
 // // let position = text.search("Blue"); //value ki index return kare ga ?
@@ -176,38 +183,74 @@ console.log(result3)
 
 
 //===================================== match method ======================================//
-// match method ---> 
+// match method ---> ye method string me kuch match karta hai agar value mil jati hai tu us kaArray bana ke retrun karta hai ? agar kuch nhi milta hai tu null ata hai va3lue ?
+// let text = "The rain in SPAIN stays mainly in the plain";
+
+// let match = text.match('ain'); //Array return karta hai ye ?
+
+// 
+// let match = text.match(/ain/g); //Array return karta hai ye ? g ka matlab hota hai globali check kare ga jitni bar mile ga us ka array bana ke dega
+
+// let match = text.match("tausif"); //null aye ga ?
+// console.log(match)
 
 
 
 
 
+//===================================== indexOf and lastIndexOf method ======================================//
+
+// indexOf Method --- > ye method return karta hai element ki position jo first element mil jaye ga us se retrun kar de ga jis se ham search kar re hai ? agar value nhi milti hai tu -1 deta hai ?
+// let text = "Hello world, welcome to the universe.";
+// let result = text.indexOf("Welcome");
+
+// let result = text.indexOf("e",2); //is ka means is me jitne bhi 'e hai ye sub chode ke 2number ki index se start kar re the se start hoga?
+
+// console.log(result);
+
+
+// lastIndexOf Method --->  ye method string ke last se value dhakta hai first hi jo value mil jati o return kar deta hai Exmple 'e' agar is se last se first mil gaya ys ki index ki position retrun kar dega ?
+
+// let text = "Hello planet earth, you are a great planet.";
+// let result = text.lastIndexOf("planet");
+// console.log(result);
 
 
 
 
+//===================================== chartAt method ======================================//
+
+// chartAt method --> ye method me potion dena hota hai agar us ko di hohi position mil jati hai us potion pe ko sa letetr word us ko return karta hai ?
+
+// let text = "HELLO WORLD";
+// let letter = text.charAt(1);//word ki position retrun kar re ga yaha se 'E' aye ga? 
+// let letter = text.charAt(text.length-1); //aise karne se last ka word mile ga 'D' aye ga?
+// console.log(letter);
 
 
 
 
+//===================================== repeat method ======================================//
+
+// repeat method ---> ye method string ko copy bana ke rahkta hai kitne bar repeat karna hai utnii baat number dene pe bar bar ohi word repeat hoga ?ye method new string deta hai ? ye method original string ko change nhi karta hai ? 
+
+// let text = "Hello world!";
+// let result = text.repeat(2); //jitne number utne bar Hello world! aye ga ?
+// console.log(result)
 
 
 
+//===================================== toString method ======================================//
+//toString method  ---> ye method string tu string me hi deta hai but number ko bhi string me change karne ke liye work hota hai?
 
+// let text = "Hello world!";
+// let result = text.toString(); 
+// console.log(typeof result)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let num = 6;
+// console.log(typeof num);
+//  let save = num.toString();
+//  console.log(typeof save) //string me change 
 
 
 
