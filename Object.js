@@ -228,19 +228,55 @@ console.log(entries[1][1]); //only Value dono print hoge
 
 // <------------------------------>Object option chaining<-------------------------------->
 
-let user ={
-    firstName: "Tausif",
-    // address: {houseNumber: 12334}, //object ke ander object hai ye ?
-}
-console.log(user.firstName);
-console.log(user?.address?.houseNumber)//line number 233 comment karne se bhi error nhi aye ga undefined q keis liye ham is se use kar re hai react me kafi use hota hai jab ham usestate ya useeffect karte hai ? is ka use hota hai hested object ke liye is hi option chaining bolte hai ?
+// let user ={
+//     firstName: "Tausif",
+//     // address: {houseNumber: 12334}, //object ke ander object hai ye ?
+// }
+// console.log(user.firstName);
+// console.log(user?.address?.houseNumber)//line number 233 comment karne se bhi error nhi aye ga undefined q keis liye ham is se use kar re hai react me kafi use hota hai jab ham usestate ya useeffect karte hai ? is ka use hota hai hested object ke liye is hi option chaining bolte hai ?
 
 // console.log(user.address.houseNumber) //object ke ander ki value aise milti hai ?
 // console.log(user['firstName']) //aise bhi print karwa sakte hai ?
 
 
 
+//<------------------------------>Object Property Getter and Setter<-------------------------------->
+// Getter and Setter ---> Function Jaisa hi hota hai ye Getter and Setter ? ye propeter object ki value ko read and set karne ke liye use hoti hai ? is jayda tara use obejct-constructor me hota hai ? getter se value set karte hai ? setter se value ko set karte hai ?
 
+let proson = { 
+    firstName : 'Tausif',
+    lastName : 'Qureshi',
+    color : " Brown",
+
+    // fullDetails : function() { //is ko method bolte hai ?
+    //     return `${this.firstName},${this.lastName}`;
+    //}
+
+   get getfullDetails(){ //is ko method bolte hai ?jab get ka use tu functio aisa banate hai ?getter ka use hota hai property ko read karne ke liye ?
+        return `${this.firstName}, ${this.lastName}`;
+    },
+
+    set setFullDetails (para){  //set ek hi parameter leta hai? agar multiple parameter tu bar bar para ko hi use karna hoga ?
+     this.firstName = para.fn, //fn firstName
+    this.lastName = para.ln; //ln lastName ,
+    }
+    
+}
+proson.setFullDetails = {fn: "Iqbal", ln : "English"} //multipal parameter hai tu value aise add karte hai ?
+
+//proson.setFullDetails = 'Javed' //aise add ? 
+
+console.log(proson.getfullDetails)//property add hone ke baad console lineNumber 265 and 267 dono same hi call joge?
+
+// console.log(proson) //pura object print hoga aise ?
+
+// console.log(proson.lastName) //use Dot notetion ?
+
+// console.log(proson['firstName']) ///aise bhi access kar sakte breaket notation se javascript me key string me hi hoti hai ?
+
+// console.log(proson.fullDetails()) ?  //pura function aye ga is ?
+
+// console.log(proson.getfullDetails) //get use tu aise console se call karwate hai ?
 
 
 

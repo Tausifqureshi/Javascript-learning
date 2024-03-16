@@ -480,8 +480,8 @@ console.log(myArray);
 // myArray.splice(1, 0,'inserted item');
 
 // add and delete 
-const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
-console.log("delted item", deletedItem);
+// const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
+// console.log("delted item", deletedItem);
 
 
 

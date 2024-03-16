@@ -1,5 +1,5 @@
 //=========================================JS Function Object Constructor=======================================//
-//Is se him Constructor function ya Constructor object dono same hi hai ?Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai? Jab bhi ham Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai ?
+//Is se hi ham Constructor function ya Constructor object dono same hi hai ?Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai? Jab bhi ham Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ?
 
 
 // =========================================== Glowvia Teac Chaneal Chaptert =================================//
@@ -11,7 +11,7 @@
 // }
 
 // console.log(car) // pura Object Print ?
-// console.log(car["firstName"]) // //aise bhi access kar sakte breaket notation se javascript me key string me hi hoti hai?
+// console.log(car["firstName"])//aise bhi access kar sakte breaket notation se javascript me key string me hi hoti hai?
 // console.log(car.firstName) //dost use kar ke bhi Print karwa sakte hai ?
 
 
