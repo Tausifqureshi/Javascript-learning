@@ -1,13 +1,13 @@
 //Array Method?
 // <------------------------------>Array Push Method<-------------------------------->
-// push --->last se add karta hai or ye array ki length change karat hai or new length deta hai?
+// push --->last se add karta hai ? or ye array ki length change karat hai or new length deta hai?
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
 // fruits.push("orange"); //arrary lenth change new lengt dega
 // console.log(fruits)
 
 // <------------------------------>Array Pop Method<-------------------------------->
-//pop ---> last se delete karta hai or ye orignal array ko change karta hai or ye remove item ko retun bhi karta hai?
+//pop ---> last se delete karta hai ? or ye orignal array ko change karta hai or ye remove item ko retun bhi karta hai ?
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
 
@@ -18,14 +18,14 @@
 // console.log(store)
 
 // <------------------------------>Array Unshift Method<-------------------------------->
-//unshift ---> starting se adda karta hai ye or ek se jayda ko bhi add kar sakte hai?
+//unshift ---> starting se adda karta hai ye or ek se jayda ko bhi add kar sakte hai? ye original array kp change karta hai ? 
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
 // fruits.unshift("grapes"); //start se add hora?
 // console.log(fruits);
 
 // <------------------------------>Array Shift Method<-------------------------------->
-// shift --->first element se delete karta hai ye? original array ko change karta hai ye delete item ko return karta hai?
+// shift --->first element se delete karta hai ye ? original array ko change karta hai ye delete item ko return karta hai?
 // let fruits = ["mango", "orange","apple"];
 // console.log(fruits);
 
@@ -284,16 +284,16 @@
 // userNames.sort();
 // console.log(userNames);
 
-const nam = ["cde", "bca"];
-console.log(nam.sort());
+// const nam = ["cde", "bca"];
+// console.log(nam.sort());
 
-//expected output example in sort method in numbers?
-const numbers = [5, 9, 1200, 410, 3000];
-numbers.sort((a, b) => {
-  //return a-b //asendin me sort ye
-  return b - a; //desending me sort ye
-});
-numbers.sort((a, b) => a - b);
+// //expected output example in sort method in numbers?
+// const numbers = [5, 9, 1200, 410, 3000];
+// numbers.sort((a, b) => {
+//   //return a-b //asendin me sort ye
+//   return b - a; //desending me sort ye
+// });
+// numbers.sort((a, b) => a - b);
 // console.log(numbers);
 //agar positive ata hai answer tu hame phele b ko rahkna hai nagitive me first a ko rahkna hai?
 // 1200,410
@@ -306,24 +306,24 @@ numbers.sort((a, b) => a - b);
 
 // Real use case? Example jab ham ecommerce website pe jate hai tu ham opetion ata hai kam price ya low price wale?
 // price lowToHigh HighToLow
-const products = [
-  { productId: 1, produceName: "p1", price: 300 },
-  { productId: 2, produceName: "p2", price: 3000 },
-  { productId: 3, produceName: "p3", price: 200 },
-  { productId: 4, produceName: "p4", price: 8000 },
-  { productId: 5, produceName: "p5", price: 500 },
-];
+// const products = [
+//   { productId: 1, produceName: "p1", price: 300 },
+//   { productId: 2, produceName: "p2", price: 3000 },
+//   { productId: 3, produceName: "p3", price: 200 },
+//   { productId: 4, produceName: "p4", price: 8000 },
+//   { productId: 5, produceName: "p5", price: 500 },
+// ];
 
 // lowToHigh
-const lowToHigh = products.slice(0).sort((a, b) => {
-  //slice use kaha se hame apni value start karna hai clone ke liye use?
-  return a.price - b.price; //kam price wale ke liye use
-});
+// const lowToHigh = products.slice(0).sort((a, b) => {
+//   //slice use kaha se hame apni value start karna hai clone ke liye use?
+//   return a.price - b.price; //kam price wale ke liye use
+// });
 
-const highToLow = products.slice(0).sort((a, b) => {
-  return b.price - a.price; //jayda price wale ke liye use
-});
-// console.log(products) // slic use se produts clone hoge is se pure products upper nice nhi hoge jais hai line bye line ayeb ge
+// const highToLow = products.slice(0).sort((a, b) => {
+//   return b.price - a.price; //jayda price wale ke liye use
+// });
+// // console.log(products) // slic use se produts clone hoge is se pure products upper nice nhi hoge jais hai line bye line ayeb ge
 
 //sort method charachter example? jo word first ata hai us se phle rahke ga jaise garima first aye ga q ke teble me g ki position jaldi ati hai is liye garima jaldi aye ga us baad harshit aise hi word two word work kare ge?
 // const users = [
@@ -357,16 +357,16 @@ const highToLow = products.slice(0).sort((a, b) => {
 // const ans = myArray.find((string)=>string.length===3);
 // console.log(ans);
 
-const users = [
-  { userId: 1, userName: "harshit" },
-  { userId: 2, userName: "harsh" },
-  { userId: 3, userName: "nitish" },
-  { userId: 4, userName: "mohit" },
-  { userId: 5, userName: "aaditya" },
-];
+// const users = [
+//   { userId: 1, userName: "harshit" },
+//   { userId: 2, userName: "harsh" },
+//   { userId: 3, userName: "nitish" },
+//   { userId: 4, userName: "mohit" },
+//   { userId: 5, userName: "aaditya" },
+// ];
 
-const myUser = users.find((user) => user.userId === 3);
-console.log(myUser);
+// const myUser = users.find((user) => user.userId === 3);
+// console.log(myUser);
 
 
 
@@ -445,12 +445,11 @@ console.log(myUser);
 
 
 // <------------------------------>Array fill Method<-------------------------------->
-
-//Fill method se array ke element ko ek  value se overwrite kar sakte hai ? ye method original array ko overwrite kar deta hai or is me 3 parameter hote hai first value second start positon and thred end positon leta hai ye method ? 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits);
-fruits.fill("Kiwi",2,4);
-console.log(fruits)
+//Fill method --> ye array ke element ko ek  value se overwrite kar sakte hai ? ye method original array ko overwrite kar deta hai or is me 3 parameter hote hai first value second start positon and thred end positon leta hai ye method ? 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+// fruits.fill("Kiwi",2,4);
+// console.log(fruits)
 
 // const myArray = [1,2,3,4,5,6,7,8];
 // myArray.fill(0,2,5); //o index se fill karna hai starat karna hai 2 se or end karna hai 5 tak menas  6number tak but 6 nhi aye ga 5 pe hi ruk jaye ga ye fill method ?
@@ -463,15 +462,15 @@ console.log(fruits)
 
 // splice method add ya remove karta hai array ke element ko ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
 
-const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
-console.log(fruit)
-fruit.splice(1,3 ,"Hello",'Array') //1 se 3 index tak delete hore hai us ke baad add bhi kar sakte hai 
-console.log(fruit)
+// const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+// console.log(fruit)
+// fruit.splice(1,3 ,"Hello",'Array') //1 se 3 index tak delete hore hai us ke baad add bhi kar sakte hai 
+// console.log(fruit)
 
 
-// start , delete , add
-const myArray = ['item1', 'item2', 'item3'];
-console.log(myArray);
+// // start , delete , add
+// const myArray = ['item1', 'item2', 'item3'];
+// console.log(myArray);
 // delete
 // const deletedItem = myArray.splice(1, 2);
 // console.log("delted item", deletedItem);
@@ -482,6 +481,61 @@ console.log(myArray);
 // add and delete 
 // const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
 // console.log("delted item", deletedItem);
+
+
+
+// <------------------------------>Array toString Method<-------------------------------->
+
+// toString Method ---> ye method oringinal array ko change nhi karta hai ? ye method array ke element ko string me change karata hai ? string me change tu array ke koi bhi method use nhi kar skate hai is pe fit ? 
+// const string = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(Array.isArray (string))  //checking array hai ya nhi 
+// console.log(typeof string) // array ka type check object aye ga array ek object hota hai ? 
+
+// let text = string.toString();
+// console.log(typeof text) //tostring se array string me change ho jata hai ?
+
+
+// <------------------------------>Array valueOf Method<-------------------------------->
+
+// valueOf Method ---> ye method original array ko change nhi karta hai ? is method se array ke shari value same position pe ati hai koi change nhi hota hai ye default value hoti hai jaise ham console karwate hai same vaise hi print hoga is method se ?
+
+// const valueOf = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(valueOf)
+// const myArray1 = valueOf.valueOf();
+// console.log(myArray1)
+
+
+// <------------------------------>Array reverse Method<-------------------------------->
+// reverse Method ---> ye method original array ko change karta hai ? ye method order change karne ke liye use hota hai means left ki postion se nhi right ki position se value milti hai is se bolte hai order-changes ?
+
+// const reverse = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(reverse)
+// let reverse1 = reverse.reverse();
+// console.log(reverse1)
+
+
+
+// <------------------------------>Array join Method<-------------------------------->
+// join Method ---> ye method ye original array ko change nhi karta hai ? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

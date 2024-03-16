@@ -241,7 +241,7 @@ console.log(entries[1][1]); //only Value dono print hoge
 
 
 //<------------------------------>Object Property Getter and Setter<-------------------------------->
-// Getter and Setter ---> Function Jaisa hi hota hai ye Getter and Setter ? ye propeter object ki value ko read and set karne ke liye use hoti hai ? is jayda tara use obejct-constructor me hota hai ? getter se value set karte hai ? setter se value ko set karte hai ?
+// Getter and Setter ---> Function Jaisa hi hota hai ye Getter and Setter ? ye propeter object ki value ko read and set karne ke liye use hoti hai ? is jayda tara use obejct-constructor me use hota hai ? getter se value set karte hai ? setter se value ko set karte hai ?
 
 let proson = { 
     firstName : 'Tausif',
