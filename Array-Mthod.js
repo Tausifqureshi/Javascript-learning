@@ -1,42 +1,142 @@
-//Array Method?
-// <------------------------------>Array Push Method<-------------------------------->
-// push --->last se add karta hai ? or ye array ki length change karat hai or new length deta hai?
-// let fruits = ["mango", "banana","apple"];
+//========================================Array Method============================?
+
+
+// <------------------------------>Array concat Method<-------------------------------->
+// concat Method ---> ye method two array kop joind karne ke liye use hota hai ? ye method new array return karta hai joined kiye huye array ko ? ye original array ko change nhi karta hai ye method ? array ki lenght bhi deta hai ?
+
+// const arr1 = ["Cecilie", "Lone"];
+// const arr2 = ["Emil", "Tobias", "Linus"];
+// const children = arr1.concat(arr2);
+// console.log(children);
+
+// const arr3 = ["Cecilie", "Lone"];
+// const arr4 = ["Emil", "Tobias", "Linus"];
+// const arr5 = ["Robin"];
+// const children1 = arr3.concat(arr4, arr5); //multipel array bhi concat kar sakte hai ? 
+// console.log(children1) 
+
+
+
+
+// <------------------------------>Array every Method<-------------------------------->
+// every metod ---> ek call back function lete hai ? or ye original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai wrana flase deta hai ? ye method true and false me answer deta hai ?
+
+// let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
+// let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi']; //is tara se check tu hi ture aye ga share element same hona chaiye ?
+
+// const allHindi = school.every(function(student){
+//   return student === "Hindi";
+// });
+
+// console.log(allHindi);
+
+
+
+// const userCart = [
+//   {productId: 1, productName: "mobile", price: 12000},
+//   {productId: 2, productName: "laptop", price: 22000},
+//   {productId: 3, productName: "tv", price: 35000},
+// ]
+
+
+// const ans = userCart.every((cartItem)=>cartItem.price < 30000);//check kar ra hai har itme 30000 hazar ka hai ya nhi? q ke har item  har itme 30000 hazar ka nhi hai is liye false aye gi value ?
+// console.log(ans)
+
+
+
+// <------------------------------>Array fill Method<-------------------------------->
+//Fill method --> ye array ke element ko ek  value se overwrite kar sakte hai ? ye method original array ko overwrite kar deta hai ? or is me 3 parameter hote hai first value second start positon and thred end positon leta hai ye method ? 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits);
-// fruits.push("orange"); //arrary lenth change new lengt dega
+// fruits.fill("Kiwi",2,4);
 // console.log(fruits)
 
-// <------------------------------>Array Pop Method<-------------------------------->
-//pop ---> last se delete karta hai ? or ye orignal array ko change karta hai or ye remove item ko retun bhi karta hai ?
-// let fruits = ["mango", "banana","apple"];
-// console.log(fruits);
+// const myArray = [1,2,3,4,5,6,7,8];
+// myArray.fill(0,2,5); //0 index se fill karna hai starat karna hai 2 se or end karna hai 5 tak menas  6number tak but 6 nhi aye ga 5 pe hi ruk jaye ga ye fill method ?
+// console.log(myArray);
 
-// fruits.pop(); //original array ko change kar ra hai or last se delete kar ra hai?
-// console.log(fruits)
 
-// const store=fruits.pop() //or remove element bhi retrun karta hai?
-// console.log(store)
 
-// <------------------------------>Array Unshift Method<-------------------------------->
-//unshift ---> starting se adda karta hai ye or ek se jayda ko bhi add kar sakte hai? ye original array kp change karta hai ? 
-// let fruits = ["mango", "banana","apple"];
-// console.log(fruits);
-// fruits.unshift("grapes"); //start se add hora?
-// console.log(fruits);
 
-// <------------------------------>Array Shift Method<-------------------------------->
-// shift --->first element se delete karta hai ye ? original array ko change karta hai ye delete item ko return karta hai?
-// let fruits = ["mango", "orange","apple"];
-// console.log(fruits);
+//<------------------------------>Array Filter Method<-------------------------------->
+//Filter Method---->ye method use hota hai ek element me se kuch bada ya chhote number nikalne keliye ? ye method new array deta hai ? ye method bhi ek callback function leta hai ? ye method original array ko change nhi karta hai ? ye method bhi 3 parameter leta hai currentValue index or array jo hamne defiend kiya hoga?
 
-// fruits.shift() //original array change karta hai start se delete karata hai?
-// console.log(fruits)
+//Normal Exapmle kuch big number ko 18 > se bada tu new array me store karna?
 
-//  let removeitem = fruits.shift()   //or remove element bhi retrun karta hai?
-//  console.log(removeitem)
+// let arr = [34,45,56,2,5,7,8,23,15]
+// let arr1 = arr.filter((val)=>{
+//        return val > 18
+
+// })
+
+// console.log(arr1)
+
+//Example array object me se only potion nikalna filter use kar ke ?
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+// const evenNumbers = numbers.filter((number)=>{  //arrow function ye?
+//     return number % 2 === 0;
+// });
+// console.log(evenNumbers);
+
+// let tem =[
+//           {
+//             name:'Tausif',
+//             position: 'developer'
+//           },
+//           {
+//             name:'Qureshi',
+//             position: 'developer'
+//           },
+//           {
+//             name:'1qbal',
+//             position: 'developer'
+//           },
+//           {
+//             name:'Abdul',
+//             position: 'developer'
+//           },
+// ]
+//  let devloper = tem.filter((val)=>{
+//      return val.name ;
+//     })
+//     console.log(devloper)
+
+
+
+
+
+
+
+// <------------------------------>Array find Method<-------------------------------->
+//Find Method ---> ye method koi element ki length check karne ke liye use hota hai array me o value hai ya nhi ? ya method element hai ya nhi hai dhakta hai ? ye method bhi ek call back function leta hai ? koi element nhi milta tu ye method undefind ata hai ? ye method original array ko change nhi karta hai ?
+
+//find method
+// const myArray = ["Hello", "cat", "lion"];
+
+// function isLength3(string){
+//     return string.length === 3;
+// }
+
+// const ans = myArray.find((string)=>string.length === 3); //ye method bata ra hai 3 length pe cat hai ?
+// console.log(ans);
+
+// const users = [
+//   { userId: 1, userName: "harshit" },
+//   { userId: 2, userName: "harsh" },
+//   { userId: 3, userName: "nitish" },
+//   { userId: 4, userName: "mohit" },
+//   { userId: 5, userName: "aaditya" },
+// ];
+
+// const myUser = users.find((user) => user.userId === 3);
+// console.log(myUser);
+
+
+
 
 // <------------------------------>Array ForEach Mthod<-------------------------------->
-//ForEach Method---->first ek call-back input leta hai means ek function lega?parametar me current value index or array leta hai means hame currnt VALIBLE KA NAAM? foreach first parameter hemsa number fir index leta hai ye new array nhi deta hai forech ek loop ki tara work karti hai?
+//ForEach Method----> ye method ek call-back input leta hai means ek function lega?parametar me current value index or array leta hai means hame currnt VALIBLE KA NAAM? foreach first parameter hemsa number fir index leta hai ye new array nhi deta hai forech ek loop ki tara work karti hai?
 
 // let fruits = ["Apple","Banana","Mango","Orange" ];
 // fruits.forEach((cuurentvalue,index,array)=>{
@@ -70,6 +170,61 @@
 
 // })
 
+
+
+// <------------------------------>Array Form Method<-------------------------------->
+// Form Method ---> 
+
+
+
+
+// <------------------------------>Array includes Method<-------------------------------->
+// Includes Method ---> 
+
+
+
+
+
+// <------------------------------>Array includes Method<-------------------------------->
+
+
+
+
+// <------------------------------>Array indexOf Method<-------------------------------->
+// indexOf Method ---> 
+
+
+
+
+// <------------------------------>Array isArray Method<-------------------------------->
+// isArray Method ---> 
+
+
+
+
+// <------------------------------>Array join Method<-------------------------------->
+//join Method ---> ye method array ke element ko string me return karta hai ? ye method ye original array ko change nhi karta hai ? 
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(typeof fruits);
+// console.log(Array.isArray( fruits));
+
+//let text = fruits.join();
+
+// let text = fruits.join("and"); //ye method array ke value ko string me deta hai ?
+// console.log(typeof text);
+// console.log(Array.isArray( text));
+
+
+
+
+// <------------------------------>Array length Method<-------------------------------->
+// length Method ---> 
+
+
+
+
+
 // <------------------------------>Array Map Method<-------------------------------->
 //Map Method---->Map method se array ke share ke sharew element pe opration perfom karne me use hota hai us ke jo result aya us se duasre array me store karta hai Map Method Example? ye bhi ek call back function leta hai ?Map function hemasa new array banta hai?agar ham retrun nhi karte hai console karte hai number* print hoga but ham kuch retrun nhi karate undefind ayega? loop ki tara kam karta hai but toda fark hai is me?original array ko change nhi karta hai ye ye paramert currentValue, index, arr?
 
@@ -92,49 +247,31 @@
 // })
 // console.log(returnValue)
 
-//<------------------------------>Array Filter Method<-------------------------------->
-//Filter Method---->ye method use hota hai ek element me se kuch bada ya chhote number nikalne keliye ?ye method new array deta hai?ye method bhi ek callback function leta hai? ye method original array ko change nhi karta hai m? ye method bhi 3 parameter leta hai currentValue index or array jo hamne defiend kiya hoga?
 
-//Normal Exapmle kuch big number ko 18 > se bada tu new array me store karna?
 
-// let arr = [34,45,56,2,5,7,8,23,15]
-// let arr1 = arr.filter((val)=>{
-//        return val >18
+// <------------------------------>Array Pop Method<-------------------------------->
+//pop ---> last se delete karta hai ? or ye orignal array ko change karta hai ? or ye remove item ko retun bhi karta hai ?
+// let fruits = ["mango", "banana","apple"];
+// console.log(fruits);
 
-// })
+// fruits.pop(); //original array ko change kar ra hai or last se delete kar ra hai?
+// console.log(fruits)
 
-// console.log(arr1)
+// const store=fruits.pop() //or remove element bhi retrun karta hai?
+// console.log(store)
 
-//Example array object me se only potion nikalna filter use kar ke
-// const numbers = [1,2,3,4,5,6,7,8,9,10];
 
-// const evenNumbers = numbers.filter((number)=>{  //arrow function ye?
-//     return number % 2 === 0;
-// });
-// console.log(evenNumbers);
 
-// let tem =[
-//           {
-//             name:'Tausif',
-//             position: 'developer'
-//           },
-//           {
-//             name:'Qureshi',
-//             position: 'developer'
-//           },
-//           {
-//             name:'1qbal',
-//             position: 'developer'
-//           },
-//           {
-//             name:'Abdul',
-//             position: 'developer'
-//           },
-// ]
-//  let devloper = tem.filter((val)=>{
-//      return val.name ;
-//     })
-//     console.log(devloper)
+
+// <------------------------------>Array Push Method<-------------------------------->
+// push --->last se add karta hai ? or ye array ki length change karat hai or new length deta hai?
+// let fruits = ["mango", "banana","apple"];
+// console.log(fruits);
+// fruits.push("orange"); //arrary lenth change new lengt dega
+// console.log(fruits)
+
+
+
 
 // <------------------------------>Array Reduce Method<-------------------------------->
 //Reduce Method---->
@@ -174,6 +311,84 @@
 // 0                {}                  12000   //current value first time pura object hoga
 // 12000            22000                34000
 // 34000            15000                49000
+
+
+
+
+
+
+// <------------------------------>Array reverse Method<-------------------------------->
+// reverse Method ---> ye method original array ko change karta hai ? ye method order change karne ke liye use hota hai means left ki postion se nhi right ki position se value milti hai is se bolte hai order-changes ?
+
+// const reverse = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(reverse)
+// let reverse1 = reverse.reverse();
+// console.log(reverse1)
+
+
+
+// <------------------------------>Array Shift Method<-------------------------------->
+// shift --->first element se delete karta hai ye ? original array ko change karta hai ? ye delete item ko return karta hai?
+// let fruits = ["mango", "orange","apple"];
+// console.log(fruits);
+
+// fruits.shift() //original array change karta hai start se delete karata hai?
+// console.log(fruits)
+
+//  let removeitem = fruits.shift()   //or remove element bhi retrun karta hai?
+//  console.log(removeitem)
+
+
+
+// <------------------------------>Array slice Method<-------------------------------->
+// Slice-Method ---> ye method use hota hai ap ko kaha se kaha tak value chahye jaise muje 'banana',se 'Apple' tak hona lekin onlye 'lemon' tak hi pring hoga,q ke ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai ?  start or end position dena padta hai kaha se kaha tak value hona ? ye method two value leta hai start and end wali position ? ye method original Array ko change bhi nhi karta hai? ye method new array bhi deta hai ? 
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);
+// console.log(citrus)
+
+
+
+// <------------------------------>Array some Method<-------------------------------->
+// some method ---> bhi ek callback function leta hai ? some method original array ko change nhi karta hai ? ye mthod use hota hai array ka ek bhi element satisfy hota hai true return karta hai jaise hi ek condition satisfy hohi true ata hai ? ye method true and flase me answer deta hai ?
+
+// let course = ['Hindi',"Urdu","English", 'Telgu'];
+
+// let urdu = course.some(function(leng){
+//   return leng === 'Hindi'
+// })
+// console.log(urdu)
+
+
+// let courses = ['Hindi', 'Urdu', 'English', 'Telugu'];
+// let isAnyCourseUrdu = courses.some(course => course === "Urdu");
+
+// console.log(isAnyCourseUrdu); // true if any course is "Urdu", false otherwise
+
+
+//===================some method  object using===============//
+// let student =[
+//    {name : 'Tausif', age : 24},
+//    {name : 'Qureshi', age : 25},
+//    {name : 'Javed', age : 23}
+// ]
+
+// let ret = student.some(function(matc){
+//   return matc.name ==='Tausif';
+// })
+
+// console.log(ret)
+
+// const userCart = [
+//   {productId: 1, productName: "mobile", price: 12000},
+//   {productId: 2, productName: "laptop", price: 22000},
+//   {productId: 3, productName: "tv", price: 35000},
+//   {productId: 3, productName: "macbook", price: 250000},
+// ]
+
+// const ans = userCart.some((cartItem)=>cartItem.price > 100000);// check kar re koi itme ki price 1 lahk ke upper hai ya nhi true ya false me answer aye ga ? true aye ga q ke 1 lahk ke upper hai price item ki ?
+// console.log(ans);
+
 
 // <------------------------------>Array sort Method<-------------------------------->
 // sort method ?
@@ -343,130 +558,19 @@
 
 // console.log(users);
 
-// <------------------------------>Array find Method<-------------------------------->
-//ye method true and false me answer deta hai ? koi element ki length check karne ? ya element hai ya nhi hai dhakta hai ? ye method bhi ek call back function leta hai?
-
-// find method
-
-// const myArray = ["Hello", "catt", "lion"];
-
-// function isLength3(string){
-//     return string.length === 3;
-// }
-
-// const ans = myArray.find((string)=>string.length===3);
-// console.log(ans);
-
-// const users = [
-//   { userId: 1, userName: "harshit" },
-//   { userId: 2, userName: "harsh" },
-//   { userId: 3, userName: "nitish" },
-//   { userId: 4, userName: "mohit" },
-//   { userId: 5, userName: "aaditya" },
-// ];
-
-// const myUser = users.find((user) => user.userId === 3);
-// console.log(myUser);
-
-
-
-
-
-// <------------------------------>Array every Method<-------------------------------->
-// every metod ---> bhi ek call back function lete hai ? or ye original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai ? warna true and false me answer deta hai ye method ?
-
-// let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
-// let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi'];
-
-// const allHindi = school.every(function(student){
-//   return student === "Hindi";
-// });
-
-// console.log(allHindi);
-
-
-
-// const userCart = [
-//   {productId: 1, productName: "mobile", price: 12000},
-//   {productId: 2, productName: "laptop", price: 22000},
-//   {productId: 3, productName: "tv", price: 35000},
-// ]
-
-
-// const ans = userCart.every((cartItem)=>cartItem.price < 30000);//check kar ra hai har itme 30000 hazar ka hai ya nhi;
-// console.log(ans)
-
-
-
-// <------------------------------>Array some Method<-------------------------------->
-
-// some method bhi ek callback function leta hai ? or some method original array ko change nhi karta hai ? ye mthod use hota hai array ka ek bhi element satisfy hota hai true return karta hai jaise hi ek condition satisfy hohi true nata hai
-
-// let course = ['Hindi',"Urdu","English", 'Telgu'];
-
-// let urdu = course.some(function(leng){
-//   return leng === 'Hindi'
-// })
-// console.log(urdu)
-
-
-// let courses = ['Hindi', 'Urdu', 'English', 'Telugu'];
-// let isAnyCourseUrdu = courses.some(course => course === "Urdu");
-
-// console.log(isAnyCourseUrdu); // true if any course is "Urdu", false otherwise
-
-
-//===================some method  object using===============//
-// let student =[
-//    {name : 'Tausif', age : 24},
-//    {name : 'Qureshi', age : 25},
-//    {name : 'Javed', age : 23}
-// ]
-
-// let ret = student.some(function(matc){
-//   return matc.name ==='Tausif';
-// })
-
-// console.log(ret)
-
-// const userCart = [
-//   {productId: 1, productName: "mobile", price: 12000},
-//   {productId: 2, productName: "laptop", price: 22000},
-//   {productId: 3, productName: "tv", price: 35000},
-//   {productId: 3, productName: "macbook", price: 250000},
-// ]
-
-// const ans = userCart.some((cartItem)=>cartItem.price > 100000);// check kar re koi itme ki price 1 lahk ke upper hai ya nhi true ya false me answer aye ga?
-// console.log(ans);
-
-
-
-
-
-// <------------------------------>Array fill Method<-------------------------------->
-//Fill method --> ye array ke element ko ek  value se overwrite kar sakte hai ? ye method original array ko overwrite kar deta hai or is me 3 parameter hote hai first value second start positon and thred end positon leta hai ye method ? 
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(fruits);
-// fruits.fill("Kiwi",2,4);
-// console.log(fruits)
-
-// const myArray = [1,2,3,4,5,6,7,8];
-// myArray.fill(0,2,5); //o index se fill karna hai starat karna hai 2 se or end karna hai 5 tak menas  6number tak but 6 nhi aye ga 5 pe hi ruk jaye ga ye fill method ?
-// console.log(myArray);
 
 
 
 
 // <------------------------------>Array spilce Method<-------------------------------->
-// splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? 
+// splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? ye method new array nhi deta hai ?
 
 // const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 // console.log(fruit)
 // fruit.splice(1,3 ,"Hello",'Array') //1 se 3 index 'orange' se 'mango'  tak delete hore hai ?delete ke baad add hora hai ?
 // console.log(fruit)
 
-// let add = fruit.splice(1,3 ,"Hello",'Array')//jo delete karte hai us se return bhi karta hai ye method ? 
-
+// let add = fruit.splice(1,3 ,"Hello",'Array')//jo delete karte hai us se return bhi karta hai ye method ? us ke  baad add hor value "Hello",'Array' ye dono ?
 // console.log(add,'deleteitem')
 
 // start , delete , add , position leta hai ye method ?
@@ -485,17 +589,16 @@
 // console.log(myArray)
 
 // add and delete 
-// let deletedItem =  myArray.splice(1, 2, "inserted item1","inserted item2")//jo delete karte hai us se return bhi karta hai ye method ? 'item2', 'item3' hore hai us ke baad value add hori hai ?
+// let deletedItem =  myArray.splice(1, 2, "inserted item1","inserted item2")//jo delete karte hai us se return bhi karta hai ye method ? 'item2', 'item3'delete hore hai us ke baad value add hori hai ?
 // console.log( deletedItem);
 
-// myArray.splice(1, 2, "inserted item1","inserted item2") // 'item2', 'item3' hore hai us ke baad value add hori hai ?
+// myArray.splice(1, 2, "inserted item1","inserted item2") //"inserted item1","inserted item2" add hore hai us ke baad value add hori hai ?
 // console.log(myArray);
 
 
 
 
 // <------------------------------>Array toString Method<-------------------------------->
-
 // toString Method ---> ye method oringinal array ko change nhi karta hai ? ye method array ke element ko string me change karata hai ? string me change tu array ke koi bhi method use nhi kar skate hai is pe fir ? 
 // const string = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(Array.isArray (string))  //checking array hai ya nhi 
@@ -503,6 +606,15 @@
 
 // let text = string.toString();
 // console.log(typeof text) //tostring se array string me change ho jata hai ?
+
+
+// <------------------------------>Array Unshift Method<-------------------------------->
+//unshift ---> starting se adda karta hai ? ye or ek se jayda ko bhi add kar sakte hai? ye original array kp change karta hai ? 
+// let fruits = ["mango", "banana","apple"];
+// console.log(fruits);
+// fruits.unshift("grapes"); //start se add hora?
+// console.log(fruits);
+
 
 
 // <------------------------------>Array valueOf Method<-------------------------------->
@@ -515,57 +627,15 @@
 // console.log(myArray1)
 
 
-// <------------------------------>Array reverse Method<-------------------------------->
-// reverse Method ---> ye method original array ko change karta hai ? ye method order change karne ke liye use hota hai means left ki postion se nhi right ki position se value milti hai is se bolte hai order-changes ?
-
-// const reverse = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(reverse)
-// let reverse1 = reverse.reverse();
-// console.log(reverse1)
 
 
 
-// <------------------------------>Array concat Method<-------------------------------->
-// concat Method ---> ye method two array kop joind karne ke liye use hota hai ? ye method new array return karta hai joined array ka ? ye original array ko change nhi karta hai ye method ? array ki lenght bhim deta hai ye method ?
-
-// const arr1 = ["Cecilie", "Lone"];
-// const arr2 = ["Emil", "Tobias", "Linus"];
-// const children = arr1.concat(arr2);
-// console.log(children);
-
-// const arr3 = ["Cecilie", "Lone"];
-// const arr4 = ["Emil", "Tobias", "Linus"];
-// const arr5 = ["Robin"];
-// const children1 = arr3.concat(arr4, arr5); //multipel array bhi concat kar sakte hai ? 
-// console.log(children1) 
 
 
 
-// <------------------------------>Array join Method<-------------------------------->
-// join Method ---> ye method array ke element ko string me return karti hai ? ye method ye original array ko change nhi karta hai ? 
-
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(typeof fruits);
-// console.log(Array.isArray( fruits));
-
-//let text = fruits.join();
-
-// let text = fruits.join("and"); //ye method array ke value ko string me deta hai
-// console.log(typeof text);
-// console.log(Array.isArray( text));
-
-
-// <------------------------------>Array slice Method<-------------------------------->
-// Slice-Method ---> ye method use hota hai ap ko kaha se kaha tak value chahye jaise muje 'banana',se 'Apple' tak hona lekin onlye 'lemon' tak hi pring hoga,q ke ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai ?  start or end position dena padta hai kaha se kaha tak value hona ? ye method two value leta hai start and end wali position ? ye method original Array ko change bhi nhi karta hai? ye method new array bhi deta hai ? 
-
-// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-// const citrus = fruits.slice(1, 3);
-// console.log(citrus)
 
 
 
-// <------------------------------>Array indexOf Method<-------------------------------->
-// indexOf Method ---> 
 
 
 
