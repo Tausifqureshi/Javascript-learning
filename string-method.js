@@ -52,7 +52,7 @@
 
 
 //================================== split method ===================================================//
-// Split Method ---> split method string ko ek ke kar ke nikal ke array me deta hai is split se string ke chotte chotte word ko tod sakte hai ? split method new array deta hai ? split method original string ko change nhi karta hai ? split method index se bhi split karta hai hame kaha se kon si value show karwna hai ? 
+// Split Method ---> split method string ko ek ek word ko nikal ke array me deta hai ? is split method  se string ke chotte chotte word ko tod sakte hai ? split method new array deta hai ? split method original string ko change nhi karta hai ? split method index se bhi split karta hai hame kaha se kon si value show karwna hai ? 
 
 // let firsNtame = 'Hello Tausif Qureshi';
 // console.log(firsNtame);
