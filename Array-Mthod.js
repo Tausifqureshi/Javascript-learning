@@ -215,7 +215,7 @@
 
 
 // <------------------------------>Array includes Method<-------------------------------->
-// Includes Method ---> is method ka use hota hai Array me jo value search ki gayi hai ya nhi agar hai tu true dega warna false deta hai ye function ? or ye method case-sensitive hai means agar capital word hai string me us ko hi search kar re ge tuhi true aye ga but small search kar re ge tu false aye ga ? includes me two parameter hote hai fisrt current value and dusri indexing bhi leta hai ye method ? ye method true and false me answer deta hai ? ye method  2 ye jo bhi index number dalte hai us ke baad dehkta hai o word hai ya nhi Example 2index ke baad 'Mango' fir se hai array me agar hoga tu true warna false aye ga ye method aisa work karta hai ?
+// Includes Method ---> is method ka use hota hai Array me jo value search ki gayi hai ya nhi agar hai tu true dega warna false deta hai ye function ? or ye method case-sensitive hai means agar capital word hai string me us ko hi search kar re ge tuhi true aye ga but small search kar re ge tu false aye ga ? includes me two parameter hote hai fisrt current value and dusri indexing bhi leta hai ye method ? ye method true and false me answer deta hai ? ye method  2 ya jo bhi index number dalte hai us ke baad dehkta hai o word hai ya nhi Example 2index ke baad 'Mango' fir se hai array me agar hoga tu true warna false aye ga ye method aisa work karta hai ?
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Orange"];
 // console.log(fruits)
@@ -251,15 +251,15 @@
 // console.log(fruits)
 
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"]; //sms print not show -1 not found the value exist array ?
-console.log(fruits)
-let index = fruits.indexOf("Kiwi"); //-1 retrun kar re ga ye method agar kuch nhi milta tu -1 retrun karta hai ?
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]; //sms print not show -1 not found the value exist array ?
+// console.log(fruits)
+// let index = fruits.indexOf("Kiwi"); //-1 retrun kar re ga ye method agar kuch nhi milta tu -1 retrun karta hai ?
 
-if (index > -1) { //-1 na aye koi meseege return kar re aise banate hai program meseege aye ? 
-    console.log('Kiwi is exist this array' ,index)
-}else{
-    console.log('Kiwi is not exixt thsi array',index);
-}
+// if (index > -1) { //-1 na aye koi meseege return kar re aise banate hai program meseege aye ? 
+//     console.log('Kiwi is exist this array' ,index)
+// }else{
+//     console.log('Kiwi is not exixt thsi array',index);
+// }
 
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
@@ -269,7 +269,7 @@ if (index > -1) { //-1 na aye koi meseege return kar re aise banate hai program 
 
 
 
-// lastIndexOf Method --->
+// lastIndexOf Method ---> 
 
 
 
@@ -279,7 +279,31 @@ if (index > -1) { //-1 na aye koi meseege return kar re aise banate hai program 
 
 
 // <------------------------------>Array isArray Method<-------------------------------->
-// isArray Method ---> 
+// isArray Method ---> ye method array ko check karne ke liye use hota hai array hai ya nhi ? ye method true and false me answer deta hai ?
+
+// let text = "W3Schools";
+// console.log(typeof text);
+// let result =  Array.isArray(text); //array ko checking aise karte hai false aye ga ye array nhi hai ?
+// console.log(result);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(typeof fruits)
+// let result = Array.isArray(fruits);//true aye ga ye array hai ?
+// console.log( result); 
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(typeof fruits)
+let result = Array.isArray(fruits);
+console.log( result); 
+
+//change array string me ?
+let result1 = fruits.toString();
+console.log(result1);
+console.log(typeof result1);
+console.log(Array.isArray(result1))
 
 
 
@@ -303,7 +327,14 @@ if (index > -1) { //-1 na aye koi meseege return kar re aise banate hai program 
 
 
 // <------------------------------>Array length Method<-------------------------------->
-// length Method ---> 
+// length Method ---> ye property lenght check karne ke liye use hoti hai ?
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let length =  fruits.length;
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.length = 1; //kitni lenght hona 'banana' aye ga kitni bhi le sakte jitni marray me hai utni hi bus ?
+// console.log(fruits);
 
 
 
