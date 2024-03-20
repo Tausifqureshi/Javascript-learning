@@ -52,13 +52,13 @@ const myArray = ["value1", "value2", "value3","value4"];
 // let myvar2 = myArray[1];
 // console.log("value of myvar1", myvar1);
 // console.log("value of myvar2", myvar2);
-let  myNewArray = myArray.slice(2);
-console.log(myNewArray)
+// let  myNewArray = myArray.slice(2); //value3 se start hoga q ke slice method use hora hai ?
+// console.log(myNewArray)
 
-// let [myvar1, myvar2, ...myNewArray] = myArray;
+let [myvar1, myvar2, ...myNewArray] = myArray; //myvar1 me value1 jaye gi mayvar2 me value2 amye gi or myNewArrayme jaye gi sperad oparetor use hore hai?
 console.log("value of myvar1", myvar1);
 console.log("value of myvar2", myvar2);
-console.log(myNewArray);
+// console.log(myNewArray);
 
 
 

@@ -269,10 +269,16 @@
 
 
 
-// lastIndexOf Method ---> 
+// lastIndexOf Method ---> ye method last se value ko specify kartra hai ? ye method ko agar value nhi milti hai -1 return karta hai ? ye method value ko jab search karta right se left se ?
+
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];  
+// let index = fruits.lastIndexOf("Apple");
+// console.log(index);
 
 
-
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
+// let index = fruits.lastIndexOf("Apple", 3); 2 index ke baad fir se ye method dheka ga 'Apple' kis postion pe hai 4index pe 'Apple' 4 return kar re ga ye method aisa work karta hai?
+// console.log(index);
 
 
 
@@ -341,15 +347,16 @@
 
 
 // <------------------------------>Array Map Method<-------------------------------->
-//Map Method---->Map method se array ke share ke sharew element pe opration perfom karne me use hota hai us ke jo result aya us se duasre array me store karta hai Map Method Example? ye bhi ek call back function leta hai ?Map function hemasa new array banta hai?agar ham retrun nhi karte hai console karte hai number* print hoga but ham kuch retrun nhi karate undefind ayega? loop ki tara kam karta hai but toda fark hai is me?original array ko change nhi karta hai ye ye paramert currentValue, index, arr?
+//Map Method----> ye method ES6 me aya js me ?Map method se array ke share ke share element pe opration perfom karne me use hota hai us ke jo result aya us se duasre array me store karta hai Map Method Example? ye bhi ek call back function leta hai ?Map function hemasa new array banta hai?agar ham retrun nhi karte hai console karte hai number* print hoga but ham kuch retrun nhi karate undefind ayega? loop ki tara kam karta hai but toda fark hai is me?original array ko change nhi karta hai ? ye paramert me currentValue, index, arr ? map method me empty element hai function nhi chale ga ? map array ke har element ko sirf ek bar hi execute karta hai o bhi index order me ?
 
 //  const numbers = [3, 4, 6, 1, 8];
 //  const square2 = numbers.map(function(number){
-//      return number*number;  //jab bhi mfunction retrun karta hai us se kahai na kahi store karan padta hai jaise square varibal me store hori retiurn value ?
-//   console.log (number*number);z
+// return number*number;  //jab bhi mfunction retrun karta hai us se kahai na kahi store karan padta hai jaise square varibal me store hori retiurn value ?
+
+//   console.log (number*number);
 //  console.log(square2)
 
-//Example 2 Real life Use Map?
+//Example 2 Real life Use Map object?
 // const users = [
 //   { firstName: "Tausif", age: 23 },
 //   { firstName: "Qureshi", age: 21 },
@@ -362,6 +369,12 @@
 // })
 // console.log(returnValue)
 
+
+// const returnValue = users.map(user =>(  //value shari obhrct me aye gi is tara se karne se 4 object aye ge is se?
+//    {   Name: user.firstName,
+//       Age : user.age
+// }));
+//  console.log(returnValue);
 
 
 // <------------------------------>Array Pop Method<-------------------------------->
