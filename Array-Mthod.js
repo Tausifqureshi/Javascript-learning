@@ -198,7 +198,7 @@
 
 
 // <------------------------------>Array Form Method<-------------------------------->
-// Form Method ---> ye method array me convearting karta hai string ko ek ek word tod ke deta hai ye method ?  arary ki lenght bhi deta hai kitne array hai us me ?
+// Form Method ---> ye method array me convearting karta hai string ko  ek ek word tod ke deta hai ye method ?  arary ki lenght bhi deta hai kitne array hai us me ?
 
 // let firstName = "Tausif";
 // console.log(firstName);
@@ -215,8 +215,7 @@
 
 
 // <------------------------------>Array includes Method<-------------------------------->
-// Includes Method ---> is method ka use hota hai Array me jo value search ki gayi hai ya nhi agar hai tu true dega warna false deta hai ye function ? or ye case-sensitive hai means agar capital word hai string me us ko hi search kar re ge tuhi true aye ga but small search kar re ge tu false aye ga ? includes me two parameter hote hai fisrt current value and dusri indexing bhi leta hai ye method ? ye method true and false me answer deta hai ?
-
+// Includes Method ---> is method ka use hota hai Array me jo value search ki gayi hai ya nhi agar hai tu true dega warna false deta hai ye function ? or ye method case-sensitive hai means agar capital word hai string me us ko hi search kar re ge tuhi true aye ga but small search kar re ge tu false aye ga ? includes me two parameter hote hai fisrt current value and dusri indexing bhi leta hai ye method ? ye method true and false me answer deta hai ? ye method  2 ye jo bhi index number dalte hai us ke baad dehkta hai o word hai ya nhi Example 2index ke baad 'Mango' fir se hai array me agar hoga tu true warna false aye ga ye method aisa work karta hai ?
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Orange"];
 // console.log(fruits)
@@ -237,8 +236,44 @@
 
 
 
-// <------------------------------>Array indexOf Method<-------------------------------->
-// indexOf Method ---> 
+// <------------------------------>Array indexOf and lastindexOf Method<-------------------------------->
+// indexOf Method ---> ye method first index value ki position return karta hai ? agar koi value nhi milti hai tu -1 retrun karta hai ye method ? ye index method array me jab value search karta hai left se right tak ?  or ye method case-sensitive hai ? array me same element ek se jayda bar aya hoga tu o first wali elemnt ko by default position bata ta hai us ke baad jo bhi element hai us ki postion batye ka o kis position pe hai ?
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]; //simple exmaple
+// console.log(fruits)
+// let index = fruits.indexOf("Apple"); //position return kar re ga 2 aye gi potion is 'Apple' ki?
+// console.log(index);
+
+//Value replace this methid
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits)
+// fruits[fruits.indexOf('Tausif')] = 'Banana' //is method se replace bhi kar sakte hai method ko 'Banana' ki Jaga 'Tausif' ko add kar re hai ?
+// console.log(fruits)
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"]; //sms print not show -1 not found the value exist array ?
+console.log(fruits)
+let index = fruits.indexOf("Kiwi"); //-1 retrun kar re ga ye method agar kuch nhi milta tu -1 retrun karta hai ?
+
+if (index > -1) { //-1 na aye koi meseege return kar re aise banate hai program meseege aye ? 
+    console.log('Kiwi is exist this array' ,index)
+}else{
+    console.log('Kiwi is not exixt thsi array',index);
+}
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
+// let index = fruits.indexOf("Apple", 3); 2 index ke baad fir se ye method dheka ga 'Apple' kis postion pe hai 4index pe 'Apple' 4 return kar re ga ye method aisa work karta hai?
+// console.log(index);
+
+
+
+
+// lastIndexOf Method --->
+
+
+
+
 
 
 

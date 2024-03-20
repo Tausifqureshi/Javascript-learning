@@ -54,8 +54,8 @@
 //================================== split method ===================================================//
 // Split Method ---> split method string ko ek ek word ko nikal ke array me deta hai ? is split method  se string ke chotte chotte word ko tod sakte hai ? split method new array deta hai ? split method original string ko change nhi karta hai ? split method index se bhi split karta hai hame kaha se kon si value show karwna hai ? 
 
-// let firsNtame = 'Hello Tausif Qureshi';
-// console.log(firsNtame);
+let firsNtame = 'Hello Tausif Qureshi';
+console.log(firsNtame);
 
 // let result = firsNtame.split(""); //ek ek word ko tod ke array ke form me dega ye split ?
 // console.log(result);
@@ -64,10 +64,10 @@
 // console.log(result1)
 
 // let result2 = firsNtame.split(" "); 
-// console.log(result2[1]); //aise karne se kon si index ki value hona ?
+// console.log(result2[1]); //aise karne se kon si index ki value hona 'Tausif' aye ga?
 
-// let result3 = firsNtame.split(" " ,2); //aise karne se Kaha se kaha tak value chaiye ?
-// console.log(result3)
+let result3 = firsNtame.split(" " ,2); //aise karne se Kaha se kaha tak value chaiye kinti length hona kon si lenght tak value hona 2 lenght tak value hona  'Tausif; ' Qureshi' aye gi value ? 0 kar ke empty [] array dega q ke ham index nhi lenght re hare hai ?
+console.log(result3)
 
 
 
