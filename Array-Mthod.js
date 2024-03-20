@@ -294,22 +294,22 @@
 
 
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(typeof fruits)
-let result = Array.isArray(fruits);
-console.log( result); 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(typeof fruits)
+// let result = Array.isArray(fruits);
+// console.log( result); 
 
-//change array string me ?
-let result1 = fruits.toString();
-console.log(result1);
-console.log(typeof result1);
-console.log(Array.isArray(result1))
+// //change array string me ?
+// let result1 = fruits.toString();
+// console.log(result1);
+// console.log(typeof result1);
+// console.log(Array.isArray(result1))
 
 
 
 
 // <------------------------------>Array join Method<-------------------------------->
-//join Method ---> ye method array ke element ko string me return karta hai ? ye method ye original array ko change nhi karta hai ? 
+//join Method ---> ye method array ke element ko string me return karta hai ? ye method ye original array ko change nhi karta hai ? ye method new string return karta hai ? ye method se apne khud se diye huye separator(#), (*),(%). kisi tara bhi separator kar sakte hai ? 
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits)
