@@ -45,7 +45,7 @@
 
 
 // <------------------------------>Array fill Method<-------------------------------->
-//Fill method --->  is method se array ke element ko ek value se overwright kar sakte hai means rejact kar ke dusri value add karta hai ? ye method original array ko overwrites karta hai ? is method se start and end position se value change kar sakte hai ? start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga ? is method me 3 parametar hote hai first value kon si add karna hai second start postion kon se index se start karna hai 3position hoti hai end kon si index tak value change karna overwites karna hai ? //ye method jab ham end position dete hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga 'Lemon' tak nhi jaye ga ye is ka roll hai ? array ki lenght bhi deta hai kitne array hai is me ?
+//Fill method --->  is method se array ke element ko ek value se overwright kar sakte hai means rejact kar ke dusri value add karta hai ? ye method original array ko overwrites karta hai ? is method se start and end position se value change kar sakte hai ? start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga ? is method me 3 parametar hote hai first value kon si add karna hai second start postion kon se index se start karna hai 3position hoti hai end kon si index tak value change karna overwites karna hai ? //ye method jab ham end position dete hai us se count nhim karta hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga 'Lemon' tak nhi jaye ga ye is ka roll hai ? array ki lenght bhi deta hai kitne array hai is me? 
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango","Lemon"];
 // console.log(fruits);
@@ -450,8 +450,10 @@
 
 // const reverse = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(reverse)
+
 // let reverse1 = reverse.reverse();
-// console.log(reverse1)
+// console.log(reverse1) //original array ko change karta hai ye method ?
+// console.log(reverse) //original array ko change karta hai ye method ?
 
 
 
@@ -519,7 +521,13 @@
 
 
 // <------------------------------>Array sort Method<-------------------------------->
-// sort method ?
+// Sort Method ---> is method ka use kar ke array ke elmement ko sort kar ke sortet array ko retrun karna sort ka use hai ? default asending hota hai ?
+
+// A,B,C,D,E,F,G ---->  asending order hota hai ?
+//G,F,E,D,C,B,A ---> desending order hai ye ?
+
+
+
 // ASCII TABLE
 //char : ascii value
 
@@ -611,7 +619,7 @@
 
 // [5,9,3000,1200,400]
 //3000, 1200, 400, 9, 5 // desending sort bolte hai is se?
-// 5,9,400, 1200, 3000     //asending sort bolte hai us se?
+// 5,9,400, 1200, 3000     //asending sort bolte hai is se?
 
 //Number Sort Example
 //js me jab ham sort method use karte tu js us se number samaj ke sort nhi karta hai string samaj ke sort karta hai?
@@ -623,6 +631,7 @@
 
 //Charachter Sort Example? is me jo first ata hai word us se first rahkta hai example? cde or bca but ye sort method first bca ko rahke ga fir cde ko?
 //agar capital letter ho ga firt o aye ga q ke ACSII code me ciptal letter kam number ke position kam hote hai?
+
 // const userNames = ['harshit', 'abcd', 'mohit', 'nitish', 'aabc', 'ABC', 'Harshit'];
 // userNames.sort();
 // console.log(userNames);

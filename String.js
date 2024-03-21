@@ -3,11 +3,46 @@
 
 // let firstName = "Tausif qureshi in web Developer Engineer";
 
-//console.log(firstName[1]) //character ki length kon se length pe hai
+// console.log(firstName[1]) // indexing bataye ga kon si index pe kon sa word hai ?
 
-//console.log(firstName.length) // total word kitne hai dega ?
-//console.log(firstName[firstName.length-1])  // agar length nhi malum hame apne character ki to aise nikal sakte hai?
+// console.log(firstName.length) // total word kitne hai dega us ki lenght?
+// console.log(firstName[firstName.length-1])  // agar length nhi malum hame apne character ki to aise nikal sakte hai?
 
+
+
+// ====================================string function======================================///
+// string ke index pe kon sa word hai batye ga ?
+function firstChar(anyString) {
+    // Check if the string is not empty to avoid undefined behavior
+    if(anyString.length > 0) {
+      return anyString[0];
+    } else {
+      return 'String is empty';
+    }
+  }
+  
+  let result = firstChar('tausif');
+  console.log(result); // This will correctly log 't'
+
+
+
+
+
+  //==================================String indexing =============================================//
+let firstName = "harshitdfjakldsfdf"; // khabi aisa ho string ki lengh nhi malum kon si index pe kya hai
+// console.log(firstName)
+console.log(firstName[firstName.length-2]); //khabi aisa ho string ki lengh nhi malum kon si index pe kya hai
+//  h    a   r   s   h   i   t 
+//  0    1   2   3   4   5   6
+
+// console.log(firstName[1]); // a aye ga us ki index 1 hai ?
+
+
+// console.log(firstName.length);  //string ki lenght nikalne ke  liye use aisa nikalte hai ?
+
+
+
+// last Index : length - 1 
 
 // string method
 // trim() 
@@ -33,7 +68,7 @@
 
 // slice---->ye metho use hota hai ap ko kaha se kaha tak word chahye jaise muje pura tausif nhi hona only sif hona tu start or end position dena padta hai kaha se kaha tak word hona or ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai? ye method two value leta hai start and end? ye method new stringn deta hai or na hi original string ko change bhi nhi karta ye method? ye method ek string ka ek parts niklta hai or us se new string me return karata hai?
 
-let firstName = "Tausif";
+// let firstName = "Tausif";
 // console.log(firstName.slice(0, 3)) 
 
 // console.log(firstName.slice(1))
