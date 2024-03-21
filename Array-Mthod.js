@@ -378,17 +378,17 @@
 
 
 // <------------------------------>Array Pop Method<-------------------------------->
-//pop ---> last se delete karta hai ? or ye orignal array ko change karta hai ? or ye remove item ko retun bhi karta hai ?
+//pop ---> last se delete karta hai ? or ye orignal array ko change karta hai or lrngth ko bhi change kar deta hai? or ye remove item ko retun bhi karta hai ? aray empty hai tab ya undefind return kar re ga ? 
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
 
-// fruits.pop(); //original array ko change kar ra hai or last se delete kar ra hai?
-// console.log(fruits)
+// // fruits.pop(); //original array ko change kar ra hai or last se delete kar ra hai?
+// // console.log(fruits)
 
-// const store=fruits.pop() //or remove element bhi retrun karta hai?
-// console.log(store)
+// const store = fruits.pop() //or remove element bhi retrun karta hai ye method 'Apple' aye ga delete itme ?
+// console.log(store, 'Deleted items')
 
-
+// console.log(fruits) //orignal array ko change karta or us ki lenght bhi chnag karta hai ?
 
 
 // <------------------------------>Array Push Method<-------------------------------->
@@ -402,14 +402,12 @@
 
 
 // <------------------------------>Array Reduce Method<-------------------------------->
-//Reduce Method---->
-
-// Reduce Method? ye method bhi ek callback function leta hai?
+//Reduce Method----> Reduce Method bhi ek callback function leta hai ? ye method array ke har ek element ke sath ek function run karta hai jis se array ko reduce kar ke single value me return karwana reduce method ka kaam hota hai ? ye method array ko ek new array me return karwta hai ? ye method original array ko change nhi karta hai ?
 
 // const numbers = [1,2,3,4,5, 10];
-// // in sub ka  : sum of all the numbers in array
+// // in sub ka  : sum of all the numbers in array ?
 
-// const sum = numbers.reduce((accumulator, currentValue)=>{//pure reduce me de ek value dera hai? sub ka sum dera hai ye reduce method
+// const sum = numbers.reduce((accumulator, currentValue)=>{//pure reduce me de ek value dera hai? sub ka sum dera hai ye reduce method ? accumulator inital value agar jo hamne di hai nhi di tu koi issu nhi ? accumulator work karta hai inital value waha se start karta hai or ya har ek element ko run karne ke baad apne pass store kar leta hai ?
 
 //     return accumulator + currentValue;
 // }, 100);      //inital  value ye 100?means hamne apni taraf se value di us se bolte initial value?
