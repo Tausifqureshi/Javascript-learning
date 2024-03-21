@@ -421,6 +421,8 @@
 // 110              5             115
 // 115             10             125   total sum value 125 aye gi?
 
+
+//Map object exmple ?
 // const userCart = [
 //   { productId: 1, productName: "mobile", price: 12000 },
 //   { productId: 2, productName: "laptop", price: 22000 },
