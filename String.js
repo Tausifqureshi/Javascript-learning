@@ -12,39 +12,44 @@
 
 // ====================================string function======================================///
 // string ke index pe kon sa word hai batye ga ?
-function firstChar(anyString) {
-    // Check if the string is not empty to avoid undefined behavior
-    if(anyString.length > 0) {
-      return anyString[0];
-    } else {
-      return 'String is empty';
-    }
-  }
+// function firstChar(anyString) {
+  //   // Check if the string is not empty to avoid undefined behavior
+  //   if(anyString.length > 0) {
+  //     return anyString[0];
+  //   } else {
+  //     return 'String is empty';
+  //   }
+  // }
   
-  let result = firstChar('tausif');
-  console.log(result); // This will correctly log 't'
+  // let result = firstChar('tausif');
+  // console.log(result); // This will correctly log 't'
 
 
 
 
 
   //==================================String indexing =============================================//
-let firstName = "harshitdfjakldsfdf"; // khabi aisa ho string ki lengh nhi malum kon si index pe kya hai
-// console.log(firstName)
-console.log(firstName[firstName.length-2]); //khabi aisa ho string ki lengh nhi malum kon si index pe kya hai
-//  h    a   r   s   h   i   t 
-//  0    1   2   3   4   5   6
+//  T    a   u   s   i   f   
+//  0    1   2   3   4   5   
 
-// console.log(firstName[1]); // a aye ga us ki index 1 hai ?
-
+  let firstName = 'Tauisf';
+console.log(firstName[1]); // a aye ga us ki index 1 hai ?
 
 // console.log(firstName.length);  //string ki lenght nikalne ke  liye use aisa nikalte hai ?
+// console.log(firstName[firstName.length-1])  // agar length nhi malum hame apne character ki to aise nikal sakte hai?
 
 
 
-// last Index : length - 1 
 
-// string method
+let letterWord = "harshitdfjakldsfdf"; //khabi aisa ho string ki lengh nhi malum hame kis index pe kon sa word hai d[letterWord.length-2] last se count kar re 2 se d print hoga jo bhi hame chachiye o index number defind karna hoga ?
+
+// console.log(letterWord);
+
+console.log(letterWord[letterWord.length-2]); //khabi aisa ho string ki lengh nhi malum hame kis index pe kon sa word hai d[letterWord.length-2] last se count kar re 2 se d print hoga jo bhi hame chachiye o index number defind karna hoga ?
+
+
+
+// ===============================string method ======================================?
 // trim() 
 // toUpperCase()
 // toLowerCase()
@@ -80,9 +85,9 @@ console.log(firstName[firstName.length-2]); //khabi aisa ho string ki lengh nhi 
 
 
 //template string use?
-let Name = "Tausif";
-let age = 24;
- console.log(`My name is ${Name} This is My age ${age} years!`)
+// let Name = "Tausif";
+// let age = 24;
+//  console.log(`My name is ${Name} This is My age ${age} years!`)
 
 
 

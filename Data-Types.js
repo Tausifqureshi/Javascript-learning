@@ -5,7 +5,7 @@
 
 let num1 = 6;//primitive  data types hai ye num1 me change tu num2 me change nhi hoga only num1 me hi change hoga?   
 let num2 = num1;
-console.log(num1);
+console.log(num1); 
 console.log(num2);
 num1++;      //Num1 me ek Increment kar re hai but num2 me koi effect nhi hoga only num1 one hi chang hoga?
 console.log(num1) //primitive  data types hai ye num1 me change tu num2 me change nhi hoga only num1 me hi change hoga?  

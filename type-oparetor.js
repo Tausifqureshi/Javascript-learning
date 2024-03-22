@@ -99,9 +99,6 @@ console.log(typeof (mySelf));
 
 
 
-
-
-
 // =================================================================================//
 //Upper wale niche wale same hi hai upper wala replit se copy pest
 
@@ -140,9 +137,9 @@ console.log(typeof (mySelf));
 
 
 //Checking type off data 
-let age = 22;  // type of Number creating
-let firstName = "Tausif"; //type of string creating
-console.log(typeof age);
+// let age = 22;  // type of Number creating
+// let firstName = "Tausif"; //type of string creating
+// console.log(typeof age);
 
 // convert number to string. ---> number se string me change hora hai?
 // age = age + "";
@@ -159,7 +156,3 @@ console.log(typeof age);
 
  
 
-//concatination strring
-let fullname = "tausif";
-let lastname = "qureshi";
-console.log(fullname + " " +lastname);
