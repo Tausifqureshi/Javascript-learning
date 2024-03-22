@@ -59,17 +59,17 @@
 // <------------------> Arrow function Oriented-programing file ka chapter <------------------>
 // Arrow function ka this nhi hota hai ? Arrow function jo this leta hai apne surrounding se means Arrow function ka This jo hota hai window object hota hai globle bhi bolte hai ? Arrow Function ka This Change nhi kar sakte hai ? 
 
-const user1 = {
-  firstName : "harshit",
-  age: 8,
-  about: () => {
-    // console.log(this) //Window object aye ga? Arrow function ka This Window hota hai?
-    console.log(this.firstName, this.age);
-  }   
-}
+// const user1 = {
+//   firstName : "harshit",
+//   age: 8,
+//   about: () => {
+//     // console.log(this) //Window object aye ga? Arrow function ka This Window hota hai?
+//     console.log(this.firstName, this.age);
+//   }   
+// }
 
 // user1.about(user1);
-user1.about.call(user1); //Arrow Function ka This Change nhi kar sakte hai ? 
+// user1.about.call(user1); //Arrow Function ka This Change nhi kar sakte hai ? 
 
 
 
@@ -196,15 +196,15 @@ function myApp(){
 // ans();   //console nhi karne se ye use karne se i am returning print hoga q ke ans ek function ban gaya hai ab ?
 
 
-function myFun(){   //higyer order function
+// function myFun(){   //higyer order function
 
-    function hello (){
-    // console.log('hello world')
-      return 'hello world' //string retrun
-    }
-    return hello;   //function return
- }
-   let ans = myFun();
+//     function hello (){
+//     // console.log('hello world')
+//       return 'hello world' //string retrun
+//     }
+//     return hello;   //function return
+//  }
+//    let ans = myFun();
   //  console.log(ans)  //pura function retrun hoga aisa karne se ?
   //  console.log(ans())  //Function retrun use karne se hello world aise hi print go jaye ga lin number 212 se ?
 
