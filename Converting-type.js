@@ -21,17 +21,3 @@ console.log(typeof age);
 
 
 
-
-//===================================== concatination strring ============================================= //
-// let telling = 'Hello'
-// let fullname = "tausif";
-// let lastname = "qureshi";
-// console.log(fullname + " " +lastname);
-
-// Using template literals
-// console.log(`${telling} ${fullname} ${lastname}`); // aisa bhi kar sakte hai space aye ga ?
-
-// let concatination = telling.concat(" ", fullname, " ", lastname); //aisa bhi concatination strring kar sakte hai ?
-// console.log(concatination); // This will print: Hello tausif qureshi
-
-
