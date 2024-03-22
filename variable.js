@@ -1,4 +1,4 @@
-// Variables Inroduction?
+//========================================== Variables Inroduction =========================================== //
 
 // Variable can some store data -->  English definetion ? 
 // we can use that information later ---> 
@@ -46,7 +46,7 @@ console.log(value1 + 10); //Math bhi use kar sakte hai?
 
 
 
-//Let Keyword create Variable ? variable banan ke liye jayda tar let and conts use karna chaiye ? let me ham ek bar jo variable create kar lete hai us se fir se nhi create kar sakte hai Error aye ga let and const sew create variable se baut hame value change kar skate hai ?
+//Let Keyword create Variable ? variable banan ke liye jayda tar let and conts use karna chaiye ? let me ham ek bar jo variable create kar lete hai us se fir se nhi create kar sakte hai Error aye ga let and const sew create variable se but hame value change kar skate hai ?
 
 // declare variable with let keyword 
 let firstName = "Tausif";

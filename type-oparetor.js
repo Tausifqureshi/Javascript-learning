@@ -157,7 +157,7 @@ console.log(typeof age);
 // age = Number(age);
 // console.log(typeof age);
 
-
+ 
 
 //concatination strring
 let fullname = "tausif";

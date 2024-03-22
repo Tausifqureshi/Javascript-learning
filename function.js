@@ -73,10 +73,6 @@ user1.about.call(user1); //Arrow Function ka This Change nhi kar sakte hai ?
 
 
 
-
-
-
-
 // <------------------>function ke ander function defiend<------------------>
 // function myFun() {
 //   console.log("Tausif");
