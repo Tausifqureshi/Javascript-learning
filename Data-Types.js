@@ -54,19 +54,23 @@ console.log(typeof (num));
 
 // console.log(z===c)
 
+
+
+
 //!= ye cheak karta hai value alag alag hai tu true deta hai agar value same tu false aye ga ye ulta hai work karta hai?
 // let x = 5;
 // let z = 6;
 // console.log(x!=z)
 
-// !== ye bhi != ki tara hi work karta hai  but ye value ke sath type bhi check karta hai?
-// let x = 5;
+// !== ye bhi != is ki  tara hi work karta hai  but ye value ke sath type bhi check karta hai?
+let x = 5;
 // let z = 6;
 // let c = "6";
-// let b = 5;
+let b = 5;
 // console.log(x!==z)
 
-// console.log(x!==b)
+console.log(x!==b)  //false aye ga datatype bhi check kar re ga ye oparetor ? fals is liye aye ga ye oparetor ulta work karta hai dono same value tu yue true deta hai alag alag tu false deta hai ?
+
 // console.log(x!==c) // datatype bhi chech hora hai ulta hi ye dono operator work karta hai agar value same tu false alaga alag tu ture deta hai ye dono operator
 
 //string
