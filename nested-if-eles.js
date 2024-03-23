@@ -1,13 +1,8 @@
-
-
-
-
-
 // ========================================if else if Conditional ====================================== //
-// if, else, and else if ---> js me Conditional statements 3 type ki hoti hai ? 
+// if, else, and else if ---> js me Conditional statements 3 type ki hoti hai ? A.HTML File me bhi hai ?
 // [1] ----> if 
 // [2] ----> else if 
-// [3] ----> if else if 
+// [3] ----> else 
 
 //if ---> conditional ko check karnr ke liye use hota hai if ?
 
