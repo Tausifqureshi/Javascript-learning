@@ -14,7 +14,7 @@
 // Type Operators
 
 
-// ======================================== Arithmetic Operators ==============================================//
+// ======================================== Arithmetic Operators ====================================//
 // Arithmetic consept ---> 
 // +	Addition
 // -	Subtraction
@@ -36,13 +36,12 @@ let b = 50;
 // console.log(b);
 // console.log(++b); //Increment 1 add hoga is me ?
 
-console.log(--b); // Decrement 1 kam hoga is se mynus
+// console.log(--b); // Decrement 1 kam hoga is se mynus
 
 
 
-// ======================================== Assignment Operators ==============================================//
+// ======================================== Assignment Operators ====================================//
 // Assignment Operators ---> ye o operator hai jis ki help se kisi variable me new value ko Assign kiya jata hai ?
-
 
 // =	Assignment Operators
 // +=	 Assignment Addition Operators ?
@@ -63,7 +62,35 @@ console.log(--b); // Decrement 1 kam hoga is se mynus
 
 
 
+// ===================================== Comparison Operators ==========================================//
+//Comparison Operator ---> jab ham 2 value ko compaire karte hai us se comparison operator bolte hai ? ye operator true and false deta hai comparison jab karta hai 2 value ko ?
+// ==	equal to
+// ===	equal value and equal type
+// !=	not equal
+// !==	not equal value or not equal type
+// >	greater than
+// <	less than
+// >=	greater than or equal to
+// <=	less than or equal to
+// ?	ternary operator
 
+
+// let x = 5;
+// let z = 5;
+// console.log(x!=z) //ye operator work karta hai same tu false dega alag alag value tu true dega ?
+
+// let x = "5";
+// let z = 5;
+// console.log(x!==z) //ye operator work karta hai same tu false dega alag alag tu true deta hai but ye operator data types bhi dhakta hai string me hai ya number me is liye ye true aye ga is ka answer
+
+// let x = 8;
+// let z = 7;
+// console.log(x > z) //8 bada hai 7 se ?
+
+
+let x = 6;
+let z = 7;
+console.log(x < z) //6 choota  hai 7 se ?
 
 
 
