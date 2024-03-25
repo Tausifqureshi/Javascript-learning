@@ -88,9 +88,100 @@ let b = 50;
 // console.log(x > z) //8 bada hai 7 se ?
 
 
-let x = 6;
-let z = 7;
-console.log(x < z) //6 choota  hai 7 se ?
+// let x = 6;
+// let z = 7;
+// console.log(x < z) //6 choota  hai 7 se ?
+
+
+
+
+// ============================================= logical Operator ==============================================//	
+// logical Operator ---> 
+
+// &&	logical and
+// ||	logical or
+// !	logical not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
