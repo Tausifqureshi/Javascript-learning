@@ -25,8 +25,8 @@
 // ++	Increment
 // --	Decrement
 
-let a = 6;
-let b = 50;
+// let a = 6;
+// let b = 50;
 
 // let x = a + b; //share Arihtmetic operatoe aise hi use kar sakte hai ?
 // let x = a ** 2; //ES 2016 me aya ye verions javascript ?
@@ -93,15 +93,45 @@ let b = 50;
 // console.log(x < z) //6 choota  hai 7 se ?
 
 
-
-
 // ============================================= logical Operator ==============================================//	
 // logical Operator ---> 
 
-// &&	logical and
-// ||	logical or
-// !	logical not
+//&&  logical and  ? //ye operatort check kartra hai dono condition match tohi true aye ga warna false deta hai ?
 
+// || logical or  ? // ye operator check karta hai ek condition bhi satisfy tohi true dono nhi match tohi false ata hai ?
+
+// ! logical not ?  // ye operator se ulta work karta hai true ko false me change karta hai ulta work ?
+
+
+// let condition1 = 10;
+// let condition2 = 5;
+
+// if (condition1 > 5 && condition2 < 10) { //dono condition match tohi true aye ga ye operator aise hi work karta hai ?
+//   console.log("Both conditions are true.");
+// } else {
+//   console.log("At least one of the conditions is false.");
+// }
+
+
+
+// let condition1 = 10;
+// let condition2 = 5;
+
+// // ye operator ulta work karta hai ? ye dono condition true hai but ! ye operator lagne se ulta work hota hai false return karta hai
+// if (!(condition1 > 5) && condition2 < 10) { 
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+
+
+
+// ===================================== Ternary Operators ==========================================//
+// Ternary Operators ---> ham is se condition operator bhi bolte hai ? ye operetor bhi true and false return karta hai ?
+
+// let age = 5;  //5 bada nhi hai 6 se is liye milk aye ga ? 5 kar re ke >= 5 is ke sath tu coffe aye ga ?
+// let store = age >= 6 ? "coffe" : "milk";
+// console.log(store);
 
 
 
