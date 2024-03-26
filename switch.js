@@ -2,9 +2,9 @@
 
 let day = 2;
 switch (day) {
-  case 0:
+  case 0: //case se use hame koi option means koi value match karwana ho is se case se match karwate hai ?
     console.log("Sunfdfay");
-    break;
+    break; //is keyword se value match hoti hai code wahi ruk jaye ga or direct switch se bher ajaye ga?
   case 1:
     console.log("Monday");
     break;
@@ -24,7 +24,7 @@ switch (day) {
     console.log("Saturday");
     break; // break keyword ka matlab jo case ture ohi execute hoga forther code nhi hoge sida bher default wala run?
    
-    default:
+    default: //is keyword jab chalte hai jab value true nhi hoti koi value match nhi hoti hai ?
       console.log("Invalid Day")
 
 

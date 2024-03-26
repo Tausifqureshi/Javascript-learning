@@ -63,6 +63,10 @@ console.log(pi);
 
 
 
+let num1 = 'Tausif',  //is tra se bhi varible create kar sakte hai ?
+   num2 = 'Qureshi',
+   num3 = 'Bbabu';
+   console.log(num2)
 
 
 
