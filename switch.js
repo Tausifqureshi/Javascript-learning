@@ -29,3 +29,11 @@ switch (day) {
 
 
 }
+
+let num1 = 'Tausif', 
+   num2 = 'Qureshi',
+   num3 = 'Bbabu';
+  //  alert(num2)
+
+  let promt = prompt('Tausif');
+  document.writeln(promt)
