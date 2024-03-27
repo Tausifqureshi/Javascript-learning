@@ -127,15 +127,15 @@
 // var firstName = 'Tausif';  // global scope kahi bhi access kar sakte function ke bher ander dono jaga? koi bhi keyword use global me var,let,const, use tu kahi bhi call kar sakte hai function ke ander ya bher ?
 
 // let  firstName = 'Tausif';
-// function myFun(){ 
+function myFun(){ 
   //var firstName = 'Tausif'; //ab ye funcion ke bher call kar re ge run nhi karb re ga q ke ab ye function scope means local scope ban gaya hai onlye function me hi call karna hoga ? koi bhi keyword use loacl scope me var,let,const, use tu kahi bhi call nhi kar  sakte hai function ke ander hi call karwana hoga only is ko bolte hai block scope mans function scope local scope ?
 
   // let  firstName = 'Tausif'
   // document.write(firstName);
 
-// };
+};
 // document.writeln(firstName,"<br>");
-// myFun()
+myFun()
 
 
 
