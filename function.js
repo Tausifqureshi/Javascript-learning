@@ -156,7 +156,6 @@ myFun()
 
 
 
-
 // <------------------>function default parameter<------------------>
 // function myfun(a,b=2){  // is ko bolte defualt paramereter ab ham argumnet nhi dege to us ki value yahi aye gi 2? agar argument me value dete hai tu b ko ohi value aye gi?
 //     return a+b;
