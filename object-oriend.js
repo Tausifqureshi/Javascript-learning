@@ -92,7 +92,7 @@
 
 
 //=====================================Call,Apply,Bind Method Chapter ========================================//
-// Call,Apply,Bind Method ---> use hote hai jab bhi hame kisi object me function ke add karte hai us se methid bolte hai or add karne ke baad ham us function ke relative object ki property ko use karna ho tab Call,Apply,Bind Method ka use karte hai ?
+// Call,Apply,Bind Method ---> use hote hai jab bhi hame kisi object me function ke add karte hai us se method bolte hai or add karne ke baad ham us function ke relative object ki property ko use karna ho tab Call,Apply,Bind Method ka use karte hai ?
 
 
 // Call --> Call function ye ek javascript ka inbuilt function hai ?Call function ka use kar ke ek object ka dusre object ki property use karne ke liye work kiya jata hai ? Call Apply Same work Karte hai ? Call Apply me itna fark hai jab Call Stap by Stap o apne argument ko call karwata hai Apply method me Sencod Argument Array me hota hai itna hi fark hai dono me Call ke ander ham koi Bhi Array ka use nhi karte hai ?

@@ -167,13 +167,18 @@
 // }
 // console.log(newArray) //newArrya me jo jara print hora yaha se ?
 
+
+
 // <------------------------------>Array use for of loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
 // //for of loop autometically chalti hai jitni us ki length hoti hai waha tak chalti hai or loo ki tara initialvalue nhi ena hota hai?
+
 // let fruits = ["apple","mango","banana","orange","kiwi"];
 // for(let i of fruits){
 //     console.log(i)
 // }
+
+
 
 // <------------------------------>Array use for in loop<-------------------------------->
 
@@ -185,14 +190,14 @@
 // }
 
 ///================== string use fir in loop =========================//
-let firstName = 'Tausif Qureshi';
+// let firstName = 'Tausif Qureshi';
 
-for (const string in firstName) {
-    // console.log(firstName) //pura name print hoga is se ?
-    console.log(string) //string print hoga is se only?
-    console.log(firstName[string])
+// for (const string in firstName) {
+//     // console.log(firstName) //pura name print hoga is se ?
+//     console.log(string) //string print hoga is se only?
+//     console.log(firstName[string])
    
-}
+// }
 
 
 // <------------------------------>Array use while loop<-------------------------------->

@@ -1,11 +1,20 @@
-// function bhi referance type hote hai?
+// Function --->  function bhi referance type hote hai ? function ek block off the code hota hai jo ek particular taks koparform karne use kiya jata hai ?  function ko ek bar create kar ke reuse bhi kar sakte hai ? ap function me aisa code defind kar sakte hai jis ka use bar bar kiya ja sakta hai ? same code ko kahi bar use kar sakte hai alag alag argument ke sath or us me ek new result execute karwa sakte hai ?  
 
-// <------------------>function declaretion<------------------>
+
+
+
+// <------------------------------------>function declaretion<------------------------------------------->
+// return ---> jab ham javascript me return ka use karte hai tab us ke baad functiom ka execution stop ho jata hai ? Return keyword ke baad koi statement hame lihkte hai tu waha pe o us ko print nhi kar re ga ? jab bhim ham javacsript me invoke karte hai menas function ko call karte hai tab javascript kuch na kuch value return karta hai jo return karta hai o value function me baje ha exmple function ka name hai sumNumber () tu o value is sunaNumber wale function ko beje ga us ke baad  us ko ek varible me store kar ke ham us ka execution start karte hai maens function ko call karte hai ?
+
 // function sumNumber (num1,num2){
-//     return num1+num2;
+//     return num1+num2; //
 // }
 // const retrunvalue = sumNumber(3,5);
 // console.log(retrunvalue);
+
+// const retrunvalue1 = sumNumber(4,6); //kitne bar bhi reuse kar sakte hai is function ko ?
+// console.log(retrunvalue1);
+
 
 // function sumNumber(){
 //     console.log(2+3)
