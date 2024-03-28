@@ -34,10 +34,10 @@
 
 // }
 
-for (let i = 1; i <= 10; i++) {
-  //teble bane ke liye use
-  document.writeln(`Two the teble ${i + i} <br>`); //jitne ka nhi teble hone bus i + add ?
-}
+// for (let i = 1; i <= 10; i++) {
+//   //teble bane ke liye use
+//   document.writeln(`Two the teble ${i + i} <br>`); //jitne ka nhi teble hone bus i + add ?
+// }
 
 // let i =0; // yaha pe bhi variable diclear kar sakte hai
 
@@ -72,11 +72,20 @@ for (let i = 1; i <= 10; i++) {
 // }
 
 // <------------------------------>while loop<-------------------------------->
-//While loop--->
+//While loop---> 
+
+// let a = 1; //     jo bhi number dale ge us ka teble print hoke aye ?
+// let i = prompt("Enter your number");
+// while(a <= 10){
+//     let result = i * a
+//     document.write(`${i} x ${a} = ${result} <br>`);
+//     a++;
+// }
+
 //less then use i ki value 0 hai ya 3 ke bara nhi hoti tab tak ye loop chale gi jaise hi 3 aye ga ruk jaye gi 4 nhi aye q ke <= use hai us se choti ya barabr ki value tak hi print hoga
 // let i = 0;
 // while (i <= 10) {
-//   document.write(i + "<br>");
+//   document.write(i + "<br>"); 
 //   i++;
 // }
 
@@ -123,6 +132,17 @@ for (let i = 1; i <= 10; i++) {
 //         break;
 //     }
 //     console.log(i)
+// };
+// console.log('Out off the code')
+
+
+///=============================== break keyword using array ====================================================
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
+// for(let i=0; i< cars.length; i++){
+//     if(cars[i] == "Tata"){
+//         break;
+//     }
+//     console.log(cars[i]);
 // }
 
 //contineu ye ji number pe contineu use hota hai us se block nhi karta us se ignor kar ke aage badta hai
