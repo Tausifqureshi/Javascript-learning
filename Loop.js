@@ -1,12 +1,44 @@
 // <------------------------------>for loop<-------------------------------->
-//Progrmming language  me loop ka use kisi action ya procese ko bar bar repit karne ke liye use kar te hai ? iterate mens hota hai repit karna bar bar us ko hi loop bolte hai ? 
-for(let i = 0; i < 10; i++){
-    document.writeln("Tausif Qureshi","<br>","<br>");
+//Progrmming language  me loop ka use kisi action ya procese ko bar bar repit karne ke liye use kar te hai ? iterate mens hota hai repit karna bar bar us ko hi loop bolte hai ?
+
+//Loop ka matlab  iterated karna hota hai ?
+
+//======================================== for loop ==========================================//
+
+// for(let i = 0; i < 1000; i++){ //kitne bar bhi print karwqa sakte hai aise ?
+//     document.writeln("Tausif Qureshi","<br>","<br>");
+// }
+
+// for(let i = 0; i <= 20; i++){
+//     if(i % 2 === 0){ //even number ke liye use ,2,4,56,8,ye even hote hai ?
+//         // document.writeln("This is even number" + " " + [i] + "<br>");
+//         document.writeln(`This is even number ${i} <br>`);
+//     }
+
+// }
+
+// for(let i = 0; i <= 20; i++){
+//     if(i % 2 !== 0){ //odd number ke liye use ,1,3,5,7,9,ye odd hote hai ?
+//         document.writeln(`This is odd number ${i} <br>`);
+//     }
+
+// }
+
+//  =============================== Odd even number ek sath ====================================
+// for(let i = 0; i <= 20; i++){
+//     if (i % 2 === 0) {
+//     document.writeln(`This is even number ${i} <br>`); //even number ke liye use ,0,2,4,56,8,ye even hote hai ?
+//      }else if(i % 2 !== 0){
+//      document.writeln(`This is odd number ${i} <br>`); //odd number ke liye use ,1,3,5,7,9,ye odd hote hai ?
+//     }
+
+// }
+
+for (let i = 1; i <= 10; i++) {
+  //teble bane ke liye use
+  document.writeln(`Two the teble ${i + i} <br>`); //jitne ka nhi teble hone bus i + add ?
 }
 
-
-//Loop ka matlab  iterated karna hota hai
-//for loop ---->  
 // let i =0; // yaha pe bhi variable diclear kar sakte hai
 
 // for(let i =0; i<=9; i++){
@@ -21,7 +53,6 @@ for(let i = 0; i < 10; i++){
 //     total=total+i
 // }
 // console.log(total)
-
 
 // let total = 0    // aisa bhi kar sakte jo eyse pade hame?
 // let num = 10
@@ -48,7 +79,7 @@ for(let i = 0; i < 10; i++){
 //   document.write(i + "<br>");
 //   i++;
 // }
-   
+
 //while loop example
 //  let i = 0;
 //  let total = 0;
@@ -74,46 +105,40 @@ for(let i = 0; i < 10; i++){
 // let total1 = (num*(num+1))/2;
 // console.log(total1)
 
-
 // <------------------------------>do while loop<-------------------------------->
 //do while loop--> while loop ka hi version hai ye do while loop? ye loop ek bar zarur chalti hai contision false ho tobhi?
 // let i = 10   //value false tobhi chale ga q ke o first console hora hai?
 
 // do{
 //     console.log(i)
-  
+
 // }while(i<=9)
-
-
 
 // <------------------------------>break and continue keyword<-------------------------------->
 //The break statement "jumps out" of a loop.
 
 //break ye jis pe use hota hai codo wahi block ho jata hai code direct lop ke bher nikal jata hai?
 // for(let i = 0; i<=10; i++){
-    //     if(i===4){
-        //         break;
-        //     }
-        //     console.log(i)
+//     if(i===4){
+//         break;
+//     }
+//     console.log(i)
 // }
-
 
 //contineu ye ji number pe contineu use hota hai us se block nhi karta us se ignor kar ke aage badta hai
 //The continue statement "jumps over" one iteration in the loop.
 
 // for(let b = 0; b<=10; b++){
-    //     if(b===5){
-        //         continue;
-        //     }
-        //     console.log(b)
+//     if(b===5){
+//         continue;
+//     }
+//     console.log(b)
 // }
-
-
 
 // <------------------------------>Array use for loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
 // let array1 = ["apple","mango","banana","orange","kiwi"]
-// let newArray=[] //new array bana ke direct push 
+// let newArray=[] //new array bana ke direct push
 
 // for(let i=0; i < array1.length; i++){
 // //console.log(array1[i].toUpperCase())  //upper lower or bhi method use kar sakte hai aisa?
@@ -121,8 +146,6 @@ for(let i = 0; i < 10; i++){
 // newArray.push( array1[i].toUpperCase()) //newArray jo ban raha us me jara
 // }
 // console.log(newArray) //newArrya me jo jara print hora yaha se ?
-
-
 
 // <------------------------------>Array use for of loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
@@ -132,7 +155,6 @@ for(let i = 0; i < 10; i++){
 //     console.log(i)
 // }
 
-
 // <------------------------------>Array use for in loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
 //ye loop onlye index deti hai first value nhi deti?
@@ -140,10 +162,6 @@ for(let i = 0; i < 10; i++){
 // for(let i in fruits){
 //     console.log(fruits[i])// items bhi chahiye to aise print warna ye sirf index deti hai first?
 // }
-
-
-
-
 
 // <------------------------------>Array use while loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
@@ -153,11 +171,3 @@ for(let i = 0; i < 10; i++){
 //     console.log(array1[i].toUpperCase())
 //     i++
 // }
-
-
-
-
-
-
-
-
