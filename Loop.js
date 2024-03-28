@@ -1,4 +1,10 @@
 // <------------------------------>for loop<-------------------------------->
+//Progrmming language  me loop ka use kisi action ya procese ko bar bar repit karne ke liye use kar te hai ? iterate mens hota hai repit karna bar bar us ko hi loop bolte hai ? 
+for(let i = 0; i < 10; i++){
+    document.writeln("Tausif Qureshi","<br>","<br>");
+}
+
+
 //Loop ka matlab  iterated karna hota hai
 //for loop ---->  
 // let i =0; // yaha pe bhi variable diclear kar sakte hai
