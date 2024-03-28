@@ -176,12 +176,24 @@
 // }
 
 // <------------------------------>Array use for in loop<-------------------------------->
+
 //Loop ka matlab  iterated karna hota hai?
 //ye loop onlye index deti hai first value nhi deti?
 // let fruits = ["apple","mango","banana","orange","kiwi"];
 // for(let i in fruits){
 //     console.log(fruits[i])// items bhi chahiye to aise print warna ye sirf index deti hai first?
 // }
+
+///================== string use fir in loop =========================//
+let firstName = 'Tausif Qureshi';
+
+for (const string in firstName) {
+    // console.log(firstName) //pura name print hoga is se ?
+    console.log(string) //string print hoga is se only?
+    console.log(firstName[string])
+   
+}
+
 
 // <------------------------------>Array use while loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
