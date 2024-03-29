@@ -5,14 +5,16 @@
 // console.log(thisKeyword) //globle mens window aye ga is tara se this use tu ?
 
 // "use strict";
-let thisKeyword = this;
-console.log(thisKeyword) // window hi object aye ga is tar use karne se "use strict";
+// let thisKeyword = this;
+// console.log(thisKeyword) // window hi object aye ga is tar use karne se "use strict";
 
-// // "use strict";
+//  "use strict";
 // function myFunc(){  //function declaretion hai ye ?is function ka bhi this window object hota hai ? functiom me 'use strict' use tu undefind aye ga commit tu window aye ga?
 //     console.log(this); 
 // }
 // myFunc();
+
+
 
 
 //=====================================This keyword Chapter ========================================//
