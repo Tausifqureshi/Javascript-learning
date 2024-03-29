@@ -67,11 +67,6 @@
 
 
 
-
-
-
-
-
 //=====================================This keyword Chapter ========================================//
 //console karne se this ki value window object print hoti hai jo javascript ka window object hota hai globel object? console window karne se bhi window object hi print hoga dono same hi hai ? This and Window ek hai baat hai javascript me ?
 
@@ -97,34 +92,51 @@
 
 // Call --> Call function ye ek javascript ka inbuilt function hai ?Call function ka use kar ke ek object ka dusre object ki property use karne ke liye work kiya jata hai ? Call Apply Same work Karte hai ? Call Apply me itna fark hai jab Call Stap by Stap o apne argument ko call karwata hai Apply method me Sencod Argument Array me hota hai itna hi fark hai dono me Call ke ander ham koi Bhi Array ka use nhi karte hai ?
 
+// this keyword --->  ka matlab hota hai us object ya variable ka reference this.firstName means object me jo firstName hai us se firstName lega us ka reference lege this ye hota hai ?
 
+let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise? parameter bhi de sakte hai
+    // return `${this.fisrtName} ${this.lastName}`; //bher function tu is tara se koi bhi object print ?
 
-// let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise? parameter bhi de sakte hai
-//     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
-//    }
+    return `${this.fisrtName} ${this.lastName} ${city} ${contry}`;
 
-// let student1 = {
-//     fisrtName :"Tausif",
-//     lastName : 'qureshi',
+    // return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
+   }
+
+let student1 = {
+    fisrtName :"Tausif",
+    lastName : 'qureshi',
 // fullName : function(){   //fullname key hai function value? function ander bhi create kar sakte hai aise?
 // return `${this.fisrtName} ${this.lastName}`
 // }
+}
+// console.log(student1.fullName()) //normal calling function ander function tu aisa call?
 
-// }
-// console.log(student1.fullName()) //normal calling function ?
+let student2 = {
+    fisrtName :"Javed",
+    lastName : 'qureshi',
+    age :24,
 
-// let student2 = {
-//     fisrtName :"Javed",
-//     lastName : 'qureshi',
-//     age :24
-// }
+    // fullName : function(){ //har object me function babane ki zarurat nhi student1 ka hi use kar sakte hai ?
+    //     return `${this.fisrtName} ${this.lastName}`
+    //     }
+    
+}
+// console.log(student2.fullName()) //student 2 ke liye call hora ye function only ?
+
+// console.log(fullName.call(student2)) //bher function tu is tara se koi bhi object print ?
 
 // console.log(fullName.call(student1, "Mumbai","India")) //bher function create tu aise call hoga ?
+
+// console.log(fullName.call(student2,'Heydrabaad','India'))
+
 // console.log(fullName.call(student2,student2.age,'Heydrabaad','India')) //bher function create tu aise bhi call kar sakte hai ? 'Heydrabaad','India' argument hai ye ?  
 
-//console.log(student1.sumNumber.call(student2)) //Call Method ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ?object ke ander function defiend tu ais call ?
 
-//  console.log(student1.fullName.call(student1))  //aisa bhi call kar sakte hai ?
+
+
+// console.log(student1.fullName.call(student1)) //Call Method ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ?object ke ander function defiend tu ais call ?
+
+//  console.log(student1.fullName.call(student2)); //aisa bhi call kar sakte hai ? koi bhi object print kar sakte hai ? ander object defind tab ?
 
 
 
