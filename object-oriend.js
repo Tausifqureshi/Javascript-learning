@@ -7,20 +7,21 @@
 
 // this keyword --->  ka matlab hota hai us object ya variable ka reference this.firstName means object me jo firstName hai us se firstName lega us ka reference lege this ye hota hai ?
 
-// function personInfo(){  //function bher create hai?
-//     console.log(`person name is ${this.firstName} and age is ${this.age}`);
-// }
+function personInfo(){  //function bher create hai ? personInfo,
+    console.log(`person name is ${this.firstName} and age is ${this.age}`);
+}
 
-// const person1 = {
-//     firstName : "Tausif",
-//     age: 24,
-//     about: personInfo //object ke ander about key hai personInfo value hai jaisa object me hota  hai key value paira?
+const person1 = {
+    firstName : "Tausif",
+    age: 24,
+    about: personInfo, // object ke ander jo about hai o key hai or personInfo () ye function hai jo value ki tara set kar re hai personInfo upper jo bher function ki tara use hora hai line number 10 me ?
 
-    // about:function(){
-    //  console.log(`person name is ${this.firstName} and age is ${this.age}`);
+    // about:function(){ //about key hai function value jaisa object me hota  hai key value paira ? ander create method means function ?
+    // console.log(`person name is ${this.firstName} and age is ${this.age}`);
     // //aise bhi create kar sakte hai function ander hi?
-    // }
-// }
+    // };
+
+}
 
 // const person2 = {
 //     firstName : "Qureshi",
@@ -33,9 +34,9 @@
 //     about: personInfo
 // }
 
-// personInfo() ---> direct call karne se undefiend aye ga 
+// personInfo() //---> direct call karne se undefiend aye ga 
 
-// person1.about(); //function call hore jis bhi object ke sath function ke sath defiend hai us se sath call hore hai ?
+person1.about(); //function call hore jis bhi object ke sath function ke sath defiend hai us se sath call hore hai ?
 // person2.about();
 // person3.about();
 
