@@ -140,8 +140,6 @@ let student2 = {
 
 
 
-
-
 //==============================harshi Start Call Method=============================================//
 
 // function about(hobby, favMusician){
