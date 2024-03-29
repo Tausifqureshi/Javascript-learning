@@ -1,20 +1,22 @@
+//Javascript-Object ---> js me kahi data types hote hai us me se ek data type hai object ? object ka use bhi key value ka store karne le liye kiya jata hai ? 
+// object bhi ek referance type hai ? object bhi memory me aise hi strore hota haio jaise array hota hai share referance types ek hi tara se store hote hai memory me ? obejct me indexing nhi hota hai ? is me array bhi store kar sakte hai ? Objecr itareble nhi hota hai ?
 
-// object bhi ek referance type hai?object bhi memory me aise hi strore hota haio jaise array hota hai share referance types ek hi tara se store hote hai memory me? obejct me indexing nhi hota hai?is me array bhi store kar sakte hai?Objecr itareble nhi hota hai
+
 // const key = "email"; //key add hori emails ki
-// let person = {
-//     name: 'Tauisf',
-//     age: 24,
-//     address: "Mumbai",
-//     hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"],
-// }
+let person = {
+    name: 'Tauisf',
+    age: 24,
+    address: "Mumbai",
+    hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"],
+}
 
 // person.contec= 8429097693; //add peoperty object me 
-// person[key]= "tausifqureshi@gaml.com" //aise key value add kar sakte key email aye gi
-// person.lastName = "javed"  //aise bhi add karte hai but ye normal add hoga is se?
+// person[key]= "tausifqureshi@gaml.com" //aise key value add kar sakte key email aye gi ?
+// person.lastName = "javed"  //aise bhi add karte hai but ye normal add hoga is se ?
 
 // document.writeln(person.hobbies)
 // console.log(person["name"]) //aise bhi access kar sakte breaket notation se javascript me key string me hi hoti hai?
-// console.log(person) //pura object print hoga is se?
+console.log( typeof person) //pura object print hoga is se or types bhi check kar re hai ?
 
 
 
