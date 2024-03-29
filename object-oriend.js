@@ -94,33 +94,33 @@
 
 // this keyword --->  ka matlab hota hai us object ya variable ka reference this.firstName means object me jo firstName hai us se firstName lega us ka reference lege this ye hota hai ?
 
-let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise? parameter bhi de sakte hai
-    // return `${this.fisrtName} ${this.lastName}`; //bher function tu is tara se koi bhi object print ?
+// let fullName = function(city,contry){  //function bhar bhi create kar sakte hai aise ? parameter bhi de sakte hai
+//     // return `${this.fisrtName} ${this.lastName}`; //bher function tu is tara se koi bhi object print ?
 
-    return `${this.fisrtName} ${this.lastName} ${city} ${contry}`;
+//     return `${this.fisrtName} ${this.lastName} ${city} ${contry}`;
 
-    // return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
-   }
+//     // return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
+//    }
 
-let student1 = {
-    fisrtName :"Tausif",
-    lastName : 'qureshi',
-// fullName : function(){   //fullname key hai function value? function ander bhi create kar sakte hai aise?
-// return `${this.fisrtName} ${this.lastName}`
+// let student1 = {
+//     fisrtName :"Tausif",
+//     lastName : 'qureshi',
+// // fullName : function(){   //fullname key hai function value? function ander bhi create kar sakte hai aise?
+// // return `${this.fisrtName} ${this.lastName}`
+// // }
 // }
-}
-// console.log(student1.fullName()) //normal calling function ander function tu aisa call?
+// // console.log(student1.fullName()) //normal calling function ander function tu aisa call?
 
-let student2 = {
-    fisrtName :"Javed",
-    lastName : 'qureshi',
-    age :24,
+// let student2 = {
+//     fisrtName :"Javed",
+//     lastName : 'qureshi',
+//     age :24,
 
-    // fullName : function(){ //har object me function babane ki zarurat nhi student1 ka hi use kar sakte hai ?
-    //     return `${this.fisrtName} ${this.lastName}`
-    //     }
+//     // fullName : function(){ //har object me function babane ki zarurat nhi student1 ka hi use kar sakte hai ?
+//     //     return `${this.fisrtName} ${this.lastName}`
+//     //     }
     
-}
+// }
 // console.log(student2.fullName()) //student 2 ke liye call hora ye function only ?
 
 // console.log(fullName.call(student2)) //bher function tu is tara se koi bhi object print ?
@@ -167,8 +167,10 @@ let student2 = {
 //Apply --> is Apply me ham Array ki value Pass karte hai means Apply me argument ki second value ko ham Array me rahkte hai ?  Call Apply Same work Karte hai ?
 
 
-// let fullName = function(city,contry){ // function bhar bhi create kar sakte hai aise?
-//     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
+// let fullName = function(city,contry,num){ // function bhar bhi create kar sakte hai aise?
+//     // console.log(city,contry)
+//     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry} ${num}`
+  
 //    }
 //  function fullName (city,contry){ // function declaretion
 //     console.log (`${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`);
@@ -188,9 +190,11 @@ let student2 = {
 
 // fullName.apply(student1,["Mumbai","India"])//aisa bhi call kar sakte hai but return nhi console function me hi karna hoga?
 
-// console.log(fullName.apply(student2, ["Mumbai","India"])) //Applay me itna fark hai second argument Array me dena hota hai ? Multipal Array lihk sakte hai yaha pe ? retrun wala function commit is tara se call tu undefiend ye ga?
+// console.log(fullName.apply(student2,["Mumbai","India",'hello'])); //Multipal Array lihk sakte hai yaha pe ?
 
-// console.log(fullName.apply(student2,[student2.age,],['Heydrabaad','India'])) 
+// console.log(fullName.apply(student2,[student2.age,],['Heydrabaad','India'])); //Apply me itna fark hai second argument Array me dena hota hai ? retrun wala function commit is tara se call tu undefiend aye ga?
+
+// console.log(fullName.apply(student2,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
 
 
 //==============================harshi Start Apply Method=============================================//
@@ -198,7 +202,7 @@ let student2 = {
 // function about(hobby, favMusician){
 //     console.log(this.firstName, this.age, hobby, favMusician);
 // }
-// const user1 = {
+// const user1 = { 
 //     firstName : "harshit",
 //     age: 8,   
 // }
@@ -218,11 +222,13 @@ let student2 = {
 
 // let fullName = function(city,contry){ 
 //     return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
+//     // return `${this.fisrtName} ${this.lastName} ${city} ${contry}`;
 //    }
 
 // let student1 = {
 //     fisrtName :"Tausif",
 //     lastName : 'qureshi',
+//     age :25
   
 // }
 
@@ -232,12 +238,16 @@ let student2 = {
 //     age :24
 // }
 
-// // console.log(fullName.bind(student1, "Mumbai","India")); //aise pura function return hoga ?
+// console.log(fullName.bind(student1, "Mumbai","India")); //aise pura function return hoga ?
 
-// let bindCall = fullName.bind(student1, "Mumbai","India");
-// console.log(bindCall()); // is ko bolte hai invoke karna Bind aise work karta hai
+// let bindCall = fullName.bind(student1,"Mumbai","India"); 
+// console.log(bindCall()); // is ko bolte hai invoke karna mens ek variable me store kar ke us variable ko function ki tara call karne ko invoke bolte hai ? Bind aise work karta hai
 
-// let bindCall2=fullName.bind(student2,student2.age,'Heydrabaad','India')
+
+// let bindCall3 = fullName.bind(student2,"Kodad","India"); //kitne bar bhi agrument ko change kar ke 
+// console.log(bindCall3());
+
+// let bindCall2=fullName.bind(student2,student2.age,'Heydrabaad','India');//is tara se call tu undefiend aye ga?
 // console.log(bindCall2());
 
 
@@ -259,14 +269,6 @@ let student2 = {
 // //Bind
 // const func = about.bind(user1, "guitar", "bach");
 // func();
-
-
-
-
-
-
-
-
 
 
 
