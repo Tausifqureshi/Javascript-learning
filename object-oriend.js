@@ -103,25 +103,25 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 //     // return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`;
 //    }
 
-// let student1 = {
-//     fisrtName :"Tausif",
-//     lastName : 'qureshi',
-// // fullName : function(){   //fullname key hai function value? function ander bhi create kar sakte hai aise?
-// // return `${this.fisrtName} ${this.lastName}`
-// // }
-// }
-// // console.log(student1.fullName()) //normal calling function ander function tu aisa call?
+let student1 = {
+    fisrtName :"Tausif",
+    lastName : 'qureshi',
+fullName : function(){   //fullname key hai function value? function ander bhi create kar sakte hai aise?
+return `${this.fisrtName} ${this.lastName}`
+}
+}
+// console.log(student1.fullName()) //normal calling function ander function tu aisa call?
 
-// let student2 = {
-//     fisrtName :"Javed",
-//     lastName : 'qureshi',
-//     age :24,
+let student2 = {
+    fisrtName :"Javed",
+    lastName : 'qureshi',
+    age :24,
 
-//     // fullName : function(){ //har object me function babane ki zarurat nhi student1 ka hi use kar sakte hai ?
-//     //     return `${this.fisrtName} ${this.lastName}`
-//     //     }
+    // fullName : function(){ //har object me function babane ki zarurat nhi student1 ka hi use kar sakte hai ?
+    //     return `${this.fisrtName} ${this.lastName}`
+    //     }
     
-// }
+}
 // console.log(student2.fullName()) //student 2 ke liye call hora ye function only ?
 
 // console.log(fullName.call(student2)) //bher function tu is tara se koi bhi object print ?
@@ -135,7 +135,7 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 
 
 
-// console.log(student1.fullName.call(student1)) //Call Method ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ?object ke ander function defiend tu ais call ?
+console.log(student1.fullName.call(student2)) //Call Method ka use kar ke ek object ka dusre object ki property use karne ke liye use kiya jata hai ?object ke ander function defiend tu ais call ?
 
 //  console.log(student1.fullName.call(student2)); //aisa bhi call kar sakte hai ? koi bhi object print kar sakte hai ? ander object defind tab ?
 
