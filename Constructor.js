@@ -1,5 +1,5 @@
 //=========================================JS Function Object Constructor=======================================//
-//Is se hi ham Constructor function ya Constructor object dono same hi hai ?Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai? Jab bhi ham Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ?
+//Is se hi ham Constructor function ya Constructor object dono same hi hai ? Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai ? Jab bhi ham Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ?
 
 
 // =========================================== Glowvia Teac Chaneal Chaptert =================================//
@@ -18,29 +18,36 @@
 
 //Creating Using ObjectConstructor ?
 function Car (name, modal, color,weight){ //Constructor function me first letter Captal hota hai ?
-  this.carName = name, //this means currnet object ka referance means Car object ka ?
+  this.carName = name, //this means currnet object ka referance means Car object ka referace ?
   this.carModa = modal,
   this.carColor = color,
   this.carWeight = weight
 };
 
-// let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
-// let car2 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //kitne bhi Car object bana sakte hai aise ?
-let car3 = new Car ('Tata Nexon',2023, "Yellow", '800 kg');
-// console.log(car1)  //pura Car name ka Function aye ga is se ?
-// console.log(car1.carName);  // is tara se koi bhi value print karwa sakte carModal jo bhi print karwna ho ?
+let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
+console.log(car1.carName);  // is tara se koi bhi value print karwa sakte carModal jo bhi print karwna ho ?
 
-// car1.speed = 150 ; //is tara se proprty add kar sakte hai ?
+car1.speed = 150 ; //is tara se proprty add kar sakte hai ?
 
 // delete car1.speed ; //aise delete bhi kar sakte hai property  ko ?
 
-car3.carInfo = function(){  //kisi bhi object me method add karne ka tarika ?
-    return this.carName + " " + this.carModa ;
-}
+console.log(car1)  //pura Car name ka Function aye ga is se ?
 
-console.log(car3.carInfo())
-// console.log(car1);
-// console.log(car3);
+// let car2 = new Car ('Tata Nexon',2023, "orange", '800 kg'); //kitne bhi Car object bana sakte hai aise ?
+// console.log(car2);
+
+
+// let car3 = new Car ('Tata Nexon',2023, "Yellow", '800 kg');
+
+// car3.carInfo = function(){  //kisi bhi object me method add karne ka tarika ?
+//   return this.carName + " " + this.carModa ;
+// }
+
+// console.log(car3.carInfo()); // jo method me return kar re hai carName, carModal us ki value aye ki onlye ?
+
+// console.log(car3); // check methpd  add hua ya nhi car3 variable me ? 
+
+
 
 
 
