@@ -10,7 +10,7 @@
 // }
 
 // for(let i = 0; i <= 20; i++){
-//     if(i % 2 === 0){ //even number ke liye use ,2,4,56,8,ye even hote hai ?
+//     if(i % 2 === 0){    //even number ke liye use ,2,4,56,8,ye even hote hai ?
 //         // document.writeln("This is even number" + " " + [i] + "<br>");
 //         document.writeln(`This is even number ${i} <br>`);
 //     }
@@ -36,8 +36,10 @@
 
 // for (let i = 1; i <= 10; i++) {
 //   //teble bane ke liye use
-//   document.writeln(`Two the teble ${i + i} <br>`); //jitne ka nhi teble hone bus i + add ?
+//   document.writeln(`Two the teble ${i + i} <br>`); //jitne ka nhi teble hone bus i + add karna?
 // }
+
+
 
 // let i =0; // yaha pe bhi variable diclear kar sakte hai
 
@@ -97,6 +99,7 @@
 //     i++
 //  }
 //console.log(total)
+
 //uppr while loop se kuch aisa hi hora hai
 // total= 0 + 1;     // ye 1se10 tak i use hora loop chala ke 1,2,3,10 tak ye i hai jo loop chala run hone pe are hai?
 // total= 1 + 2;
