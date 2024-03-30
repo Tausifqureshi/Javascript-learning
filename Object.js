@@ -61,7 +61,7 @@
 //     name: 'Tauisf',
 //     age: 24,
 //     address: "Mumbai",
-//     hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"]
+//     hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"] //array hai object ke ander ye ?
 // }
 //  console.log(Object.keys(person)) //person object ek array me value retrun kare ga is se?
 
@@ -96,6 +96,8 @@
 //   console.log(var1);
 
 //   console.log(var3)// speard oparetot use bachi hohi value is me aye gi adress hobbies?
+
+
 
 //==============================nested destructuring object==========================================?
 // const users= [             // ek array me kuch object store user ke ?
@@ -145,6 +147,8 @@
 
 //  }
 
+
+
 // <------------------------------>parameter destructuring<-------------------------------->
 //is object me use kiya gaya hai?
 //react me kafi usefull method hai ye?
@@ -164,7 +168,32 @@
 // }
 // printDetails(perosn)
 
-// <------------------------------>Object option chaining<-------------------------------->
+// <------------------------------>Object me Array<-------------------------------->
+
+const person = {
+        name: 'Tauisf',
+        age: 24,
+        address: "Mumbai",
+        hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"] ,
+        person2 :{
+            name : 'Javed',
+            myFavorite :['Driving', 'Bookred','Developer'], // nested array ?
+        }
+    }
+
+  console.log(person.person2.myFavorite); //pura array aye ga is se nested wala ?
+  
+  person.person2.myFavorite[3]= 'Software'; // nested array me value add 3 index me add hoga?original array change hoga is se ?
+
+  console.log(person.person2.myFavorite); // checking add value 'Software ?
+
+    console.log(person.hobbies[1]); //Access indexing array value ?
+
+    console.log(person.hobbies); //pura array aye ga is se ?
+
+    console.log(person);//pura object print hoga is se ?
+
+// <-------------------------------->Object option chaining<-------------------------------->
 
 // let user ={
 //     firstName: "Tausif",
