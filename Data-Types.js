@@ -42,17 +42,17 @@ console.log(typeof (num));
 // =================================boolean========================================//
 //boolean----->ture are false retun karta hai?
 //  use comparison operator ke sath use hote hai boolean?
-// let x = 5;
-// let y = 5;
-// let z = 6;
-// let c= '6'
+let x = 5;
+let y = 5;
+let z = 6;
+let c = '6'
 
-// console.log(x==y)     //== only types check karta hai
+console.log(x==y)     //== only value check karta hai dono barbar hai ya nhi ? true aye ga dono value same hai
 // console.log(x==z)
 
-// console.log(x===z) //value ke sath types bhi check karta hai ye operator
+// console.log(x===z) //value ke sath types bhi check karta hai ye operator number form me hai ya string me ?
 
-// console.log(z===c)
+console.log(z===c) //value ke sath types bhi check karta hai ye operator number form me hai ya string me ? flase aye ga q ke c string me hai 
 
 
 
@@ -63,7 +63,7 @@ console.log(typeof (num));
 // console.log(x!=z)
 
 // !== ye bhi != is ki  tara hi work karta hai  but ye value ke sath type bhi check karta hai?
-let x = 5;
+// let x = 5;
 // let z = 6;
 // let c = "6";
 let b = 5;

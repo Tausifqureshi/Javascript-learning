@@ -134,11 +134,11 @@
 
 // const myArray = ["Hello", "cat", "lion"];
 
-// // function isLength3(string){
-// //     return string.length === 3;
-// // }
+// function isLength3(string){
+//     return string.length === 3;
+// }
 
-// const ans = myArray.find((string)=>string.length === 3); //ye method bata ra hai 3 length pe cat hai ?
+// const ans = myArray.find((string)=>string.length === 3); //ye method bata ra hai 3 word ki length cat ki  hai ?
 // console.log(ans);
 
 // const users = [
@@ -251,7 +251,7 @@
 // console.log(fruits)
 
 
-// const fruits = ["Banana", "Orange", "Apple", "Mango"]; //sms print not show -1 not found the value exist array ?
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]; //messege ana agar array me value nhi -1 nhi ana?
 // console.log(fruits)
 // let index = fruits.indexOf("Kiwi"); //-1 retrun kar re ga ye method agar kuch nhi milta tu -1 retrun karta hai ?
 
@@ -263,7 +263,7 @@
 
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
-// let index = fruits.indexOf("Apple", 3); 2 index ke baad fir se ye method dheka ga 'Apple' kis postion pe hai 4index pe 'Apple' 4 return kar re ga ye method aisa work karta hai?
+// let index = fruits.indexOf("Apple",3); //2 index ke baad fir se ye method dheka ga  3index se start kare ga 'Apple' kis postion pe hai 4index pe 'Apple' 4 return kar re ga ye method aisa work karta hai?
 // console.log(index);
 
 
@@ -370,7 +370,7 @@
 // console.log(returnValue)
 
 
-// const returnValue = users.map(user =>(  //value shari obhrct me aye gi is tara se karne se 4 object aye ge is se?
+// const returnValue = users.map(user =>(  //value shari object me aye gi is tara se karne se 4 object aye ge is se?
 //    {   Name: user.firstName,
 //       Age : user.age
 // }));
@@ -488,7 +488,14 @@
 // let urdu = course.some(function(leng){
 //   return leng === 'Hindi'
 // })
-// console.log(urdu)
+// console.log(urdu);
+
+// let urdu = function(leng){ //is tara se bhi function bana ke karte sakte hai ? jo eyse ho hame ?
+//   return leng === 'Hindi'
+// }
+
+// let saveSomeValue = course.some(urdu);
+// console.log(saveSomeValue)
 
 
 // let courses = ['Hindi', 'Urdu', 'English', 'Telugu'];
@@ -498,17 +505,18 @@
 
 
 //===================some method  object using===============//
-// let student =[
-//    {name : 'Tausif', age : 24},
-//    {name : 'Qureshi', age : 25},
-//    {name : 'Javed', age : 23}
-// ]
+let student =[
+   {name : 'Tausif', age : 24},
+   {name : 'Qureshi', age : 25},
+   {name : 'Javed', age : 23}
+]
 
-// let ret = student.some(function(matc){
-//   return matc.name ==='Tausif';
-// })
+let ret = student.some(function(matc){
+//   return matc.name =='Tausif'; //Tausif name ka student hai tu true wrana false me answer dega ye method ?
+  return matc.age > 23; // ko student 23 se bada hai ya nhi ha hai 25 ka student hai is liye true aye ga ?
+})
 
-// console.log(ret)
+console.log(ret)
 
 // const userCart = [
 //   {productId: 1, productName: "mobile", price: 12000},
@@ -520,7 +528,10 @@
 // const ans = userCart.some((cartItem)=>cartItem.price > 100000);// check kar re koi itme ki price 1 lahk ke upper hai ya nhi true ya false me answer aye ga ? true aye ga q ke 1 lahk ke upper hai price item ki ?
 // console.log(ans);
 
-
+// const ans = userCart.some((value)=>{ //is tara se bhi arrow function bana sakte hai >
+//     return value.price > 100000
+// })
+// console.log(ans);
 // <------------------------------>Array sort Method<-------------------------------->
 // Sort Method ---> is method ka use kar ke array ke elmement ko sort kar ke sortet array ko retrun karna sort ka use hai ? default asending hota hai ? ye method bhi ek call back function leta hai ? ye method origan array ko change karta hai?
 
