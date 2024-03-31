@@ -53,11 +53,11 @@
 // fruits.fill("Kiwi"); //start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga?
 // console.log(fruits)  //original array change hoga is se tara se check karta hai ?
 
-//fruits.fill("Kiwi",2,4); //ye method jab ham end position dete hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga
+//fruits.fill("Kiwi",2,4); //ye method jab ham end position dete hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga ?
 // console.log(fruits)
 
 // const myArray = [1,2,3,4,5,6,7,8];
-// myArray.fill(0,2,5); //0 index se fill karna hai starat karna hai 2 se or end karna hai 5 tak menas  6number tak but 6 nhi aye ga 5 pe hi ruk jaye ga ye fill method ?
+// myArray.fill(0,2,5); //0 index se fill karna hai starat karna hai 2 se or end karna hai 5 tak menas  6number tak but 6 nhi aye ga 5 pe hi ruk jaye ga ye fill method aise hi work karta hai ?
 // console.log(myArray);
 
 
@@ -322,7 +322,7 @@
 // console.log(typeof fruits); //array ka typeof object ata hai is liye ye object aye ga ?
 // console.log(Array.isArray( fruits)); //check in array true aye ga ye array hai is liye?
 
-// let text = fruits.join(" and ");//Joind method me adda bhi kuch karwa sakte hai ? 
+// let text = fruits.join(" and ");//Joind method me add bhi kuch karwa sakte hai ? 
 // console.log(text)
 
 // //let text = fruits.join(); //ye method array ke value ko string me deta hai ?
@@ -392,10 +392,11 @@
 
 
 // <------------------------------>Array Push Method<-------------------------------->
-// push --->last se add karta hai ? or ye array ki length change karat hai or new length deta hai?
+// push --->last se add karta hai ? or ye original array or us ki length change karat hai ? new array return karta hai new length deta hai?
+
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
-// fruits.push("orange"); //arrary lenth change new lengt dega
+// fruits.push("orange"); //arrary lenth change new lengt dega ?
 // console.log(fruits)
 
 
@@ -422,7 +423,7 @@
 // 115             10             125   total sum value 125 aye gi?
 
 
-//Map object exmple ?
+//object exmple ?
 // const userCart = [
 //   { productId: 1, productName: "mobile", price: 12000 },
 //   { productId: 2, productName: "laptop", price: 22000 },
@@ -526,11 +527,11 @@
 // A,B,C,D,E,F,G ---->  asending order hota hai ?
 // G,F,E,D,C,B,A ---> desending order hai ye ?
 
-let arrayCharctter = ['a','f','g','b','c','d'];  //asending order hota hai 
-console.log(arrayCharctter.sort());
+// let arrayCharctter = ['a','f','g','b','c','d'];  //asending order hota hai 
+// console.log(arrayCharctter);
 
-let sortArray = arrayCharctter.sort(); //aisa bhi kar sakte hai print ?
-console.log(sortArray);
+// let sortArray = arrayCharctter.sort(); //aisa bhi kar sakte hai print ?
+// console.log(sortArray);
 
 
 //3000, 1200, 400, 9, 5 // desending sort bolte hai is se?
