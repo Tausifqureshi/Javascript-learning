@@ -34,6 +34,30 @@
 // console.log(array2)
 
 
+// ========================================= Array-Constructor ===========================================//
+// let arrayConstructor = new Array('Tausif','Banana','Apple','Mango');
+// console.log(arrayConstructor);
+// console.log(Array.isArray(arrayConstructor)); //Array checking array hai ya nhi ? 
+// arrayConstructor[4] = 'Kiwi';//Array Constructor me value array ?
+// console.log(arrayConstructor); 
+
+
+// ================================== Multidimesinal Array===========================================//
+// Multidimesinal Array ---> is ka matlab hota hai Array ke ander array ? Multidimesinal Array me index value ki jaga array deta hai ? 
+ 
+let student = [
+    ['name',24,'Front-end'],
+    ['Qureshi',25,'Software'],
+    ['Tausif',23,'Web-delopment']
+]
+
+console.log(student[0][1]); //access student ki zero index me kon sa arra name ki first index me kon si value aise lete hai Multidimesinal Array me ?
+
+
+
+
+
+
 
 // <------------------------------>Array Destructuring<-------------------------------->
 // let cars = ['Volvo','Tata','Marcedes','Audi']

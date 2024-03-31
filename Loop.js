@@ -40,6 +40,13 @@
 // }
 
 
+// ============================== array use for loop ====================================== //
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
+// for(let i = 0; i < cars.length; i++){
+//    console.log(cars[i])
+// };
+
+
 
 // let i =0; // yaha pe bhi variable diclear kar sakte hai
 
