@@ -50,7 +50,15 @@
 
 
 // ================================== Object-Constructor-Prototype ================================//
-// Object-Constructor-prototype ---> is ko ham Object-Prototype bhi bolte hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? 
+// Object-Constructor-prototype ---> is ko ham Object-Prototype bhi bolte hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? javascript ke inbilt data-type ko prototypes se nhi change kar sakte hai Example?
+// Numbers
+// Strings
+// Arrays
+// Dates
+// Booleans
+// Function
+// Objects
+
 
 
 function Car (name, modal, color,weight){ //Object-Constructor function me first letter Captal hota hai ?
@@ -70,7 +78,7 @@ let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function 
 
 Car.prototype.madein = 'india'; //Constructor-Objeect me property add hoga is tara se prototype use kar ke ?
 
-// console.log(car1.madein) //Checking madein add hua ya nhi ?
+console.log(car1.madein) //Checking madein add hua ya nhi ?
 
 Car.prototype.carInfo = function(){ //prototype use kar ke Constructor me function bhi add kar sakte hai carInfo function add hora hai ?
   return `${this.carName } ${this.carModa}  ${this.madein}`;
@@ -83,7 +91,7 @@ console.log(car1.carInfo()); //jo method add us ko call kar re hai carInfo () ko
 let car2 = new Car ('BMW',2024, "yallow", '800 kg'); //is ke sath bhi method work kar re ga ?
 
 console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne object create utno ke sath use kar sakte hai ?
- console.log(car2)
+ console.log(car2.madein) //add ki hohi property kisi bhi object ke sath bhi use kar sakte hai ?
 
 
 

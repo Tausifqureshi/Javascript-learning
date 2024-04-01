@@ -45,13 +45,13 @@
 // ================================== Multidimesinal Array===========================================//
 // Multidimesinal Array ---> is ka matlab hota hai Array ke ander array ? Multidimesinal Array me index value ki jaga array deta hai ? 
  
-let student = [
-    ['name',24,'Front-end'],
-    ['Qureshi',25,'Software'],
-    ['Tausif',23,'Web-delopment']
-]
+// let student = [
+//     ['name',24,'Front-end'],
+//     ['Qureshi',25,'Software'],
+//     ['Tausif',23,'Web-delopment']
+// ]
 
-console.log(student[0][1]); //access student ki zero index me kon sa arra name ki first index me kon si value aise lete hai Multidimesinal Array me ?
+// console.log(student[0][1]); //access student ki zero index me kon sa arra name ki first index me kon si value aise lete hai Multidimesinal Array me ?
 
 
 
@@ -72,13 +72,13 @@ console.log(student[0][1]); //access student ki zero index me kon sa arra name k
 
 
 // array destructuring 
-const myArray = ["value1", "value2", "value3","value4"];
-let myvar1 = myArray[0]; //is tara se bhi kar sakte hau destructuring array ko 'Value1'?
-let myvar2 = myArray[1]; //value2 aye gi is me
-console.log("value of myvar1", myvar1);
-console.log("value of myvar2", myvar2);
-let  myNewArray = myArray.slice(2,3); //value3 value4 tak jaye gi is me q ke slice method use hora hai ? slice method use is methos use hame value kaha se kaha tak hona agar end postion nhi dete hai tu dono value ko hi print kar deta hai ? end postion deta hai tu o only ek value first hi print karta hai "Value3" hi aye gi only slice method ka ye rool hai ?
-console.log(myNewArray)
+// const myArray = ["value1", "value2", "value3","value4"];
+// let myvar1 = myArray[0]; //is tara se bhi kar sakte hau destructuring array ko 'Value1'?
+// let myvar2 = myArray[1]; //value2 aye gi is me
+// console.log("value of myvar1", myvar1);
+// console.log("value of myvar2", myvar2);
+// let  myNewArray = myArray.slice(2,3); //value3 value4 tak jaye gi is me q ke slice method use hora hai ? slice method use is methos use hame value kaha se kaha tak hona agar end postion nhi dete hai tu dono value ko hi print kar deta hai ? end postion deta hai tu o only ek value first hi print karta hai "Value3" hi aye gi only slice method ka ye rool hai ?
+// console.log(myNewArray)
 
 // let [myvar1, myvar2, ...myNewArray] = myArray; //myvar1 me value1 jaye gi mayvar2 me value2 aye gi or myNewArray me jaye gi "value3","value4" sperad oparetor use hore hai?
 // console.log("value of myvar1", myvar1);
@@ -88,6 +88,18 @@ console.log(myNewArray)
 
 
 
+// =========== ============================Array ka prototyoe cheking =======================================//
+// prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? Array ka method check karne kerne ke liye use hotan hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? javascript ke inbilt data-type ko prototypes se nhi change kar sakte hai Example jitne niche diye huye hai Data-Types un sub ka bhi prototype nhi change kar sakte hai ?
+
+// Numbers
+// Strings
+// Arrays
+// Dates
+// Booleans
+// Function
+// Objects
+
+// console.log(Array.prototype); //Array ka prototype check ---> means jitne Array pe method use karte hai ohi aye only na ke is ka use kar ke object ki tara property and method add nhi kar sakte hai ?
 
 
 
