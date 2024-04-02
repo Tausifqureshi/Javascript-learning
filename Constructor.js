@@ -17,12 +17,12 @@
 
 
 //Creating Using Object-Constructor ?
-// function Car (name, modal, color,weight){ //Object-Constructor function me first letter Captal hota hai ?
-//   this.carName = name, //this means currnet object ka referance means Car object ka referace ?
-//   this.carModa = modal,
-//   this.carColor = color,
-//   this.carWeight = weight
-// };
+function Car (name, modal, color,weight){ //Object-Constructor function me first letter Captal hota hai ?
+  this.carName = name, //this means currnet object ka referance means Car object ka referace ?
+  this.carModa = modal,
+  this.carColor = color,
+  this.carWeight = weight
+};
 
 // let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
 // // console.log(car1.carName);  // is tara se koi bhi value print karwa sakte carModal jo bhi print karwna ho ?
@@ -31,7 +31,7 @@
 
 // delete car1.speed ; //aise delete bhi kar sakte hai property  ko ?
 
-// console.log(car1)  //pura Car name ka Function aye ga is se ?
+// console.log(car1)  //pura Car name ka Constructor-Object-Function aye ga is se ?
 
 // let car2 = new Car ('Tata Nexon',2023, "orange", '800 kg'); //kitne bhi Car object bana sakte hai aise ?
 // console.log(car2);
@@ -70,8 +70,8 @@ function Car (name, modal, color,weight){ //Object-Constructor function me first
 
 let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
 // console.log(car1.carName);  // is tara se koi bhi value print karwa sakte carModal jo bhi print karwna ho ?
-
 // car1.speed = 150 ; //is tara se proprty add kar sakte hai only object me add hogi na ke Constructor me ?
+
 
 
 

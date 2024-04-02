@@ -162,11 +162,22 @@ h1.style.fontFamily = "Times New Roman,Times, serif";
 // }
 //   num.about()
 
+ let num = {
+    name:'Tausif',
+ }
+ console.log(num)
 
-
-
+ function Show(fName,lName){
+    this.name =fName,
+    this.name2 = lName,
+    this.fullName = function(){//dirct aisa bhi add kart sakte function jab ham constructor create karte hai tab hi ?
+        return this.name + " " + this.name2;
+    }
+ }
+ let save = new Show('Tausif','qureshi');
+ console.log(save.fullName())
 </script>
-<script src="Array.js"></script>
+<!-- // <script src="Constructor.js"></script> -->
 
 
 

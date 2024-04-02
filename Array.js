@@ -96,10 +96,11 @@
 // Arrays
 // Dates
 // Booleans
-// Function
+// Functio9n
 // Objects
 
-// console.log(Array.prototype); //Array ka prototype check ---> means jitne Array pe method use karte hai ohi aye only na ke is ka use kar ke object ki tara property and method add nhi kar sakte hai ?
+console.log((Array.prototype)); //Array ka prototype check ---> means jitne Array pe method use karte hai ohi aye only na ke is ka use kar ke object ki tara property and method add nhi kar sakte hai ?
+
 
 
 
