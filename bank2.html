@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Code-Use-Bank</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Canra-Bank</h2>
+    <form action="" id="accountForm">
+        <input type="text" placeholder="Customer name" id="customerName">
+
+        <input type="number" placeholder="Initial number" id="balance">
+        <button >Create account</button>
+
+
+    </form>
+
+
+
+    <script>
+        function BankAccount(customerName, balance = 0) {//balance default value hai agar argument me diye tu ye default value  0 nhi rehe gi fir ?
+
+            this.holerName = customerName,
+                this.accountNumber = Date.now(), //dynamic Number deta ga Date.now() method ;
+                this.transition = balance,
+
+                this.deposit = function (amount) { //
+                    this.transition += amount; //assing oparetor use plus += hoke assing hori property ?
+                };
+
+            this.withdraw = (amount) => { //arrow function hai ye ?
+                this.transition -= amount; //assing oparetor use mynus -= hoke assing hori property ?
+            };
+
+        }
+
+
+let accountForm = document.querySelector("#accountForm");
+let customerName = document.querySelector("#customerName");
+let balance = document.querySelector("#balance");
+
+accountForm.addEventListener('submit',(e)=>{
+  
+   e.preventDefault();
+    const trimmedName = customerName.value.trim();
+    let balanceTrim =  balance.value.trim();
+    if(trimmedName == "" || balanceTrim == "" ) {
+     alert("Please Requrid Details");
+     return false; 
+    }
+    
+    else{
+        alert("Form submitted successfully!")
+        resetForm()
+        return true;
+    }
+    
+   
+})
+
+function resetForm() {
+  customerName.value = "";
+ balance.value = "";
+
+
+}
+
+
+
+    </script>
+</body>
+
+</html>

@@ -12,11 +12,29 @@ function BankAccount(customerName,balance = 0){//balance default value hai agar 
 
     this.holerName = customerName,
     this.accountNumber = Date.now(), //dynamic Number deta ga Date.now() method ;
-    this.transition = balance;
+    this.transition = balance,
+
+    this.deposit = function(amount){ //
+    this.transition += amount; //assing oparetor use plus += hoke assing hori property ?
+    };
+
+    this.withdraw = (amount)=>{ //arrow function hai ye ?
+   this.transition -= amount; //assing oparetor use mynus -= hoke assing hori property ?
+    };
+
    }
-   
-let tausifAccount = new BankAccount('Tausif',1000);
- console.log(tausifAccount)
+
+// let tausifAccount = new BankAccount('Tausif',1000);
+// let qureshiAccount = new BankAccount('Qureshi ');//balance parameter se default lega ye ab hamne value nhi di hai ?
+
+// tausifAccount.deposit(5000); //jis object ke sath bhi ye method ko use kar sakte hai ? parameter me amount diye hai us ki value hi ham argument me dere hai 5000 ?
+
+// tausifAccount.withdraw(2000); //jis object ke sath bhi ye method ko use kar sakte hai ? jitna mynus kar ge transition se unta myuns hoke answer aye ga abhi 2000 kar re hai is liye 4000 bavhe ge ?
+
+
+//  console.log(tausifAccount);
+
+// //  console.log(tausifAccount.accountNumber); //dono object ki koi bhi property bhi get kar sakte hai ?
 
 
 
