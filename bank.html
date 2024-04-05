@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank-Conding</title>
+  </head>
+  <body>
+    <script>
+
+function BankAccount(customerName,balance = 0){//balance default value hai agar argument me diye tu ye default value  0 nhi rehe gi fir ?
+
+    this.holerName = customerName,
+    this.accountNumber = Date.now(), //dynamic Number deta ga Date.now() method ;
+    this.transition = balance;
+   }
+   
+let tausifAccount = new BankAccount('Tausif',1000);
+ console.log(tausifAccount)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      document.write`<h1 id='center'>Bank-Statemnt</h1>`;
+      let h1 = document.getElementById("center");
+      h1.style.textAlign = "center";
+      h1.style.fontFamily = "Times New Roman,Times, serif";
+
+
+
+    </script>
+  </body>
+</html>
