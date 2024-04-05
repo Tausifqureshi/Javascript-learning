@@ -13,7 +13,7 @@
         <input type="text" placeholder="Customer name" id="customerName">
 
         <input type="number" placeholder="Initial number" id="balance">
-        <button >Create account</button>
+        <button>Create account</button>
 
 
     </form>
@@ -37,34 +37,47 @@
 
         }
 
+        let accounts = []; //shari value is store me jaye gi ?
+        let accountForm = document.querySelector("#accountForm");
+        let customerName = document.querySelector("#customerName");
+        let balance = document.querySelector("#balance");
 
-let accountForm = document.querySelector("#accountForm");
-let customerName = document.querySelector("#customerName");
-let balance = document.querySelector("#balance");
+        function resetForm() {
+            accountForm.reset(); // Clears all input fields in the form.
+        }
 
-accountForm.addEventListener('submit',(e)=>{
-   e.preventDefault();
-    const trimmedName = customerName.value.trim();
-    let balanceTrim =  balance.value.trim();
-    if(trimmedName == "" || balanceTrim == "" ) {
-     alert("Please Requrid Details");
-     return false; 
-    }
+        accountForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-    else{
-        alert("Form submitted successfully!")
-        resetForm()
-      return true;
-    }   
-   
-})
+            // const trimmedName = customerName.value.trim();
+            // let balanceTrim =  balance.value.trim();
 
-function resetForm() {
-  customerName.value = "";
- balance.value = "";
+            if (customerName.value.trim() == "" || balance.value.trim() == "") {
+                alert("Please Requrid Details");
+                return false;
+            }
+            else {
+                alert("Form submitted successfully!");
+                let account = new BankAccount(customerName.value.trim(), Number(balance.value.trim()));
+
+                // let account = new BankAccount (customerName.value, +balance.value);//dynamic value ari jo ham input me dege ohi aye gi ? balance number me convert + hus is se ?
+                console.log(account);
+                accounts.push(account) //new arry mr store ye ?
+                console.log(accounts);
+                resetForm()
+                return true;
+            }
 
 
-}
+
+        })
+
+
+        // function resetForm() {
+        //   customerName.value = "";
+        //  balance.value = "";
+
+        // }
 
 
 
