@@ -43,7 +43,6 @@ let customerName = document.querySelector("#customerName");
 let balance = document.querySelector("#balance");
 
 accountForm.addEventListener('submit',(e)=>{
-  
    e.preventDefault();
     const trimmedName = customerName.value.trim();
     let balanceTrim =  balance.value.trim();
@@ -51,13 +50,12 @@ accountForm.addEventListener('submit',(e)=>{
      alert("Please Requrid Details");
      return false; 
     }
-    
+
     else{
         alert("Form submitted successfully!")
         resetForm()
-        return true;
-    }
-    
+      return true;
+    }   
    
 })
 
