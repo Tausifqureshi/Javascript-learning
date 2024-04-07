@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
 
     <title>Javascript-Learning</title>
     <style>
-        .container{
+        .container {
             color: white;
             float: right;
             clear: both;
             font-family: 'Times New Roman', Times, serif;
-        
+
         }
-        .para{
+
+        .para {
             display: none;
             background-color: yellow;
         }
@@ -24,7 +26,7 @@
             display: inline-block;
             clear: both;
         } */
-        .container:hover .para{
+        .container:hover .para {
             display: block;
             width: 150px;
             height: 200px;
@@ -36,149 +38,161 @@
             font-weight: bold;
             color: white;
         }
-        
-
     </style>
-    
+
 </head>
 
 <body>
- 
+
 
     <div class="container">
         <button style="display: block;">SUBMIT</button>
         <p class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptate nemo atque minima excepturi veritatis assumenda soluta rem id iusto amet inventore suscipit pariatur tempore voluptates nobis perspiciatis, vero animi quaerat omnis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptate nemo atque minima excepturi
+            veritatis assumenda soluta rem id iusto amet inventore suscipit pariatur tempore voluptates nobis
+            perspiciatis, vero animi quaerat omnis!
         </p>
     </div>
 
 
 
 
-           
 
-        
-    
+
+
+
     <!-- <form action="" onsubmit="return handelr(event)"> -->
-        <!-- <input type="text" id="input-name" placeholder="Enetr Nmae"/>
+    <!-- <input type="text" id="input-name" placeholder="Enetr Nmae"/>
         <input type="text" id="input-age" placeholder="Enetr age"/> -->
-        <!-- <button onclick="handelr(event)">Submit</button> -->
-        <!-- <input type="submit" value="submit"/> -->
+    <!-- <button onclick="handelr(event)">Submit</button> -->
+    <!-- <input type="submit" value="submit"/> -->
     <!-- </form>  -->
-    
-   
-   
-    
- 
+
+
+
+
+
     <!-- This keyword flie ka event use -->
     <!-- <button onclick="this.style.color = 'red'">Click-me</button> -->
     <!-- event me this element ko refere kartra hai ? is me this button ko refer kar raha hai -->
     <button onclick="this.style.backgroundColor = 'red'">Click-me</button>
-    
 
-<!-- if else statement  -->
-<!-- 
+
+    <!-- if else statement  -->
+    <!-- 
 <h2>Voting Progrmaing</h2>
 <input type="text" id="presonAge">
 <button id="status">Cheking age</button>
 <div id="result">Voting statuts display</div> -->
-<script>
-//======================== if else statement ================================================= //
-//  let buttonStatus = document.getElementById('status');
-//  buttonStatus.addEventListener("click", checkVotingEligibility);
+    <script>
+        //======================== if else statement ================================================= //
+        //  let buttonStatus = document.getElementById('status');
+        //  buttonStatus.addEventListener("click", checkVotingEligibility);
 
-// function checkVotingEligibility() {
-//   let age = document.getElementById("presonAge").value;
-//   console.log(age)
+        // function checkVotingEligibility() {
+        //   let age = document.getElementById("presonAge").value;
+        //   console.log(age)
 
-//   if(age > 18){
-//  document.getElementById("result").innerHTML = 'you can vote'
-//   }else{
-//     document.getElementById("result").innerHTML = 'you can not vote'
-//   }if (age == '') { //empty age tu dalne ko Bole ga ?
-//     document.getElementById("result").innerHTML = 'age dalo'
-//   }
-  
-// }
+        //   if(age > 18){
+        //  document.getElementById("result").innerHTML = 'you can vote'
+        //   }else{
+        //     document.getElementById("result").innerHTML = 'you can not vote'
+        //   }if (age == '') { //empty age tu dalne ko Bole ga ?
+        //     document.getElementById("result").innerHTML = 'age dalo'
+        //   }
+
+        // }
 
 
 
-// const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
-// for(let i=0; i< cars.length; i++){
-//     if(cars[i] == "Saab"){
-//         break;
-//     }
+        // const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
+        // for(let i=0; i< cars.length; i++){
+        //     if(cars[i] == "Saab"){
+        //         break;
+        //     }
+
+        //     console.log(cars[i]);
+
+        // }
+
+        // or (let i = 0; i < cars.length; i++) {
+        //   if (cars[i] === "Saab") {
+        //     break; // Exit the loop when "Saab" is found
+        //   }
+        //   console.log("Car: " + cars[i]);
+
+        document.write`<h1 id='center'>Javascript Tutorial</h1>`;
+        let h1 = document.getElementById("center");
+        h1.style.textAlign = 'center';
+        h1.style.fontFamily = "Times New Roman,Times, serif";
+
+
+        // async function test (){ 
+        //     console.log("2:message")
+        //   await console.log("3:message")
+        //     console.log("4:message")
+        //  }
+
+        //  console.log("1:message")
+        //  test ()
+        //  console.log("5:message")
+
+
+
+        // console.log("First Execution");
+        // setTimeout(() => {
+        //     console.log("setTime out xall")
+        // }, 3000);
+        // console.log('Last Exzecution code')
+
+        // for(let i = 0; i < 10; i++){
+        //     console.log(i)
+        // }
+
+
+        //This Keyword Arrow function ka thisKLeyword window hota hai ;
+        // let num = {
+        //     name: "Tausif",
+        //     age: 24,
+
+        //     // fun: ()=>{}
+        //     about: ()=>{
+        //     console.log(this)   //arrow function ka this window hota hai
+        //    console.log(this.name, this.perpertion)  //Arrow Function Me This Ki value Undefind Ati hai
+        //   }
+
+        // }
+        //   num.about()
+
+        let num = {
+            name: 'Tausif',
+        }
+        console.log(num)
+
+        function Show(fName, lName) {
+            this.name = fName,
+                this.name2 = lName,
+                this.fullName = function () {//dirct aisa bhi add kart sakte function jab ham constructor create karte hai tab hi ?
+                    return this.name + " " + this.name2;
+                }
+        }
+        let save = new Show('Tausif', 'qureshi');
+        //  console.log(save.fullName());
+        console.log(save);
+
+        // let array1 = ['a'];
+        // console.log(array1)
+
+        function Pizza(name) {
+            this.firstName = name
+        }
+   const orderName = new Pizza('Chicken pizza');
+   console.log(orderName)
+
+    </script>
+<!-- in hindi javascript prototype vs __proto__ -->
     
-//     console.log(cars[i]);
-    
-// }
-
-// or (let i = 0; i < cars.length; i++) {
-//   if (cars[i] === "Saab") {
-//     break; // Exit the loop when "Saab" is found
-//   }
-//   console.log("Car: " + cars[i]);
-
-document.write`<h1 id='center'>Javascript Tutorial</h1>`;
-let h1 = document.getElementById("center");
-h1.style.textAlign = 'center';
-h1.style.fontFamily = "Times New Roman,Times, serif";
-
-
-// async function test (){ 
-//     console.log("2:message")
-//   await console.log("3:message")
-//     console.log("4:message")
-//  }
-
-//  console.log("1:message")
-//  test ()
-//  console.log("5:message")
-
-
-
-// console.log("First Execution");
-// setTimeout(() => {
-//     console.log("setTime out xall")
-// }, 3000);
-// console.log('Last Exzecution code')
-
-// for(let i = 0; i < 10; i++){
-//     console.log(i)
-// }
-
-
-//This Keyword Arrow function ka thisKLeyword window hota hai ;
-// let num = {
-//     name: "Tausif",
-//     age: 24,
-
-//     // fun: ()=>{}
-//     about: ()=>{
-//     console.log(this)   //arrow function ka this window hota hai
-//    console.log(this.name, this.perpertion)  //Arrow Function Me This Ki value Undefind Ati hai
-//   }
-
-// }
-//   num.about()
-
- let num = {
-    name:'Tausif',
- }
- console.log(num)
-
- function Show(fName,lName){
-    this.name =fName,
-    this.name2 = lName,
-    this.fullName = function(){//dirct aisa bhi add kart sakte function jab ham constructor create karte hai tab hi ?
-        return this.name + " " + this.name2;
-    }
- }
- let save = new Show('Tausif','qureshi');
-//  console.log(save.fullName());
- console.log(save)
-</script>
-<!-- // <script src="Constructor.js"></script> -->
+    <!-- // <script src="Constructor.js"></script> -->
 
 
 
@@ -186,6 +200,7 @@ h1.style.fontFamily = "Times New Roman,Times, serif";
 
 
 
-<!-- https://github.com/harshitvee/javascript-beginning-to-mastery/commit/7417aa43f92f85c32b09e1c90e45a63406428a95 -->
- </body>
- </html> 
+    <!-- https://github.com/harshitvee/javascript-beginning-to-mastery/commit/7417aa43f92f85c32b09e1c90e45a63406428a95 -->
+</body>
+
+</html>
