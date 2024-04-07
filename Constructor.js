@@ -56,7 +56,8 @@ function Car (name, modal, color,weight){ //Object-Constructor function me first
 
 
 // ================================== Object-Constructor-Prototype ================================//
-// Object-Constructor-prototype ---> is ko ham Object-Prototype bhi bolte hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? javascript ke inbilt data-type ko prototypes se nhi change kar sakte hai Example?
+// Object-Constructor-prototype ---> is ko ham Object-Prototype bhi bolte hai ? Prototype ka use ham consturctor ya jaavscript ki class me use kar kar te hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? javascript ke inbilt data-type ko prototypes se nhi change kar sakte hai Example?
+
 // Numbers
 // Strings
 // Arrays
