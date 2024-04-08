@@ -75,7 +75,7 @@ function Car (name, modal, color,weight){ //Object-Constructor function me first
   this.carWeight = weight
 };
 
-let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
+// let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
 // console.log(car1.carName);  // is tara se koi bhi value print karwa sakte carModal jo bhi print karwna ho ?
 // car1.speed = 150 ; //is tara se proprty add kar sakte hai only object me add hogi na ke Constructor me ?
 
@@ -85,12 +85,12 @@ let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function 
 
 Car.prototype.madein = 'india'; //Constructor-Objeect me property add hoga is tara se prototype use kar ke ?
 
-console.log(car1.madein) //Checking madein add hua ya nhi ?
+// console.log(car1.madein) //Checking madein add hua ya nhi ?
 
 Car.prototype.carInfo = function(){ //prototype use kar ke Constructor me function bhi add kar sakte hai carInfo function add hora hai ?
   return `${this.carName } ${this.carModa}  ${this.madein}`;
 }
-console.log(car1.carInfo()); //jo method add us ko call kar re hai carInfo () ko ?
+// console.log(car1.carInfo()); //jo method add us ko call kar re hai carInfo () ko ?
 
 // console.log(car1)  //pura Car name ka Function aye ga is se ?
 
@@ -98,7 +98,7 @@ console.log(car1.carInfo()); //jo method add us ko call kar re hai carInfo () ko
 let car2 = new Car ('BMW',2024, "yallow", '800 kg'); //is ke sath bhi method work kar re ga ?
 
 console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne object create utno ke sath use kar sakte hai ?
- console.log(car2.madein) //add ki hohi property kisi bhi object ke sath bhi use kar sakte hai ?
+//  console.log(car2.madein) //add ki hohi property kisi bhi object ke sath bhi use kar sakte hai ?
 
 
 
