@@ -99,10 +99,22 @@
 // Functio9n
 // Objects
 
-console.log((Array.prototype)); //Array ka prototype check ---> means jitne Array pe method use karte hai ohi aye only na ke is ka use kar ke object ki tara property and method add nhi kar sakte hai ?
+// console.log((Array.prototype)); //Array ka prototype check ---> means jitne Array pe method use karte hai ohi aye only ? na ke is ka use kar ke object ki tara property and method add nhi kar sakte hai ?
+
+// console.log(array1.__proto__) //is tara bhi prototype check kar sakte hai ? means jitne Array pe method use karte hai ohi aye ge ?
 
 
+// console.log(array1);
 
+Array.prototype.sum = function(){ //khud ka method add kar re hai array ke prototype me jo array ke in built method hai foreach map jo bhi hai lekin ham is me apna banya hua method use kar rehe hai ?
+
+return this .reduce((accumulator, currentValue)=>accumulator + currentValue ,0);//this aray 1 ko hi refer kar ra hai ?
+}
+
+let array1 = [2,3,4];
+console.log(array1.sum());
+
+// console.log(array1.__proto__); // sum method add hua ya bhi cheking ?
 
 
 // <------------------------------>practical<-------------------------------->
