@@ -91,8 +91,15 @@ let obj2 = {
 
 obje.__proto__ = obj2; // __proto__  ----> is use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
 
+obj2.__proto__ ={ //ek prototy ka bhi prototyp se kar sakte hai ? is ka prototype object set kar re hai ?
+    autherName : "English",
+};
+console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
+
+
+
 // obje.about();
-console.log(obje.owner) // __proto__   ek object se disre object ki property bhi use kar sakte hai ?
+// console.log(obje.owner) // __proto__   ek object se dusre object ki property bhi use kar sakte hai ?
 
 
 
