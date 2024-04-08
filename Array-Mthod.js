@@ -449,11 +449,11 @@
 // <------------------------------>Array reverse Method<-------------------------------->
 // reverse Method ---> ye method original array ko change karta hai ? ye method order change karne ke liye use hota hai means left ki postion se nhi right ki position se value milti hai is se bolte hai order-changes ?
 
-// const reverse = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(reverse)
+const reverse = ["Banana", "Orange", "Apple", "Mango"];
+console.log(reverse)
 
-// let reverse1 = reverse.reverse();
-// console.log(reverse1) //original array ko change karta hai ye method ?
+let reverse1 = reverse.reverse();
+console.log(reverse1) //original array ko change karta hai ye method ?
 // console.log(reverse) //original array ko change karta hai ye method ?
 
 
