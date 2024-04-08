@@ -4,7 +4,7 @@
 
 //prototype ---> Prototype ka use ham consturctor ya jaavscript ki class me use kar kar te hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? 
 
-// prototype-inheritance ---> is matlab hota hai hamne 2 constructor function banaye hai ek constructor function me hamne jo bhi property and method defind kiye hai o dusre wale constructor function ko us ki property and method us kar re manms hamne ek Peron ka constructor banye or dusra Student constructor function banye but ham code repit na hot Preson me jo bhi property and method hai o Student use kar re is ko bolte hai Prototype-Inheritance is ko use karne ke liye ham tab hi __proto__ ka use kar te hai ? 
+// prototype-inheritance ---> is matlab hota hai hamne 2 constructor function banaye hai ek constructor function me hamne jo bhi property and method defind kiye hai o dusre wale constructor function ko use kar re property and method  manms hamne ek Peron ka constructor banye or dusra Student constructor function banye but ham code repit na ho Preson me jo bhi property and method hai o Student use kar re is ko bolte hai Prototype-Inheritance is ko use karne ke liye ham tab hi __proto__ ka use kar te hai ? 
 
 
 // __proto__  ----> is use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
