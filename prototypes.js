@@ -89,7 +89,7 @@ let obj2 = {
     // }
 }
 
-obje.__proto__ = obj2; // __proto__  ----> is use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
+obje.__proto__ = obj2; // __proto__  ----> aise use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
 
 obj2.__proto__ ={ //ek prototy ka bhi prototyp se kar sakte hai ? is ka prototype object set kar re hai ?
     autherName : "English",
