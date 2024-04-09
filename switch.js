@@ -27,7 +27,6 @@ switch (day) {
     default: //is keyword jab chalte hai jab value true nhi hoti koi value match nhi hoti hai ?
       console.log("Invalid Day")
 
-
 }
 
 let num1 = 'Tausif', 
