@@ -82,7 +82,7 @@ let obje = {
 
 let obj2 = {
     owner : 'Best',
-    last : 'Qureshi',
+    last : 'Qureshi', 
 
     // about: ()=>{ //create method means function
     //   alert("Run the method")
