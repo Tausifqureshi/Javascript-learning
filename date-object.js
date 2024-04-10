@@ -65,16 +65,16 @@
 
 // Long dates are most often written with a "MMM DD YYYY" syntax like this ?
 
-const d = new Date("Mar 25 2015");
-console.log(d);
+// const d = new Date("Mar 25 2015");
+// console.log(d);
 
 
 // Dono tara se jun defind kar sakte hai ?
-const d1 = new Date("January 25 2015");
-console.log(d1);
+// const d1 = new Date("January 25 2015");
+// console.log(d1);
 
-const d2 = new Date("Jan 25 2015");
-console.log(d2);
+// const d2 = new Date("Jan 25 2015");
+// console.log(d2);
 
 
 
