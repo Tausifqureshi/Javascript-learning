@@ -21,7 +21,9 @@
 // console.log(d3)
 
 
- 
+ let newDate = new Date("2023-03-25"); //aisa bhi kar sakte apni khuid ki date defind kar ke ?
+ console.log(newDate)
+ console.log(newDate.getFullYear()); //Koi bhi method data ka use kar sakte hai is me ?
 
 // [2] --->
 // Type	                       Example
