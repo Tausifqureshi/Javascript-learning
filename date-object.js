@@ -21,9 +21,17 @@
 // console.log(d3)
 
 
+
+//  let newDate = new Date("2023-03-25"); //aisa bhi kar sakte apni khuid ki date defind kar ke ?
+//  console.log(newDate)
+//  console.log(newDate.getFullYear()); //Koi bhi method data ka use kar sakte hai is me ?
+
+
+ //interview me ata hai ye qution aisa logi currnt date se 50 day jayda hona
  let newDate = new Date("2023-03-25"); //aisa bhi kar sakte apni khuid ki date defind kar ke ?
- console.log(newDate)
- console.log(newDate.getFullYear()); //Koi bhi method data ka use kar sakte hai is me ?
+//  console.log(newDate)
+newDate.setDate( newDate.getDate() + 50)
+ console.log(newDate);
 
 // [2] --->
 // Type	                       Example

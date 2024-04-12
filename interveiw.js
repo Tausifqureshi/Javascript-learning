@@ -19,6 +19,11 @@ console.log(newDate.getLastYear());
 
 
 
+ //interview me ata hai ye qution aisa logi currnt date se 50 day jayda hona
+ let newDate1 = new Date("2023-03-25"); //aisa bhi kar sakte apni khuid ki date defind kar ke ?
+ console.log(newDate1)
+newDate1.setDate( newDate1.getDate() + 50);
+ console.log(newDate1);
 
 
 
