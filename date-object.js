@@ -1,4 +1,5 @@
-//Date ----> Javascript me date bhi ek object hai ? date bhi ek referance data-type hai ?  Replit me bhi hai code is ka or ?
+//Date ----> Javascript me Date ek inbuilt keyword hai ? Javascript me date bhi ek object hai ? date bhi ek referance data-type hai ?  Replit me bhi hai code is ka or ?
+
 
 // 3 types of JavaScript date input formats hai ?
 // [1] 
