@@ -37,7 +37,7 @@
 
 
 
-//creating abs() jo bhi hamra number hai us ki absolute value deta hai means nagetiv number pass to positiv number milta hai ye method ?
+//creating abs() ---> jo bhi hamra number hai us ki absolute value deta hai means nagetiv number pass to positiv number milta hai ye method ?
 
 // var num1 = -4;
 // console.log("abs() of "+ num1 +" : " + Math.abs(num1));
@@ -49,30 +49,33 @@
 
 
 
-//creating ceil() return jo hamre current number se badi value hoti hai o return karta hai 4.2 is ke pass integer value 5 dga ye method ? 
+//creating ceil() --->  return jo hamre current number se badi value hoti hai o return karta hai 4.2 is ke pass integer value 5 dga ye method ? 
 
 // console.log("ceil() of 4.2 : " + Math.ceil(4.2));
 // console.log("<br>ceil() of 7.6 : " + Math.ceil(7.6));
-// console.log("<br>ceil() of -4.2 : " + Math.ceil(-4.2)); //nagetiv numberke liue use tu badi value se jo chota o value mile gi 4.2 hai us ki value 4 aye gi nagetiv number me ?
+// console.log("<br>ceil() of -4.2 : " + Math.ceil(-4.2)); //nagetiv number ke liye use tu badi value se jo chota o value mile gi 4.2 hai us ki value 4 aye gi nagetiv number me ?
 
 
 
 
-//creating exp() exponential method ?
+//creating exp() ---> exponential method ?
 // console.log("exp() of 1 : " + Math.exp(1));
 // console.log("<br>exp() of 2 : " + Math.exp(2));
 
 
 
 
-//creating floor() largest integer number off value deta hai
-// console.log("floor() of 7.2 : " + Math.floor(7.2));
-// console.log("<br>floor() of -7.2 : " + Math.floor(-7.2));
+
+//creating floor() ---> largest integer number off value deta hai ?
+
+// console.log("floor() of 7.2 : " + Math.floor(7.2)); //small value dega pogetive me ye method ?
+// console.log("<br>floor() of -7.2 : " + Math.floor(-7.2)); //nagetiv number ke liye use tu ye method jo bada number hoga us ke pass o dega -7.2 ka aye ga 8 ?
 
 
 
 
-//creating log() log value return karta hai
+//creating log() --->  log hame log value return karta hai ?
+
 // console.log("log() of 1 : " + Math.log(1));
 // console.log("<br>log() of 0 : " + Math.log(0));
 // console.log("<br>log() of 10 : " + Math.log(10));
@@ -81,37 +84,41 @@
 
 
 
-//creating max() big number fiend ke liye use ye method
-// console.log("Maximum number from 7,6,8,1,9,2 : " + Math.max(7,6,8,1,9,2));
+//creating max() ---> big number fiend ke liye use ye method ka ?
+// console.log("Maximum number from 7,6,8,1,9,2 : " + Math.max(7,6,8,1,9,2)); //is ka big number 9, aye ga ?
 // 
 
-
-//creating min()  small number fiend ke liye use this method
-// console.log("Minimum number from 7,6,8,1,9,2 : " + Math.min(7,6,8,1,9,2));
-
+//creating min() --->  small number fiend ke liye use this method ?
+// console.log("Minimum number from 7,6,8,1,9,2 : " + Math.min(7,6,8,1,9,2)); // is ka small number 1 aye ga ?
 
 
 
-//creating pow() power nikalne ke liye use this method
-// console.log("2 to the power 3 is : " + Math.pow(2,3));
+
+//creating pow() ---> power nikalne ke liye use this method ?
+// console.log("2 to the power 3 is : " + Math.pow(2,3)); 
 // console.log("<br>5 to the power 1.2 is : " + Math.pow(5,1.2));
 
 
 
 
-//creating random() har bar jo new number genrate hota hai example opt us ham rendom number bolte hai
-// function randomNumber(){
-// return Math.random()*1000000;
-// }
+//creating random() ---> har bar jo new number genrate hota hai example opt us ham rendom number bolte hai ?
+function randomNumber(){
+return Math.random()*1000000;
+};
+
+console.log("<br>Create an OTP using Math.random() : " + Math.floor(randomNumber())); // only jitne digit hona utne hi mile ge 6to6 and 5to5 jitne hona ceil and floor use kar ke ?
 
 // console.log("random number between 0 and 1 : " + Math.random());
-// console.log("<br>Create an OTP using Math.random() : " + Math.floor(randomNumber())); // only jitne digit hona utne hi mile ge 6to6 and 5to5 jitne hona ceil and floor use kar ke
+// console.log("random number between 0 and 1 : " + Math.random(0,10));// 0 se10 ke bicha ka random number dega ? hame kitne bhi number ka random number le sakte hai 1000,2000, kitne bhi ?
 
 
 
 
 
-//creating round() 
+
+
+//creating round()  --->
+
 // console.log("round() value of 7.2 : " + Math.round(7.2));
 // console.log("<br>round() value of 7.7 : " + Math.round(7.7));
 // console.log("<br>round() value of -7.2 : " + Math.round(-7.2));
@@ -120,27 +127,28 @@
 
 
 
-//creating sign(); this method work positiv number pass 1 and answer +1 is return
+//creating sign() --->  this method work positiv number pass 1 and answer +1 is return
+
 // console.log("sign() value of 5 : " + Math.sign(5));
 // console.log("<br>sign() value of -5 : " + Math.sign(-5));
 // console.log("<br>sign() value of 0 : " + Math.sign(0));
 
 
 
-//creating sqrt(); square nikalne ke liye use this method
+//creating sqrt() ---> square nikalne ke liye use this method
 // console.log("sqrt() value of 4 : " + Math.sqrt(4));
 // console.log("<br>sqrt() value of 1.8452 : " + Math.sqrt(1.8452));
 
 
 
-//creating cbrt() cube root
+//creating cbrt() ---> cube root
 // console.log("cbrt() value of 8 : " + Math.cbrt(8));
 // console.log("<br>cbrt() value of 1.8452 : " + Math.cbrt(1.8452));
 
 
 
 
-//creating trunc() jo bhi hamra number hoga us ka integer number mile ga
+//creating trunc() ---> jo bhi hamra number hoga us ka integer number mile ga
 // console.log("trunc() value of 8.56 : " + Math.trunc(8.56));
 // console.log("<br>trunc() value of -0.65 : " + Math.trunc(-0.65));
 
