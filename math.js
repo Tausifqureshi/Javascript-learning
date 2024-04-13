@@ -38,6 +38,7 @@
 
 
 //creating abs() jo bhi hamra number hai us ki absolute value deta hai means nagetiv number pass to positiv number milta hai ye method ?
+
 // var num1 = -4;
 // console.log("abs() of "+ num1 +" : " + Math.abs(num1));
 // console.log("<br>abs() of 4 : " + Math.abs(4));
@@ -48,17 +49,16 @@
 
 
 
+//creating ceil() return jo hamre current number se badi value hoti hai o return karta hai 4.2 is ke pass integer value 5 dga ye method ? 
 
-
-//creating ceil() return jo hamre current number se badi hoti hai return karta hai smaller integer value deta hai
 // console.log("ceil() of 4.2 : " + Math.ceil(4.2));
 // console.log("<br>ceil() of 7.6 : " + Math.ceil(7.6));
-// console.log("<br>ceil() of -4.2 : " + Math.ceil(-4.2));
+// console.log("<br>ceil() of -4.2 : " + Math.ceil(-4.2)); //nagetiv numberke liue use tu badi value se jo chota o value mile gi 4.2 hai us ki value 4 aye gi nagetiv number me ?
 
 
 
 
-//creating exp() exponential method 
+//creating exp() exponential method ?
 // console.log("exp() of 1 : " + Math.exp(1));
 // console.log("<br>exp() of 2 : " + Math.exp(2));
 
