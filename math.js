@@ -106,22 +106,18 @@ function randomNumber(){
 return Math.random()*1000000;
 };
 
-console.log("<br>Create an OTP using Math.random() : " + Math.floor(randomNumber())); // only jitne digit hona utne hi mile ge 6to6 and 5to5 jitne hona ceil and floor use kar ke ?
+// console.log("<br>Create an OTP using Math.random() : " + Math.floor(randomNumber())); // jitne bar 000 use utne digi hi mile ge 6to6 and 5to5 jitne hona ceil and floor method bhi use kar sakte hai ?
 
 // console.log("random number between 0 and 1 : " + Math.random());
 // console.log("random number between 0 and 1 : " + Math.random(0,10));// 0 se10 ke bicha ka random number dega ? hame kitne bhi number ka random number le sakte hai 1000,2000, kitne bhi ?
 
 
 
-
-
-
-
-//creating round()  --->
+//creating round()  ---> ye method work karta hai is ke pass jo number fir o bada number ho ya chotta ohi number retrun karta hai Example 7.2 is ka round number 7 aye ga and second 7.7 is ka round number 8 aye ga ?  nagetiv number same work karta hai ye method ?
 
 // console.log("round() value of 7.2 : " + Math.round(7.2));
 // console.log("<br>round() value of 7.7 : " + Math.round(7.7));
-// console.log("<br>round() value of -7.2 : " + Math.round(-7.2));
+console.log("<br>round() value of -7.2 : " + Math.round(-7.2));
 // console.log("<br>round() value of -0.6 : " + Math.round(-0.6));
 
 
