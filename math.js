@@ -117,17 +117,16 @@ return Math.random()*1000000;
 
 // console.log("round() value of 7.2 : " + Math.round(7.2));
 // console.log("<br>round() value of 7.7 : " + Math.round(7.7));
-console.log("<br>round() value of -7.2 : " + Math.round(-7.2));
+// console.log("<br>round() value of -7.2 : " + Math.round(-7.2));
 // console.log("<br>round() value of -0.6 : " + Math.round(-0.6));
 
 
 
 
-//creating sign() --->  this method work positiv number pass 1 and answer +1 is return
-
-// console.log("sign() value of 5 : " + Math.sign(5));
-// console.log("<br>sign() value of -5 : " + Math.sign(-5));
-// console.log("<br>sign() value of 0 : " + Math.sign(0));
+//creating sign() --->  this method work positiv number tu 1 mile ga and nagetiv number tu -1 mile ga ?
+console.log("sign() value of 5 : " + Math.sign(5)); // positiv number
+console.log("<br>sign() value of -5 : " + Math.sign(-66)); //nagetiv number
+console.log("<br>sign() value of 0 : " + Math.sign(0));
 
 
 
@@ -154,6 +153,7 @@ console.log("<br>round() value of -7.2 : " + Math.round(-7.2));
 
 
 //creating Math Methods for Trignomatry 
+
 // console.log("<h4>Trignomatry values for 1/2 (1.5) : </h4>");
 // console.log("cos(1/2) : " + Math.cos(1.5) + "<br>");
 // console.log("sin(1/2) : " + Math.sin(1.5) + "<br>");
