@@ -189,12 +189,28 @@
 //    const orderName = new Pizza('Chicken pizza');
 //    console.log(orderName)
 
+async function myFun() {
+    try{
+    let call = await fetch("data.json");
+    let respon = await call.json();
+    console.log(respon)
+    }catch(error){
+        console.error("Error fetching data: ", error);
+    }
+    
+}
 
+myFun() 
 
+let everyMetod = ['sum','sum','sum'];
+let valueSave = everyMetod.every((val)=>{
+    return val === 'sum'
+})
+console.log(valueSave)
     </script>
 
     
-     <script src="math.js"></script>
+     <script src="data.json"></script>
 
 
 
