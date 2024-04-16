@@ -1,8 +1,16 @@
 [
     {
-        "name": "Tausif",
-        "age" :24,
-        "city": "Mumbai"
+        "name": "Tausif",                                   //String value
+        "age" :24,                                         //Number Value
+        "married" : false ,                               //Boolean value
+
+        "student" :{                                      //Object value
+         "name": "Sofiya","age":23,"City": "Kodad" },
+
+        "coruse": ["HTML","CSS","Javascrip"],              //Array value
+        "kids": ,                                          //Null value
+
+        "city": "Mumbai"    
     },
     {
         "name": "QUreshi",

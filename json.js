@@ -1,5 +1,25 @@
-//JSON ---> JSON Full-Form Javascript-Object-Notation Hota Hai ? JSON is language independent har language ke sath use kar sakte hai ? JSON ka use kiya jata hai jab server se web page pe data beja jata hai tab JSON ka use hota hai ? JSON samajne me eyse hai ? JSON syntax Javascript-Object-Notation se liya gaya hai ? leink JSON ek Text formet hai only ? JSON Data ko read and or generating means banane ke liye code kisi bhi programming language Lihka ja sakta hai ?
+//JSON ---> JSON Full-Form Javascript-Object-Notation Hota Hai ? JSON ka use data ko store ya data ko Exchange ke liye use hota hai ? JSON is language independent har language ke sath use kar sakte hai ? JSON ka use kiya jata hai jab server se web page pe data beja jata hai tab JSON ka use hota hai ? JSON samajne me eyse hai ? JSON syntax Javascript-Object-Notation se liya gaya hai ? leink JSON ek Text formet hai only ? JSON Data ko read and or generating means banane ke liye code kisi bhi programming language Lihka ja sakta hai ?
 
+// JSON me Data type itne store kar sakte hai ?
+// String,Array,Null,Boolean,Number,Object ?
+
+let dtails ={
+    name: "Tausif",                                   //String value
+    "age" :24,                                         //Number Value
+    // "married" : false ,                               //Boolean value
+
+    // student ={                                      //Object value
+    //  "name": "Sofiya","age":23,"City": "Kodad" },
+
+    // "coruse": ["HTML","CSS","Javascrip"],              //Array value
+    // "kids": ,                                          //Null value
+
+    // "city": "Mumbai"    
+// }
+
+}
+
+console.log(dtails)
 
 
 
