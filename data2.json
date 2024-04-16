@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tausif",                                   
+        "age" :24,                                      
+        "married" : false ,                               
+
+        "student" :{                                     
+         "name": "Sofiya","age":23,"City": "Kodad" },
+
+        "coruse": ["HTML","CSS","Javascrip"],             
+        "kids": null,                                         
+
+        "city": "Mumbai"    
+    },
+    
+    {
+        "name": "QUreshi",
+        "age" :24,
+        "city": "Hydrabaad"
+    },
+    {
+        "name": "babu",
+        "age" :24,
+        "city": "Kodad"
+    }
+]
