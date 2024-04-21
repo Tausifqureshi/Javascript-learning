@@ -54,7 +54,18 @@
 
 
 
+      // Fatch API Call data.json File?
+      async function myFun() {
+        try {
+          let call = await fetch("data2.json");
+          let respon = await call.json();
+          console.log(respon);
+        } catch (error) {
+          console.error("Error fetching data: ", error);
+        }
+      }
 
+      // myFun()
 
 
 
