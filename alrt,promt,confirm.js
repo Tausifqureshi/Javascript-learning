@@ -7,16 +7,47 @@
 
 // document.writeln(userGuess) // promt se liya hua kuch print aise karte hai
 
+
+// let buttonText = document.getElementById("cliked");
+// buttonText.addEventListener("click",myFunction);
+
 function myFunction() {
   let text = "Press a button!\nEither OK or Cancel.";
   if (confirm(text) == true) {
     text = "You pressed OK!";
-    document.writeln("You pressed OK!");
+    // document.writeln("You pressed OK!");
   } else {
     text = "You canceled!";
-    document.writeln("You canceled OK!");
+    // document.writeln("You canceled OK!");
   }
-  // document.getElementById("demo").innerHTML = text; //HTML me bhi value print karwa sakte hai id use kar ke ?
+  document.getElementById("demo").innerHTML = text; //HTML me bhi value print karwa sakte hai id use kar ke ?
 }
 
-myFunction();
+// myFunction();
+
+
+
+let buttonText = document.getElementById("cliked");
+buttonText.addEventListener("click",function(){ //Anonymous Function ka bhi use kar sakte hai ?
+  
+  let text = "Press a button!\nEither OK or Cancel.";
+  if (confirm(text) == true) {
+    text = "You pressed OK!";
+    // document.writeln("You pressed OK!");
+  } else {
+    text = "You canceled!";
+    // document.writeln("You canceled OK!");
+  }
+  document.getElementById("demo").innerHTML = text; //HTML me bhi value print karwa sakte hai id use kar ke ?
+});
+
+
+// document.getElementById("clicked").addEventListener("click", () => { //use Arrow function ?
+//   let text = "Press a button!\nEither OK or Cancel.";
+//   if (confirm(text) == true) {
+//     text = "You pressed OK!";
+//   } else {
+//     text = "You canceled!";
+//   }
+//   document.getElementById("demo").innerHTML = text;
+// });
