@@ -2,7 +2,7 @@
 // OOPs in  me hi ata hai Constructore bhi
 
 
-//prototype ---> Prototype ka use ham consturctor ya jaavscript ki class me use kar kar te hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? 
+//prototype ---> Prototype ka use ham consturctor ya jaavscript ki class me use kar te hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? 
 
 // prototype-inheritance ---> is matlab hota hai hamne 2 constructor function banaye hai ek constructor function me hamne jo bhi property and method defind kiye hai o dusre wale constructor function ko use kar re property and method  manms hamne ek Peron ka constructor banye or dusra Student constructor function banye but ham code repit na ho Preson me jo bhi property and method hai o Student use kar re is ko bolte hai Prototype-Inheritance is ko use karne ke liye ham tab hi __proto__ ka use kar te hai ? 
 
@@ -43,17 +43,17 @@ let studentOlder = new Student('Java','Qureshi'); //Student function wale ka ye 
 Person.prototype.__proto__ = Object.create(Student.prototype); //is se ye hora hai student ki property and method ye use kar sakta hai person constructor ?
 
 
-Person.prototype.madein = 'india'; //proptotype me property bhim add kar sakte hai meams constructor ke ander ? Preson wale me add hora hai ?
+Person.prototype.madein = 'india'; //proptotype me property bhi add kar sakte hai means constructor ke ander ? Preson wale me add hora hai ?
 
 
-Person.prototype.fullName = function(){ //is bolte hai prototype me method rahkna meams constructor ke ander aye ga ye method ?  is se dry nhi hoga code dry dont repit your code aise code repit nhi hona ?
+Person.prototype.fullName = function(){ //is bolte hai prototype me method rahkna means constructor ke ander aye ga ye method ?  is se dry nhi hoga code dry dont repit your code aise code repit nhi hona ?
     
 return `${this.firstName} ${this.lastNmae} ${this.madein}` //add ki property return bhi kar re hai madein ko ?
 }
 
  
 
-let autherName = new Person('Tausif','Qureshi'); // Constructor object banane se jo javascript ka har ek ke sath object-protype hai us me jitni bhi property hai dirct show nhi hoti hai ? jab bhi ham constructor function se jab bhi obejct banate hai tu constructor function apne naam ka hi first ek prototype bana leta hai us ke baad jo prototype show hota hai jo javascript ka inbuilt hai har ek ke sath us ki property constructor wale prototype ke baad show hoti hai ? is ko bolte hai prototype chaining constructor function ka prototype javascript ke inbuilt object wale prototype se conect hota hai ?
+let autherName = new Person('Tausif','Qureshi'); // Constructor object banane se jo javascript ka har ek ke sath object-protype hai us me jitni bhi property hai dirct show nhi hoti hai ? jab bhi ham constructor function se obejct banate hai tu constructor function apne naam ka hi ek prototype bana leta hai us ke baad jo prototype show hota hai o javascript ka inbuilt Prototype hota hai har ek ke sath us ki property constructor wale prototype ke baad show hoti hai ? is ko bolte hai prototype chaining constructor function ka prototype javascript ke inbuilt object wale prototype se conect hota hai ?
 
 // console.log(autherName);
 // console.log(autherName.country()); //Student ka method is Person ke sath use hora hai __proto__ use karne se ?
@@ -109,6 +109,37 @@ console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
 
 
 
+// ==================================== parctical Exmple =======================//
+
+      // Simple Object Create ?
+      let num = {
+        name: "Tausif",
+      };
+    //   console.log(num)
+
+      // Constructor Function ?
+      function Show(fName, lName) {
+        (this.name = fName),
+          (this.name2 = lName),
+          (this.fullName = function () {
+            //dirct aisa bhi add kart sakte function jab ham constructor create karte hai tab hi ?
+            return this.name + " " + this.name2;
+          });
+      }
+      let save = new Show("Tausif", "qureshi");
+      //  console.log(save.fullName());
+    //   console.log(save);
+
+
+
+      let array1 = ['a'];
+    //   console.log(array1)
+
+              function Pizza(name) {
+                  this.firstName = name;
+              }
+         const orderName = new Pizza('Chicken pizza');
+        //  console.log(orderName)
 
 
 

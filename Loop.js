@@ -165,6 +165,25 @@
 //     console.log(b)
 // }
 
+      // const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
+      // for(let i=0; i< cars.length; i++){
+      //     if(cars[i] == "Saab"){
+      //         break;
+      //     }
+
+      //     console.log(cars[i]);
+
+      // }
+
+      // or (let i = 0; i < cars.length; i++) {
+      //   if (cars[i] === "Saab") {
+      //     break; // Exit the loop when "Saab" is found
+      //   }
+      //   console.log("Car: " + cars[i]);
+
+
+
+
 // <------------------------------>Array use for loop<-------------------------------->
 //Loop ka matlab  iterated karna hota hai?
 // let array1 = ["apple","mango","banana","orange","kiwi"]
