@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>Javascript-Learning</title>
     <style>
-        .container {
-            color: white;
-            float: right;
-            clear: both;
-            font-family: 'Times New Roman', Times, serif;
+      .container {
+        color: white;
+        float: right;
+        clear: both;
+        font-family: "Times New Roman", Times, serif;
+      }
 
-        }
+      .para {
+        display: none;
+        background-color: yellow;
+      }
 
-        .para {
-            display: none;
-            background-color: yellow;
-        }  
-
-        /* .container::after{
+      /* .container::after{
             contain: "";
             display: inline-block;
             clear: both;
         } */
-        .container:hover .para {
-            display: block;
-            width: 150px;
-            height: 200px;
-            border: 1px solid black;
-            background: gray;
-            border-radius: 12px;
-            font-size: 1rem;
-            padding: 0.5rem;
-            font-weight: bold;
-            color: white;
-        }
+      .container:hover .para {
+        display: block;
+        width: 150px;
+        height: 200px;
+        border: 1px solid black;
+        background: gray;
+        border-radius: 12px;
+        font-size: 1rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        color: white;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <div class="container">
-        <button style="display: block;">SUBMIT</button>
-        <p class="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptate nemo atque minima excepturi
-            veritatis assumenda soluta rem id iusto amet inventore suscipit pariatur tempore voluptates nobis
-            perspiciatis, vero animi quaerat omnis!
-        </p>
+      <button style="display: block">SUBMIT</button>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        voluptate nemo atque minima excepturi veritatis assumenda soluta rem id
+        iusto amet inventore suscipit pariatur tempore voluptates nobis
+        perspiciatis, vero animi quaerat omnis!
+      </p>
     </div>
-
-
-
-
-
-
-
 
     <!-- <form action="" onsubmit="return handelr(event)"> -->
     <!-- <input type="text" id="input-name" placeholder="Enetr Nmae"/>
@@ -68,15 +60,10 @@
     <!-- <input type="submit" value="submit"/> -->
     <!-- </form>  -->
 
-
-
-
-
     <!-- This keyword flie ka event use -->
     <!-- <button onclick="this.style.color = 'red'">Click-me</button> -->
     <!-- event me this element ko refere kartra hai ? is me this button ko refer kar raha hai -->
     <button onclick="this.style.backgroundColor = 'red'">Click-me</button>
-
 
     <!-- if else statement  -->
     <!-- 
@@ -85,147 +72,131 @@
 <button id="status">Cheking age</button>
 <div id="result">Voting statuts display</div> -->
     <script>
-        //======================== if else statement ================================================= //
-        //  let buttonStatus = document.getElementById('status');
-        //  buttonStatus.addEventListener("click", checkVotingEligibility);
+      //======================== if else statement ================================================= //
+      //  let buttonStatus = document.getElementById('status');
+      //  buttonStatus.addEventListener("click", checkVotingEligibility);
 
-        // function checkVotingEligibility() {
-        //   let age = document.getElementById("presonAge").value;
-        //   console.log(age)
+      // function checkVotingEligibility() {
+      //   let age = document.getElementById("presonAge").value;
+      //   console.log(age)
 
-        //   if(age > 18){
-        //  document.getElementById("result").innerHTML = 'you can vote'
-        //   }else{
-        //     document.getElementById("result").innerHTML = 'you can not vote'
-        //   }if (age == '') { //empty age tu dalne ko Bole ga ?
-        //     document.getElementById("result").innerHTML = 'age dalo'
-        //   }
+      //   if(age > 18){
+      //  document.getElementById("result").innerHTML = 'you can vote'
+      //   }else{
+      //     document.getElementById("result").innerHTML = 'you can not vote'
+      //   }if (age == '') { //empty age tu dalne ko Bole ga ?
+      //     document.getElementById("result").innerHTML = 'age dalo'
+      //   }
 
-        // }
+      // }
 
+      // const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
+      // for(let i=0; i< cars.length; i++){
+      //     if(cars[i] == "Saab"){
+      //         break;
+      //     }
 
+      //     console.log(cars[i]);
 
-        // const cars = ["BMW", "Volvo", "Saab", "Ford", "Tata","Nisan","Toya"];
-        // for(let i=0; i< cars.length; i++){
-        //     if(cars[i] == "Saab"){
-        //         break;
-        //     }
+      // }
 
-        //     console.log(cars[i]);
+      // or (let i = 0; i < cars.length; i++) {
+      //   if (cars[i] === "Saab") {
+      //     break; // Exit the loop when "Saab" is found
+      //   }
+      //   console.log("Car: " + cars[i]);
 
-        // }
+      document.write`<h1 id='center'>Javascript Tutorial</h1>`;
+      let h1 = document.getElementById("center");
+      h1.style.textAlign = "center";
+      h1.style.fontFamily = "Times New Roman,Times, serif";
 
-        // or (let i = 0; i < cars.length; i++) {
-        //   if (cars[i] === "Saab") {
-        //     break; // Exit the loop when "Saab" is found
-        //   }
-        //   console.log("Car: " + cars[i]);
+      // async function test (){
+      //     console.log("2:message")
+      //   await console.log("3:message")
+      //     console.log("4:message")
+      //  }
 
-        document.write`<h1 id='center'>Javascript Tutorial</h1>`;
-        let h1 = document.getElementById("center");
-        h1.style.textAlign = 'center';
-        h1.style.fontFamily = "Times New Roman,Times, serif";
+      //  console.log("1:message")
+      //  test ()
+      //  console.log("5:message")
 
+      // SetTime Out function ?
+      // console.log("First Execution");
+      // setTimeout(() => {
+      //     console.log("setTime out xall")
+      // }, 3000);
+      // console.log('Last Exzecution code')
 
-        // async function test (){ 
-        //     console.log("2:message")
-        //   await console.log("3:message")
-        //     console.log("4:message")
-        //  }
+      // for(let i = 0; i < 10; i++){
+      //     console.log(i)
+      // }
 
-        //  console.log("1:message")
-        //  test ()
-        //  console.log("5:message")
+      //This Keyword Arrow function ka thisKLeyword window hota hai ;
+      // let num = {
+      //     name: "Tausif",
+      //     age: 24,
 
+      //     // fun: ()=>{}
+      //     about: ()=>{
+      //     console.log(this)   //arrow function ka this window hota hai
+      //    console.log(this.name, this.perpertion)  //Arrow Function Me This Ki value Undefind Ati hai
+      //   }
 
+      // }
+      //   num.about()
 
-        // SetTime Out function ?
-        // console.log("First Execution");
-        // setTimeout(() => {
-        //     console.log("setTime out xall")
-        // }, 3000);
-        // console.log('Last Exzecution code')
+      // Simple Object Create ?
+      let num = {
+        name: "Tausif",
+      };
+      // console.log(num)
 
-        // for(let i = 0; i < 10; i++){
-        //     console.log(i)
-        // }
+      // Constructor Function ?
+      function Show(fName, lName) {
+        (this.name = fName),
+          (this.name2 = lName),
+          (this.fullName = function () {
+            //dirct aisa bhi add kart sakte function jab ham constructor create karte hai tab hi ?
+            return this.name + " " + this.name2;
+          });
+      }
+      let save = new Show("Tausif", "qureshi");
+      //  console.log(save.fullName());
+      // console.log(save);
 
+      // let array1 = ['a'];
+      // console.log(array1)
 
-        //This Keyword Arrow function ka thisKLeyword window hota hai ;
-        // let num = {
-        //     name: "Tausif",
-        //     age: 24,
+      //         function Pizza(name) {
+      //             this.firstName = name;
+      //         }
+      //    const orderName = new Pizza('Chicken pizza');
+      //    console.log(orderName)
 
-        //     // fun: ()=>{}
-        //     about: ()=>{
-        //     console.log(this)   //arrow function ka this window hota hai
-        //    console.log(this.name, this.perpertion)  //Arrow Function Me This Ki value Undefind Ati hai
-        //   }
-
-        // }
-        //   num.about()
-
-
-        // Simple Object Create ?
-        let num = {
-            name: 'Tausif',
+      // Fatch API Call data.json File?
+      async function myFun() {
+        try {
+          let call = await fetch("data2.json");
+          let respon = await call.json();
+          console.log(respon);
+        } catch (error) {
+          console.error("Error fetching data: ", error);
         }
-        // console.log(num)
+      }
 
-        // Constructor Function ?
-        function Show(fName, lName) {
-            this.name = fName,
-                this.name2 = lName,
-                this.fullName = function () {//dirct aisa bhi add kart sakte function jab ham constructor create karte hai tab hi ?
-                    return this.name + " " + this.name2;
-                }
-        }
-        let save = new Show('Tausif', 'qureshi');
-        //  console.log(save.fullName());
-        // console.log(save);
+      // myFun()
 
-        // let array1 = ['a'];
-        // console.log(array1)
+      // Exmple Every Function ?
+      let everyMetod = ["sum", "sum", "sum"];
+      let valueSave = everyMetod.every((val) => {
+        return val === "sum";
+      });
+      // console.log(valueSave);
+    </script>
 
-//         function Pizza(name) {
-//             this.firstName = name;
-//         }
-//    const orderName = new Pizza('Chicken pizza');
-//    console.log(orderName)
-
-// Fatch API Call data.json File?
-async function myFun() {
-    try{
-    let call = await fetch("data2.json");
-    let respon = await call.json();
-    console.log(respon)
-    }catch(error){
-        console.error("Error fetching data: ", error);
-    }
-    
-}
-
-// myFun()    
-
-// Exmple Every Function ?
-let everyMetod = ['sum','sum','sum'];
-let valueSave = everyMetod.every((val)=>{
-    return val === 'sum';
-})
-// console.log(valueSave);
-
-</script>
-
-    
- <script src="Asynchronous.js"></script>
-
-
-
-
-
-
+    <script src="alrt,promt,confirm.js"></script>
 
     <!-- https://github.com/harshitvee/javascript-beginning-to-mastery/commit/7417aa43f92f85c32b09e1c90e45a63406428a95 -->
-</body>
-
+  </body>
 </html>
