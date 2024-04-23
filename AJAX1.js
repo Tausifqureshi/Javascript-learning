@@ -22,31 +22,7 @@
 
 // myFun1();
 
-// async function myFun(){
-//     let fatchingAPI =  await fetch("https://jsonplaceholder.typicode.com/users");
-//     console.log(fatchingAPI)
-//     let respons =  await fatchingAPI.json()
-//     console.log(respons);
-// }
 
-// console.log(myFun());
-
-
-async function myFun(){
-    let fetchingAPI = await fetch("data2.json");
-    // console.log(fetchingAPI);
-    let respon = fetchingAPI.json();
-    console.log(respon);
-}
-// myFun()
-
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-.then((apiData)=>{
-    console.log(apiData)
-    return apiData.json()
-}).then((accessData)=>{
-console.log(accessData)
-})
 
 
  
