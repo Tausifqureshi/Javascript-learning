@@ -3,7 +3,20 @@
 // AJAX ---> Is ka Full-Form hai  Asynchronous JavaScript And XML.? AJAX  Asynchronous hota hai ?  AJAX koi programming language nhi hai ye ek set of technologies hai Asynchronous JavaScript And XML ? AJAX me Page reloading kar re bina page update kar sakte hai mains koi button ko upadete karna hai us ka page refresh kar re bina upadate kar sate hai ? AJAX ka use kar ke ham fast and dynamic web page bana sakta hai ? Modern Website JSON ka use karti hai na ke XML---> is ka full-orm hoota hai Extensible Markup Language ? 
 
 
+// HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 
+// Informational responses (100 – 199)
+// Successful responses (200 – 299)
+// Redirection messages (300 – 399)
+// Client error responses (400 – 499)
+// Server error responses (500 – 599)
+
+
+fetch('https://fakestoreapi.com/users')
+.then((getData)=>{
+    console.log(getData);
+
+})
 
 
 

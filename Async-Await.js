@@ -1,3 +1,5 @@
+//Asynchronous Programming me ata hai ---> 
+
 //async hame hamesa propmies return karta hai? asyn function bhi propmies ki tara work karta hai ya ye reslove hoga ya reject? esync function ES 2017 me javascript me aya?awaite bhi aysnc ke ander hi work karta hai awaite waite karta hai promies ke liye? kisi bhi function ke aage aysnc laga dete hai o function promies ban jata hai?
 // async function test (){ 
 //     return 'Tausif'
