@@ -14,9 +14,32 @@
 
 fetch('https://fakestoreapi.com/users')
 .then((getData)=>{
-    console.log(getData);
+    // console.log(getData);
 
 })
+
+
+let AccessButton = document.getElementById("ajax");
+AccessButton.addEventListener('click',ajaxFunction);
+
+function ajaxFunction (){
+// console.log('Clicked');
+let xhr = new XMLHttpRequest(); //request send karne ke liye server ko ?
+console.log(xhr);
+
+
+
+
+
+
+
+xhr.open('GET','https://fakestoreapi.com/users',true);
+xhr.send();
+}
+ 
+
+
+
 
 
 

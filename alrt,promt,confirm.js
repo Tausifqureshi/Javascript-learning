@@ -1,5 +1,12 @@
+//Alert and Prompt and Confirm Method ?
+
+
+// ===================================================== Alert Method =======================================// 
+
 // alert("Hello User")
 
+
+// ===================================================== Prompt Method =======================================// 
 // let promt = prompt('Tausif');
 // document.writeln(promt);
 
@@ -8,6 +15,8 @@
 // document.writeln(userGuess) // promt se liya hua kuch print aise karte hai
 
 
+
+// ===================================================Confrim Method ======================================//
 // let buttonText = document.getElementById("cliked");
 // buttonText.addEventListener("click",myFunction);
 
