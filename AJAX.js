@@ -34,7 +34,7 @@ fetch('https://fakestoreapi.com/users')
 
 
 // ========================================= Ftach API =================================================//
-// Fatch API AJAX Call ?
+// Fatch API USE AJAX Call ?
 
 // Fatch API ----> fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota haim server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ? 
 
