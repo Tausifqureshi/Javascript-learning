@@ -33,16 +33,16 @@ function ajaxFunction() {
   console.log(xhr);
   xhr.responseType = "json"; //Kis type me data hona JSON.XML,ya String me xhr.responseType ='json' string me aye ga data ?
   xhr.onload = () => {
-    console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
+console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
 
-    // console.log(JSON.parse(xhr.response)); //json aisa bhi pars kar sakte hai ?
+//console.log(JSON.parse(xhr.response)); //json file me data aisa bhi le sakte hai ?
 
 if (xhr.status === 200) { //aisa condistion bhi laga sakte hai ham status ke liye koi bhi statu code use kar sakte hai?
  console.log('Successful responses');
- 
+
     }
 
-    // console.log(xhr.status)//Status Code kon sa error code aye ga ?
+    //console.log(xhr.status)//Status Code kon sa status error code aye ga number only ?
   };
 
 xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
