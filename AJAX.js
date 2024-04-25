@@ -5,19 +5,28 @@
 
 // HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 
+//Status Code ?
 // Informational responses (100 – 199)
 // Successful responses (200 – 299)
 // Redirection messages (300 – 399)
-// Client error responses (400 – 499)
+// Client error responses (400 – 499) Server not respos technical issu ?
+//404 ---> Not Found -> File ko request karne me server ko file nhi milti tab ye error ata hai ?
 // Server error responses (500 – 599)
 
 
-fetch('https://fakestoreapi.com/users')
-.then((getData)=>{
-    // console.log(getData);
+// Readystate Code ?
 
-})
+// Value	   State	                Description
 
+// 0	     UNSENT	                   Client has been created. open() not called yet.
+// 1	     OPENED	                   open() has been called.
+// 2	     HEADERS_RECEIVED	       send() has been called, and headers and status are available.
+// 3	     LOADING	               Downloading; responseText holds partial data.
+// 4	     DONE	                   The operation is complete.
+
+
+
+let url  = "https://jsonplaceholder.typicode.com/users";
 
 let AccessButton = document.getElementById("ajax");
 AccessButton.addEventListener('click',ajaxFunction);
@@ -26,15 +35,13 @@ function ajaxFunction (){
 // console.log('Clicked');
 let xhr = new XMLHttpRequest(); //request send karne ke liye server ko ?
 console.log(xhr);
+console.log(xhr.statusText);
 
 
+xhr.open('GET',url,true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
 
+xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
 
-
-
-
-xhr.open('GET','https://fakestoreapi.com/users',true);
-xhr.send();
 }
  
 
