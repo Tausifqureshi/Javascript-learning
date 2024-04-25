@@ -33,10 +33,26 @@ function ajaxFunction() {
   console.log(xhr);
   xhr.responseType = "json"; //Kis type me data hona JSON.XML,ya String me xhr.responseType ='json' string me aye ga data ?
   xhr.onload = () => {
-    console.log(xhr.response);
+    console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
+
+    // console.log(JSON.parse(xhr.response)); //json aisa bhi pars kar sakte hai ?
+
+if (xhr.status === 200) { //aisa condistion bhi laga sakte hai ham status ke liye koi bhi statu code use kar sakte hai?
+ console.log('Successful responses');
+ 
+    }
+
+    // console.log(xhr.status)//Status Code kon sa error code aye ga ?
   };
 
+xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
+    console.log('Error',xhr)
+
+}
+
+
   xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
+
 
   xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
 }
