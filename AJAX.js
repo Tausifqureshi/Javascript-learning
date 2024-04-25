@@ -35,7 +35,8 @@ function ajaxFunction (){
 // console.log('Clicked');
 let xhr = new XMLHttpRequest(); //request send karne ke liye server ko ?
 console.log(xhr);
-console.log(xhr.statusText);
+console.log(xhr.statusText); 
+
 
 
 xhr.open('GET',url,true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
