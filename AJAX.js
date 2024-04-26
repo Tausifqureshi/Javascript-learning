@@ -71,6 +71,40 @@ xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
 
 }
 
+// ====================================== AJAX Exmple 2 ===================================================//
+
+// let url = "https://jsonplaceholder.typicode.com/users";
+
+// // Get the button element by its ID
+// let AccessButton = document.getElementById("ajax"); 
+// // Add a click event listener to the button that calls the ajaxFunction when clicked
+// AccessButton.addEventListener("click", ajaxFunction);
+
+// Define the ajaxFunction
+// function ajaxFunction() {
+//   // Create a new XMLHttpRequest object
+//   let xhr = new XMLHttpRequest();
+// console.log(xhr)
+
+//   // Configure the request: 'GET' request to the URL
+//   xhr.open('GET', url, true);
+
+//   // Set up a function that is called when the request completes
+//   xhr.onload = function () {
+//     if (xhr.status >= 200 && xhr.status < 300) {
+//       // Parse JSON data from the response
+//       let data = JSON.parse(xhr.responseText);
+//       console.log(data);
+//     } else {
+//       // Handle errors, if any
+//       console.log('Error:', xhr.status);
+//     }
+//   };
+
+//   // Send the request
+//   xhr.send();
+// }
+
 
 
 

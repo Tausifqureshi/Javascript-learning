@@ -4,9 +4,16 @@
 // AJAX ---> AJAX Ki dusri file hai ye onlye AJAX me use hone wali property and method is me aye ge na ke koi exmple jitni property and method hai is me aye ge ?
 
 
+let url = "https://jsonplaceholder.typicode.com/users";
+
+let AccessButton = document.getElementById("ajax"); //dono AJAX File me same id ka button use hora hai ?
+AccessButton.addEventListener("click", ajaxFunction);
+
+function ajaxFunction(){
+console.log('Clicked');
 
 
-
+}
 
 
 
