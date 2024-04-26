@@ -5,22 +5,24 @@
 
 // console.log("AJAX Tutorial");
 
-// const url = "https://jsonplaceholder.typicode.com/posts";
+const url = "https://jsonplaceholder.typicode.com/posts";
 
-// async function myFun1(){
-// try {
-//     let fatchingAPI =  await fetch(url);
-//     console.log(fatchingAPI);
-//     let reponsingData = await fatchingAPI.json()
-//     console.log(reponsingData);
-// } catch (error) {
-// console.error("Error fetching data: ", error);
-// }
+async function myFun1(){
+try {
+    let fatchingAPI =  await fetch(url);
+    console.log(fatchingAPI);
+    let jsonData = await fatchingAPI.json(); //json data me file aye gi is tara se ?
+    console.log(jsonData);
+    // let textData = await fatchingAPI.text();  // fetchAPI me text File me bhi aisa data le sakte hai but not good peractic this text() method json me hi data lene chachiye ?
+    // console.log(textData);
+} catch (error) {
+console.error("Error fetching data: ", error);
+}
 
 
-// }
+}
 
-// myFun1();
+myFun1();
 
 
 

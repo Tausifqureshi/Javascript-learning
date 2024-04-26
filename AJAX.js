@@ -36,7 +36,7 @@ function ajaxFunction() {
   // console.log('Clicked');
   let xhr = new XMLHttpRequest(); //request send karne ke liye server ko ?
   console.log(xhr);
-xhr.responseType = "json"; //Kis type me data hona JSON.XML,ya String me xhr.responseType ='json' string me aye ga data ?
+xhr.responseType = "json"; //Kis type me data hona JSON,XML,ya TextFile, me hona ? hamne xhr.responseType ='json' set kiya hai is liye ye formate object me data hai ? is xhr.responseType = "json" commit tu data sting me mile ga ?
   xhr.onload = () => {
 console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
 
@@ -57,14 +57,14 @@ xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
 }
 
 
-  // xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
+  xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
 
   // xhr.open("POST", url, true); //Post request ke aisa marte hai ?
 
   xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8'); //jab bhi post request marte hai setRequestHeader set karna hi padta hai ?
 
-  // xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
-  xhr.send(JSON.stringify(postObj)); //post request ke liye send method aisa use  hoga ? jab bhiu ham server pe data send kar te hai JSON.stringify() method me karte hai ? 
+  xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
+  // xhr.send(JSON.stringify(postObj)); //post request ke liye send method aisa use  hoga ? jab bhiu ham server pe data send kar te hai JSON.stringify() method me karte hai ? 
 
 
 
@@ -80,12 +80,14 @@ xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
 // Fatch API ----> fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota haim server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ?
 
 // fetch("data2.json")
-// fetch('https://fakestoreapi.com/products')
-// .then((apiData)=>{
-//     console.log(apiData);
-//     return apiData.json();
-// }).then((accessData)=>{
+fetch('https://fakestoreapi.com/products')
+.then((apiData)=>{
+    console.log(apiData);
+    // return apiData.json();
+})
+// .then((accessData)=>{
 //     console.log(accessData)
-// }).catch((error)=>{ //Promise me kuch error tu ye catch wala code chale ga ?
-// console.log("Error Occurs",error);
 // })
+.catch((error)=>{ //Promise me kuch error tu ye catch wala code chale ga ?
+console.log("Error Occurs",error);
+})
