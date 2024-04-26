@@ -46,8 +46,8 @@ if (xhr.status === 200) { //aisa condistion bhi laga sakte hai ham status ke liy
 console.log('Successful responses');
 } 
 // else if (xhr.status === 404) {
-// console.log('Page Not Found');    
-// }
+// console.log('Page Not Found');     
+// } 
 // console.log(xhr.status)//Status Code kon sa status error code aye ga number only ?
   };
 
