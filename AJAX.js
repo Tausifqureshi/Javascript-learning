@@ -64,6 +64,7 @@ xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
   xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8'); //jab bhi post request marte hai setRequestHeader set karna hi padta hai ?
 
   xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
+  
   // xhr.send(JSON.stringify(postObj)); //post request ke liye send method aisa use  hoga ? jab bhiu ham server pe data send kar te hai JSON.stringify() method me karte hai ? 
 
 
