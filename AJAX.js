@@ -57,12 +57,16 @@ xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
 }
 
 
-  xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
+  // xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
+
+  // xhr.open("POST", url, true); //Post request ke aisa marte hai ?
 
   xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8'); //jab bhi post request marte hai setRequestHeader set karna hi padta hai ?
 
-//   xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
+  // xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
   xhr.send(JSON.stringify(postObj)); //post request ke liye send method aisa use  hoga ? jab bhiu ham server pe data send kar te hai JSON.stringify() method me karte hai ? 
+
+
 
 
 }
