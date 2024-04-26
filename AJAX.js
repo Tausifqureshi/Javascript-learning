@@ -27,34 +27,44 @@ let url = "https://jsonplaceholder.typicode.com/users";
 let AccessButton = document.getElementById("ajax");
 AccessButton.addEventListener("click", ajaxFunction);
 
+let postObj = {  //create post request ?
+    id: 1, 
+    title: "What is AJAX", 
+    body: "AJAX stands for Asynchronous JavaScript..."
+}
 function ajaxFunction() {
   // console.log('Clicked');
   let xhr = new XMLHttpRequest(); //request send karne ke liye server ko ?
   console.log(xhr);
-  xhr.responseType = "json"; //Kis type me data hona JSON.XML,ya String me xhr.responseType ='json' string me aye ga data ?
+xhr.responseType = "json"; //Kis type me data hona JSON.XML,ya String me xhr.responseType ='json' string me aye ga data ?
   xhr.onload = () => {
 console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
 
-//console.log(JSON.parse(xhr.response)); //json file me data aisa bhi le sakte hai ?
+// console.log(JSON.parse(xhr.response)); //json file me data aisa bhi le sakte hai ?
 
 if (xhr.status === 200) { //aisa condistion bhi laga sakte hai ham status ke liye koi bhi statu code use kar sakte hai?
- console.log('Successful responses');
-
-    }
-
-    //console.log(xhr.status)//Status Code kon sa status error code aye ga number only ?
+console.log('Successful responses');
+} 
+// else if (xhr.status === 404) {
+// console.log('Page Not Found');    
+// }
+// console.log(xhr.status)//Status Code kon sa status error code aye ga number only ?
   };
 
 xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
-    console.log('Error',xhr)
+ console.log('Error')
 
 }
 
 
   xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
 
+  xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8'); //jab bhi post request marte hai setRequestHeader set karna hi padta hai ?
 
-  xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
+//   xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
+  xhr.send(JSON.stringify(postObj)); //post request ke liye send method aisa use  hoga ? jab bhiu ham server pe data send kar te hai JSON.stringify() method me karte hai ? 
+
+
 }
 
 
