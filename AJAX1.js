@@ -69,7 +69,7 @@ console.log(" AJAX Property And Method Get! ");
 //AJAX Use method only ?
 
 // onLoad () ---> ye function jab call hota hai XMLHttpRequest() transaction completes ho jata hai ?
-// onprogress () ---> ye method work karta hai request success hone se phele call hom jata hai ye method ?
+// onprogress () ---> ye method work karta hai request success hone se phele call ho jata hai ye method ?
 // onerror () ---> Error ke liye use hota hai ye method ?
 // onloadstart () ---> data transfer hone se phele hi ye method call ho jata hai ?
 // onabort () ---> 
@@ -222,7 +222,8 @@ if(xhr.status === 200){ //Status code check ?
 console.log("Successfully Execution Code",xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
 x = xhr.response;
 for( let i = 0; i<x.length; i++){
-console.log("For-Loop Use",x[i]);
+// console.log("For-Loop Use",xhr.response[i]); /share user aye ge is tara se ?
+console.log("For-Loop Use",x[0]); //dono same hi work kkar re hai ?
 }
 }
 else{
