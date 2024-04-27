@@ -75,6 +75,7 @@ console.log(" AJAX Property And Method Get! ");
 // onabort () ---> 
 // ontimeout () ---> jab ham timeout attribute use karte hai tab hi ye method work karta hai ?
 // onloadend () ---> jab hamra tranfer data end ho  jata hai tab ye methiod call hota hai ?
+// xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
 
 // let url = "https://jsonplaceholder.typicode.com/users";
 
@@ -149,6 +150,57 @@ console.log(" AJAX Property And Method Get! ");
 // ===========================================Example 3 =====================================================//
 //AJAX Use Property Only
 
+// let url = "https://jsonplaceholder.typicode.com/users";
+
+// let AccessButton = document.getElementById("ajax"); //dono AJAX File me same id ka button use hora hai ?
+// AccessButton.addEventListener("click", ajaxFunction);
+
+// function ajaxFunction(){
+// let xhr =  new XMLHttpRequest();
+
+// // console.log(xhr);
+
+// // xhr.responseType = "json";//Kis type me data hona JSON,XML,ya TextFile, me hona ? hamne xhr.responseType ='json' set kiya hai is liye ye formate object me data hai ? is xhr.responseType = "json" commit tu data sting me mile ga ?
+
+
+// xhr.open("GET",url,true); 
+
+
+// xhr.onreadystatechange =()=> {//Readystate Code 1,2,3,4 ye code? onreadystatechange ki jaga onload bhi use hota hai ?
+//  console.log(xhr);
+
+// if(xhr.status === 200){ //Status code check ?
+// //console.log(xhr);
+
+// console.log("Successfully Execution Code",xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
+
+// // AJAX USE Prorperty ?
+// console.log("Text-proprty",xhr.responseText);
+// console.log("Status",xhr.status);
+// console.log("Response",xhr.response);
+// console.log('ResponseURL',xhr.responseURL);
+// console.log('getResponseHeaders',xhr.getResponseHeaders('LAST-Modifed'));
+// console.log('getAllResponseHeaders',xhr.getAllResponseHeaders());
+
+
+
+// }else{
+// console.log("Response the Problem"); //Error ke liye ye code ?
+// }
+
+// }
+
+
+
+// xhr.send();
+// }
+
+
+
+
+// ========================================= AJAX For-loop ============================================//
+// AJAX For-loop use Access daat
+
 let url = "https://jsonplaceholder.typicode.com/users";
 
 let AccessButton = document.getElementById("ajax"); //dono AJAX File me same id ka button use hora hai ?
@@ -161,37 +213,26 @@ let xhr =  new XMLHttpRequest();
 
 xhr.responseType = "json";//Kis type me data hona JSON,XML,ya TextFile, me hona ? hamne xhr.responseType ='json' set kiya hai is liye ye formate object me data hai ? is xhr.responseType = "json" commit tu data sting me mile ga ?
 
-
 xhr.open("GET",url,true); 
 
-
-xhr.onreadystatechange =()=> {//Readystate Code 1,2,3,4 ye code? onreadystatechange ki jaga onload bhi use hota hai ?
+xhr.onload =()=> {//Readystate Code 1,2,3,4 ye code? onreadystatechange ki jaga onload bhi use hota hai ?
  console.log(xhr);
-
 if(xhr.status === 200){ //Status code check ?
 //console.log(xhr);
-
 console.log("Successfully Execution Code",xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
-
-}else{
+x = xhr.response;
+for( let i = 0; i<x.length; i++){
+console.log("For-Loop Use",x[i]);
+}
+}
+else{
 console.log("Response the Problem"); //Error ke liye ye code ?
 }
 
 }
 
-
-
-
 xhr.send();
 }
-
-
-
-
-
-
-
-
 
 
 
