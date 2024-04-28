@@ -24,7 +24,7 @@ switch (day) {
     console.log("Saturday");
     break; // break keyword ka matlab jo case ture ohi execute hoga forther code nhi hoge sida bher default wala run?
    
-    default: //is keyword jab chalte hai jab value true nhi hoti koi value match nhi hoti hai ?
+    default: //ye keyword jab chalte hai jab value true nhi hoti koi value match nhi hoti hai ?
       console.log("Invalid Day")
 
 }
