@@ -21,31 +21,41 @@
 // Rejected ?
 // When a Promise object is "rejected", the result is an error object.
 
+console.log('First of the Code execute');
+setTimeout(() => {
+  console.log("SetTimeout Code Execute distance 3 mili second");
+}, 3000);
+console.log("After the Code Execute");
 
 
 
-let myPromise = new Promise(function(myResolve, myReject) {
-    // console.log(myPromise)
-    let x = 8;
-  
-  // some code (try to change x to 5)
-  
-    if (x == 8) {
-      myResolve("OK");
-    } else {
-      myReject("Error");
-    }
-  });
-//   console.log(typeof myPromise) //promise bhi ek object hai ?
-  myPromise.then(
-    function(value) {
-    console.log(value);
-    },
-    function(error) {
-    console.log(error);
-    }
-  );
-  
+
+
+let AccessButton = document.getElementById("ajax");
+// AccessButton.addEventListener("click", myPromise);
+
+// function myPromise(){
+// console.log('Clicked');
+
+// let myPromise = new Promise(function(myResolve, myReject) {
+//   let x = 8;
+    
+//     if (x == 8) {
+//       myResolve("OK");
+//     } else {
+//       myReject("Error");
+//     }
+//   });
+// //   console.log(typeof myPromise) //promise bhi ek object hai ?
+//   myPromise.then(
+//     function(value) {
+//     console.log(value);
+//     },
+//     function(error) {
+//     console.log(error);
+//     }
+//   );
+// }
 
 
 
