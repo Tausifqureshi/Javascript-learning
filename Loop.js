@@ -3,7 +3,19 @@
 
 //Loop ka matlab  iterated karna hota hai ?
 
+
+//================================================ Nested Loop ==================================================//
+for (let i = 0; i < 5; i++) {
+      let str = "";
+    for (let d = 0; d < 5; d++) {
+      // console.log(d);
+      str = str + d;
+    }
+    console.log(i,str)
+  // console.log(i)
+  }
 //======================================== for loop ==========================================//
+
 
 // for(let i = 0; i < 1000; i++){ //kitne bar bhi print karwqa sakte hai aise ?
 //     document.writeln("Tausif Qureshi","<br>","<br>");
