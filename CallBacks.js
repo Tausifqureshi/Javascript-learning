@@ -74,14 +74,60 @@ function gerRollNo() {  //is tara shep ko pyramid of doom bolte hai is avoided C
     }, 2000)
 }
 
-gerRollNo()
+// gerRollNo()
 
 
 
 
 
 
+// ========================================Example 2 ===================================================//
+//Exaple Pizz of Code ?
+let AccessButton = document.getElementById("ajax");
+AccessButton.addEventListener("click", calllFunction);
+function calllFunction(){
+console.log("Call-Back Function Button Clicked Call");
 
+
+function getCheese(callback) {
+    setTimeout(()=>{ //1mili second ye cheese function call hoga ?
+        let cheese = " 🧀 ";
+        console.log("here is cheese",cheese);
+        callback(cheese);
+    },1000);
+}
+
+function makeDough(cheese1,callback1){
+setTimeout(() => {
+    let dough = cheese1 + " 🍩";
+    console.log("here is dough",dough);
+    callback1(dough);
+
+}, 2000);
+}
+
+function makePizza(dough1,callback1){ //pizza ko hona dough pizza banane ke liye ?
+    setTimeout(() => {
+        let pizza = dough1 + " 🍕";
+        console.log("here is pizza",pizza);
+        callback1(pizza);
+    
+    }, 3000);
+    }
+
+ getCheese((cheeseAccess)=>{ //92 line se ye cheese milra hai us ke parameter se ?
+console.log("Received cheese:",cheeseAccess);
+makeDough(cheeseAccess,(AccessDough)=>{ //ye cheeseAcesse line 100 parameter se mil ra hai arugument me kuch bhi naam pass kar sakte hai agrument me ham cheeseAccess function ko hi lare re hai q ke parametar me hamne cheese1 pass kiya hai is liye hame argument me kuch tu lena hoga is liye ham cheeseAccess hi lere hai argument me?
+ console.log("Dough is ready.", AccessDough);
+ makePizza(AccessDough,(AccessPizza)=>{
+console.log("Pizza is ready.", AccessPizza);
+ })
+
+})
+
+ })
+
+}; //is callback ko soulf karne ke liye promise use karte hai ?
 
 
 
