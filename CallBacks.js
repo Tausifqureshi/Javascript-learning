@@ -74,7 +74,7 @@ function gerRollNo() {  //is tara shep ko pyramid of doom bolte hai is avoided C
     }, 2000)
 }
 
-// gerRollNo()
+gerRollNo()
 
 
 
