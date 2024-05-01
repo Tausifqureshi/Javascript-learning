@@ -20,14 +20,30 @@
 
 // Rejected ?
 // When a Promise object is "rejected", the result is an error object.
+// ({
+//   "plugins": ["jsdom-quokka-plugin"],
+//   "jsdom": {"file": "test.html"} // Located in project root
+// })
+// {
+//   "plugins": ["jsdom-quokka-plugin"]
+// }
 
 
+let user = {
+  fisrtNmae : "Tauisf",
+  age : 25,
+}
 
+console.log(user)
 
-let AccessButton = document.getElementById("ajax");
-AccessButton.addEventListener("click", myPromise);
+// let AccessButton = document.getElementById("ajax");
+// AccessButton.addEventListener("click", myPromise);
 
-function myPromise(){
+// function myPromise(){
+// 
+document.getElementById("ajax").addEventListener("click",()=>{
+  console.log('Tausif');
+  
 console.log('Clicked');
 
 let myPromise = new Promise(function(myResolve, myReject) {
@@ -51,12 +67,9 @@ let myPromise = new Promise(function(myResolve, myReject) {
   .catch (function(error){
     console.log('Caught by catch:', error);
   })
-}
-console.log('Tasif')
+})
 
-
-
-
+console.log('Tasif') 
 
 
 
