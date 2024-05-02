@@ -20,21 +20,8 @@
 
 // Rejected ?
 // When a Promise object is "rejected", the result is an error object.
-// ({
-//   "plugins": ["jsdom-quokka-plugin"],
-//   "jsdom": {"file": "test.html"} // Located in project root
-// })
-// {
-//   "plugins": ["jsdom-quokka-plugin"]
-// }
 
 
-let user = {
-  fisrtNmae : "Tauisf",
-  age : 25,
-}
-
-console.log(user)
 
 // let AccessButton = document.getElementById("ajax");
 // AccessButton.addEventListener("click", myPromise);
