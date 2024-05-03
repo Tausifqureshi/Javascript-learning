@@ -23,26 +23,26 @@
 
 
 
-// let AccessButton = document.getElementById("ajax");
-// AccessButton.addEventListener("click", myPromise);
+let AccessButton = document.getElementById("ajax");
+AccessButton.addEventListener("click", myPromise);
 
-// function myPromise(){
+function myPromise(){
 // 
 document.getElementById("ajax").addEventListener("click",()=>{
-  console.log('Tausif');
-  
 console.log('Clicked');
 
 let myPromise = new Promise(function(myResolve, myReject) {
-  let x = 7;
+  let x = 8;
     
     if (x == 8) {
-      myResolve("OK");
+      // myResolve("OK");
+      myResolve("Promise Success-Full Resolve");
     } else {
       myReject(new Error("I am a Error"));
     }
   });
-//   console.log(typeof myPromise) //promise bhi ek object hai ?
+//   console.log(typeof myPromise) //promise object aye ga return hoke ?
+
   myPromise.then(
     function(value) {
     console.log(value);
@@ -52,11 +52,14 @@ let myPromise = new Promise(function(myResolve, myReject) {
     // }
   )
   .catch (function(error){
-    console.log('Caught by catch:', error);
+    // console.log('Caught by catch:', error);
+    console.log( error);
   })
 })
 
-console.log('Tasif') 
+}
+
+console.log('Error out the code run ') ;
 
 
 
