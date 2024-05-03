@@ -59,7 +59,7 @@ let myPromise = new Promise(function(myResolve, myReject) {
 
 }
 
-console.log('Error outter the code run ') ;
+console.log('Error outter the code run ');
 
 
 
