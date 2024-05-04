@@ -65,7 +65,30 @@ console.log('Error outter the code run ');
 
 
 
+let firsNtame = 'Hello Tausif Qureshi';
+console.log(firsNtame);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let result = firsNtame.split(":"); //ek ek word ko tod ke array ke form me dega ye split ?
+// console.log(result);
+// let arry = result.join("");
+// console.log(arry)
+// console.log(typeof arry)
 
 
 
