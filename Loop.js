@@ -1,3 +1,4 @@
+console.log('Tausif')
 // <------------------------------>for loop<-------------------------------->
 //Progrmming language  me loop ka use kisi action ya procese ko bar bar repit karne ke liye use kar te hai ? iterate mens hota hai repit karna bar bar us ko hi loop bolte hai ?
 
@@ -91,6 +92,14 @@ for (let i = 0; i < 5; i++) {
 // for(var i = 10; i > 0; i--){
 //     document.write(i+ "<br>");
 // }
+
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let i = array.length - 1; i >= 0; i--) {
+  const element = array[i];
+  console.log(element);
+}
+
 
 // <------------------------------>while loop<-------------------------------->
 //While loop---> 
