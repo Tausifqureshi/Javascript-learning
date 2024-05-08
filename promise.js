@@ -22,6 +22,7 @@
 // When a Promise object is "rejected", the result is an error object.
 
 console.log('Error outter the code run ');
+console.log('Error outter the code run ');
 
 
 // let AccessButton = document.getElementById("ajax");
