@@ -25,43 +25,43 @@ console.log('Error outter the code run ');
 console.log('Error outter the code run ');
 
 
-// let AccessButton = document.getElementById("ajax");
-// AccessButton.addEventListener("click", myPromise);
+let AccessButton = document.getElementById("ajax");
+AccessButton.addEventListener("click", myPromise);
 
-// function myPromise(){
-// // 
-// document.getElementById("ajax").addEventListener("click",()=>{
-// console.log('Clicked');
+function myPromise(){
+// 
+document.getElementById("ajax").addEventListener("click",()=>{
+console.log('Clicked');
 
-// let myPromise = new Promise(function(myResolve, myReject) {
-//   let x = 8;
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 8;
     
-//     if (x == 8) {
-//       // myResolve("OK");
-//       myResolve("Promise Success-Full Resolve");
-//     } else {
-//       myReject(new Error("I am a Error"));
-//     }
-//   });
-// //   console.log(typeof myPromise) //promise object aye ga return hoke ?
+    if (x == 8) {
+      // myResolve("OK");
+      myResolve("Promise Success-Full Resolve");
+    } else {
+      myReject(new Error("I am a Error"));
+    }
+  });
+//   console.log(typeof myPromise) //promise object aye ga return hoke ?
 
-//   myPromise.then(
-//     function(value) {
-//     console.log(value);
-//     },
-//     // function(error) { //ye line commit tab jake catch wala code execute hoga ?
-//     // console.log(error);
-//     // }
-//   )
-//   .catch (function(error){
-//     // console.log('Caught by catch:', error);
-//     console.log( error);
-//   })
-// })
+  myPromise.then(
+    function(value) {
+    console.log(value);
+    },
+    // function(error) { //ye line commit tab jake catch wala code execute hoga ?
+    // console.log(error);
+    // }
+  )
+  .catch (function(error){
+    // console.log('Caught by catch:', error);
+    console.log( error);
+  })
+})
 
-// }
+}
 
-// console.log('Error outter the code run ');
+console.log('Error outter the code run ');
 
 
 
