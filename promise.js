@@ -30,8 +30,8 @@ AccessButton.addEventListener("click", myPromise);
 
 function myPromise(){
 // 
-document.getElementById("ajax").addEventListener("click",()=>{
-console.log('Clicked');
+// document.getElementById("ajax").addEventListener("click",()=>{
+// console.log('Clicked');
 
 let myPromise = new Promise(function(myResolve, myReject) {
   let x = 8;
@@ -57,13 +57,40 @@ let myPromise = new Promise(function(myResolve, myReject) {
     // console.log('Caught by catch:', error);
     console.log( error);
   })
-})
-
 }
+
+
 
 console.log('Error outter the code run ');
 
 
+
+
+
+
+
+
+let promiseObj =  new Promise((resolve, reject) => {
+  let b = 5
+
+  if (b === 8) {
+    resolve("Promise reslove");
+    
+  }else{
+    reject (new Error('Promise is reject'));
+  }
+})
+
+promiseObj.then((reslove)=>{
+ console.log(reslove)
+})
+// ,function(error){
+// console.log(error,"Error Problem");
+// }
+.catch((error)=>{
+    // console.log('Error Ocurd', error.message)
+    console.log( error.message) //hamne Error Message me tu diye hoge ohi print hoga sirf  Error.messege se ?
+})
 
 
 
