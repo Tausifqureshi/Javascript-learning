@@ -60,7 +60,7 @@ console.log('Error outter the code run ');
 
 
 
-//================================  Tahapa =================================================//
+//================================  Tahapa technical =================================================//
 // 
  
 let promiseObject = new Promise((resolve, reject) => {
