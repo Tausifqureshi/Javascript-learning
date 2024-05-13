@@ -65,26 +65,25 @@ console.log('Error outter the code run ');
  
 let promiseObject = new Promise((resolve, reject) => {
    setTimeout(() => {
-    //  let arr = [];  //is tara se promise reject hoti hai ?
+    //  let arr = [];  //is tara se promise reject hoga  hai  is Exmple me ?
     let arr = [1,2,3,4,5,6,];
     // resolve(arr)
-    console.log("Timeout completed.");
-    if (arr.length > 0) {
-        resolve(arr);
-    } else {
-        reject(new Error("Array is empty"));
-    }
+
+    // reject( new Error("Error Ocurd"));
+    reject("Error Ocurd");
+
 
    },2000);
 
 })
 
 promiseObject.then((result)=>{
-  // console.log(result);
-  console.log("Promise resolved:", result);
+  console.log(result);
+  // console.log("Promise resolved:", result);
 }).catch((error)=>[
   console.log("Promise rejected:",error.message),
 ]) 
+
 
 
 

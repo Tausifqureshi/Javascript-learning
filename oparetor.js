@@ -83,14 +83,24 @@
 // let z = 5;
 // console.log(x!==z) //ye operator work karta hai same tu false dega alag alag tu true deta hai but ye operator data types bhi dhakta hai string me hai ya number me is liye ye true aye ga is ka answer
 
+// greater than  Exmple
 // let x = 8;
 // let z = 7;
-// console.log(x > z) //8 bada hai 7 se ?
+// console.log(x > z) //8 bada hai 7 se is liye true aye ga ?
 
+// let x = 8;
+// let z = 7;
+// console.log(z > x) // is me ham check kar re hai greater than is me left value ko hamsa badi hona chachiye is condison me ham check kar re hai kya z ki value x se badi hai greater than use kar re hai is liye false aye ga q ke 7 bada nhi hai 8 se left ki value badi hi hona chaciye hemsa is me
+
+
+// less than Exemple
+// let x = 6;
+// let z = 7;
+// console.log(x < z) //6 choota  hai 7 se is liye true aye ga ?
 
 // let x = 6;
 // let z = 7;
-// console.log(x < z) //6 choota  hai 7 se ?
+// console.log(z < x); // is me check kar re hai less than is ka jab bhi use hota hai left value ko hemsa chotti hona chaciye is condision me ham checkm kar re hai kay 7 chotta hai 6 se q ke 7 chotta nhi hota hai 6 is liye ye false aye gi value q ke less than left ki  value hamsa chotti rehna chaciye ? 
 
 
 // ============================================= logical Operator ==============================================//	
