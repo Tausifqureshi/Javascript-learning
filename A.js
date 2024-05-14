@@ -47,13 +47,12 @@ async function fetchData(url) {
     .catch(error => console.error('Error:', error));
   
 
-
+ 
 
   
 // async awaite ka use kar ke handler Error ?
 //   document.addEventListener('DOMContentLoaded', async function() {
 //     const postsContainer = document.getElementById('posts');
-
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
 //         console.log("ok",response)

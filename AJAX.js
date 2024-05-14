@@ -26,58 +26,76 @@ let url = "https://jsonplaceholder.typicode.com/users";
 
 let AccessButton = document.getElementById("ajax");
 AccessButton.addEventListener("click", ajaxFunction);
-
-let postObj = {  //create post request ?
-    id: 1, 
-    title: "What is AJAX", 
-    body: "AJAX stands for Asynchronous JavaScript..."
-}
 function ajaxFunction() {
-  // console.log('Clicked');
+  console.log("Clicked");
   let xhr = new XMLHttpRequest(); //request send karne ke liye server ko ?
   console.log(xhr);
-xhr.responseType = "json"; //Kis type me data hona JSON,XML,ya TextFile, me hona ? hamne xhr.responseType ='json' set kiya hai is liye ye formate object me data hai ? is xhr.responseType = "json" commit tu data sting me mile ga ?
+  xhr.responseType = "json"; //Kis type me data hona JSON,XML,ya TextFile, me hona ? hamne xhr.responseType ='json' set kiya hai is liye ye formate object me data hai ? is xhr.responseType = "json" commit tu data sting me mile ga ?
   xhr.onload = () => {
-console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
+    console.log(xhr.response); //json me data mile ga respons se q ke hamne xhr.responseType json kiya hua hai ?
+    // console.log(JSON.parse(xhr.response)); //json file me data aisa bhi le sakte hai ?
+    if (xhr.status === 200) {
+      //aisa condistion bhi laga sakte hai ham status ke liye koi bhi statu code use kar sakte hai?
+      // console.log('Successful responses');
+      console.log("Successful response:", xhr.response);
+    }
 
-// console.log(JSON.parse(xhr.response)); //json file me data aisa bhi le sakte hai ?
-
-if (xhr.status === 200) { //aisa condistion bhi laga sakte hai ham status ke liye koi bhi statu code use kar sakte hai?
-console.log('Successful responses');
-} 
-// else if (xhr.status === 404) {
-// console.log('Page Not Found');     
-// } 
-// console.log(xhr.status)//Status Code kon sa status error code aye ga number only ?
+    // else if (xhr.status === 404) {
+    // console.log('Page Not Found');
+    // }
+    // console.log(xhr.status)//Status Code kon sa status error code aye ga number only ?
   };
 
-xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
- console.log('Error')
-
-}
-
+  xhr.onerror = () => {
+    //koi error aye gi yaha se pata chale ga ?
+    console.log("Error");
+  };
 
   xhr.open("GET", url, true); //serevr se data access karne ya dene ke liye use hota hai open() method is me three parameter hote hai first kon sa method use get,pots second parametar hota hai URL ya file name and three parametar hota hai true and falsa true use tu Asynchronous me work hoga and false use tu synchronous me work hoga ?
 
-  // xhr.open("POST", url, true); //Post request ke aisa marte hai ?
-
-  xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8'); //jab bhi post request marte hai setRequestHeader set karna hi padta hai ?
-
   xhr.send(); // Request ko server pe send karne ke liye ye send() Method use karte hai ?
-  
-  // xhr.send(JSON.stringify(postObj)); //post request ke liye send method aisa use  hoga ? jab bhiu ham server pe data send kar te hai JSON.stringify() method me karte hai ? 
-
-
-
-
 }
 
+
+
+// =============================axaj post request ==================================
+// let url = "https://jsonplaceholder.typicode.com/users";
+
+// let AccessButton = document.getElementById("ajax");
+// AccessButton.addEventListener("click", ajaxFunction);
+
+// let postObj = {
+//     id: 1,
+//     title: "What is AJAX",
+//     body: "AJAX stands for Asynchronous JavaScript..."
+// };
+
+function ajaxFunction() {
+  let xhr = new XMLHttpRequest();
+  xhr.responseType = "json";
+
+  xhr.onload = () => {
+    if (xhr.status === 201) {
+      // 201 for successful creation
+      console.log("Successful response:", xhr.response);
+    }
+  };
+
+  xhr.onerror = () => {
+    console.log("Error", xhr);
+  };
+
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+  xhr.send(JSON.stringify(postObj));
+}
+// ajaxFunction()
 // ====================================== AJAX Exmple 2 ===================================================//
 
 // let url = "https://jsonplaceholder.typicode.com/users";
 
 // // Get the button element by its ID
-// let AccessButton = document.getElementById("ajax"); 
+// let AccessButton = document.getElementById("ajax");
 // // Add a click event listener to the button that calls the ajaxFunction when clicked
 // AccessButton.addEventListener("click", ajaxFunction);
 
@@ -106,23 +124,21 @@ xhr.onerror = () =>{ //koi error aye gi yaha se pata chale ga ?
 //   xhr.send();
 // }
 
-
-
-
 // ========================================= Ftach API =================================================//
 // Fatch API USE AJAX Call ?
 
 // Fatch API ----> fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota haim server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ?
 
 // fetch("data2.json")
-fetch('https://fakestoreapi.com/products')
-.then((apiData)=>{
+fetch("https://fakestoreapi.com/products")
+  .then((apiData) => {
     console.log(apiData);
     // return apiData.json();
-})
-// .then((accessData)=>{
-//     console.log(accessData)
-// })
-.catch((error)=>{ //Promise me kuch error tu ye catch wala code chale ga ?
-console.log("Error Occurs",error);
-})
+  })
+  // .then((accessData)=>{
+  //     console.log(accessData)
+  // })
+  .catch((error) => {
+    //Promise me kuch error tu ye catch wala code chale ga ?
+    console.log("Error Occurs", error);
+  });

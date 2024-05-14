@@ -84,25 +84,40 @@ let promiseObject = new Promise((resolve, reject) => {
 
   //  },2000);
 });
-promiseObject
-  .then((result) => {
-    // console.log(result);
-    console.log("Promise resolved:", result);
-    // (error)=>{
-    //     console.log(error,"Promise rejected");
+// promiseObject
+  // .then((result) => {
+  //   // console.log(result);
+  //   console.log("Promise resolved:", result);
+  //   // (error)=>{
+  //   //     console.log(error,"Promise rejected");
 
-    // }
-  })
-  .catch((error) => {
-    console.log("Promise rejected:", error.message);
-  });
+  //   // }
+  // })
+  // .catch((error) => {
+  //   console.log("Promise rejected:", error.message);
+  // });
 
+
+
+
+
+  // let url = "https://jsonplaceholder.typicode.com/posts";
+  // async function fetchData(){
+  //   try {
+  //   // let dataFetch = fetch(url); //jab bhi data fetch karte hai await nhi use tu promise pending ata hai
+  //   let dataFetch = await fetch(url) ;
+  //   // console.log(dataFetch);
+  //   } catch (error) {
+  //     console.error('There was a problem with the fetch operation:', error)
+  //   }
+ 
+  // }
+
+
+
+  // fetchData()
 
 
 
 
   
-
-
-
-
