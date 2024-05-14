@@ -1,6 +1,6 @@
 //Asynchronous Programming me ata hai --->
 
-//Promise ---> Javascript me promise bhi object hoti hai ? promise jab bhi call hota hai ya resolve matlab success hoga ya reject hoga ? promise ka matlab hota hai code execution take code Asynchronous me run kar sake ? Promise ek promise hai code ko run karne ka ? 
+//Promise ---> Javascript me promise bhi object hoti hai ? promise jab bhi call hota hai ya resolve matlab success hoga ya reject hoga ? promise ka matlab hota hai code of execution take code Asynchronous me run kar sake ? Promise ek promise hai code ko run karne ka ? 
 
 // Promise ko handle karne ke liye new promise() method ka use kiya jata hai ?
 
