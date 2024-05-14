@@ -33,29 +33,8 @@ async function main() {
     console.log(value);
 }
 
-main();
+// main();
 
 
 
 
-
-async function postData(url, data = {}) {
-    const options = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    };
-
-    const response = await fetch(url, options);
-
-    if (!response.ok) {
-        throw new Error(`Network response was not ok: ${response.statusText}`);
-    }
-
-    return response.json(); // Assumes the server responds with JSON. Handle accordingly if there's variation.
-}
-
-// Example usage:
-postData('https://example.com/data', { key: 'value', anotherKey: 'anotherValue' })
-    .then(data => console.log(data))
-    .catch(error => console.error('Error during postData:', error));
