@@ -8,16 +8,25 @@
 // Fatch API AJAX Call ?
 fetch('https://jsonplaceholder.typicode.com/todos/1')
 .then((apiData)=>{
-    console.log(apiData);
+    // console.log(apiData);
 })
 
 
-
+   
 
 // ==========================================fetch API Post request ========================================= //
 async function fetchData() {
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        method: 'POST'
+        body: JSON.stringify({
+          title: 'foo',
+          body: 'bar',
+          userId: 1,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        }
 
         const data = await response.json();
         // console.log(data);
