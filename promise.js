@@ -60,13 +60,6 @@ function myPromise() {
 
 
 
-
-
-
-
-
-
-
 //================================  Tahapa technical =================================================//
 //
 
@@ -96,7 +89,6 @@ promiseObject
   .catch((error) => {
     console.log("Promise rejected:", error.message);
   });
-
 
 
 

@@ -3,14 +3,14 @@
 // Fatch API ----> fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota haim server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ?
 // Fatch API AJAX Call ?
 
-fetch("https://jsonplaceholder.typicode.com/todos/")
-  .then((apiData) => {
-    // console.log(apiData);
-    return apiData.json();
-  })
-  .then((accessData) => {
-    // console.log(accessData)
-  });
+// fetch("https://jsonplaceholder.typicode.com/todos/")
+//   .then((apiData) => {
+//     console.log(apiData);
+//     return apiData.json();
+//   })
+//   .then((accessData) => {
+//     console.log(accessData)
+//   });
 
 
 
@@ -23,7 +23,7 @@ fetch("https://jsonplaceholder.typicode.com/todos/")
 // ==========================================fetch API Post request ========================================= //
 // aysnc await use post request
 
-// const url = 'https://api.example.com/data'; // Replace this with your API endpoint
+const url = 'https://api.example.com/data'; // Replace this with your API endpoint
 
 const postData1 = async () => {
   const data = {
@@ -127,20 +127,19 @@ const postData = async () => {
 };
 
 // Call the postData function
-// postData()
-//   .then(responseData => {
-//     // Handle the response data if needed
-//     console.log('Response Data:', responseData);
-//   })
-//   .catch(error => {
-//     // Handle any errors occurred during the postData function
-//     console.error('Failed to post data:', error);
-//   });
+postData()
+  .then(responseData => {
+    // Handle the response data if needed
+    console.log('Response Data:', responseData);
+  })
+  .catch(error => {
+    // Handle any errors occurred during the postData function
+    console.error('Failed to post data:', error);
+  });
 
 
 
-const url = "https://jsonplaceholder.typicode.com/posts"; // Replace this with your API endpoint
-
+// const url = "https://jsonplaceholder.typicode.com/posts"; // Replace this with your API endpoint
 // const data = {
 //   key1: 'value1',
 //   key2: 'value2'
