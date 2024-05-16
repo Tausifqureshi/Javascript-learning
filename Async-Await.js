@@ -73,5 +73,18 @@
 
 
 
+// jab bhi data fetch karte hai await nhi use tu promise pending return karta hai ?
 
+ let url = "https://jsonplaceholder.typicode.com/posts";
+  // async function fetchData(){
+  //   try {
+  //   // let dataFetch = fetch(url); //
+  //   let dataFetch = await fetch(url) ;
+  //   // console.log(dataFetch);
+  //   } catch (error) {
+  //     console.error('There was a problem with the fetch operation:', error)
+  //   }
+ 
+  // }
 
+  // fetchData()
