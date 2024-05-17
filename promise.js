@@ -61,8 +61,6 @@ function myPromise() {
 
 
 //================================  Tahapa technical =================================================//
-//
-
 let promiseObject = new Promise((resolve, reject) => {
   //  setTimeout(() => {
   //  let arr = [];  //is tara se promise reject hoga  hai  is Exmple me ?
