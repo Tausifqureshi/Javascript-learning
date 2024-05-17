@@ -1,6 +1,6 @@
 //Asynchronous Programming me ata hai --->
 
-//Promise ---> Javascript me promise bhi object hoti hai ? promise jab bhi call hota hai ya resolve matlab success hoga ya reject hoga ? promise ka matlab hota hai code of execution take code Asynchronous me run kar sake ? Promise ek promise hai code ko run karne ka ?
+//Promise ---> Javascript me promise ek special type ka object hota hai ? promise value producee karta hai after Asynchronous operation perform karne ke liye ya ek error producee karta hai jo hamne Asynchronous operation  kiya hai o successfully perform nhi hua hai ? promise jab bhi call hota hai ya resolve matlab success hoga ya reject hoga ? promise ka matlab hota hai code of execution take code Asynchronous me run kar sake ? Promise ek promise hai code ko run karne ka ?
 
 // Promise ko handle karne ke liye new promise() method ka use kiya jata hai ?
 
@@ -77,24 +77,25 @@ let promiseObject = new Promise((resolve, reject) => {
 
   //  },2000);
 });
-promiseObject
-  .then((result) => {
-    // console.log(result);
-    console.log("Promise resolved:", result);
-    // (error)=>{
-    //     console.log(error,"Promise rejected");
+// promiseObject
+//   .then((result) => {
+//     // console.log(result);
+//     console.log("Promise resolved:", result);
+//     // (error)=>{
+//     //     console.log(error,"Promise rejected");
 
-    // }
-  })
-  .catch((error) => {
-    console.log("Promise rejected:", error.message);
-  });
-
-
+//     // }
+//   })
+//   .catch((error) => {
+//     console.log("Promise rejected:", error.message);
+//   });
 
 
 
-
+let promise = new Promise((resolve, reject) => {
+  
+});
+console.log(promise)
 
 
 

@@ -139,6 +139,7 @@ postData()
 
 
 
+  // dono upper wala bhi same .then but ya sort hai aise bhi request kar sakte hai ?
 // const url = "https://jsonplaceholder.typicode.com/posts"; // Replace this with your API endpoint
 // const data = {
 //   key1: 'value1',
