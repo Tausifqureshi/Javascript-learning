@@ -61,7 +61,8 @@ function myPromise() {
 
 
 
-//=========================================== Chai and Code  =================================================//
+//============================================ Chai and Code  =================================================//
+
 // promise use API call ?
 fetch("https://jsonplaceholder.typicode.com/posts")
 .then((result)=>{
