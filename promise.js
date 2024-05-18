@@ -62,8 +62,8 @@ function myPromise() {
 
 
 //============================================ Chai and Code  =================================================//
-
 // promise use API call ?
+
 fetch("https://jsonplaceholder.typicode.com/posts")
 .then((result)=>{
   if(!result.ok){
@@ -80,7 +80,7 @@ return result.json();
 })
 
 
-// dono same hi hai but status code check karne ka tarika alag hai?
+// dono same hi hai bus status code check karne ka tarika alag hai?
 // fetch("https://jsonplaceholder.typicode.com/post")
 //   .then((result) => {
 //     // Check if the response is OK (status code 200-299)
