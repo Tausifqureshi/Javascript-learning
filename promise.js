@@ -11,6 +11,7 @@
 // "rejected"	              an error object
 
 // promise property ?
+
 // Pending ?
 // When a  Promise object is "pending" (working), the result is undefined. ?
 
@@ -35,8 +36,8 @@ function myPromise() {
       // myResolve("OK");
       myResolve("Promise Success-Full Resolve");
     } else {
-      // myReject(new Error("I am a Error"));
-      myReject("I am a Error");
+      myReject(new Error("I am a Error"));
+      // myReject("I am a Error");
     }
   });
   //   console.log(typeof myPromise) //promise object aye ga return hoke ?
@@ -52,8 +53,8 @@ function myPromise() {
     )
     .catch(function (error) {
       // console.log('Caught by catch:', error);
-      console.log(error);
-      // console.log( error.message) //hamne Error Message me tu diye hoge ohi print hoga sirf  Error.messege se ?
+      // console.log(error);
+      console.log( error.message) //hamne new Error me jo diye hoge ohi print hoga sirf  Error.messege use se ?
     });
 }
 // console.log('Error outter the code run ');
@@ -61,30 +62,124 @@ function myPromise() {
 
 
 //=========================================== Chai and Code  =================================================//
+// promise use API call ?
+fetch("https://jsonplaceholder.typicode.com/posts")
+.then((result)=>{
+  if(!result.ok){
+  throw new Error(`HTTP error! status: ${result.status}`);
+  }
+console.log(result);
+return result.json();
+})
+.then((data)=>{
+  console.log(data)
+})
+.catch((error)=>{
+  console.log("API Create Error",error)
+})
 
 
+// dono same hi hai but status code check karne ka tarika alag hai?
+// fetch("https://jsonplaceholder.typicode.com/post")
+//   .then((result) => {
+//     // Check if the response is OK (status code 200-299)
+//     if (result.status === 200) {
+//       return result.json();
+//     } else {
+//       throw new Error(`HTTP error! status: ${result.status}`);
+//     }
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.error("API Create Error:", error);
+//   });
+
+// ====================================== Promise chaining use ==============================================//
+// Promise chaining ?
+
+// let promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let error = false;
+//     if (!error) {
+//       resolve({ userName: "Tausif", userEmail: "tausifqureshi@gmail.com" });
+//     } else {
+//       reject(new Error("Promise creation error"));
+//     }
+//   }, 2000);
+// });
+
+// // Promise chaining
+// promise
+//   .then((user) => { // Promise chaining is ko hi bolte hai ?
+
+//     console.log("UserName Return:", user);
+//     return user; // Passing the user object to the next .then()
+//     // pure user ko return means pura object retrun hoga fir next.then se ek ek value access kar sakte hai ?
+//   })
+//   .then((personUser) => { // Promise chaining is ko hi bolte hai ?
+
+//     console.log("UserName Access:", personUser.userName);
+//     return personUser.userEmail; // Passing userEmail to the next .then()
+//   })
+//   .then((userEmail) => { // Promise chaining is ko hi bolte hai ?
+
+//     console.log("Access UserEmail:", userEmail);
+//   })
+//   .catch((error) => {
+//     console.log(error.message); // This will log the error message if the promise is rejected
+//   });
 
 
-let promise = new Promise((resolve, reject) => {
+  //dono same hai but ham is ko only aysnc/await se handle kar re hai ?
+  let promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let error = false;
+      if (!error) {
+        resolve({ userName: "Tausif", userEmail: "tausifqureshi@gmail.com" });
+      } else {
+        // reject(new Error("Promise creation error"));
+        reject("Promise creation error");
+      }
+    }, 2000);
+  });
 
-  
-});
-console.log(promise)
+async function getData(){
+  try {
+    let response = await promise1;
+    console.log(response)
+  } catch (error) {
+    console.log("error",error)
+  }
+}
+// getData()
 
 
+// promise chainin same upper wala ye but is me async await use hua hai ?
+async function fetchData() {
+  try {
+    let user = await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        let error = false;
+        if (!error) {
+          resolve({ userName: "Tausif", userEmail: "tausifqureshi@gmail.com" });
+        } else {
+          reject(new Error("Promise creation error"));
+        }
+      }, 2000);
+    });
 
+    console.log("UserName Return:", user);
 
+    console.log("UserName Access:", user.userName);
 
-
-
-
-
-
-
-
-
-
-
+    console.log("Access UserEmail:", user.userEmail);
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+// fetchData();
 
 
 

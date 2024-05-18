@@ -14,12 +14,6 @@
 
 
 
-
-
-
-
-
-
 // ==========================================fetch API Post request ========================================= //
 // aysnc await use post request
 
@@ -139,7 +133,7 @@ postData()
 
 
 
-  // dono upper wala bhi same .then but ya sort hai aise bhi request kar sakte hai ?
+// upper wala ye dono same hi hai .then wala  but ya sort hai aise bhi request kar sakte hai ?
 // const url = "https://jsonplaceholder.typicode.com/posts"; // Replace this with your API endpoint
 // const data = {
 //   key1: 'value1',
@@ -170,6 +164,8 @@ postData()
 
 
 
+
+;
 // fetch API me file chanege code hai text.file ka ?
 const urls = "https://jsonplaceholder.typicode.com/posts";
 // async function myFun1(){

@@ -69,7 +69,7 @@ function ajaxFunction() {
 //     title: "What is AJAX",
 //     body: "AJAX stands for Asynchronous JavaScript..."
 // };
-
+ 
 function ajaxFunction() {
   let xhr = new XMLHttpRequest();
   xhr.responseType = "json";
