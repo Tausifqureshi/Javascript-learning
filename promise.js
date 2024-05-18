@@ -60,48 +60,16 @@ function myPromise() {
 
 
 
-//================================  Tahapa technical =================================================//
-let promiseObject = new Promise((resolve, reject) => {
-  //  setTimeout(() => {
-  //  let arr = [];  //is tara se promise reject hoga  hai  is Exmple me ?
+//=========================================== Chai and Code  =================================================//
 
-  let arr = [1, 2, 3, 4, 5, 6]; //is tara se promise reject hoga  hai  is Exmple me ?
-  if (arr.length >= 7) {
-    //check kar re hai arr ki lenght 0 se badi hona chaciye greater than use lef value badi hoan hamesa is liye ye condison reslove hogi true hai condison ?
-    resolve(arr); // Resolve with the array if it has elements
-  } else {
-    reject(new Error("Error Occurred")); // Reject with an error if the array is empty
-  }
-
-  //  },2000);
-});
-// promiseObject
-//   .then((result) => {
-//     // console.log(result);
-//     console.log("Promise resolved:", result);
-//     // (error)=>{
-//     //     console.log(error,"Promise rejected");
-
-//     // }
-//   })
-//   .catch((error) => {
-//     console.log("Promise rejected:", error.message);
-//   });
 
 
 
 let promise = new Promise((resolve, reject) => {
+
   
 });
 console.log(promise)
-
-
-
-
-
-
-
-
 
 
 
