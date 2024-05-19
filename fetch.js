@@ -1,6 +1,6 @@
 // ========================================= Ftach API =================================================//
 
-// Fatch API ----> fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota haim server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ?
+// Fatch API ----> Fetch ek global fetch method hai jo global se strat karta hai kisi resource ko fetch karne ke liye ? fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota hai server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ?
 // Fatch API AJAX Call ?
 
 // fetch("https://jsonplaceholder.typicode.com/todos/")
