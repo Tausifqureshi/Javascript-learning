@@ -37,7 +37,7 @@ const person1 = {
 // personInfo() //---> direct call karne se undefiend aye ga 
 
 person1.about(); //function call hore jis bhi object ke sath function ke sath defiend hai us se sath call hore hai ?
-// person2.about();
+// person2.about();z
 // person3.about();
 
 
@@ -180,8 +180,9 @@ console.log(student1.fullName.call(student2)) //Call Method ka use kar ke ek obj
 // let student1 = {
 //     fisrtName :"Tausif",
 //     lastName : 'qureshi',
+//  // age :25
   
-// }
+// } 
 
 // let student2 = {
 //     fisrtName :"Javed",
@@ -197,6 +198,8 @@ console.log(student1.fullName.call(student2)) //Call Method ka use kar ke ek obj
 
 // console.log(fullName.apply(student2,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
 
+
+// console.log(fullName.apply(student1,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
 
 //==============================harshi Start Apply Method=============================================//
 
