@@ -23,6 +23,7 @@
 
 
 //Creating Using Object-Constructor ?
+
 function Car (name, modal, color,weight){ //Object-Constructor function me first letter Captal hota hai ?
   this.carName = name, //this means currnet object ka referance means Car object ka referace ?
   this.carModa = modal,
