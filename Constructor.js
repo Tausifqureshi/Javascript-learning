@@ -144,13 +144,6 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 
 
 
-//================================================ Object Constructor==========================================//
-//Creating Object Constructor ---> First Letter Captital
-
-let Person = {
-  firstName : "Tausif",
-  lastName : "Qureshi"
-}
 
 
 
