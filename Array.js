@@ -106,13 +106,13 @@
 
 // console.log(array1);
 
-Array.prototype.sum = function(){ //khud ka method add kar re hai array ke prototype me jo array ke in built method hai foreach map jo bhi hai lekin ham is me apna banya hua method use kar rehe hai ?
+Array.prototype.sum = function(){ //khud ka method add kar re hai array ke prototype me jo array ke in built method hai foreach map jo bhi hai lekin ham is me apna banya hua method add kar rehe hai jo kisi bhi array ke sath use karna ho kar sakte hai apni marzi hai ?
 
-return this .reduce((accumulator, currentValue)=>accumulator + currentValue ,0);//this aray 1 ko hi refer kar ra hai ?
+return this .reduce((accumulator, currentValue)=>accumulator + currentValue ,0);//this array 1 ko hi refer kar ra hai ?
 }
 
 let array1 = [2,3,4];
-console.log(array1.sum());
+console.log(array1.sum()); //jo sum naam ka khud ka method banye hai us ko array1 ke sath use kar re hai jo sub number ka sum kar ke dege plus means ?
 
 // console.log(array1.__proto__); // sum method add hua ya nhi cheking ?
 

@@ -88,24 +88,92 @@ let obj2 = {
     //   alert("Run the method")
     // }
 }
+// console.log(obje)
+// console.log(obj2)
 
-obje.__proto__ = obj2; // __proto__  ----> aise use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
+// obje.__proto__ = obj2; // __proto__  ----> aise use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ? obje obj2 ki shari property and method use kar ra hai ? is ko hi bolte hai prototype-inheritance ?
 
-obj2.__proto__ ={ //ek propaty ka bhi prototyp se add kar sakte hai ? is ka prototype object set kar re hai ?
-    autherName : "English",
-};
-console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
+Object.setPrototypeOf(obje,obj2) //same hi kam hora .__proto__ but ye setprototype modern hai ab is se hi use kar te hai ?
 
-
+// obj2.__proto__ ={ //ek propaty ka bhi prototyp se add kar sakte hai ? is ka prototype object set kar re hai ?
+//     autherName : "English",
+// };
+// console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
+   
+Object.setPrototypeOf(obj2,{ 
+  autherName: 'Maths' //same kam upper wala kim tara property add kar re hai  but ham is me setprototypeof ka use kar ke q ke ye modern hai ?
+});
+// console.log(obje.autherName)
 
 // obje.about();
-// console.log(obje.owner) // __proto__   ek object se dusre object ki property bhi use kar sakte hai ?
+// console.log(obje.owner) // __proto__   ek object se dusre object ki property bhi use kar sakte hai ? 
+
+
+
+// ======================================================================================================//
+// object ke prototype me method create jo jo object ke sath use kar sakte hai q ke hamne prototype me ye method cerate kar diya hai ?
+        Object.prototype.tausif = function() {
+           console.log("I am All time present");
+      }
+      
+      var person = {
+        name: 'Alice',
+        age: 30
+    };
+    
+    var car = {
+        brand: 'Toyota',
+        model: 'Corolla'
+    };
+    
+    // person.tausif(); // Logs: "I am All time present"
+    // car.tausif();    // Logs: "I am All time present"
+    
+
+
+// ==========================================================================================//
+// Array ke bhi prototype set koi bhi arry use us me ye call hoga ?
+
+Array.prototype.power = function() {
+  // "this" refers to the array being called upon
+  return this.map(function(num) { //this is me jo bhi varible is ko use kar re ga jaise ke arrayInstance ko refere kar ra hai jo jo call us ko refere ka ke ga this keyword refere ke liye hi use hota hai?
+
+    return num ** 3;  //power ke liye 3 use ? squer ke liye 2 use ?
+  }); //apna khud ka banya hua method jo hame har number ka power nikal ke dega ham is se kisi bhi array ke sath use kar sakte hai only array ke sath hi use ?
+};
+
+// Create an array instance to call the sumArray method
+let arrayInstance = [8,9,12];
+let storeValue = arrayInstance.power();
+// console.log(storeValue);  
+
+
+let secondArray = [2,4,5];
+// console.log(secondArray);
+let accessValue = secondArray.power();
+console.log(accessValue);  
 
 
 
 
 
 
+// ==========================================================================================//
+//String ke prototype me add method kisi bhi string ke sath use kar sakte hai ?
+
+String.prototype.trimLength = function() {
+  //Remove leading and trailing whitespace
+
+  return`${ this.trim()}`; //this is me jo bhi varible is ko use kar re ga means call kar re ga jaise ke tringLength ko refere kar ra hai jo jo call us ko refere ka ke ga this keyword refere ke liye hi use hota hai?
+};
+
+
+
+let stringLength = "Javascript          "
+console.log(stringLength)
+console.log(stringLength.length);
+let valueTrim = stringLength.trimLength();
+console.log(valueTrim.length)
 
 
 
@@ -140,59 +208,6 @@ console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
               }
          const orderName = new Pizza('Chicken pizza');
         //  console.log(orderName)
-
-
-
-
-
-
-
-
-// =========================================================================//
-// aisa object ke prototype me method create jo jo object ke sath use kar sakte hai q ke hamne prototype me ye method cerate kar diya hai ?
-        Object.prototype.tausif = function() {
-           console.log("I am All time present");
-      }
-      
-      var person = {
-        name: 'Alice',
-        age: 30
-    };
-    
-    var car = {
-        brand: 'Toyota',
-        model: 'Corolla'
-    };
-    
-    // person.tausif(); // Logs: "I am All time present"
-    // car.tausif();    // Logs: "I am All time present"
-    
-
-
-// ==========================================================================================//
-// Array ke bhi prototype set koi bhi arry use us me ye call hoga 
-
-// Array.prototype.sumArray = (num1, num2)=>{
-//   return num1 ** num2;
-// };
-
-// let storeVlaue = sumArray(5,5);
-// console.log(storeVlaue)
-
-
-let sumArray = (num1)=>{
-  return num1;
-};
-
-let storeVlaue = sumArray(5);
-console.log(storeVlaue)
-
-
-
-
-
-
-
 
 
 
