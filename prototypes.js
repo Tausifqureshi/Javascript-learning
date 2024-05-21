@@ -91,7 +91,7 @@ let obj2 = {
 
 obje.__proto__ = obj2; // __proto__  ----> aise use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
 
-obj2.__proto__ ={ //ek prototy ka bhi prototyp se kar sakte hai ? is ka prototype object set kar re hai ?
+obj2.__proto__ ={ //ek propaty ka bhi prototyp se add kar sakte hai ? is ka prototype object set kar re hai ?
     autherName : "English",
 };
 console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
@@ -148,9 +148,44 @@ console.log(obje.autherName) //protypes set constructor ke ander 'English' ?
 
 
 
+// =========================================================================//
+// aisa object ke prototype me method create jo jo object ke sath use kar sakte hai q ke hamne prototype me ye method cerate kar diya hai ?
+        Object.prototype.tausif = function() {
+           console.log("I am All time present");
+      }
+      
+      var person = {
+        name: 'Alice',
+        age: 30
+    };
+    
+    var car = {
+        brand: 'Toyota',
+        model: 'Corolla'
+    };
+    
+    // person.tausif(); // Logs: "I am All time present"
+    // car.tausif();    // Logs: "I am All time present"
+    
 
 
+// ==========================================================================================//
+// Array ke bhi prototype set koi bhi arry use us me ye call hoga 
 
+// Array.prototype.sumArray = (num1, num2)=>{
+//   return num1 ** num2;
+// };
+
+// let storeVlaue = sumArray(5,5);
+// console.log(storeVlaue)
+
+
+let sumArray = (num1)=>{
+  return num1;
+};
+
+let storeVlaue = sumArray(5);
+console.log(storeVlaue)
 
 
 

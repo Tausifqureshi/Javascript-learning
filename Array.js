@@ -88,7 +88,7 @@
 
 
 
-// =========== ============================Array ka prototyoe cheking =======================================//
+// =========== ============================Array ka prototype cheking =======================================//
 // prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? Array ka method check karne kerne ke liye use hotan hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? javascript ke inbilt data-type ko prototypes se nhi change kar sakte hai Example jitne niche diye huye hai Data-Types un sub ka bhi prototype nhi change kar sakte hai ?
 
 // Numbers
@@ -114,7 +114,7 @@ return this .reduce((accumulator, currentValue)=>accumulator + currentValue ,0);
 let array1 = [2,3,4];
 console.log(array1.sum());
 
-// console.log(array1.__proto__); // sum method add hua ya bhi cheking ?
+// console.log(array1.__proto__); // sum method add hua ya nhi cheking ?
 
 
 // <------------------------------>practical<-------------------------------->
