@@ -8,7 +8,20 @@
 // Inheritance
 // Polymorphism
 
-
+function SetUserName(userName){
+    this.myName = userName
+  }
+  
+  
+  function CreateUser(userName,email,password) {
+    SetUserName(userName)
+    this.myEmail = email;
+    this.myPassword = password;
+  }
+  
+  let visitingUser = new CreateUser("Tausif","Tausifqureshi@gmail.com",123);
+  console.log(visitingUser)
+  
 
 
 

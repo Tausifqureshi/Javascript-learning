@@ -144,12 +144,8 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 
 
 
-
-
-
-
-
-
+//  ==========================================This-call=======================================================//
+// This and call ek sath use ---> 
 
 
 
