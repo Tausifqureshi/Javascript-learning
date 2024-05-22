@@ -11,6 +11,7 @@
 // person.contec= 8429097693; //add peoperty object me
 // person[key]= "tausifqureshi@gaml.com" //aise key value add kar sakte key email aye gi ?
 // person.lastName = "javed"  //aise bhi add karte hai but ye normal add hoga is se ?
+// person.name = "Qureshi";   //value ka bhi change kar sakte hai aise ?
 
 // document.writeln(person.hobbies)
 // console.log(person["name"]) //aise bhi access kar sakte breaket notation se javascript me key string me hi hoti hai?

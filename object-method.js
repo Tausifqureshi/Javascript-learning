@@ -10,7 +10,7 @@
 const person1 = {
     firstName : "Tausif",
     age: 24,
-    // about: personInfo, // object ke ander jo about hai o key hai or personInfo () ye function hai jo value ki tara set kar re hai personInfo upper jo bher function ki tara use hora hai line number 10 me ?
+    // about: personInfo, // object ke ander jo about hai o key hai or personInfo () ye function hai jo value ki tara set kar re hai personInfo upper jo bher function ki tara use hora hai line number 6 me ?
 
     about:function(){ //about key hai function value jaisa object me hota  hai key value paira ? ander create method means function ?
     console.log(`person name is ${this.firstName} and age is ${this.age}`);
@@ -30,7 +30,7 @@ const person3 = {
     age: 17,
     // about: personInfo
 }
-
+ 
 // personInfo() //---> direct call karne se undefiend aye ga 
 
 person1.about(); //function call hore jis bhi object ke sath function ke sath defiend hai us se sath call hore hai ?
@@ -62,13 +62,13 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 // //  console.log([print],myObj) // key Value  print hogi is se ?
 //  })
 
- //Object.Value() Use; ----> Array ki fom me value data hai fir ham is me koi bhi oppressiom kar sakte hai loop arr pe chalna ho ya kcuh bhimarray ke method use karna ho ?
+ //Object.Value() Use; ----> Array ki fom me value data hai fir ham is me koi bhi oppressiom kar sakte hai loop arr pe chalna ho ya kcuh bhi array ke method use karna ho ?
 //  let value = Object.values(myObj);
 //  console.log(value)
 //  console.log(Array.isArray(value)) //Checking Array True and false retrun This method ?
 
 
-// Object.entries() Use ---> Ye Pura ki pura array deta hai kitne array hai us ki length deta hai ? fir ham is me koi bhi oppressiom kar sakte hai loop arr pe chalna ho ya kcuh bhimarray ke method use karna ho ?
+// Object.entries() Use ---> Ye Pura ki pura array deta hai kitne array hai us ki length deta hai ? fir ham is me koi bhi oppressiom kar sakte hai loop arr pe chalna ho ya kcuh bhi array ke method use karna ho ?
 // let entries = Object.entries(myObj);
 // console.log(myObj) 
 // console.log(entries[1]); //Key Value dono print hoge

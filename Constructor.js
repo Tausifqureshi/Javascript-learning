@@ -134,8 +134,8 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 //add.hello = function(){  //add object me ek method bhi add hora hai hello name ka means function?
 // return this.name + "" + this.id
 //}
-
 //this.hello = function(){     //only jo hame retun karwana ho id,name jo bhi aisa karte hai
+
 // return this.name + "" + this.id
 //}
 //console.log(add.hello());  //pura object print hoga?
