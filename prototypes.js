@@ -111,12 +111,12 @@ Object.setPrototypeOf(obj2,{
 
 
 // ======================================================================================================//
-// object ke prototype me method create jo jo object ke sath use kar sakte hai q ke hamne prototype me ye method cerate kar diya hai ?
-        Object.prototype.tausif = function() {
-           console.log("I am All time present");
-      }
+// object ke prototype me method create jo jo object ke sath use kar sakte hai q ke hamne prototype me ye method cerate kar diya hai ? ys code ko block kar sakta hai is tara se share code ko ?
+      //   Object.prototype.tausif = function() {
+      //      console.log("I am All time present");
+      // }
       
-      var person = {
+    var person = {
         name: 'Alice',
         age: 30
     };
@@ -132,7 +132,7 @@ Object.setPrototypeOf(obj2,{
 
 
 // ==========================================================================================//
-// Array ke bhi prototype set koi bhi arry use us me ye call hoga ?
+// Array ke bhi prototype set koi bhi arry use us me ye call hoga ? is se use karna jayda sahi nhi hai Prototype ka is se code me 
 
 Array.prototype.power = function() {
   // "this" refers to the array being called upon
@@ -159,12 +159,14 @@ console.log(accessValue);
 
 
 // ==========================================================================================//
-//String ke prototype me add method kisi bhi string ke sath use kar sakte hai ?
+//String ke prototype me add method kisi bhi string ke sath use kar sakte hai ? is se use karna jayda sahi nhi hai Prototype ka 
 
 String.prototype.trimLength = function() {
   //Remove leading and trailing whitespace
 
-  return`${ this.trim()}`; //this is me jo bhi varible is ko use kar re ga means call kar re ga jaise ke tringLength ko refere kar ra hai jo jo call us ko refere ka ke ga this keyword refere ke liye hi use hota hai?
+  // return this.trim().length; //this is me jo bhi varible is ko use kar re ga means call kar re ga jaise ke tringLength ko refere kar ra hai jo jo call us ko refere ka ke ga this keyword refere ke liye hi use hota hai?
+
+  return this.replace(/^\s+|\s+$/, '').length; //same kam kar ra hai trim ka hi ?
 };
 
 
