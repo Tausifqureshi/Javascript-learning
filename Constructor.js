@@ -145,7 +145,34 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 
 
 //  ==========================================This-call=======================================================//
-// This and call ek sath use ---> 
+// This and call ek sath use ---> Aisa bi constructor function khabi banae ki zarurat pad sakti hai ?
+
+
+function SetUserName(userName){
+  this.myName = userName
+}
+
+
+function CreateUser(userName,email,password) {
+SetUserName.call(this,userName); //---> ham is wale function se userName set karwana hai ? is me jo ham userName pass kar re hai o is hi function CreateUser ka hi jo ham ek argument dere hai q ke hamne setUserName me ek Parameter pass kiya hai tu argument bhi dena hoga is liye ham argument ke taur per is Createuser function me ka userName de re hai ? ham is function ka use kar ke CraeteUser fubction wale ka userName Set kar re hai ? call ham is liye use kar re hai Call function ka use kar ke ek object ki property dusre object use kar sakta haiu ? this object ko refere karta hai is SetUserName() me jo this hai o CreateUser function ke userName ke liye call hora hai or console me is ki propertymyName ke set hogi q ke hame SetUserName se username set kar re hai tu hamne is usename varibel ka naam ya key bol do is naam myName rahka hai is liye CreateUser function wale userName me jo bhi value aye gi is myName me set ho jaye gi ?
+
+
+
+  // this.myName = userName; ----> //aisa bhi set kar sakte hai but hame abhi aisa nhi karna hame ek dusre function ki value ko use karna hai is wale function me ?
+
+  this.myEmail = email;
+  this.myPassword = password;
+}
+
+let visitingUser = new CreateUser("Tausif","Tausifqureshi@gmail.com",123);
+console.log(visitingUser)
+
+
+
+
+
+
+
 
 
 
