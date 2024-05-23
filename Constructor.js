@@ -2,10 +2,23 @@
 
 
 //=========================================JS Function Object Constructor=======================================//
-//Is se hi ham Constructor function ya Constructor object dono same hi hai ? Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai ? Jab bhi ham object Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ?
+//Is se hi ham Constructor function ya Constructor object dono same hi hai ? Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai ? Jab bhi ham object Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ? 
+
+// ChatGPT Se liya hua Syntax ---> Constructor functions JavaScript mein classes introduce hone se pehle objects create karne ke liye use kiye jate the. Ek constructor function banane ke liye, aap function keyword ka use karte hain aur new keyword ke sath ise call karte hain.
+
+// ChatGPT Se liya hua Syntax ---> Constructor functions mein methods ko prototype pe define karna padta hai, jo thoda complex aur verbose ho sakta hai.
+
+// ChatGPT Se liya hua Syntax ---> Constructor functions mein inheritance ko implement karna thoda complex hota hai aur manually prototype ko set karna padta hai.
+
+
 
 
 // New keyword ----> is kyeword ka use hota hai Consturctor ko call karne ke liye kisi object ko create  karne ke liye use kiya jata hai ? is ka ham use karte hai constructor function se object banane ke liye javascript me ?
+
+// ChatGPT Se liya hua Syntax ---> JavaScript me new keyword ka istemal objects create karne ke liye kiya jata hai. Yeh keyword ek constructor function ko call karta hai aur ek naya object return karta hai. new keyword ke sath, JavaScript internals kuch specific steps follow karta hai:
+
+
+
 
 
 // =========================================== Glowvia Teac Chaneal Chaptert =================================//

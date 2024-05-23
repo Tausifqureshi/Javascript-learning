@@ -1,5 +1,11 @@
 //Asynchronous vs synchronous Programming ---> 
 
+// ChatGPT Se liya hua Syntax --->  JavaScript me Asynchronous aur Synchronous code execution ke concepts bahut important hain. Inka samajhna, code likhne aur samajhne ka tareeka kafi badal deta hai. Chaliye, main aapko in dono concepts ke baare mein detail mein samjha deta hoon.
+
+// ChatGPT Se liya hua Syntax --->  Synchronous Code Execution ?  Synchronous code execution ka matlab hai ki code ek line ke baad ek line execute hota hai. Jab tak ek line ka execution complete nahi hota, tab tak agli line execute nahi hoti.
+
+// ChatGPT Se liya hua Syntax ---> Asynchronous Code Execution ? Asynchronous code execution ka matlab hai ki code ek line ke baad ek line execute nahi hota. Kuch operations jo time consume karte hain, jaise ki fetching data from a server, file reading, ya ek timer ke through delay, inhe asynchronous tareeke se execute kiya jata hai. Isme, code execution continue hoti hai jab tak asynchronous operation complete nahi hota.
+
 
 // synchronous ----> code line bye line execute hona us se synchronous progrmming bolte hai ?
 // console.log("Tausif"); //synchronous work hora code line bye bye execute hora hai ?

@@ -1,6 +1,10 @@
 // Function --->  function bhi referance type hote hai ? function ek block off the code hota hai jo ek particular taks ko parform karne use kiya jata hai ?  function ko ek bar create kar ke reuse bhi kar sakte hai ? ap function me aisa code defind kar sakte hai jis ka use bar bar kiya ja sakta hai ? same code ko kahi bar use kar sakte hai alag alag argument ke sath or us me ek new result execute karwa sakte hai ?  
 
 
+// // ChatGPT Se liya hua Syntax ---> JavaScript me functions ka use code ko modular, reusable, aur organized banane ke liye kiya jata hai. Functions kuch specific tasks ko perform karte hain aur values return kar sakte hain. Functions define aur invoke (call) kiye ja sakte hain.
+
+
+
 
 
 // <------------------------------------>function declaretion<------------------------------------------->

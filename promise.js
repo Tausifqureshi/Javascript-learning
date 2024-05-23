@@ -2,6 +2,13 @@
 
 //Promise ---> Javascript me promise ek special type ka object hota hai ? promise value producee karta hai after Asynchronous operation perform karne ke liye ya ek error producee karta hai jo hamne Asynchronous operation  kiya hai o successfully perform nhi hua hai ? promise jab bhi call hota hai ya resolve matlab success hoga ya reject hoga ? promise ka matlab hota hai code of execution take code Asynchronous me run kar sake ? Promise ek promise hai code ko run karne ka ?
 
+// ChatGPT Se liya hua Syntax ---> Promises JavaScript me asynchronous programming ko handle karne ke liye use hoti hain. Promises ek bahut hi powerful aur flexible tool hain jo hume allow karta hai ki hum async operations ko efficiently manage kar sakein. Chaliye, main aapko pura detail ke sath promise ke bare me samjha deta hoon.
+
+// ChatGPT Se liya hua Syntax ---> Promise Kya Hai ? Promise ek object hai jo future me kisi async operation ka completion ya failure ka result represent karta hai. Ye ek placeholder ki tarah kaam karta hai jahan hum ek async operation ko start karte hain aur future me uska result obtain karte hain.
+
+
+
+
 // Promise ko handle karne ke liye new promise() method ka use kiya jata hai ?
 
 //  promise two property ko support karta hai state and reuslt ?

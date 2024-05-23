@@ -1,5 +1,9 @@
 //Javascript-Object ---> js me kahi data types hote hai us me se ek data type hai object ? object ka use bhi key value ka store karne le liye kiya jata hai ? object bhi ek referance type hai ? object bhi memory me aise hi strore hota haio jaise array hota hai share referance types ek hi tara se store hote hai memory me ? obejct me indexing nhi hota hai ? is me array bhi store kar sakte hai ? Objecr itareble nhi hota hai ?
 
+// // ChatGPT Se liya hua Syntax ---> JavaScript me objects ek powerful data structure hain jinka use key-value pairs ko store karne ke liye hota hai. Har key ek unique identifier hoti hai aur uss key ke corresponding ek value hoti hai. Chaliye, main detail mein samjhata hoon aur kuch examples ke sath dekhta hoon.
+
+
+
 // const key = "email"; //key add hori emails ki
 // let person = {
 //     name: 'Tauisf',

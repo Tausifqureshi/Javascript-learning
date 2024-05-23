@@ -52,7 +52,7 @@
 // **=  Assignment Exponentiation Operators (ES2016) //ES 2016 me aya ye verions javascript ?
 
 // let c = 10;
-// let z = c += 5;  //is se hora hai c me jo puri value ti us c me ham fir 5 += assign kar re hai is ka answer 15 hoga ? sortcut bolte hai is ko ?
+// let z = c += 5;  //is se hora hai c me jo purani value ti us c me ham fir 5 += assign kar re hai is ka answer 15 hoga ? sortcut bolte hai is ko ?
 // console.log(z) // sub same hi operator aise use karna hai ?
 
 // let c = 6;
