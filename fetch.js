@@ -1,8 +1,49 @@
 // ========================================= Ftach API =================================================//
 
 // Fatch API ----> Fetch ek global fetch method hai jo global se strat karta hai kisi resource ko fetch karne ke liye ? fatch API ECMAScript6 (ES6) featur me aya hai ? Fatch API ka work hota hai server se deta lena ya dene ke liye use hota hai ? Fatch API Promise return karta hai ?
-// Fatch API AJAX Call ?
 
+// ChatGPT Se liya hua Syntax ---> Fetch API JavaScript mein server se data fetch karne ke liye ek built-in interface hai. Isse aap HTTP requests bhej sakte hain, jaise GET, POST, PUT, DELETE, etc. Yeh ek modern alternative hai XMLHttpRequest (XHR) object ka, jo traditional taur par data fetch karne ke liye istemal hota tha.
+
+// Fetch API ke kaam karne ka tarika yeh hai:
+// fetch() function: Yah function ek URL ko argument ke roop me leta hai aur ek Promise return karta hai.
+
+// Promise: Promise ek object hai jo ek asynchronous operation ke result ko represent karta hai.
+// Response object: Promise resolve hone par, yah ek Response object return karta hai jo HTTP response ko represent karta hai.
+
+// Response methods: Response object me kai methods hote hain jinse aap response data ko access aur manipulate kar sakte hain. Jaise ki:
+// json(): Response body ko JSON format me parse karta hai.
+// text(): Response body ko string me convert karta hai.
+// blob(): Response body ko Blob object me convert karta hai.
+
+// Error handling: Agar request me koi error aata hai, to Promise reject ho jaata hai aur error object return hota hai.
+
+
+// ChatGPT Se liya hua Syntax ---> Example
+fetch('https://api.example.com/data')
+  .then(response => {
+    // Yahaan se response ka status check karenge
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    // Agar sab thik hai, toh JSON format mein response ko parse karenge
+    return response.json();
+  })
+  .then(data => {
+    // Ab yahaan par aap jo bhi karna chahte hain, woh kar sakte hain
+    console.log(data);
+  })
+  .catch(error => {
+    // Agar koi error aata hai toh yahaan handle karenge
+    console.error('There was a problem with the fetch operation:', error);
+  });
+
+
+
+
+
+
+
+// Fatch API AJAX Call ?
 // fetch("https://jsonplaceholder.typicode.com/todos/")
 //   .then((apiData) => {
 //     console.log(apiData);
@@ -166,7 +207,7 @@ postData()
 
 
 ;
-// fetch API me file chanege code hai text.file ka ?
+//fetch API me file chanege code hai text.file ka ?
 const urls = "https://jsonplaceholder.typicode.com/posts";
 // async function myFun1(){
 // try {
@@ -184,3 +225,40 @@ const urls = "https://jsonplaceholder.typicode.com/posts";
 // }
 
 // myFun1();
+
+
+
+
+      // Fatch API Call data.json File?
+      async function myFun() {
+        try {
+          let call = await fetch("data2.json");
+          let respon = await call.json();
+          console.log(respon);
+        } catch (error) {
+          console.error("Error fetching data: ", error);
+        }
+      }
+      // myFun()
+
+
+
+
+
+// jab bhi data fetch karte hai await nhi use tu promise pending return karta hai ?
+//  let url = "https://jsonplaceholder.typicode.com/posts";
+  // async function fetchData(){
+  //   try {
+  //   // let dataFetch = fetch(url); //
+  //   let dataFetch = await fetch(url) ;
+  //   // console.log(dataFetch);
+  //   } catch (error) {
+  //     console.error('There was a problem with the fetch operation:', error)
+  //   }
+ 
+  // }
+
+  // fetchData()
+
+
+  

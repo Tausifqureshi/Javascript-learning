@@ -1,6 +1,19 @@
 //Asynchronous Programming me ata hai ---> 
 
 //async hame hamesa propmies return karta hai? asyn function bhi propmies ki tara work karta hai ya ye reslove hoga ya reject? esync function ES 2017 me javascript me aya?awaite bhi aysnc ke ander hi work karta hai awaite waite karta hai promies ke liye? kisi bhi function ke aage aysnc laga dete hai o function promies ban jata hai?
+
+
+// ChatGPT Se liya hua Syntax --->  Async-await JavaScript mein ek powerful technique hai jo asynchronous code ko likhne aur manage karne mein madad karta hai. Is technique ka istemal promises ke upar kiya jata hai. Async-await, code ko readable aur maintainable banane ke liye ek elegant tarika hai
+
+
+// ChatGPT Se liya hua Syntax --->  Async functions:
+// Async functions ko async keyword ke saath define kiya jaata hai. Ye functions promises return karte hain.
+
+// ChatGPT Se liya hua Syntax ---> Await keyword:
+// await keyword ka use async function ke andar kiya jaata hai. Yah ek promise ke resolve hone ka intezaar karta hai aur phir promise ka resolved value return karta hai
+
+
+
 // async function test (){ 
 //     return 'Tausif'
 // }
@@ -56,35 +69,3 @@
 
 
 
-      // Fatch API Call data.json File?
-      async function myFun() {
-        try {
-          let call = await fetch("data2.json");
-          let respon = await call.json();
-          console.log(respon);
-        } catch (error) {
-          console.error("Error fetching data: ", error);
-        }
-      }
-
-      // myFun()
-
-
-
-
-
-// jab bhi data fetch karte hai await nhi use tu promise pending return karta hai ?
-
- let url = "https://jsonplaceholder.typicode.com/posts";
-  // async function fetchData(){
-  //   try {
-  //   // let dataFetch = fetch(url); //
-  //   let dataFetch = await fetch(url) ;
-  //   // console.log(dataFetch);
-  //   } catch (error) {
-  //     console.error('There was a problem with the fetch operation:', error)
-  //   }
- 
-  // }
-
-  // fetchData()
