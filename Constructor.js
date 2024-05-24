@@ -1,6 +1,6 @@
 // OOPs in  me hi ata hai Constructore bhi
 
-
+//  ES5 (ECMAScript 2014) OOP ka old Concept ab is ki jaga new OOP ne liya jis se ham Class and Object Constructor bolte hai ?
 //=========================================JS Function Object Constructor=======================================//
 //Is se hi ham Constructor function ya Constructor object dono same hi hai ? Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai ? Jab bhi ham object Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ? 
 
