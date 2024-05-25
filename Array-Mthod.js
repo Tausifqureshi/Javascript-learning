@@ -4,6 +4,8 @@
 // <------------------------------>Array concat Method<-------------------------------->
 // concat Method ---> ye method two array kop joind karne ke liye use hota hai ? ye method new array return karta hai joined kiye huye array ko ? ye original array ko change nhi karta hai ye method ? array ki lenght bhi deta hai kitne array hai us me?
 
+// ChatGPT Se liya hua Syntax ---> concat() method do ya do se zyada arrays ko ek saath jodta hai aur ek naya array return karta hai. Yah method original arrays ko modify nahi karta hai, balki ek naya array banaata hai jismein sabhi elements shaamil hote hain.
+
 // const arr1 = ["Cecilie", "Lone"];
 // const arr2 = ["Emil", "Tobias", "Linus"];
 // const children = arr1.concat(arr2);
@@ -20,6 +22,9 @@
 
 // <------------------------------>Array every Method<-------------------------------->
 // every method ---> ek call back function lete hai ? or ye original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai wrana flase deta hai ? ye method true and false me answer deta hai ?
+
+// ChatGPT Se liya hua Syntax ---> every() method JavaScript me ek array method hai jo check karta hai ki array ke sabhi elements provided test function ko pass karte hain ya nahi. Agar sabhi elements function ko pass karte hain, to yeh method true return karta hai; agar koi bhi element fail karta hai, to yeh method false return karta hai.
+
 
 // let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
 // let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi']; //is tara se check tu hi ture aye ga share element same hona chaiye ?
@@ -47,6 +52,10 @@
 // <------------------------------>Array fill Method<-------------------------------->
 //Fill method --->  is method se array ke element ko ek value se overwright kar sakte hai means rejact kar ke dusri value add karta hai ? ye method original array ko overwrites karta hai ? is method se start and end position se value change kar sakte hai ? start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga ? is method me 3 parametar hote hai first value kon si add karna hai second start postion kon se index se start karna hai 3position hoti hai end kon si index tak value change karna overwites karna hai ? //ye method jab ham end position dete hai us se count nhim karta hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga 'Lemon' tak nhi jaye ga ye is ka roll hai ? array ki lenght bhi deta hai kitne array hai is me? 
 
+
+
+// ChatGPT Se liya hua Syntax ---> fill() method ek array ke sabhi elements ko ek specific value se replace kar deta hai. Yah method array ko modify karta hai aur ek modified array return karta hai. Original array unchanged rahata hai.
+
 // const fruits = ["Banana", "Orange", "Apple", "Mango","Lemon"];
 // console.log(fruits);
 
@@ -65,8 +74,10 @@
 //<------------------------------>Array Filter Method<-------------------------------->
 //Filter Method----> ye method use hota hai ek element me se kuch bada ya chhote number nikalne keliye ? ye method new array deta hai ? ye method bhi ek callback function leta hai ? ye method original array ko change nhi karta hai ? ye method bhi 3 parameter leta hai currentValue index or array jo hamne defiend kiya hoga ? ye method higher oder function hai means hota hai aisa function jo kisi or function ko argument accpet karte hai ? kuch bade number nilak na ya odd even number nikalne ke liye use hota hai ? Array deta hai pura us ki lenght ke sath ?
 
-//Normal Exapmle kuch big number ko 18 > se bada tu new array me store karna?
+// ChatGPT Se liya hua Syntax ---> Array filter() method JavaScript mein ek bahut hi powerful method hai jo hume ek naya array banane mein madad karta hai, jisme sirf woh elements shamil hote hain jo di gayi condition ko satisfy karte hain. Yeh method ek callback function ko lekar kaam karta hai, jo har array element ke liye ek baar chala jata hai. Agar callback function true return karta hai, toh woh element naye array mein shamil hota hai, nahi toh nahi.
 
+
+//Normal Exapmle kuch big number ko 18 > se bada tu new array me store karna?
 // let arr = [34,45,56,2,5,7,8,23,15] //jo number Greater-than 18 se bada number jitne ohi aye ge is method se or o sahre element new array me store hoge  ye method new array deta hai ?
 // let arr1 = arr.filter((val , index)=>{
 //        return val > 18 ,index; //index bhi print karwa sakte hai hamare pe hai ?
@@ -118,6 +129,8 @@
 
 // <------------------------------>Array find Method<--------------------------------------------------------->
 //Find Method ---> ye method array ke koi bhi first index ki value milti hai us value ko hi return kar deta hai aage badta hi nhi hai ? koi value nhi milta tu ye method undefind deta hai agar milta hai tu us ki value deta hai 'cate','lion' aisa deta hai? ya method value hai ya nhi hai dhakta hai ? ye method bhi ek call back function leta hai? ye method original array ko change nhi karta hai ?
+
+// ChatGPT Se liya hua Syntax --->    
 
 //find method
 // const numArray = [1,3,4,5,7,9,10];
