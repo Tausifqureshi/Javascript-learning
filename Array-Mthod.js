@@ -132,6 +132,7 @@
 
 // ChatGPT Se liya hua Syntax --->    
 
+
 //find method
 // const numArray = [1,3,4,5,7,9,10];
 
