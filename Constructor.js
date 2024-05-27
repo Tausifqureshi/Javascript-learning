@@ -36,7 +36,6 @@
 
 
 //Creating Using Object-Constructor ?
-
 function Car (name, modal, color,weight){ //Object-Constructor function me first letter Captal hota hai ?
   this.carName = name, //this means currnet object ka referance means Car object ka referace ?
   this.carModa = modal,
@@ -140,6 +139,7 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 // Show.prototype.nationlity = 'indian'; //constructor me alag se add karne ka tarika ye aisa
 
 //let add = new Show("Tausif",12,2300); //new keyword se constructor Object create hora show wale function ka? 
+// console.log(add); // pura object print hoga ? 
 
 //add.nationlity= 'indian'  //only object me add add hoga aise constructor me add nhi hoga ?
 
@@ -147,11 +147,9 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 //add.hello = function(){  //add object me ek method bhi add hora hai hello name ka means function?
 // return this.name + "" + this.id
 //}
-//this.hello = function(){     //only jo hame retun karwana ho id,name jo bhi aisa karte hai
 
-// return this.name + "" + this.id
-//}
-//console.log(add.hello());  //pura object print hoga?
+//console.log(add.hello());  // jo value print karwaye ohi aye ga is add wale function se ?
+
 
 
 
