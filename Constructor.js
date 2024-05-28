@@ -36,6 +36,63 @@
 
 
 //Creating Using Object-Constructor ?
+
+// function Student(fName, lName, age) { //is tara se bhi bana sakte Constructor function jo hame eyse pade ?
+//   // Call the User constructor to initialize User properties
+//   User.call(this, fName, lName, age);
+// }
+
+// // Define the User constructor
+// function User(fName, lName, age) {
+//   this.firstName = fName;
+//   this.lastName = lName;
+//   this.age = age;
+// }
+
+// // Define methods on User prototype
+// User.prototype.fullName = function () {
+//   return `${this.firstName} ${this.lastName} ${this.age}`; 
+// };
+
+// User.prototype.getRole = function () {
+//   return this.numbeRole;
+// };
+
+// User.prototype.setRole = function (changeRole) {
+//   this.numbeRole = changeRole;
+// };
+
+// User.prototype.setName = function (changeName) {
+//   this.name = changeName;
+// };
+
+// User.prototype.language = "English";
+
+// // Set up inheritance
+// Object.setPrototypeOf(Student.prototype, User.prototype);
+
+// // Correct the prototype constructor reference
+// Student.prototype.constructor = Student;
+
+// // Example usage
+// let student = new Student("John", "Doe", 20);
+// console.log(student.fullName()); // "John Doe 20"
+// console.log(student.language); // "English"
+// student.setRole("Student");
+// console.log(student.getRole()); // "Student"
+// console.log(student.firstName)
+
+
+
+// let user = new User("hello", "Doe", 40);
+// console.log(user)
+// console.log(user.lastName)
+
+
+
+
+
+
 function Car (name, modal, color,weight){ //Object-Constructor function me first letter Captal hota hai ?
   this.carName = name, //this means currnet object ka referance means Car object ka referace ?
   this.carModa = modal,
@@ -177,6 +234,7 @@ SetUserName.call(this,userName); //---> ham is wale function se userName set kar
 
 let visitingUser = new CreateUser("Tausif","Tausifqureshi@gmail.com",123);
 console.log(visitingUser)
+
 
 
 

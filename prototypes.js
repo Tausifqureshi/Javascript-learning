@@ -28,7 +28,7 @@ function Person(fName, lName) {
         // this.fullName = function () { 
         // return `${this.firstName} ${this.lastNmae}`;
 
-        // } // but is me ek problem hai jo hamne fullName ka method banaye hai o bhi dono me copy pate ho gaya hai is progrmming me bolte hai dry dont repit your code aise code repit nhi hona us se memory me jaga leta hai is ke suletion hai jab bhi ham function banye ke us ko object ka ander nhi rahk ke prototype me rahkte means constructor ke ander ?
+        // } // but is me ek problem hai jo hamne fullName ka method banaye hai o bhi Person use kar ke jitne object banye ke us me copy peste ho gaye ga hai is progrmming me bolte hai dry dont repit your code aise code repit nhi hona us se memory me jaga leta hai is ke suletion hai jab bhi ham function banye ke us ko object ka ander nhi rahk ke prototype me rahkte means constructor ke ander ?
 }
 
 Student.prototype.country = function(){ //Student wale me add hora ye function ?
@@ -36,12 +36,18 @@ Student.prototype.country = function(){ //Student wale me add hora ye function ?
 console.log('Code executing this function')
 }
 
+Student.prototype.setName = function (changeName) {
+  return this.name = changeName;
+};// khabi kisi ka name ya other property chnage karna ho tu aise karte hai or kski bhi object ke sath use kar sakte hai inheritance kar ke dusre dusre object ke sath use kar sakte hai ?
+
 let studentOlder = new Student('Java','Qureshi'); //Student function wale ka ye object ?
 // console.log(studentOlder);
+studentOlder.setName("niuce") //name change function call 
+console.log(studentOlder);
 
 // console.log(studentOlder.country()); //Country wala function call student ke sath ?
-Person.prototype.__proto__ = Object.create(Student.prototype); //is se ye hora hai student ki property and method ye use kar sakta hai person constructor ?
-
+// Person.prototype.__proto__ = Object.create(Student.prototype); //is se ye hora hai student ki property and method ye use kar sakta hai person constructor ? agar Person ki property and method ko Stydent use Student.prototype.__proto__ = Object.create(Person.prototype); karna hoga or jitne bhi method Add karna hoga prototype me o Person ke us me karna hoga ?
+Object.setPrototypeOf(Person.prototype, Student.prototype); //same kam hi hora hai line number 49 wala .
 
 Person.prototype.madein = 'india'; //proptotype me property bhi add kar sakte hai means constructor ke ander ? Preson wale me add hora hai ?
 
