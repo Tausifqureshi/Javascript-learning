@@ -100,8 +100,17 @@ function Car (name, modal, color,weight){ //Object-Constructor function me first
   this.carWeight = weight
 };
 
+
 // let car1 = new Car ('Tata Nexon',2023, "Red", '800 kg'); //Constructor function ko call karne ka tarika hai new keyword ?
 // // console.log(car1.carName);  // is tara se koi bhi value print karwa sakte carModal jo bhi print karwna ho ?
+Car.prototype.setName = function (changeName) {
+  return this.name = changeName;
+};// khabi kisi ka name ya other property chnage karna ho tu aise karte hai or kski bhi object ke sath use kar sakte hai inheritance kar ke dusre dusre object ke sath use kar sakte hai ?
+console.log(car1.setName("Change Name"));
+
+
+// car1.carColor = "Yellow" //is tara se value ko change bhi kar sakte hai constructor ki ?
+// console.log(car1.carColor) // check value change hohi ya nhi ?
 
 // car1.speed = 150 ; //is tara se proprty add kar sakte hai ?
 
@@ -122,7 +131,7 @@ function Car (name, modal, color,weight){ //Object-Constructor function me first
 
 // console.log(car3.carInfo()); // jo method me return kar re hai carName, carModal us ki value aye ki onlye ?
 
-// console.log(car3); // check methpd  add hua ya nhi car3 variable me ? 
+// console.log(car3); // check method  add hua ya nhi car3 variable me ? 
 
 
 // ================================== Object-Constructor-Prototype ================================//

@@ -11,49 +11,6 @@
 // Inheritance
 // Polymorphism
 
-function Student(fName, lName, age) {
-  this.firstName = fName;
-  this.lastName = lName;
-  this.age = age;
-}
-
-function User(fName, lName, age) {
-  this.firstName = fName;
-  this.lastName = lName;
-  this.age = age;
-}
-
-Student.prototype.fullName = function () {
-   return `${this.firstName} ${this.lastName} ${this.age}`; 
-};
-
-User.prototype.getRole = function (changeName) {
-  return (this.numbeRole = changeName);
-};
-
-User.prototype.setName = function (changeName) {
-  return (this.name = changeName);
-};
-
-User.prototype.language = "English";
-
-Object.setPrototypeOf(User.prototype, Student.prototype);
-// Student.prototype.__proto__ = Object.create(User.prototype);
-// User ki Shrai property and method Student use kar sakta hai is line se ye hora hai ?
-
-const student1 = new Student("Tausif", "Qureshi", 25); //Student object .
-console.log(student1);
-// console.log('User Role Number', student1.getRole(1));
-// console.log(student1.language);
-
-let user = new User("Neha", "Qureshi", 26);
-console.log(user);
-console.log(user.fullName());
-// console.log('User Role Number', student1.getRole(2));
-
-
-
-
 
 
 
