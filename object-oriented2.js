@@ -11,15 +11,42 @@
 // Inheritance
 // Polymorphism
 
+function User(name, email, age) {
+  this.firstName = name;
+  this.MyEmail = email;
+  this.age = age;
 
+  this.fullName = () =>{
+    console.log(this)
+   return (`${this.firstName} ${this.MyEmail} ${this.age}`)
+  };
 
+}
+// let user = new User("Tausif", "Tausif@gamil.com", 25);
 
+// console.log(user.fullName())
+// class Person {
+//     constructor(name) {
+//       this.name = name;
+//     }
+  
+//     showSkills = () => {
+//       return(this.name + " can code."); // Potential error
+//     }
+//   }
+//   const person = new Person("John Doe");
+//  console.log( person.showSkills()  
+// )
 
-
-
-
-
-
-
+function greet() {
+    console.log(this.name); // Output: John Doe
+  }
+  
+//   const person = {
+//     name: "John Doe",
+//     about: greet
+//   };
+  
+//  person.about();
 
 

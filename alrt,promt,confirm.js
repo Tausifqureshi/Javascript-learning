@@ -29,7 +29,7 @@ function myFunction() {
     text = "You canceled!";
     // document.writeln("You canceled OK!");
   }
-  document.getElementById("demo").innerHTML = text; //HTML me bhi value print karwa sakte hai id use kar ke ?
+  // document.getElementById("demo").innerHTML = text; //HTML me bhi value print karwa sakte hai id use kar ke ?
 }
 
 // myFunction();

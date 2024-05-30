@@ -19,7 +19,7 @@ let student1 = {
   fisrtName: "Tausif",
   lastName: "qureshi",
   age : 25,
-  fullName: function () { //fullname key hai function value? function ander bhi create kar sakte hai aise?
+fullName: function () { //fullname key hai function value? function ander bhi create kar sakte hai aise?
 return `${this.fisrtName} ${this.lastName} ${this.age}`; //object me this keyword apne hi object ko refers karta hai
   },
 };

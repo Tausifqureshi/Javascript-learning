@@ -42,6 +42,7 @@ Student.prototype.setName = function (changeName) {
 
 let studentOlder = new Student('Java','Qureshi'); //Student function wale ka ye object ?
 // console.log(studentOlder);
+
 studentOlder.setName("niuce") //name change function call 
 console.log(studentOlder);
 

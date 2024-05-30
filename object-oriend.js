@@ -11,6 +11,7 @@ function personInfo(){  //function bher create hai ? personInfo,
     console.log(`person name is ${this.firstName} and age is ${this.age}`);
 }
 
+
 const person1 = {
     firstName : "Tausif",
     age: 24,
@@ -20,7 +21,6 @@ const person1 = {
     // console.log(`person name is ${this.firstName} and age is ${this.age}`);
     // //aise bhi create kar sakte hai function ander hi?
     // };
-
 }
 
 // const person2 = {
