@@ -24,6 +24,24 @@ let saveValue =student1.fullName();
 console.log(saveValue) //aisa bhi print karwa sakte return ke time aise hi store kar ke print karte hai ?
 
 
+
+// is tara  se object me this ki value access kar sakte hai q ke arrow function ka apna this nhi hota hai o jo this leta hai Saruonding se leta hai jaha function call hota hai .
+const person2 = { 
+  name: "John Doe",
+  showSkills: function() {
+  //   console.log(this.name);
+  const showSkillsArrow = () => {
+      return(this.name); // Error: this is not defined
+    };
+    return showSkillsArrow()
+  }
+};
+console.log(person2.showSkills())
+
+
+
+
+
 //=========================================== Standalone functions me ============================================//
 //ChatGPT Se liya hua Syntax --->  Jab ek standalone function ko call kiya jaata hai, toh "this" keyword global object ko refer karta hai.
 function greet() {
@@ -93,19 +111,6 @@ console.log(greet()); // Output: John Doe 30
 //======================================= Arrow function This keyword ==========================================//
 // Arrow function ka this nhi hota hai ? Arrow function jo this leta hai apne surrounding se means Arrow function ka This jo hota hai window object hota hai globle bhi bolte hai ? Arrow Function ka This Change nhi kar sakte hai ?
 
-// const user1 = {
-//   firstName : "harshit",
-//   age: 8,
-//   about: () => {
-//     // console.log(this) //Window object aye ga? Arrow function ka This Window hota hai?
-//     console.log(this.firstName, this.age);
-//   }
-// }
-
-// user1.about(user1);
-
-
-
 // ChatGPT Se liya hua Syntax ---> Arrow functions mein this ki value fixed hoti hai aur badli nahi ja sakti hai.
 // call, apply, aur bind methods arrow functions ke saath useful nahi hain.
 // Agar aapko this ki value ko control karne ki zarurat hai, to regular functions ka use karein.
@@ -169,7 +174,7 @@ class Person {
       console.log(`Hello, my name is ${this.name}`);
     };
     // 'bind' method ka istemaal
-    this.greet = this.greet.bind(this);
+    // this.greet = this.greet.bind(this);
   }
 }
 const person = new Person('John Doe');

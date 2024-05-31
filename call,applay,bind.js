@@ -61,7 +61,7 @@ function greet(name) { //parametar hai name ?
 // ===================================== Bind =========================================//
 
 // ChatGPT Se liya hua Syntax ---> Bind Method Kya Hai?
-// Bind method ek function ka method hota hai jo humme ek function ko ek object ke context me bind karne me madad karta hai. Iska matlab hai ki hum ek function ko call kar sakte hain aur uska "this" keyword ek specific object ko refer karega.
+// Bind method JavaScript me ek aisa method hai jo aapko ek function ko ek specific object ke context me bind karne me madad karta hai. Iska matlab hai ki jab aap bound function ko call karte hain, to this keyword us object ko refer karega jisse usko bind kiya gaya hai.
 
 // Bind Method Ka Kaam Kya Hai?
 // Bind method 3 kaam karta hai:
@@ -77,6 +77,15 @@ function greet(name) { //parametar hai name ?
 // Bind method humme event handlers me "this" keyword ko control karne me madad karta hai.
 
 
+const person = {
+  name: "John Doe",
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+
+const boundGreet = person.greet.bind(person);
+boundGreet(); // Output: Hello, my name is John Doe
 
 
 

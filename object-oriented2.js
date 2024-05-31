@@ -28,13 +28,3 @@ let user = new User("Tausif", "Tausif@gamil.com", 25);
 
 
   
-
-
-
-
-
-
-
-
-
-
