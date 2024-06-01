@@ -17,14 +17,70 @@ function User(name, email, age) {
   this.age = age;
 
   this.fullName = () =>{
-    console.log(this)
+    // console.log(this)
    return (`${this.firstName} ${this.MyEmail} ${this.age}`)
   };
 
 }
-let user = new User("Tausif", "Tausif@gamil.com", 25);
 
+// let user = new User("Tausif", "Tausif@gamil.com", 25);
 // console.log(user.fullName())
 
 
+
+// let user1 = Object.assign()
+
+
+
+let student1 = {
+  fisrtName: "Tausif",
+  lastName: "qureshi",
+  age : 25,
+fullName:  ()=> { 
+return `${this.fisrtName} ${this.lastName} ${this.age}`; 
+  },
+};
+
+// console.log(student1.fullName()); //aise bhi print karwa sakte hai ?
+let saveValue =student1.fullName();
+console.log(saveValue)
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

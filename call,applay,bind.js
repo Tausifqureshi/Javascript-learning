@@ -1,4 +1,6 @@
-// 
+// Theory only is ke code object-oriented me hai or jo simple theory bhi hai us me ?
+
+
 // ChatGPT Se liya hua Syntax ---> call() method kya hai?
 // call method ek predefined JavaScript method hai ? jiska use kisi function ko ek object ke sath call karne ke liye kiya jaata hai. Iska matlab hai ki aap kisi bhi function ko kisi bhi object ke context mein run kar sakte hain, chaahe woh function us object ka method na ho.
 
