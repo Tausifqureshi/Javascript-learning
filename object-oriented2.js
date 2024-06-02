@@ -11,48 +11,47 @@
 // Inheritance
  // Polymorphism
 
-function User(name, email, age) {
+ function User(name, email, age) {
   this.firstName = name;
   this.MyEmail = email;
   this.age = age;
 
-  this.fullName = () =>{
-    // console.log(this)
-   return (`${this.firstName} ${this.MyEmail} ${this.age}`)
-  };
+}
+
+function Person(fName,email,age) {
+  this.firstName = fName,
+  this.MyEmail = email,
+  this.age = age;
+
 
 }
 
-// let user = new User("Tausif", "Tausif@gamil.com", 25);
-// console.log(user.fullName())
-
-
-
-// let user1 = Object.assign()
-
-
-
-let student1 = {
-  fisrtName: "Tausif",
-  lastName: "qureshi",
-  age : 25,
-fullName:  ()=> { 
-return `${this.fisrtName} ${this.lastName} ${this.age}`; 
-  },
+User.prototype.fullName = function(){
+  // console.log(this)
+  return (`${this.firstName} ${this.MyEmail} ${this.age}`);
 };
 
-// console.log(student1.fullName()); //aise bhi print karwa sakte hai ?
-let saveValue =student1.fullName();
-console.log(saveValue)
-  
 
 
+Object.setPrototypeOf(Person.prototype, User.prototype)
 
 
+let user = new User("Tausif", "Tausif@gmail.com", 25);
+console.log(user)
+console.log(user.fullName())
 
 
+let person = new Person("usa", "usa@gmail.com", 25);
+console.log(person)
+console.log(person.fullName())
 
+// console.log(user instanceof User);
+// console.log(user instanceof Person);
 
+// cheking karta hai kya Person constructor User wale se inheritance hai ya nhi us ki property nad method use kar sakta hai q ke o inheritance ho chuka hai?
+console.log(user instanceof User); // true
+console.log(person instanceof Person); // true
+console.log(person instanceof User); // true
 
 
 

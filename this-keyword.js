@@ -142,12 +142,11 @@ showSkills(); // Error: this is not defined
 
 //======================================= this kyeword constructor ==========================================//
 
-//ChatGPT Se liya hua Syntax ---> Constructor function ke andar, 'this' keyword, us object ko refer karta hai jiska naya instance banaaya ja raha hai. Lekin, arrow function mein, 'this' keyword, jahan yeh function define kiya gaya hai, us lexical scope ko refer karta hai.
+//ChatGPT Se liya hua Syntax ---> 
 
-// Isliye, agar hum constructor function ke andar arrow function ka istemaal karte hain, toh 'this' keyword sahi object ko refer nahi karega.
+
 
 // Samadhaan:m ---> Yeh samasya ko do tarikon se hal kiya ja sakta hai:
-
 // 1. Regular Function ka Istemaal:
 // Agar aapko constructor function ke andar 'this' keyword ko use karne ki zarurat hai, toh regular function ka istemaal karein
 
@@ -174,7 +173,7 @@ class Person {
       console.log(`Hello, my name is ${this.name}`);
     };
     // 'bind' method ka istemaal
-    // this.greet = this.greet.bind(this);
+    this.greet = this.greet.bind(this);
   }
 }
 const person = new Person('John Doe');

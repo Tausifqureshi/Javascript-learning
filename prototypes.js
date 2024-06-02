@@ -1,8 +1,8 @@
 
 // OOPs in  me hi ata hai Constructore bhi
 
-
 //prototype ---> Prototype ka use ham consturctor ya jaavscript ki class me use kar te hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? 
+
 
 // prototype-inheritance ---> is matlab hota hai hamne 2 constructor function banaye hai ek constructor function me hamne jo bhi property and method defind kiye hai o dusre wale constructor function ko use kar re property and method  manms hamne ek Peron ka constructor banye or dusra Student constructor function banye but ham code repit na ho Preson me jo bhi property and method hai o Student use kar re is ko bolte hai Prototype-Inheritance is ko use karne ke liye ham tab hi __proto__ ka use kar te hai ? 
 
@@ -48,9 +48,14 @@ console.log(studentOlder);
 
 // console.log(studentOlder.country()); //Country wala function call student ke sath ?
 // Person.prototype.__proto__ = Object.create(Student.prototype); //is se ye hora hai student ki property and method ye use kar sakta hai person constructor ? agar Person ki property and method ko Stydent use Student.prototype.__proto__ = Object.create(Person.prototype); karna hoga or jitne bhi method Add karna hoga prototype me o Person ke us me karna hoga ?
-Object.setPrototypeOf(Person.prototype, Student.prototype); //same kam hi hora hai line number 49 wala .
+Object.setPrototypeOf(Person.prototype, Student.prototype); //same kam hi hora hai line number 50 wala .
 
 Person.prototype.madein = 'india'; //proptotype me property bhi add kar sakte hai means constructor ke ander ? Preson wale me add hora hai ?
+// Object.setPrototypeOf(Person, {
+//   prototype: {
+//     madein: 'India'
+//   }
+// });
 
 
 Person.prototype.fullName = function(){ //is bolte hai prototype me method rahkna means constructor ke ander aye ga ye method ?  is se dry nhi hoga code dry dont repit your code aise code repit nhi hona ?
