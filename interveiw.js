@@ -1,5 +1,7 @@
 "use strict"; //is ko use karne se function me jo this console hua hai us ki value ab undefiend aye gi use strict mood on karne se but is ko commit karne se this ki value window object hi print hogi? === interview quetion hai ye ? --> object-oriented-file ka This keyword ka question hai line number 54 ?
 
+
+//  =======================================================================================================//
 Date.prototype.getLastYear = function () {
   //interview me ata hai ye question aisa function banao 2024 chal hai but current years se ek years kam de matlab 2023 ana ?
 
@@ -11,6 +13,28 @@ console.log(newDate.getFullYear());
 
 console.log(newDate.getLastYear());
 
+
+// is tara se bhi implement kar sakte hai ?
+
+// Function to get the previous year
+const getLastYear = (date) => {
+  // Subtract 1 from the current year to get the previous year
+  return date.getFullYear() - 1;
+};
+
+// Get the current date
+
+const currentDate = new Date();
+
+// // Display the current year
+console.log("Current Year:", currentDate.getFullYear());
+
+// // Display the previous year
+console.log("Previous Year:", getLastYear(currentDate));
+
+
+
+//  =======================================================================================================//
 //interview me ata hai ye qution aisa logic currnt date se 50 day jayda hona
 let newDate1 = new Date("2023-03-25"); //aisa bhi kar sakte apni khud ki date defind kar ke ?
 console.log(newDate1);

@@ -59,7 +59,6 @@ Person.prototype.madein = 'india'; //proptotype me property bhi add kar sakte ha
 
 
 Person.prototype.fullName = function(){ //is bolte hai prototype me method rahkna means constructor ke ander aye ga ye method ?  is se dry nhi hoga code dry dont repit your code aise code repit nhi hona ?
-    
 return `${this.firstName} ${this.lastNmae} ${this.madein}` //add ki property return bhi kar re hai madein ko ?
 }
 

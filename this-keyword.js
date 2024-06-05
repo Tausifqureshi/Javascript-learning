@@ -142,9 +142,7 @@ showSkills(); // Error: this is not defined
 
 //======================================= this kyeword constructor ==========================================//
 
-//ChatGPT Se liya hua Syntax ---> 
-
-
+//ChatGPT Se liya hua Syntax ---> Agar aap ek constructor function ke andar arrow function define karte hain, to us arrow function ka "this" keyword naye banae gaye object ko refer nahi karega. Instead, ye us scope ke "this" binding ko inherit karega jismein arrow function define kiya gaya hai.
 
 // Samadhaan:m ---> Yeh samasya ko do tarikon se hal kiya ja sakta hai:
 // 1. Regular Function ka Istemaal:
