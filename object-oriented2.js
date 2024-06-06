@@ -1,3 +1,5 @@
+// OOPS ke ye share concept ChatGPT Se liya hua jo khud se perctic o A.js file me hai.
+
 //OOPs in javscript ---> Means ye ek programming paradigm hai means ek style program karne ki ? apni code karne ki style hai?  Object oriented programming jis me class object ko use kar ke program ko design kiya jata hai ?
 
 // ChatGPT Se liya hua Syntax ---> Object-oriented programming (OOP) ek programming paradigm hai jo objects ke around design kiya gaya hai. Objects data aur methods ka combination hote hain. JavaScript me, OOP ko implement karne ke liye objects aur classes ka istemal kiya jata hai.
@@ -220,10 +222,67 @@ class Child extends Parent {
   }
 
   greet() {
-    console.log(`Hello, my name is ${this.name}.`);
+    console.log(`Hello, my name is ${this.name}.`); //Parent class ki property access.
     console.log(`My full name is ${super.getFullName()}.`); // Parent class ke getFullName() method ko call karta hai
   }
 }
 
 const child1 = new Child("John", "Doe");
 child1.greet(); // Output: Hello, my name is John. My full name is John Doe.
+
+
+
+
+// [3] Method ko access karna super keyword se.
+class Parent1 {
+  constructor(name) {
+    this.name = name;
+  }
+
+  // getDetails()
+  greet() {
+    return `Hello, ${this.name}!`;
+  }
+}
+
+class Child1 extends Parent1 {
+  constructor(name, age) {
+    super(name); // Calls the constructor of the Parent class
+    this.age = age;
+  }
+
+  greet() {
+    // Calls the greet method from the Parent class
+    let parentGreeting = super.greet(); //Parnet Class me same name ka function or child name me samge name ka function greet tu hi ham uper keyword se access kar sakte hai. warna Parent class me koi or name ka function tu ham getDetails() aisa koifunction tu ham chaild class me this.getDetails() kar ke access kar sakte hai koi error nhi aye ga. Parnet class ka greet function return kar ra hai is liye ham is se const me store kar re hai.
+
+    return `${parentGreeting} You are ${this.age} years old.`;
+  }
+}
+
+let chil = new Child1('Alice', 12);
+console.log(chil.greet()); // Output: "Hello, Alice! You are 12 years old."
+
+
+
+
+//[4] Super keywod use property access karna Parent class se.
+class Parent3 {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Child3 extends Parent3 {
+  constructor(name, age) {
+    super(name); // Calls the constructor of the Parent class
+    this.age = age;
+  }
+
+  getParentName() {
+    return super.name; // Accesses the 'name' property from the Parent class. this.name se bhi acess ho jaye gi.
+  }
+}
+
+let child3 = new Child3('Alice', 12);
+console.log(child3.getParentName()); // Output: 'Alice'
+console.log(child3.age); // Output: 12
