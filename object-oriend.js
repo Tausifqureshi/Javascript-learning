@@ -55,7 +55,7 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 
 // const user1 = {
 //     firstName : "harshit",
-//     age: 8,
+//     age: 8, 
 //  about(){     //is ko bolte hai sort function object me ? key value pairs lihkne ki zarurt nhi hai ? abuot method 
 //               // create hau is me means function ban gaya about ab ?
 // console.log(this.firstName, this.age);

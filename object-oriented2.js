@@ -280,7 +280,7 @@ class Child3 extends Parent3 {
   }
 
   getParentName() {
- return this.name; // Accesses the 'name' property from the Parent class direct. Access 'name' from parent class.
+ return this.name; // Accesses the 'name' property from the Parent class direct. Access 'name' from parent class. 
   }
 }
 
