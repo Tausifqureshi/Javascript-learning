@@ -222,7 +222,7 @@ class Child extends Parent {
   }
 
   greet() {
-    console.log(`Hello, my name is ${this.name}.`); //Parent class ki property access.
+    console.log(`Hello, my name is ${this.name}.`); // Access 'name' from parent class.
     console.log(`My full name is ${super.getFullName()}.`); // Parent class ke getFullName() method ko call karta hai
   }
 }
@@ -242,6 +242,7 @@ class Parent1 {
   // getDetails()
   greet() {
     return `Hello, ${this.name}!`;
+    // console.log( `Hello, ${this.name}!`)
   }
 }
 
@@ -253,7 +254,7 @@ class Child1 extends Parent1 {
 
   greet() {
     // Calls the greet method from the Parent class
-    let parentGreeting = super.greet(); //Parnet Class me same name ka function or child name me samge name ka function greet tu hi ham uper keyword se access kar sakte hai. warna Parent class me koi or name ka function tu ham getDetails() aisa koifunction tu ham chaild class me this.getDetails() kar ke access kar sakte hai koi error nhi aye ga. Parnet class ka greet function return kar ra hai is liye ham is se const me store kar re hai.
+    let parentGreeting = super.greet(); //Parnet Class me same name ka function or child me bhi same name ka function greet tu hi ham uper keyword se access kar sakte hai method ko. warna Parent class me koi or name ka function tu ham getDetails() aisa koifunction tu ham chaild class me this.getDetails() kar ke access kar sakte hai koi error nhi aye ga. Parnet class ka greet function return kar ra hai is liye ham is se const me store kar re hai. agar Parent class me return ki jaga console tu store karne ki zarurt nhi hai fir direct child.greet() aisa bhi call kar sakte hai niche.
 
     return `${parentGreeting} You are ${this.age} years old.`;
   }
@@ -279,7 +280,7 @@ class Child3 extends Parent3 {
   }
 
   getParentName() {
-    return super.name; // Accesses the 'name' property from the Parent class. this.name se bhi acess ho jaye gi.
+ return this.name; // Accesses the 'name' property from the Parent class direct. Access 'name' from parent class.
   }
 }
 

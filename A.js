@@ -31,7 +31,6 @@ class Person {
     return `${this.firstName} ${this.myEmails} ${this.age}`;
   }
 
-
 }
 
 class Employee extends Person {
@@ -45,8 +44,7 @@ super(fName, email); //Parent class ke constructor ko call karta hai ye super ke
 }
 
   greet() {
-    return `My full name is ${super.greet()}.`; // Parent class ke getDetails() method ko call karta hai super keyword. jab bhi Class syntex me kisi method ko inheritance karne ke baad dusre class me call karne ke liye super keyword ka hi use hota hai warna error dega. i 
-
+    return `Hello, my name is ${this.firstName}.My full name is ${super.greet()}.`; // Parent class ke getDetails() method ko call karta hai super keyword. Parnet Class me same name ka function or child me bhi same name ka function greet tu hi ham uper keyword se access kar sakte hai method ko. warna Parent class me koi or name ka function tu ham getDetails() aisa koifunction tu ham chaild class me this.getDetails() kar ke access kar sakte hai koi error nhi aye ga. // Access 'firstName' from parent class direct.
   }
 }
 
@@ -56,5 +54,4 @@ super(fName, email); //Parent class ke constructor ko call karta hai ye super ke
 const employee = new Employee("Qureshi", "Qureshi@gamil.com", 26); 
 console.log(employee)
 console.log(employee.greet());
-
 
