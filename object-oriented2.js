@@ -1,4 +1,4 @@
-// OOPS ke ye share concept ChatGPT Se liya hua jo khud se perctic o A.js file me hai.
+// OOPS ke ye share concept ChatGPT Se liya hua jo khud se perctic o OOPS.js file me hai.
 
 //OOPs in javscript ---> Means ye ek programming paradigm hai means ek style program karne ki ? apni code karne ki style hai?  Object oriented programming jis me class object ko use kar ke program ko design kiya jata hai ?
 
