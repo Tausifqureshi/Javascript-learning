@@ -67,12 +67,13 @@
 // <------------------------------>Array Destructuring<-------------------------------->
 // let cars = ['Volvo','Tata','Marcedes','Audi']
 
-// const[model1, ,model2,model3,model4]=cars; //duble ,, se marecedes module2 me jaye ga?
-// const[model1,...model2]=cars;  //speard oparetor use tata se audi tak model2 me jaye ge? 
-// console.log(model1)
-// console.log(model2)
-// console.log(model3)
-// console.log(model4)
+//const[model1,model2,model3,model4] = cars; // jis bhi varible ke baad is ko jitna use vlue us value ke baas start hogi ? lekin abhi is me simple Destructuring kar re hai.
+// const[model1,...model2]=cars;  // speard oparetor use tata se audi tak model2 me jaye ge ? 
+// console.log(model1); // 'Valvo'
+// console.log(model2); // 'Tata'
+// console.log(model3); // 'Marcedes'
+// console.log(model4); // 'Audi'
+
 
 
 
@@ -80,11 +81,14 @@
 // const myArray = ["value1", "value2", "value3","value4"];
 // let myvar1 = myArray[0]; //is tara se bhi kar sakte hau destructuring array ko 'Value1'?
 // let myvar2 = myArray[1]; //value2 aye gi is me
+
 // console.log("value of myvar1", myvar1);
 // console.log("value of myvar2", myvar2);
-// let  myNewArray = myArray.slice(2,3); //value3 value4 tak jaye gi is me q ke slice method use hora hai ? slice method use is methos use hame value kaha se kaha tak hona agar end postion nhi dete hai tu dono value ko hi print kar deta hai ? end postion deta hai tu o only ek value first hi print karta hai "Value3" hi aye gi only slice method ka ye rool hai ?
+
+// let myNewArray = myArray.slice(2,3); //value3 value4 tak jaye gi is me q ke slice method use hora hai ? slice method use is methos use hame value kaha se kaha tak hona agar end postion nhi dete hai tu dono value ko hi print kar deta hai ? end postion deta hai tu o only ek value first hi print karta hai "Value3" hi aye gi only slice method ka ye rool hai ?
 // console.log(myNewArray)
 
+// const myArray = ["value1", "value2", "value3","value4"];
 // let [myvar1, myvar2, ...myNewArray] = myArray; //myvar1 me value1 jaye gi mayvar2 me value2 aye gi or myNewArray me jaye gi "value3","value4" sperad oparetor use hore hai?
 // console.log("value of myvar1", myvar1);
 // console.log("value of myvar2", myvar2);

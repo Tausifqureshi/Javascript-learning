@@ -97,7 +97,7 @@
 //         hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"]
 //     }
 
-//const{name:var1 ,age:var2,...var3}=person; //destructurin hora yaha se alag alag variabal ban tre hai?varibal ka naam aise change karate hai [var1:] kar ke? ...sperad oparetor use kar ke bachi hohi value var3 me jaye gi
+//const{name:var1 ,age:var2,...var3}=person; //destructurin hora yaha se alag alag variabal ban re hai ? varibal ka naam aise change karate hai [var1:] kar ke ? ...sperad oparetor use kar ke bachi hohi value var3 me jaye gi
 //   console.log(var1);
 
 //   console.log(var3)// speard oparetot use bachi hohi value is me aye gi adress hobbies?
@@ -115,12 +115,39 @@
 // const [ user1,user2,user3]= users
 // console.log(user1) //simple destructuring ye
 
-// const [{firstName, userId},{gender}] =users // is ko bolte hai nested destructuring ham object ke ander selere hai?firstName index[0]ka hai or gender index[2] ka hai  q ke hai ek ,user  kar re hai  simple wala aye ga ,, use tu hello aye ga kuch nhi use to male hi aye ga?
+// const [{firstName, userId},{gender}] = users // is ko bolte hai nested destructuring ham object ke ander se lere hai ? firstName index[0]ka hai or gender index[2] ka hai  q ke hai ham ek hi use kar re hai is ko , user  kar re hai  simple wala aye ga ,, use tu hello aye ga kuch nhi use to male hi aye ga?
 
 // console.log(firstName) //
 // console.log(userId) //first wali user id print hogi is se?
 
 // console.log(gender)
+
+
+// const users= [             // ek array me kuch object store user ke ?
+
+//           {userId: 1, firstName: "Tausif", gender:"Male"},
+//           {userId: 2, firstName: "Qureshi", gender:"simple" },
+//           {userId: 3, firstName: "Iqbal", gender:"hello"}
+// ]
+// const [{firstName: firstName1}, {firstName: firstName2}, {firstName: firstName3}] = users;
+// console.log(firstName1) //
+// console.log(firstName2) //
+// console.log(firstName3) //
+
+
+// const users= [             // ek array me kuch object store user ke ?
+
+//           {userId: 1, firstName: "Tausif", gender:"Male"},
+//           {userId: 2, firstName: "Qureshi", gender:"simple" },
+//           {userId: 3, firstName: "Iqbal", gender:"hello"}
+// ]
+// const [{firstName}, , {userId: secondUserId}, , {gender: thirdUserGender}] = users;
+// console.log(firstName);         // Output: "Tausif"
+// console.log(secondUserId);      // Output: 2
+// console.log(thirdUserGender);   // Output: "hello"
+
+
+
 
 // <------------------------------>Object inside Array<-------------------------------->
 //object ke ander Array create karen matlab ya fir array ke ander bhut share object create karan ye hota hai object inside array ? React me kafi use full hai ye method or real world application me bhi?

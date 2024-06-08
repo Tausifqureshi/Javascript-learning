@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+  input{
+    display: block;
+    margin: auto;
+    margin-top: 10em;
+    width: 300px;
+    padding: .5em;
+  }
+
+  /* .focus-placeholder::placeholder {
+    display: block;
+    color: red;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    margin-top: 2em;
+  } */
+
+</style>
 </head>
 <body>
     <input type="text" id="inputBox" placeholder="Email">
     <script>
-    // input box pe click karne se placehold me jo hoga o out ho jaye ga or bher kahi click tu value set ho jaye gi jaisa google me hota hai jab ham kuch serch kar te hai ?
- let inputBox = document.getElementById('inputBox');
+//input box pe click karne se placehold me jo hoga o out ho jaye ga or bher kahi click tu value set ho jaye gi jaisa google me hota hai jab ham kuch serch kar te hai ?
+
 inputBox.addEventListener("focus", () => {
   // Clear placeholder on focus
   inputBox.placeholder = "";

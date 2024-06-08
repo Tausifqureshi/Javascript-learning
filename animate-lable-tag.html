@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Input Label</title>
+<style>
+    .input-box {
+        position: relative;
+        margin: 15em;
+    }
+
+    .input-box input {
+        width: 20%;
+        padding: .5em .2em;
+    }
+
+    .input-box label {
+        position: absolute;
+        top: .5em;
+        left: .2em;
+        pointer-events: none;
+        transition: top 0.5s, font-size 0.5s;
+    }
+
+    .input-box input:focus ~ label {
+        top: -1.5em;
+        font-size: 0.8em;
+        transition: top 0.5s, font-size 0.5s;
+    }
+</style>
+</head>
+<body>
+    <div class="input-box">
+        <input type="text" id="inputBox">
+        <label for="inputBox">Email</label>
+    </div>
+</body>
+</html>
