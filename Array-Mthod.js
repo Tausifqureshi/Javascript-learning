@@ -1,10 +1,8 @@
-//========================================Array Method============================?
+//========================================Array Method ================================================//
+//============================================= Array concat Method ==============================================//
 
+// ChatGPT Se liya hua Syntax ---> Array.concat() method do ya do se zyada arrays ko ek saath jodta hai aur ek naya array return karta hai. Is method ka istemal original arrays ko modify kiye bina unhe combine karne ke liye kiya jata hai. array ki lenght bhi deta hai kitne array hai us me.
 
-// <------------------------------>Array concat Method<-------------------------------->
-// concat Method ---> ye method two array kop joind karne ke liye use hota hai ? ye method new array return karta hai joined kiye huye array ko ? ye original array ko change nhi karta hai ye method ? array ki lenght bhi deta hai kitne array hai us me?
-
-// ChatGPT Se liya hua Syntax ---> concat() method do ya do se zyada arrays ko ek saath jodta hai aur ek naya array return karta hai. Yah method original arrays ko modify nahi karta hai, balki ek naya array banaata hai jismein sabhi elements shaamil hote hain.
 
 // const arr1 = ["Cecilie", "Lone"];
 // const arr2 = ["Emil", "Tobias", "Linus"];
@@ -20,10 +18,8 @@
 
 
 
-// <------------------------------>Array every Method<-------------------------------->
-// every method ---> ek call back function lete hai ? or ye original arrya ko change nhi karta hai? every method array ke share element ko check karne ke liye use kiya jata hai share element same condition fullfil tohi ya true retrun karta hai wrana flase deta hai ? ye method true and false me answer deta hai ?
-
-// ChatGPT Se liya hua Syntax ---> every() method JavaScript me ek array method hai jo check karta hai ki array ke sabhi elements provided test function ko pass karte hain ya nahi. Agar sabhi elements function ko pass karte hain, to yeh method true return karta hai; agar koi bhi element fail karta hai, to yeh method false return karta hai.
+//============================================== Array every Method ==============================================//
+// ChatGPT Se liya hua Syntax ---> Array.every() method ek Array method hai jo yeh check karta hai ki array ke sabhi elements ek specific condition ko satisfy karte hain ya nahi. Agar sabhi elements condition ko satisfy karte hain toh yeh true return karta hai, warna false return karta hai. ye function bhi ek callBack Function leta hai.
 
 
 // let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
@@ -49,12 +45,10 @@
 
 
 
-// <------------------------------>Array fill Method<-------------------------------->
-//Fill method --->  is method se array ke element ko ek value se overwright kar sakte hai means rejact kar ke dusri value add karta hai ? ye method original array ko overwrites karta hai ? is method se start and end position se value change kar sakte hai ? start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga ? is method me 3 parametar hote hai first value kon si add karna hai second start postion kon se index se start karna hai 3position hoti hai end kon si index tak value change karna overwites karna hai ? //ye method jab ham end position dete hai us se count nhim karta hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga 'Lemon' tak nhi jaye ga ye is ka roll hai ? array ki lenght bhi deta hai kitne array hai is me? 
+//  ============================================= Array fill Method =============================================//
+//Fill method --->  is method se array ke element ko ek value se overwright kar sakte hai means rejact kar ke dusri value add karta hai ? ye method original array ko overwrites karta hai ? is method se start and end position se value change kar sakte hai ? start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga ? is method me 3 parametar hote hai first value kon si add karna hai second start postion kon se index se start karna hai 3position hoti hai end kon si index tak value change karna overwites karna hai ? //ye method jab ham end position dete hai us se count nhim karta hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga 'Lemon' tak nhi jaye ga ye is ka roll hai ? array ki lenght bhi deta hai kitne array hai is me.
 
-
-
-// ChatGPT Se liya hua Syntax ---> fill() method ek array ke sabhi elements ko ek specific value se replace kar deta hai. Yah method array ko modify karta hai aur ek modified array return karta hai. Original array unchanged rahata hai.
+// ChatGPT Se liya hua Syntax ---> fill() Array.fill() method ek aisa method hai jiska use karke hum kisi bhi array ke elements ko ek specific value se fill kar sakte hain. Ye method array ko modify karta hai aur ek modified array return karta hai.
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango","Lemon"];
 // console.log(fruits);
@@ -127,11 +121,10 @@
 
 
 
-// <------------------------------>Array find Method<--------------------------------------------------------->
+//=========================================== Array find Method ==================================================//
 //Find Method ---> ye method array ke koi bhi first index ki value milti hai us value ko hi return kar deta hai aage badta hi nhi hai ? koi value nhi milta tu ye method undefind deta hai agar milta hai tu us ki value deta hai 'cate','lion' aisa deta hai? ya method value hai ya nhi hai dhakta hai ? ye method bhi ek call back function leta hai? ye method original array ko change nhi karta hai ?
 
-// ChatGPT Se liya hua Syntax --->    
-
+// ChatGPT Se liya hua Syntax ---> Array.find() method ek aisi shaktishali array method hai jo aapko kisi bhi array mein pahle element ko khojne aur use nikalne mein madad karti hai jo ek nirdhaariit shart ko pura karta hai. Yah method ek callback function leta hai jo array ke har element ko check karta hai aur agar koi element shart ko pura karta hai to usse wapas return karta hai.   
 
 //find method
 // const numArray = [1,3,4,5,7,9,10];
@@ -174,8 +167,11 @@
 
 
 
-// <-----------------------------------> Array ForEach Mthod <---------------------------------------->
-//ForEach Method ----> ye method ek call-back input leta hai means ek function leta hai ? parametar me current value index or array leta hai means hame currnt VALIBLE KA NAAM? foreach first parameter hemsa number fir index leta hai ?ye method  new array nhi deta hai ? forech ek loop ki tara work karti hai ? ye method array ke share element ko run karta hai ya access ya get karta hai ? dusre sabdo me bol sakte hai foreach method array ke har ek element ke liye call-back function arenge karta hai jo array ki har ek value ko user defind call-back function set karta hai jis se ham har ek element ko apne coding me accoding koi bhi taks karwa sakte hai ? foreach ko Map and set object me bhi use kar sakte hai ? ye method higher order function hai means hota hai aisa function jo kisi or function ko argument accpet karte hai ?
+//============================================== Array ForEach Mthod =============================================//
+// ForEach Method ----> ye method ek call-back input leta hai means ek function leta hai ? parametar me current value index or array leta hai means hame currnt VALIBLE KA NAAM? foreach first parameter hemsa number fir index leta hai ?ye method  new array nhi deta hai ? forech ek loop ki tara work karti hai ? ye method array ke share element ko run karta hai ya access ya get karta hai ? dusre sabdo me bol sakte hai foreach method array ke har ek element ke liye call-back function arenge karta hai jo array ki har ek value ko user defind call-back function set karta hai jis se ham har ek element ko apne coding me accoding koi bhi taks karwa sakte hai ? foreach ko Map and set object me bhi use kar sakte hai ? ye method higher order function hai means hota hai aisa function jo kisi or function ko argument accpet karte hai.
+
+// ChatGPT Se liya hua Syntax ---> Array.forEach() method ek aisa method hai jo array ke har ek element ke liye ek callback function ko execute karta hai. Yeh method array ko modify nahi karta hai aur yeh hamesha undefined return karta hai. 
+
 
 // let fruits = ["Apple","Banana","Mango","Orange" ];
 // fruits.forEach((cuurentvalue,index,array)=>{
@@ -211,7 +207,7 @@
 
 
 
-// <------------------------------>Array Form Method<-------------------------------->
+//======================================= Array Form Method =============================================//
 // Form Method ---> ye method array me convearting karta hai string ko  ek ek word tod ke deta hai ye method ?  arary ki lenght bhi deta hai kitne array hai us me ?
 
 // let firstName = "Tausif";
@@ -228,8 +224,13 @@
 
 
 
-// <------------------------------>Array includes Method<-------------------------------->
+//====================================== Array includes Method ===============================================//
 // Includes Method ---> is method ka use hota hai Array me jo value search ki gayi hai ya nhi agar hai tu true dega warna false deta hai ye function ? or ye method case-sensitive hai means agar capital word hai string me us ko hi search kar re ge tuhi true aye ga but small search kar re ge tu false aye ga ? includes me two parameter hote hai fisrt current value and dusri indexing bhi leta hai ye method ? ye method true and false me answer deta hai ? ye method  2 ya jo bhi index number dalte hai us ke baad dehkta hai o word hai ya nhi Example 2index ke baad 'Mango' fir se hai array me agar hoga tu true warna false aye ga ye method aisa work karta hai ?
+
+// ChatGPT Se liya hua Syntax ---> Array.includes() method ek aisa method hai jo check karta hai ki kya ek array ek specific value contain karta hai ya nahi. Yeh method true return karta hai agar value array me present hai, aur false return karta hai agar value array me present nahi hai.
+
+
+
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Orange"];
 // console.log(fruits)
@@ -250,8 +251,10 @@
 
 
 
-// <------------------------------>Array indexOf and lastindexOf Method<-------------------------------->
+// ================================ Array indexOf and lastindexOf Method ========================================//
 // indexOf Method ---> ye method first index value ki position return karta hai ? agar koi value nhi milti hai tu -1 retrun karta hai ye method ? ye index method array me jab value search karta hai left se right tak ?  or ye method case-sensitive hai ? array me same element ek se jayda bar aya hoga tu o first wali elemnt ko by default position bata ta hai us ke baad jo bhi element hai us ki postion batye ka o kis position pe hai ?
+
+
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"]; //simple exmaple
 // console.log(fruits)
@@ -298,7 +301,7 @@
 
 
 
-// <------------------------------>Array isArray Method<-------------------------------->
+// ===================================== Array isArray Method ==========================================//
 // isArray Method ---> ye method array ko check karne ke liye use hota hai array hai ya nhi ? ye method true and false me answer deta hai ?
 
 // let text = "W3Schools";
@@ -328,8 +331,11 @@
 
 
 
-// <------------------------------>Array join Method<-------------------------------->
+//============================================ Array join Method =================================================//
 //join Method ---> ye method array ke element ko string me return karta hai ? ye method ye original array ko change nhi karta hai ? ye method new string return karta hai ? ye method se apne khud se diye huye separator(#), (*),(%). kisi tara bhi separator kar sakte hai ? 
+
+
+// ChatGPT Se liya hua Syntax ---> Array.join() method ek aisa method hai jo array ke har ek element ko ek string me concatenate karta hai aur ek new string return karta hai. Yeh method array ko modify nahi karta hai aur yeh default separator ke roop me comma (,) use karta hai.
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits)
@@ -346,7 +352,7 @@
 
 
 
-// <------------------------------>Array length Method<-------------------------------->
+// ===========================================  Array length Method  ============================================//
 // length Method ---> ye property lenght check karne ke liye use hoti hai ?
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // let length =  fruits.length;
@@ -360,8 +366,10 @@
 
 
 
-// <------------------------------>Array Map Method<-------------------------------->
-//Map Method----> ye method ES6 me aya js me ?Map method se array ke share ke share element pe opration perfom karne me use hota hai us ke jo result aya us se duasre array me store karta hai Map Method Example? ye bhi ek call back function leta hai ?Map function hemasa new array banta hai?agar ham retrun nhi karte hai console karte hai number* print hoga but ham kuch retrun nhi karate undefind ayega? loop ki tara kam karta hai but toda fark hai is me?original array ko change nhi karta hai ? ye paramert me currentValue, index, arr ? map method me empty element hai function nhi chale ga ? map array ke har element ko sirf ek bar hi execute karta hai o bhi index order me ?
+// ================================================ Array Map Method ========================================//
+//Map Method----> ye paramert me currentValue, index, arr ? map method me empty element hai function nhi chale ga ? map array ke har element ko sirf ek bar hi execute karta hai o bhi index order me ?
+
+// ChatGPT Se liya hua Syntax ---> map() method ek naya array return karta hai, jo ki original array ke har element par ek specified function ko apply karne ke baad banta hai. Ye method asli array ko modify nahi karta, balki ek naya array banata hai.ye method ES6 me aya js me. ye method bhi ek call back function leta hai. 
 
 //  const numbers = [3, 4, 6, 1, 8];
 //  const square2 = numbers.map(function(number){
@@ -391,8 +399,10 @@
 //  console.log(returnValue);
 
 
-// <------------------------------>Array Pop Method<-------------------------------->
+// ==================================== Array Pop Method =============================================//
+
 //pop ---> last se delete karta hai ? or ye orignal array ko change karta hai or lrngth ko bhi change kar deta hai? or ye remove item ko retun bhi karta hai ? aray empty hai tab ya undefind return kar re ga ? 
+
 // let fruits = ["mango", "banana","apple"];
 // console.log(fruits);
 
@@ -405,7 +415,7 @@
 // console.log(fruits) //orignal array ko change karta or us ki lenght bhi chnag karta hai ?
 
 
-// <------------------------------>Array Push Method<-------------------------------->
+// ========================================= Array Push Method ================================================//
 // push --->last se add karta hai ? or ye original array or us ki length change karat hai ? new array return karta hai new length deta hai?
 
 // let fruits = ["mango", "banana","apple"];
@@ -416,8 +426,11 @@
 
 
 
-// <------------------------------>Array Reduce Method<-------------------------------->
+// ====================================== Array Reduce Method ====================================================//
 //Reduce Method----> Reduce Method bhi ek callback function leta hai ? ye method array ke har ek element ke sath ek function run karta hai jis se array ko reduce kar ke single value me return karwana reduce method ka kaam hota hai ? ye method array ko ek new array me return karwta hai ? ye method original array ko change nhi karta hai ?
+
+
+// ChatGPT Se liya hua Syntax ---> Array reduce() method ek aisi method hai jo array ke har element par ek callback function ko apply karti hai aur ek single value return karti hai. Is method ka use data aggregation, filtering, aur transformation ke liye kiya ja sakta hai.
 
 // const numbers = [1,2,3,4,5, 10];
 // // in sub ka  : sum of all the numbers in array ?
@@ -460,8 +473,11 @@
 
 
 
-// <------------------------------>Array reverse Method<-------------------------------->
+//=========================================== Array reverse Method ================================================//
 // reverse Method ---> ye method original array ko change karta hai ? ye method order change karne ke liye use hota hai means left ki postion se nhi right ki position se value milti hai is se bolte hai order-changes ?
+
+// ChatGPT Se liya hua Syntax ---> JavaScript me Array.reverse() method ek built-in method hai jo array ke elements ko reverse order me modify karta hai. Yani ki pehla element last me aur last element pehla ban jata hai. Ye method original array ko hi modify karta hai aur reversed array ko return karta hai.
+
 
 const reverse = ["Banana", "Orange", "Apple", "Mango"];
 console.log(reverse)
@@ -472,8 +488,9 @@ console.log(reverse1) //original array ko change karta hai ye method ?
 
 
 
-// <------------------------------>Array Shift Method<-------------------------------->
-// shift --->first element se delete karta hai ye ? original array ko change karta hai ? ye delete item ko return karta hai?
+// ======================================== Array Shift Method ==================================================//
+// shift --->first element se delete karta hai ye ? original array ko change karta hai ? ye delete item ko return karta hai.
+
 // let fruits = ["mango", "orange","apple"];
 // console.log(fruits);
 
@@ -485,17 +502,42 @@ console.log(reverse1) //original array ko change karta hai ye method ?
 
 
 
-// <------------------------------>Array slice Method<-------------------------------->
+// ======================================== Array slice Method ===================================================//
 // Slice-Method ---> ye method use hota hai ap ko kaha se kaha tak value chahye jaise muje 'banana',se 'Apple' tak hona lekin onlye 'lemon' tak hi print hoga,q ke ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai ?  start or end position dena padta hai kaha se kaha tak value hona ? ye method two value leta hai start and end wali position ? ye method original Array ko change bhi nhi karta hai? ye method new array bhi deta hai ? 
+
+// ChatGPT Se liya hua Syntax ---> slice() method ek bahut hi useful function hai, jo Arrays ke saath istemal hota hai. Ye method ek naya Array banata hai jo original Array se kuch elements ko include karke banaya jata hai, ya phir kuch elements ko exclude karke banaya jata hai.
+
 
 // const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // const citrus = fruits.slice(1, 3); 
 // console.log(citrus)
 
 
+// ChatGPT Se liya hua Syntax ---> Agar aap sirf ek index pass karte hain, jaise slice(2), to wo index se lekar array ke aakhri tak sab elements ko slice karta hai.
 
-// <------------------------------>Array some Method<-------------------------------->
+var fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+var slicedFruits = fruits.slice(2);
+
+console.log(slicedFruits); // Output: ["Cherry", "Date", "Elderberry"]
+
+
+
+// ChatGPT Se liya hua Syntax --->  Aur agar aap negative indices use karte hain, to wo array ke last se count karte hain.
+
+var fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+var slicedFruits = fruits.slice(-3, -1);
+
+console.log(slicedFruits); // Output: ["Cherry", "Date"]
+
+
+
+// =========================================== Array some Method =================================================//
 // some method ---> ye bhi ek callback function leta hai ? some method original array ko change nhi karta hai ? ye mthod use hota hai array ka koi ek bhi element satisfy hota hai true return karta hai jaise hi ek condition satisfy hohi true ata hai ? ye method true and flase me answer deta hai ?
+
+// ChatGPT Se liya hua Syntax --->  Array some() method ka upyog yah check karne ke liye kiya jata hai ki kya array ke kisi bhi element ke liye ek specific shart true hai. Agar koi bhi element shart ko satisfy karta hai, to some() method true return karta hai. Warna, yah false return karta hai.
+
 
 // let course = ['Hindi',"Urdu","English", 'Telgu'];
 
@@ -518,7 +560,7 @@ console.log(reverse1) //original array ko change karta hai ye method ?
 // console.log(isAnyCourseUrdu); // true if any course is "Urdu", false otherwise
 
 
-//===================some method  object using===============//
+//======================================== some method  object using =============================================//
 let student =[
    {name : 'Tausif', age : 24},
    {name : 'Qureshi', age : 25},
@@ -546,8 +588,10 @@ console.log(ret)
 //     return value.price > 100000
 // })
 // console.log(ans);
-// <------------------------------>Array sort Method<-------------------------------->
+// ========================================= Array sort Method ==============================================//
 // Sort Method ---> is method ka use kar ke array ke elmement ko sort kar ke sortet array ko retrun karna sort ka use hai ? default asending hota hai ? ye method bhi ek call back function leta hai ? ye method origan array ko change karta hai?
+
+// ChatGPT Se liya hua Syntax ---> Array sort() method ka upyog kisi array ke elements ko sort karne ke liye kiya jata hai. Yah elements ko default mein ascending order mein sort karta hai, jo ki chhote se bade tak hota hai. Aap custom compare function ka use karke elements ko kisi bhi order mein sort kar sakte hain.
 
 // A,B,C,D,E,F,G ---->  asending order hota hai ?
 // G,F,E,D,C,B,A ---> desending order hai ye ?
@@ -635,8 +679,10 @@ console.log(ret)
 
 
 
-// <------------------------------>Array spilce Method<-------------------------------->
+// ====================================== Array spilce Method ===================================================//
 // splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? ye method new array nhi deta hai ?
+
+// ChatGPT Se liya hua Syntax ---> Array splice() method ka upyog kisi array mein elements ko add, remove, aur replace karne ke liye kiya jata hai. Yah original array ko modify karta hai aur ek naya array return karta hai jismein changes kiye gaye hain.
 
 // const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 // console.log(fruit)
