@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Propagation Example</title>
+    <style>
+        div,
+        p,
+        button {
+            padding: 20px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        Div Element
+        <p id="p1">
+            Paragraph Element
+            <button id="btn1">Button Element</button>
+        </p>
+    </div>
+
+    <script>
+        // ChatGPT Se liya hua Syntax --->Jab koi event kisi HTML element mein hota hai, toh yeh event DOM (Document Object Model) ke zariye upar ki taraf badhata hai. Is process ko event propagation ke naam se jaana jata hai. Event propagation ke do pramukh stages hain.
+
+        // Bubbling: Isme event target element se shuru hota hai aur uske ancestor elements ke zariye upar ki taraf badhata hai. Yeh default behavior hai.
+
+        // Capturing: Isme event window object se shuru hota hai aur uske descendant elements ke zariye niche ki taraf jaata hai.
+
+        // Event Propagation Stages
+        // Capturing Phase: Event capturing phase me event DOM tree ke root se start hota hai aur target element tak propagate karta hai.
+
+        // Bubbling Phase: Event bubbling phase me event target element se start hota hai aur DOM tree ke root tak propagate karta hai.
+
+
+
+
+        // Capturing phase event listeners
+        document.getElementById("div1").addEventListener("click", function () {
+            console.log("Div element (capturing)");
+        }, true);  // true for capturing phase
+
+        document.getElementById("p1").addEventListener("click", function () {
+            console.log("Paragraph element (capturing)");
+        }, true);  // true for capturing phase
+
+        document.getElementById("btn1").addEventListener("click", function () {
+            console.log("Button element (capturing)");
+        }, true);  // true for capturing phase
+
+        // Bubbling phase event listeners
+        document.getElementById("div1").addEventListener("click", function () {
+            console.log("Div element (bubbling)");
+        }, false);  // false for bubbling phase
+
+        document.getElementById("p1").addEventListener("click", function () {
+            console.log("Paragraph element (bubbling)");
+        }, false);  // false for bubbling phase
+
+        document.getElementById("btn1").addEventListener("click", function () {
+            console.log("Button element (bubbling)");
+        }, false);  // false for bubbling phase
+    </script>
+</body>
+
+</html>

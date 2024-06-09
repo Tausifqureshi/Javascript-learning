@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Event Example</title>
+</head>
+
+<body>
+    <!-- mouse Event  -->
+    <button id="myButton">Click me!</button>
+    <!-- mouse Event  -->
+
+
+    <button id="myButton">Hover over me!</button>
+    <p id="message"></p>
+
+    <!-- KeyboardEvent  -->
+    <input type="text" id="myInput" placeholder="Type something...">
+    <!-- KeyboardEvent  -->
+
+    <script>
+        // // ChatGPT Se liya hua Syntax ---> JavaScript me event handling ek important concept hai, jo aapko user interactions ko handle karne ka tareeka deta hai. Chaliye ek simple example ke saath isko samjhate hain.
+
+        // Javascript all event
+        // Mouse Events: click, dblclick, mouseover, mouseout, mousedown, mouseup, mousemove .
+
+        // Keyboard Events: keydown, keyup, keypress.
+
+        // Form Events: submit, focus, blur, change.
+
+        // Window Events: load, resize, scroll.
+
+        // Clipboard Events: copy, cut, paste.
+
+
+        // Button element ko grab karna
+        const button = document.getElementById('myButton');
+
+        // Message element ko grab karna
+        const message = document.getElementById('message');
+
+        // Event listener add karna button ke mouseover event par
+        button.addEventListener('mouseover', function () {
+            // Message ko update karna
+            message.textContent = 'Mouse is over the button!';
+        });
+
+        // Event listener add karna button ke mouseout event par
+        button.addEventListener('mouseout', function () {
+            // Message ko update karna
+            message.textContent = '';
+        });
+
+
+
+        //======================================= Mouse event ================================================//
+        const butto = document.getElementById('myButton');
+
+        // Click event
+        butto.addEventListener('click', function(event) {
+            console.log('Button clicked at coordinates: ', event.clientX, event.clientY);
+        });
+
+        // Mouseover event
+        butto.addEventListener('mouseover', function(event) {
+            console.log('Mouse over button');
+        });
+
+        // Mouseout event
+        butto.addEventListener('mouseout', function(event) {
+            console.log('Mouse out of button');
+        });
+
+
+
+        //====================================== KeyboardEvent==========================================//
+        // Keydown event
+        const input = document.getElementById('myInput');
+
+        input.addEventListener('keydown', function(event) {
+            console.log('Key down: ', event.key);
+        });
+
+        // Keyup event
+        input.addEventListener('keyup', function(event) {
+            console.log('Key up: ', event.key);
+        });
+
+        // Keypress event
+        input.addEventListener('keypress', function(event) {
+            console.log('Key press: ', event.key);
+        });
+    </script>
+
+    </script>
+</body>
+
+</html>
