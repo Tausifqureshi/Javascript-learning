@@ -104,6 +104,7 @@ return result.json();
 //     console.error("API Create Error:", error);
 //   });
 
+
 // ====================================== Promise chaining use ==============================================//
 // Promise chaining ?
 
@@ -147,7 +148,7 @@ return result.json();
       if (!error) {
         resolve({ userName: "Tausif", userEmail: "tausifqureshi@gmail.com" });
       } else {
-        // reject(new Error("Promise creation error"));
+        // reject(new Error("Promise creation error")); //ye code jab chalta hai jab hai catch me error.message karte hai tab.
         reject("Promise creation error");
       }
     }, 2000);

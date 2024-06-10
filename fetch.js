@@ -86,10 +86,10 @@ const postData1 = async () => {
     console.error("Error:", error);
   }
 };
-// postData1();
+// postData1(); //sort tarika hai ye.
 
 
-
+// Return kar re ge data tu aisa code lihknqa hoga.
 async function fetchData() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
