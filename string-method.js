@@ -5,8 +5,8 @@
 // Concat method ---> ye method two srting ko joing karne ke liye use hota hai ? ye method original String ko Change nhi karta hai ? ye method new string retrun karta hai ? 
 
 // let firstName = 'Tausif';
-// let lastName = 'Qureshi';
 // let text = 'Hello'
+// let lastName = 'Qureshi';
 
 // let result = firstName.concat(lastName,text); //String joind hori yaha se ? kitni bhi string joind kr sakte hi
 // console.log(result)
