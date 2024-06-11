@@ -76,7 +76,7 @@ console.log(phn1.greet());
 console.log(privateVariable); // ReferenceError: privateVariable is not defined.
 
 
-//   IIFE ka use karne ke kuch common scenarios.
+// IIFE ka use karne ke kuch common scenarios.
 
 // Global Scope Pollution Avoid Karna: IIFE ka use karte hue, aap global scope ko unnecessary variables se clutter hone se bacha sakte hain.
 
@@ -89,3 +89,11 @@ var result = (function(a, b) {
   
   console.log(result); // Output: 15
   
+
+
+
+
+
+
+
+

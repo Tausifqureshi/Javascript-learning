@@ -16,54 +16,68 @@
 </head>
 
 <body>
-    <div id="div1">
-        Div Element
-        <p id="p1">
-            Paragraph Element
-            <button id="btn1">Button Element</button>
-        </p>
+    <div id="parent">
+        <div id="child">
+            <button id="button">Click Me</button>
+        </div>
     </div>
+
 
     <script>
         // ChatGPT Se liya hua Syntax ---> Jab koi event kisi HTML element mein hota hai, toh yeh event DOM (Document Object Model) ke zariye upar ki taraf badhata hai. Is process ko event propagation ke naam se jaana jata hai. Event propagation ke do pramukh stages hain.
 
-        // Bubbling: Isme event target element se shuru hota hai aur uske ancestor elements ke zariye upar ki taraf badhata hai. Yeh default behavior hai.
+        // Event Capturing (Capture Phase) ----> Event capturing mein, event sabse upar (document se shuru hokar) se niche tak propagate hota hai. Yani, agar aapne ek element par event trigger kiya hai, toh pehle document se shuru ho kar woh element tak pahunchega, phir us element par trigger hoga.
 
-        // Capturing: Isme event window object se shuru hota hai aur uske descendant elements ke zariye niche ki taraf jaata hai.
-
-        // Event Propagation Stages
-        // Capturing Phase: Event capturing phase me event DOM tree ke root se start hota hai aur target element tak propagate karta hai.
-
-        // Bubbling Phase: Event bubbling phase me event target element se start hota hai aur DOM tree ke root tak propagate karta hai.
+        // Event Bubbling (Bubbling Phase)---> Event bubbling mein, event sabse nichle element se shuru hokar upar ki taraf propagate hota hai. Yani, agar aapne ek element par event trigger kiya hai, toh sabse pehle us element par trigger hoga, phir uske parent elem
 
 
 
+        // Exmple Bubbling.
+        // Bubbling event handler for "button" element
+        document.getElementById('button').addEventListener('click', function (event) {
+            console.log('Bubbling: Button clicked!');
+        });
 
-        // Capturing phase event listeners
-        document.getElementById("div1").addEventListener("click", function () {
-            console.log("Div element (capturing)");
-        }, true);  // true for capturing phase
+        // Bubbling event handler for "child" element
+        document.getElementById('child').addEventListener('click', function (event) {
+            console.log('Bubbling: Child clicked!');
+        });
 
-        document.getElementById("p1").addEventListener("click", function () {
-            console.log("Paragraph element (capturing)");
-        }, true);  // true for capturing phase
+        // Bubbling event handler for "parent" element
+        document.getElementById('parent').addEventListener('click', function (event) {
+            console.log('Bubbling: Parent clicked!');
+        });
 
-        document.getElementById("btn1").addEventListener("click", function () {
-            console.log("Button element (capturing)");
-        }, true);  // true for capturing phase
+        // Agar hum "button" element par click karte hain, toh yeh output milega.
+        // Bubbling: Button clicked!
+        // Bubbling: Child clicked!
+        // Bubbling: Parent clicked!
 
-        // Bubbling phase event listeners
-        document.getElementById("div1").addEventListener("click", function () {
-            console.log("Div element (bubbling)");
-        }, false);  // false for bubbling phase
 
-        document.getElementById("p1").addEventListener("click", function () {
-            console.log("Paragraph element (bubbling)");
-        }, false);  // false for bubbling phase
 
-        document.getElementById("btn1").addEventListener("click", function () {
-            console.log("Button element (bubbling)");
-        }, false);  // false for bubbling phase
+        // Capturing.
+        // Capturing event handler for "parent" element
+        document.getElementById('parent').addEventListener('click', function (event) {
+            console.log('Capturing: Parent clicked!');
+        }, true);
+
+        // Capturing event handler for "child" element
+        document.getElementById('child').addEventListener('click', function (event) {
+            console.log('Capturing: Child clicked!');
+        }, true);
+
+        // Capturing event handler for "button" element
+        document.getElementById('button').addEventListener('click', function (event) {
+            console.log('Capturing: Button clicked!');
+        }, true);
+
+        // Agar hum "button" element par click karte hain, toh yeh output milega:
+        // Capturing: Parent clicked!
+        // Capturing: Child clicked!
+        // Capturing: Button clicked!
+
+
+
     </script>
 </body>
 

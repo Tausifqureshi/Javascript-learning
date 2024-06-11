@@ -49,7 +49,7 @@ function myPromise() {
   });
   //   console.log(typeof myPromise) //promise object aye ga return hoke ?
 
-  myPromise
+  myPromise //my promise bhi use ya mypromise nhi ki jaga .then direct bhi use kar sakte hai.
     .then(
       function (value) {
         console.log(value);
@@ -154,15 +154,20 @@ return result.json();
     }, 2000);
   });
 
-async function getData(){
-  try {
-    let response = await promise1;
-    console.log(response)
-  } catch (error) {
-    console.log("error",error)
+  async function getData(){
+    try {
+      let response = await promise1;
+      console.log(response);
+      let nameUser = response.userName;
+      let email = response.userEmail;
+      console.log(email);
+      console.log(nameUser);
+    } catch (error) {
+      console.log("error", error);
+    }
   }
-}
-// getData()
+  getData();
+  
 
 
 // promise chainin same upper wala ye but is me async await use hua hai ?
