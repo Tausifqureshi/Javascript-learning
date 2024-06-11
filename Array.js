@@ -124,7 +124,7 @@ let array1 = [2,3,4];
 console.log(array1.sum()); //jo sum naam ka khud ka method banye hai us ko array1 ke sath use kar re hai jo sub number ka sum kar ke dege plus means ?
 
 // console.log(array1.__proto__); // sum method add hua ya nhi cheking ?
-
+ 
 
 // <------------------------------>practical<-------------------------------->
 //Clone Array Array1 ke items sub or alag se item add karna ka tarika practical?
