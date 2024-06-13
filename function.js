@@ -8,7 +8,7 @@
 
 
 // <------------------------------------>function declaretion<------------------------------------------->
-// return ---> jab ham javascript me return ka use karte hai tab us ke baad functiom ka execution stop ho jata hai ? Return keyword ke baad koi statement hame lihkte hai tu waha pe o us ko print nhi kar re ga ? jab bhi ham javacsript me invoke karte hai menas function ko call karte hai tab javascript kuch na kuch value return karta hai jo return karta hai o value function me baje ha exmple function ka name hai sumNumber () tu o value is sunaNumber wale function ko beje ga us ke baad  us ko ek varible me store kar ke ham us ka execution start karte hai maens function ko call karte hai ?
+// return ---> jab ham javascript me return ka use karte hai tab us ke baad functiom ka execution stop ho jata hai ? Return keyword ke baad koi statement hame lihkte hai tu waha pe o us ko print nhi kar re ga ? jab bhi ham javacsript me invoke karte hai menas function ko call karte hai tab javascript kuch na kuch value return karta hai jo return karta hai o value function me bajta hai exmple function ka name hai sumNumber () us me num1 and num1 value k plus kar ke return ka re hai j bhi return hoga is sumNumber wale function mw jaye ga us ke baad  us ko ek varible me store kar re ke ham ge us ka function ko call kare ge fir hame value mili gi jo plus hoe ari hai.
 
 // function sumNumber (num1,num2){
 //     return num1+num2; //

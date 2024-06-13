@@ -3,7 +3,7 @@
 
 //Array---> javacsripe me array single variable hota hai jis se ham alag alag element ya value store karne ke liye use karte hai ? Array reference type hai ? JS me jitne refeance type hote hai us se object bolte hai Array ek object hai ?Array hai Collection off element ? Array order collection off items hai menas indexing Access karna ? Array meutabal hota hai means array me indexing se add to o original array ko change kar dega ? 
 
-// ChatGPT Se liya hua Syntax --->  JavaScript me arrays ek aise data structure hain jisme hum multiple values ko ek hi variable me store kar sakte hain. Arrays ko hum ek ordered list ke roop me bhi dekh sakte hain. Chaliye, hum arrays ke bare me detail me samajhte hain aur kuch examples dekhte hain.
+// ChatGPT Se liya hua Syntax --->  JavaScript me arrays ek aise data structure hain jisme hum multiple values ko ek hi variable me store kar sakte hain. Arrays ko hum ek ordered list ke roop me bhi dekh sakte hain. 
 
 
 
