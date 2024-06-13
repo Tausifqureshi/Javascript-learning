@@ -1,4 +1,4 @@
-// ChatGPT Se liya hua Syntax ---> JavaScript mein Spread Operator (…): Ek Sampoorna Samajh
+// ChatGPT Se liya hua Syntax ---> JavaScript mein Spread Operator (…).
 // Spread operator, jise ellipsis operator bhi kaha jata hai, ek aisa JavaScript tool hai jo iterable objects (jaise arrays aur objects) ko expand karne mein madad karta hai. Yah hamen arrays ko combine karne, functions ko arguments pass karne, aur objects ko copy karne mein aasan banata hai.
 
 // ChatGPT Se liya hua Syntax ---> Yeh kya karta hai.

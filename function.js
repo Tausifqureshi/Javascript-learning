@@ -131,42 +131,6 @@
 
 
 
-//===================================== block scope vs function scope ======================================//
-//global variablr ko hame function and function ke bher bhi call karwa sakte hai ? but local variable ko only function me hi call karwa sakte hai ?
-
-// let and const are block scope menas local scope onlye function me call ?
-// var is function scope means globle scope ?
-
-// var firstName = 'Tausif';  // global scope kahi bhi access kar sakte function ke bher ander dono jaga? koi bhi keyword use global me var,let,const, use tu kahi bhi call kar sakte hai function ke ander ya bher ?
-
-// let  firstName = 'Tausif';
-function myFun(){ 
-  //var firstName = 'Tausif'; //ab ye funcion ke bher call kar re ge run nhi karb re ga q ke ab ye function scope means local scope ban gaya hai onlye function me hi call karna hoga ? koi bhi keyword use loacl scope me var,let,const, use tu kahi bhi call nhi kar  sakte hai function ke ander hi call karwana hoga only is ko bolte hai block scope mans function scope local scope ?
-
-  // let  firstName = 'Tausif'
-  // document.write(firstName);
-
-};
-// document.writeln(firstName,"<br>");
-myFun()
-
-
-
-// if (true) { //var ko block and block ke bher kahi bhi call karwa saktew hai ?
-//   var firstName = 'Tausif';
-//   document.writeln(firstName)
-// }
-// document.writeln(firstName)
-
-
-
-// if (true) {  //let and const ko block me hi call karwa sakte hai only ? {} is ke ander hi call karna hoga sirf ?
-//   let firstName = 'Tausif';
-//   document.writeln(firstName)
-// }
-// document.writeln(firstName)
-
-
 
 
 // <------------------>function default parameter<------------------>

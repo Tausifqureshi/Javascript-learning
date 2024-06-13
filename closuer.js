@@ -1,6 +1,6 @@
 // ChatGPT Se liya hua Syntax ---> JavaScript mein closure function kya hai?
 
-// Closure function ek aisi function hoti hai jo apne containing scope ke variable tak pahunch sakti hai, jabki containing function execute ho chuka ho. Dusre shabdon mein, closure function apne parent function ke scope mein declare kiye gaye variable ko retain kar sakti hai.
+//Closure ek important concept hai JavaScript mein, jo function ke bahar ke variables ko access karne ki capability ko refer karta hai. 
 
 // Closure function kaise kam karti hai.
 // Jab aap koi function define karte hain, to use function ko ek lexical environment assign kiya jata hai. Lexical environment mein woh sabhi variable shamil hote hain jo us function ke scope mein declare kiye gaye hain. Jab aap closure function ko call karte hain, to woh function apne lexical environment mein declare kiye gaye variable ko access kar sakti hai, jabki containing function execute ho chuka ho.
