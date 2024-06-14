@@ -1,7 +1,7 @@
 //js me hamre pass data types hote hai ?
 
 //primitive  data types hai ye?
-//String, Number, Booleans, Undefiend, Null, ?
+//String, Number, Booleans, Undefiend, Null, Bigint, Symbol?
 
 let num1 = 6;//primitive  data types hai ye num1 me change tu num2 me change nhi hoga only num1 me hi change hoga?   
 let num2 = num1;
@@ -105,9 +105,9 @@ let firstName = "tausif";
 
 
 //============================================ Reference data-type? ==========================================//
-
+// (primitiv-data) ko hi  Reference data-type bolte hai.
 // Reference data-type? means ek variable me chang to dusre me chang hoga?
-//Array object,
+//Array object, function
 let array1 = ['item1', 'item2','item3'];   //array hai
     let array2 = array1 //aisa karne se  array1 me add tu array 2 me bhi hoga q ke Array reference ?
     console.log(array1)
@@ -128,7 +128,7 @@ let array1 = ['item1', 'item2','item3'];   //array hai
 //===================================================== Non-primitive  ===============================//
 
 //Non-primitive Data types javascript ? means ek variable me chang to dusre me chang hoga?
-// Object, Array 
+// Object, Array, function 
 // Array creating
 let city = ["mumbai", "hyderabad", "lucknow", "gujarat", "secunderabad"];
 console.log(city)

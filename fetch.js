@@ -6,7 +6,6 @@
 
 // Fetch API ke kaam karne ka tarika yeh hai:
 // fetch() function: Yah function ek URL ko argument ke roop me leta hai aur ek Promise return karta hai.
-
 // Promise: Promise ek object hai jo ek asynchronous operation ke result ko represent karta hai.
 // Response object: Promise resolve hone par, yah ek Response object return karta hai jo HTTP response ko represent karta hai.
 

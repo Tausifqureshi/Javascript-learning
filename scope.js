@@ -19,16 +19,17 @@ myFun();
 console.log(firstName); //local varible ko access nhi kar sakta bher error dega.
 
 
-// jab {} ye function ya if else ke sath ata hai is ko bolte hai scope. object alag hai. is liye const and let block scope hai is se keyword let and const ka tu in ne {} is me hi access karna hoga warna ye error dega upper function ka exmple hai ye if ka example hai.
+// jab {} ye function ya if else ke sath ata hai is ko bolte hai scope. object alag hai. is liye const and let block scope hai.is let and const keyword ke variable ko {} is me hi access karna hoga. warna ye error dega upper function ka exmple hai ye if ka example hai.
 //   if (true) { //var ko block and block ke bher kahi bhi call karwa saktew hai ?
 //     var firstName = 'Tausif';
 //     console.log(firstName)
 //   }
 //   console.log(firstName)
 
+
 //   if (true) {
 // //let and const ko block me hi call karwa sakte hai only ? {} is ke ander hi call karna hoga sirf.warna error dega.
 //     let firstName = 'Tausif';
 //     console.log(firstName);
 //   }
-//    console.log(firstName); //ye first name jo upper defind hai var se us ko access kar ra hai agar o var ko commint tu error aye ga.
+//  console.log(firstName); //ye first name jo upper defind hai var se us ko access kar ra hai agar o var ko commint tu error aye ga.

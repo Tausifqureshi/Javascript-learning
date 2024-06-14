@@ -35,7 +35,7 @@
   let firstName = 'Tauisf';
 console.log(firstName[1]); // a aye ga us ki index 1 hai ?
 
-// console.log(firstName.length);  //string ki lenght nikalne ke  liye use aisa nikalte hai ?
+// console.log(firstName.length);  //string ki lenght nikalne ke liye aisa nikalte hai ?
 // console.log(firstName[firstName.length-1])  // agar length nhi malum hame apne character ki to aise nikal sakte hai?
 
 

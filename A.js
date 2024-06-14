@@ -4,7 +4,7 @@
 //     console.log(val)
 // })
 
-
+ 
 let promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     let error = false;
@@ -57,11 +57,13 @@ async function fetchData(){
 };
 
 
-fetchData()
+// fetchData()
 
+let pi = Math.PI
+console.log(pi)
 
-
-
+let num  = Object.getOwnPropertyDescriptor(Math,"PI");
+console.log(num)
 
 
 

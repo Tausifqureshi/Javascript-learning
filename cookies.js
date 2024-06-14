@@ -12,7 +12,6 @@ document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2024 23:59:59 GMT; path
 
 // 2. Cookie Get Karna (Read a Cookie)
 // Cookies ko read karne ke liye bhi document.cookie property ka use karte hain. Ye saari cookies ek single string me return karta hai, jahan cookies semicolon (;) se separated hoti hain.
-
 // Ek specific cookie ko read karne ke liye, hame string ko parse karna padta hai:
 function getCookie(name) {
     let cookieArr = document.cookie.split(";");

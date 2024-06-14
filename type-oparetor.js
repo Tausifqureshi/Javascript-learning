@@ -1,5 +1,5 @@
 // primitive data type in javascript ? means hota hai ek variabe me chang value to dusre me chang nhi hoga primitive data types me 
-//String, Number, Booleans, Undefiend, Null,
+//String, Number, Booleans, Undefiend, Null, Bigint, Smybol.
  
 let num1 = 6;    
 let num2 = num1;
@@ -50,7 +50,7 @@ console.log(typeof (nul));
 
 
 
-// Reference data-type? means ek variable me chang to dusre me chang hoga?
+// Reference data-type. is ko Privitiv-Data type bolte hai. means ek variable me chang to dusre me chang hoga?
 //Array object,function
 
 let array1 = ['item1', 'item2','item3'];   //array hai
@@ -134,8 +134,6 @@ console.log(typeof (mySelf));
 
 
 // Symbol
-
-
 //Checking type off data 
 // let age = 22;  // type of Number creating
 // let firstName = "Tausif"; //type of string creating
