@@ -44,18 +44,31 @@
 
 
 // ===================================== Nested if-eles condison ==============================================//
-// let winnigNumber = 19;
-// let userGuess = +prompt("Guess a number") //users se number lere hai ye propmt? promt string me leta hai value +is se number me change hoga 
+let winnigNumber = 19;
+let userGuess = +prompt("Guess a number") //users se number lere hai ye propmt? promt string me leta hai value +is se number me change hoga 
 
-// // document.writeln(userGuess)  // aise print hoga user se liya hua number/
-//  if (winnigNumber === userGuess){
-//     document.writeln('Your guess Number is right')
-//  }else if(userGuess < winnigNumber){
-//     document.writeln("too low Number")
-//  }else{
-//     document.writeln("to high Number")
-//  }
+// document.writeln(userGuess)  // aise print hoga user se liya hua number/
+ if (winnigNumber === userGuess){
+    document.writeln('Your guess Number is right')
+ }else if(userGuess < winnigNumber){
+    document.writeln("too low Number")
+ }else{
+    document.writeln("to high Number")
+ }
 
+// ===================================== Nested if-eles condison ==============================================//
+//  let winningNumber = 19;
+// let userGuess = +prompt("Guess a number");
+
+// if(userGuess === winningNumber){
+//     console.log("Your guess is right!!");
+// }else{
+//     if(userGuess < winningNumber){
+//         console.log("too low !!!");
+//     }else{
+//         console.log("too high !!!");
+//     }
+// }
 
 
 // let time = new Date().getHours()

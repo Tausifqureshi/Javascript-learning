@@ -9,7 +9,7 @@
 
 // ES Modules (ESM): ES Modules ko import keyword ke sath import kiya jaata hai. Ye browser mein sabse aam type ka module hai.   
 
-
+ 
 import config from "./modules1.js"; // Default import aisa karte hai.
 
 import { name, myFun, Person } from "./modules1.js"; //

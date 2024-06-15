@@ -40,6 +40,32 @@
 
 
 
+
+let x = 3;
+const y = x++; //Postfix increment
+
+console.log(`x:${x}, y:${y}`); // is me baad me incremnet hota hai is liye is me y ki value 3 ari or a ki 4 value ari hai.
+// Expected output: "x:4, y:3"
+let n = 12;
+console.log(n++);   //post increment use 
+console.log(n); // is me value baad me increment hota hai first value print hoti hai.
+console.log(n++);
+console.log(n)
+
+
+let a = 3;
+const b = ++a; //Prefix increment
+
+console.log(`a:${a}, b:${b}`); // is me first increment hota hai is liye dono ki value same hai.
+// Expected output: "a:4, b:4"
+
+let f = 12;
+console.log(++f);   //pree increment use
+console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
+
+
+
+
 // ======================================== Assignment Operators ====================================//
 // Assignment Operators ---> ye o operator hai jis ki help se kisi variable me new value ko Assign kiya jata hai ?
 

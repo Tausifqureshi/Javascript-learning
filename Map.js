@@ -1,6 +1,6 @@
 //Map ---> Maps object ki tara hote hai Key value pairs store karte hai ?  but ham is me kisi bhi tara ki key ya value add kar sakte hai Exmple Function String Ek blank object bhi use kar sakte hai key ki tara ? Maps javascript ES6 me aya hai ? Maps pe for of loop se bhi key value paris get kar sakte hai ? Map bhi ek itareble hai ? Map me bhi duplicate kay nhi allow hai? Object or Map me  different  Map me Key ki bhi type ki rahk sakte hai string number 
 
-//  ====================================================Harsiht Cha========================================//
+//  ===================================== Harsiht Chepter ================================================//
 // object literal me key string ya symbole me hoti hai jayda tara 99 presnt string me hi key hoti hai ?
 // Simple Object Create ye ?
 
@@ -100,11 +100,12 @@ console.log(extraInfo.get(person2).gender); //Map use kar ke object 2 gender pri
 
 // fruits.set("apples", 500);   //Value add maps me ?
 
-// let key1 ='Tauisf', key2 = {name: "Qureshi"} ,key3 = function(){}, key4 = {}; //Maps constructor ye is me kuch bhi key value use kar sakte hai?
+// let key1 ='Tauisf', key2 = {name: "Qureshi"} ,key3 = function(){}, key4 = {},key5 = ['age', 24]; //Maps constructor ye is me kuch bhi key value use kar sakte hai?
 // fruits.set(key1, 'String Hai');  //Value add maps me  Aise bhi kar sakte hai ?
 // fruits.set(key2, 'Object Hai');
 // fruits.set(key3, 'Function Hai');
 // fruits.set(key4, 'Empty Object Hai');
+// fruits.set(key5, 'Array Add');
 // console.log(fruits);
 
 //=========Gets Method se value lere hai kon si key ki value hona get method use =======?

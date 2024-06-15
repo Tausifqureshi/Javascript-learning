@@ -1,9 +1,8 @@
 //Javascript-Object ---> js me kahi data types hote hai us me se ek data type hai object ? object ka use bhi key value ka store karne le liye kiya jata hai ? object bhi ek referance type hai ? object bhi memory me aise hi strore hota haio jaise array hota hai share referance types ek hi tara se store hote hai memory me ? obejct me indexing nhi hota hai ? is me array bhi store kar sakte hai ? Objecr itareble nhi hota hai ?
 
-// ChatGPT Se liya hua Syntax ---> JavaScript me objects ek powerful data structure hain jinka use key-value pairs ko store karne ke liye hota hai. Har key ek unique identifier hoti hai aur uss key ke corresponding ek value hoti hai. 
+// ChatGPT Se liya hua Syntax ---> JavaScript me objects ek powerful data structure hain jinka use key-value pairs ko store karne ke liye hota hai. Har key ek unique identifier hoti hai aur uss key ke corresponding ek value hoti hai.
 
 // ChatGPT Se liya hua Syntax ---> avaScript mein, object ek data type hota hai jo key-value pairs ka collection hota hai. Key aur value string, number, boolean, array, function, ya dusre object bhi ho sakte hain. Object ko curly braces {} ke andar define kiya jata hai, aur key aur value ko colon : se separate kiya jata hai.
-
 
 // const key = "email"; //key add hori emails ki
 // let person = {
@@ -103,9 +102,27 @@
 
 //   console.log(var3)// speard oparetot use bachi hohi value is me aye gi adress hobbies?
 
-
-
 //==============================nested destructuring object==========================================?
+//nested destructuring object only
+const person1 = {
+  name: 'Alice',
+  age: 30,
+  address: {
+    city: 'New York',
+    postalCode: '10001'
+  }
+};
+
+// Extracting nested properties using destructuring
+const { name, age, address: { city, postalCode } } = person1;
+console.log(name); // Output: Alice
+console.log(age); // Output: 30
+console.log(city); // Output: New York
+console.log(postalCode)
+
+
+//nested destructuring object only array of object...........................
+
 // const users= [             // ek array me kuch object store user ke ?
 
 //           {userId: 1, firstName: "Tausif", gender:"Male"},
@@ -116,15 +133,16 @@
 // const [ user1,user2,user3]= users
 // console.log(user1) //simple destructuring ye
 
-// const [{firstName, userId},{gender}] = users // is ko bolte hai nested destructuring ham object ke ander se lere hai ? firstName index[0]ka hai or gender index[2] ka hai  q ke hai ham ek hi use kar re hai is ko , user  kar re hai  simple wala aye ga ,, use tu hello aye ga kuch nhi use to male hi aye ga?
+// const [{firstName, userId},{gender}] = users // is ko bolte hai nested destructuring ham object ke ander se lere hai ? firstName index[0]ka hai or gender index[2] ka hai  q ke hai ham ek hi use kar re hai is ko , user  kar re hai  simple wala aye ga ,, use tu hello aye ga kuch nhi use to male hi aye ga.
 
+
+// const [,{firstName},{userId,gender}] = users; //aisa bhi kar sakte hai userid2 ka firstName le rehai. 
 // console.log(firstName) //
 // console.log(userId) //first wali user id print hogi is se?
-
 // console.log(gender)
 
 
-// const users= [             // ek array me kuch object store user ke ?
+// const users= [        // ek array me kuch object store user ke ?
 
 //           {userId: 1, firstName: "Tausif", gender:"Male"},
 //           {userId: 2, firstName: "Qureshi", gender:"simple" },
@@ -136,19 +154,16 @@
 // console.log(firstName3) //
 
 
-// const users= [             // ek array me kuch object store user ke ?
+const users= [             // ek array me kuch object store user ke ?
 
-//           {userId: 1, firstName: "Tausif", gender:"Male"},
-//           {userId: 2, firstName: "Qureshi", gender:"simple" },
-//           {userId: 3, firstName: "Iqbal", gender:"hello"}
-// ]
-// const [{firstName}, , {userId: secondUserId}, , {gender: thirdUserGender}] = users;
-// console.log(firstName);         // Output: "Tausif"
-// console.log(secondUserId);      // Output: 2
-// console.log(thirdUserGender);   // Output: "hello"
-
-
-
+  {userId: 1, firstName: "Tausif", gender:"Male"},
+  {userId: 2, firstName: "Qureshi", gender:"simple" },
+  {userId: 3, firstName: "Iqbal", gender:"hello"}
+]
+const [,{firstName,userId},{gender}] = users; //is se hora userid1 se name same us se id or userid3 ka gender is ko bolte hai nested destrcturing.
+console.log(firstName);        
+console.log(userId);            
+console.log(gender);   
 
 // <------------------------------>Object inside Array<-------------------------------->
 //object ke ander Array create karen matlab ya fir array ke ander bhut share object create karan ye hota hai object inside array ? React me kafi use full hai ye method or real world application me bhi?
@@ -180,8 +195,6 @@
 
 //  }
 
-
-
 // <------------------------------>parameter destructuring<-------------------------------->
 //is object me use kiya gaya hai?
 //react me kafi usefull method hai ye?
@@ -204,27 +217,27 @@
 // <------------------------------>Object me Array<-------------------------------->
 
 const person = {
-        name: 'Tauisf',
-        age: 24,
-        address: "Mumbai",
-        hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"] ,
-        person2 :{
-            name : 'Javed',
-            myFavorite :['Driving', 'Bookred','Developer'], // nested array ?
-        }
-    }
+  name: "Tauisf",
+  age: 24,
+  address: "Mumbai",
+  hobbies: ["Crickect", "Bookread", "coding", "Game"],
+  person2: {
+    name: "Javed",
+    myFavorite: ["Driving", "Bookred", "Developer"], // nested array ?
+  },
+};
 
-  console.log(person.person2.myFavorite); //pura array aye ga is se nested wala ?
-  
-  person.person2.myFavorite[3]= 'Software'; // nested array me value add 3 index me add hoga?original array change hoga is se ?
+console.log(person.person2.myFavorite); //pura array aye ga is se nested wala ?
 
-  console.log(person.person2.myFavorite); // checking add value 'Software ?
+person.person2.myFavorite[3] = "Software"; // nested array me value add 3 index me add hoga?original array change hoga is se ?
 
-    console.log(person.hobbies[1]); //Access indexing array value ?
+console.log(person.person2.myFavorite); // checking add value 'Software ?
 
-    console.log(person.hobbies); //pura array aye ga is se ?
+console.log(person.hobbies[1]); //Access indexing array value ?
 
-    console.log(person);//pura object print hoga is se ?
+console.log(person.hobbies); //pura array aye ga is se ?
+
+console.log(person); //pura object print hoga is se ?
 
 // <-------------------------------->Object option chaining<-------------------------------->
 

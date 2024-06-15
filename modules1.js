@@ -1,14 +1,14 @@
-let name = "Tausif";
+let name = "Tausif"; //Export Varible.
 
-const myFun = () => {
+const myFun = () => {  //EXport Function.
   return `imported Function`;
 };
 
- class Person { 
+ class Person {  //Export Class
   constructor(n) {
     this.firsName = n;
   }
-}
+} 
 export { name,myFun,Person};
 
 // config.js
@@ -20,7 +20,6 @@ export default config; //defualt file me sirf ek hi ho sakta hai bus.
 
 
 // module.js
-
 const defaultFunction = () => {  //defualt function.
     return `This is the default exported function`;
   };

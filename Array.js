@@ -67,7 +67,7 @@
 // <------------------------------>Array Destructuring<-------------------------------->
 // let cars = ['Volvo','Tata','Marcedes','Audi']
 
-//const[model1,model2,model3,model4] = cars; // jis bhi varible ke baad is ko jitna use vlue us value ke baas start hogi ? lekin abhi is me simple Destructuring kar re hai.
+//const[model1,model2,model3,model4] = cars;  // model12 me "Tata" nhi "Marcedes" aye gi q ke hamne , is ka use kiye hai jitne bar bhi is ka use kar re ge two bar use tu two value ko avoid kar re ga. lekin abhi is me simple Destructuring kar re hai.
 // const[model1,...model2]=cars;  // speard oparetor use tata se audi tak model2 me jaye ge ? 
 // console.log(model1); // 'Valvo'
 // console.log(model2); // 'Tata'

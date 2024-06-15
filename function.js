@@ -38,8 +38,8 @@
 
 //Aisa function agar value milti hai tu number index retrun warna -1 aye ga?
 // function findTarget(arr,target){
-//     for(let i =0; i<arr.length; i++){
-//         if(arr[i]=== target){
+  //         if(arr[i]=== target){
+    //     for(let i =0; i<arr.length; i++){
 //             return [i];
 //         }
 //     }return -1;
