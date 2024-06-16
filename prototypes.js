@@ -82,7 +82,7 @@ let autherName = new Person('Tausif','Qureshi'); // Constructor object banane se
 
 
 
-//=======================================simple Object pe use ___proto__  ========================================//
+//======================================= simple Object pe use ___proto__  ========================================//
 
 
 let obje = {

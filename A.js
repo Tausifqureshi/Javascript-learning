@@ -65,34 +65,18 @@ async function fetchData(){
 // let num  = Object.getOwnPropertyDescriptor(Math,"PI");
 // console.log(num)
 
-// const users = [
-//   { userId: 1, firstName: "Tausif", gender: "Male" },
-//   { userId: 2, firstName: "Qureshi", gender: "simple" },
-//   { userId: 3, firstName: "Iqbal", gender: "hello" }
-// ];
 
-// // const [{,{firstName},, userId,gender}] = users 
-// const [, { firstName }, , { userId, gender }] = users;
-// console.log(firstName) //
-// console.log(userId) //first wali user id print hogi is se?
-// console.log(gender)
 
-// const users = [
-//   { userId: 1, firstName: "Tausif", gender: "Male" },
-//   { userId: 2, firstName: "Qureshi", gender: "simple" },
-//   { userId: 3, firstName: "Iqbal", gender: "hello" }
-// ];
-// const [{firstName}, , {userId: secondUserId},,{secondGender}] = users;
-// console.log(firstName);         // Output: "Tausif"
-// console.log(secondUserId);      // Output: 2
-// console.log(secondGender);   // Output: "hello"
 
-// const [,,{ firstName }] = users;
-// const[{ userId, gender }] = users;
- 
-// console.log(firstName); // Output: "Qureshi"
-// console.log(userId);    // Output: 2
-// console.log(gender);    // Output: "simple"
+const users = [
+  { userId: 1, firstName: "Tausif", gender: "Male" },
+  { userId: 2, firstName: "Qureshi", gender: "simple" },
+  { userId: 3, firstName: "Iqbal", gender: "hello" }
+];
+const [,{firstName, userId: secondUserId, gender: secondGender},{}] = users;
+// console.log(firstName);
+// console.log(secondUserId);
+// console.log(secondGender)
 
 
 // const userid2FirstName = users.find(user => user.userId === 2).firstName;
@@ -118,6 +102,5 @@ async function fetchData(){
 
 
 
-
-
+ 
 
