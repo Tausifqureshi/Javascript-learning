@@ -682,7 +682,7 @@ console.log(ret)
 // ====================================== Array spilce Method ===================================================//
 // splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? ye method new array nhi deta hai ?
 
-// ChatGPT Se liya hua Syntax ---> Array splice() method ka upyog kisi array mein elements ko add, remove, aur replace karne ke liye kiya jata hai. Yah original array ko modify karta hai aur ek naya array return karta hai jismein changes kiye gaye hain.
+// ChatGPT Se liya hua Syntax ---> Array splice() method ka upyog kisi array mein elements ko add, remove, aur replace karne ke liye kiya jata hai. Yah original array ko modify karta hai aur ek naya array return karta hai jismein changes kiye gaye hain. original array ko change karta hai ye method.
 
 // const fruit = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 // console.log(fruit)
@@ -717,7 +717,7 @@ console.log(ret)
 
 
 
-// <------------------------------>Array toString Method<-------------------------------->
+// <------------------------------>Array toStrinFg Method<-------------------------------->
 // toString Method ---> ye method oringinal array ko change nhi karta hai ? ye method array ke element ko string me change karata hai ? string me change tu array ke koi bhi method use nhi kar skate hai is pe fir ? 
 
 // const string = ["Banana", "Orange", "Apple", "Mango"];

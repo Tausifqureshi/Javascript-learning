@@ -74,9 +74,9 @@ const users = [
   { userId: 3, firstName: "Iqbal", gender: "hello" }
 ];
 const [,{firstName, userId: secondUserId, gender: secondGender},{}] = users;
-// console.log(firstName);
-// console.log(secondUserId);
-// console.log(secondGender)
+console.log(firstName);
+console.log(secondUserId);
+console.log(secondGender)
 
 
 // const userid2FirstName = users.find(user => user.userId === 2).firstName;
@@ -85,6 +85,32 @@ const [,{firstName, userId: secondUserId, gender: secondGender},{}] = users;
 // } else {
 //   console.log("User with userId 2 not found");
 // }
+
+// number-object example
+// let number = new Number(100);
+// console.log(typeof number.toPrecision())
+
+// let myNum = 100000000000;
+// console.log(myNum.toLocaleString("en-IN")) //india me defualvalue lw sakte.
+
+
+// date and time.
+// let newDate = new Date();
+// console.log( newDate.toString());
+// console.log(newDate.toLocaleString());
+
+// console.log(newDate.toDateString());
+// console.log(newDate.toLocaleDateString());
+
+// console.log(newDate.toTimeString());
+// console.log(newDate.toLocaleTimeString());
+
+
+
+
+
+
+
 
 
 
