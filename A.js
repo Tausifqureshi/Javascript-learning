@@ -107,12 +107,27 @@ console.log(secondGender)
 
 
 
+let url = "https://jsonplaceholder.typicode.com/users";
 
-
-
-
-
-
+let xhr = new XMLHttpRequest();
+// console.log(xhr)
+xhr.responseType = "json"; 
+xhr.onreadystatechange = function(){
+  if(xhr.readyState === 4){
+    console.log("DONE 4 ")
+  console.log(xhr.response);
+   if (xhr.status >= 200 && xhr.status < 300) {
+    // Parse JSON data from the response
+    // let data = JSON.parse(xhr.responseText);
+    // console.log(data)
+  } else {
+    // Handle errors, if any
+    console.log('Error:', xhr.status);
+  }
+}
+}
+xhr.open("GET", url, true)
+xhr.send()
 
 
 
