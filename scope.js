@@ -8,7 +8,7 @@ let firstName1 = "Tausif"; // global variable ye fir ye koi bhi keyword se defie
 
 function myFun() {
   let firstName = "Tausif"; //Local variable
-  //jo bhi varibel function ke ander defind o local hi variable hua fir o koi bhi veriable ho let const ya var agar ye local varibel me defind tu in ne ander hi call karna hoga local varible le bher call se error dega.
+  //jo bhi varibel function ke ander defind o local hi variable ho fir o koi bhi veriable ho let const ya var agar ye local varibel me defind tu in ne ander hi call karna hoga local varible le bher call se error dega.
 
   console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
 

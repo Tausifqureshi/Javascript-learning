@@ -73,10 +73,10 @@ const users = [
   { userId: 2, firstName: "Qureshi", gender: "simple" },
   { userId: 3, firstName: "Iqbal", gender: "hello" }
 ];
-const [,{firstName, userId: secondUserId, gender: secondGender},{}] = users;
-console.log(firstName);
-console.log(secondUserId);
-console.log(secondGender)
+// const [,{firstName, userId: secondUserId, gender: secondGender},{}] = users;
+// console.log(firstName);
+// console.log(secondUserId);
+// console.log(secondGender)
 
 
 // const userid2FirstName = users.find(user => user.userId === 2).firstName;
@@ -141,6 +141,23 @@ showLoading ()
 xhr.send()
 
 
+
+function myFun() {
+ var firstName = "Tausif"; //Local variable
+  console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
+  // console.log(firstName1); //global varibel access function me.
+}
+
+
+// myFun();
+// console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
+
+
+if (true) { 
+    var firstName = 'Tausif';
+    // console.log(firstName)
+  }
+  console.log(firstName)
 
 
 
