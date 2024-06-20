@@ -106,14 +106,24 @@ console.log(secondGender)
 // console.log(newDate.toLocaleTimeString());
 
 
+const loadingSpinner = document.querySelector(".loading-spinner");
 
+const showLoading = () => {
+  loadingSpinner.style.display = "block";
+};
+
+const hideLoading = () => {
+  loadingSpinner.style.display = "none";
+};
 let url = "https://jsonplaceholder.typicode.com/users";
 
 let xhr = new XMLHttpRequest();
 // console.log(xhr)
 xhr.responseType = "json"; 
 xhr.onreadystatechange = function(){
+
   if(xhr.readyState === 4){
+    hideLoading()
     console.log("DONE 4 ")
   console.log(xhr.response);
    if (xhr.status >= 200 && xhr.status < 300) {
@@ -127,6 +137,7 @@ xhr.onreadystatechange = function(){
 }
 }
 xhr.open("GET", url, true)
+showLoading ()
 xhr.send()
 
 
