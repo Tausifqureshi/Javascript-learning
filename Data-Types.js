@@ -105,7 +105,7 @@ let firstName = "tausif";
 
 
 //============================================ Reference data-type? ==========================================//
-// (primitiv-data) ko hi  Reference data-type bolte hai.
+// Non-primitiv data types ko hi. Reference data-type bhi bolte hai.
 // Reference data-type? means ek variable me chang to dusre me chang hoga?
 //Array object, function
 let array1 = ['item1', 'item2','item3'];   //array hai
