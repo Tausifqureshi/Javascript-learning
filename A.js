@@ -165,14 +165,16 @@ if (true) {
   
 
 
+// Hosting function.
+// console.log(arror());
+// var arror = ()=>{
+//   console.log("Arrow");  
+// };
 
-var arror = ()=>{
-  console.log("Arrow");  
-};
-console.log(arror());
 
-
-
+// Variable hosting.
+// console.log( firatName)
+// var firatName = "Hello wold";
 
  
 
