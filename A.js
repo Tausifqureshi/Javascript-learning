@@ -176,5 +176,23 @@ if (true) {
 // console.log( firatName)
 // var firatName = "Hello wold";
 
+
+
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
