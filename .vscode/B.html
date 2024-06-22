@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Input</title>
+</head>
+
+<body>
+    <p id="textToHideShow">This is the text to hide and show.</p>
+    <button id="toggleTextButton"> Clicked </button>
+
+
+    <script>
+
+
+
+    
+    document.getElementById("toggleTextButton").addEventListener("click", toggleTextVisibility)
+function toggleTextVisibility() {
+  const textElement = document.getElementById("textToHideShow");
+  const button = document.getElementById("toggleTextButton");
+
+  if (textElement.style.display === "none") {
+    showText(); // Call showText directly
+  } else {
+    hideText(); // Call hideText directly
+  }
+
+  // Function to show the text element
+  function showText() {
+    textElement.style.display = "block";
+    button.textContent = "Hide Text";
+  }
+
+  // Function to hide the text element
+  function hideText() {
+    textElement.style.display = "none";
+    button.textContent = "Show Text";
+  }
+}
+
+// Event listener to toggle text visibility on button click
+// let num = document.getElementById("toggleTextButton").addEventListener("click", ()=>{
+//     toggleTextVisibility()
+// });
+
+
+
+    </script>
+</body>
+
+</html>

@@ -34,6 +34,30 @@ inputBox.addEventListener("blur", () => {
 });
 
 
+// refractor code hai ye jo eyse pade ohi use ka ke karo.
+document.addEventListener("DOMContentLoaded",()=>{
+    const inputBox = document.getElementById("box");
+
+    inputBox.addEventListener("focus", focusHandle);
+    inputBox.addEventListener("blur", blurHandle);
+
+
+    function focusHandle(){
+        if (inputBox.value === '') {
+            inputBox.placeholder = ""
+        }
+    };
+
+
+    function blurHandle(){
+        if (inputBox.value === "") {
+             inputBox.placeholder = "My name"
+        }
+    }
+
+})
+
+
 
 
 // inputBox.addEventListener("click", () => {  //inputbox me hi click karnse placeholde ki vlaue ye ge jaye gi ?
