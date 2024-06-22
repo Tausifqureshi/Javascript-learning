@@ -142,12 +142,12 @@ xhr.send()
 
 
 
+// Scope Perctical.
 function myFun() {
  var firstName = "Tausif"; //Local variable
   console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
   // console.log(firstName1); //global varibel access function me.
 }
-
 
 // myFun();
 // console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
@@ -160,7 +160,8 @@ if (true) {
   console.log(firstName)
 
 
-
+let pro = prompt("Enter the Value");
+document.write(pro)
   
 
 
