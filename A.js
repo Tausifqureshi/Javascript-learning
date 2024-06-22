@@ -160,15 +160,16 @@ if (true) {
   console.log(firstName)
 
 
-let pro = prompt("Enter the Value");
-document.write(pro)
+// let pro = prompt("Enter the Value");
+// document.write(pro)
   
 
 
 
-
-
-
+var arror = ()=>{
+  console.log("Arrow");  
+};
+console.log(arror());
 
 
 
