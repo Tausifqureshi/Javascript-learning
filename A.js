@@ -177,7 +177,7 @@ if (true) {
 // var firatName = "Hello wold";
 
 
-let myAge = 2;
+let myAge = 25;
 console.log(myAge) 
 
 

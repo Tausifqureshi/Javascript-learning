@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Input</title>
+</head>
+
+<body>
+    <p id="textToHideShow">This is the text to hide and show.</p>
+    <button id="toggleTextButton"> Clicked </button>
+
+
+    <script>
+// function toggleTextVisibility(){
+// let button = document.getElementById("toggleTextButton");
+// let textElement = document.getElementById("textToHideShow");
+
+// if (textElement.style.display === "none") {
+//  show();
+// }else{
+//   hide();
+// }
+
+// function show(){
+// textElement.style.display = "block";
+// button.textContent = "Hide Text";
+// }
+// function  hide(){
+//   textElement.style.display = "none";
+//   button.textContent = "Show Text";
+// }
+
+// }
+// document.getElementById("toggleTextButton").addEventListener("click" ,toggleTextVisibility);
+
+let button = document.getElementById("toggleTextButton");
+button.addEventListener("click",()=>{
+  let textElement = document.getElementById("textToHideShow");
+  if (textElement.style.display === "none") {
+    textElement.style.display = "block";
+    button.textContent = "Hide Text";
+  }else{
+    textElement.style.display = "none";
+    button.textContent = "Show Text";
+  }
+})
+    </script>
+</body>
+
+</html>

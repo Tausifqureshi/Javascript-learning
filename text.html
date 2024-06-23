@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-    body {
-            transition: background-color 0.5s;
-        }
-  </style>
-  <body id="change">
-    <!-- body click color chnage -->
-    <button onclick="colorChange() ">Color chnage</button>
 
-    <!-- Hide and show Text -->
-    <!-- <p id="textToHideShow">This is the text to hide and show.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  body {
+    transition: background-color 0.5s;
+  }
+</style>
+
+<body id="change">
+  <!-- body click color chnage -->
+  <button onclick="colorChange() ">Color chnage</button>
+
+  <!-- Hide and show Text -->
+  <!-- <p id="textToHideShow">This is the text to hide and show.</p>
 
 <button onclick="hideText()">Hide Text</button>
 <button onclick="showText()">Show Text</button> -->
 
-    <!-- Hide and show one more button -->
-    <p id="textToHideShow">This is the text to hide and show.</p>
-    <button id="toggleTextButton">Hide Text</button>
+  <!-- Hide and show one more button -->
+  <p id="textToHideShow">This is the text to hide and show.</p>
+  <button id="toggleTextButton">Hide Text</button>
 
-    <script>
-      // =========================== Hide and show one more button =================================//
-      document 
-        .getElementById("toggleTextButton")
-        .addEventListener("click", () => {
-          const textElement = document.getElementById("textToHideShow");
-          const button = document.getElementById("toggleTextButton");
-
-          if (textElement.style.display === "none") {
-            textElement.style.display = "block";
-            button.textContent = "Hide Text";
-          } else {
-            textElement.style.display = "none";
-            button.textContent = "Show Text";
-          }
-        });
-      // ==============Hide and show code =================== //
-      function hideText() {
-        document.getElementById("textToHideShow").style.display = "none";
-      }
-
-      function showText() {
-        document.getElementById("textToHideShow").style.display = "block";
-      }
-
-      //==============================  body Color change ========================================//
-      var x = 0;
-      function colorChange() {
-        if (x == 0) {
-          document.getElementById("change").style.background = "green";
-          x = 1;
-        } else if (x == 1) {
-          document.getElementById("change").style.background = "blue";
-          x = 2;
-        } else if (x == 2) {
-          document.getElementById("change").style.background = "yellow";
-          x = 3;
+  <script>
+    // =========================== Hide and show one more button =================================//
+    document
+      .getElementById("toggleTextButton")
+      .addEventListener("click", () => {
+        const textElement = document.getElementById("textToHideShow");
+        const button = document.getElementById("toggleTextButton");
+        if (textElement.style.display === "none") {
+          textElement.style.display = "block";
+          button.textContent = "Hide Text";
         } else {
-          document.getElementById("change").style.background = "red";
-          x = 0;
+          textElement.style.display = "none";
+          button.textContent = "Show Text";
         }
+      });
+    
+      //refractor code one more buttone use same upper wale hi code
+    let button = document.getElementById("toggleTextButton");
+    button.addEventListener("click", () => {
+      let textElement = document.getElementById("textToHideShow");
+      if (textElement.style.display === "none") {
+        textElement.style.display = "block";
+        button.textContent = "Hide Text";
+      } else {
+        textElement.style.display = "none";
+        button.textContent = "Show Text";
       }
+    });
+
+    // ==============Hide and show code =================== //
+    function hideText() {
+      document.getElementById("textToHideShow").style.display = "none";
+    }
+
+    function showText() {
+      document.getElementById("textToHideShow").style.display = "block";
+    }
+
+    //==============================  body Color change ========================================//
+    var x = 0;
+    function colorChange() {
+      if (x == 0) {
+        document.getElementById("change").style.background = "green";
+        x = 1;
+      } else if (x == 1) {
+        document.getElementById("change").style.background = "blue";
+        x = 2;
+      } else if (x == 2) {
+        document.getElementById("change").style.background = "yellow";
+        x = 3;
+      } else {
+        document.getElementById("change").style.background = "red";
+        x = 0;
+      }
+    }
 
     //   ========================================body Color Change============================================//
     //sort code 
     // <button onclick="colorChange()">Color change</button> //html code
-        let colors = ["green", "blue", "yellow"];
-        let x = 0;
-        function colorChange() {
-            document.getElementById("change").style.backgroundColor = colors[x];
-            x = (x + 1) % colors.length;
-        }
+    let colors = ["green", "blue", "yellow"];
+    let x = 0;
+    function colorChange() {
+      document.getElementById("change").style.backgroundColor = colors[x];
+      x = (x + 1) % colors.length;
+    }
 
 
-      // var x = 0;
+    // var x = 0;
 
-      // function colorChange() {
-      //     switch (x) {
-      //         case 0:
-      //             document.getElementById("change").style.background = 'green';
-      //             x = 1;
-      //             break;
-      //         case 1:
-      //             document.getElementById("change").style.background = 'red';
-      //             x = 2;
-      //             break;
-      //         case 2:
-      //             document.getElementById("change").style.background = 'blue';
-      //             x = 0;
-      //             break;
-      //         default:
-      //             // Just in case x gets an unexpected value.
-      //             document.getElementById("change").style.background = 'red';
-      //             x = 0;
-      //     }
-      // }
-    </script>
-  </body>
+    // function colorChange() {
+    //     switch (x) {
+    //         case 0:
+    //             document.getElementById("change").style.background = 'green';
+    //             x = 1;
+    //             break;
+    //         case 1:
+    //             document.getElementById("change").style.background = 'red';
+    //             x = 2;
+    //             break;
+    //         case 2:
+    //             document.getElementById("change").style.background = 'blue';
+    //             x = 0;
+    //             break;
+    //         default:
+    //             // Just in case x gets an unexpected value.
+    //             document.getElementById("change").style.background = 'red';
+    //             x = 0;
+    //     }
+    // }
+  </script>
+</body>
+
 </html>
