@@ -73,11 +73,11 @@
 // Arrow function ka this nhi hota hai ? Arrow function jo this leta hai apne surrounding se means Arrow function ka This jo hota hai window object hota hai globle bhi bolte hai ? Arrow Function ka This Change nhi kar sakte hai ? 
 
 // const user1 = {
-//   firstName : "harshit",
+//   firstName : "harshit",  
 //   age: 8,
 //   about: () => {
 //     // console.log(this) //Window object aye ga? Arrow function ka This Window hota hai?
-//     console.log(this.firstName, this.age);
+//     console.log(this.firstName + " " + this.age);
 //   }   
 // }
 
@@ -181,8 +181,7 @@
 //  }
 //    const ans = myFun();
 // //    console.log(ans)
-// ans();   //console nhi karne se ye use karne se i am returning print hoga q ke ans ek function ban gaya hai ab ?
-
+ 
 
 // function myFun(){   //higyer order function
 
@@ -196,7 +195,6 @@
   //  console.log(ans)  //pura function retrun hoga aisa karne se ?
   //  console.log(ans())  //Function retrun use karne se hello world aise hi print go jaye ga lin number 212 se ?
 
-//  ans();//aisa use karne se hello world print hoga q ke ans ek function ban gaya hai ab ?
 
 
 

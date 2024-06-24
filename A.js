@@ -142,54 +142,41 @@ xhr.send()
 
 
 
-// Scope Perctical.
-function myFun() {
- var firstName = "Tausif"; //Local variable
-  console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
-  // console.log(firstName1); //global varibel access function me.
+
+
+
+let fullName = function(city,contry,num){ // function bhar bhi create kar sakte hai aise?
+    // console.log(city,contry)
+    return `${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry} ${num}`
+  
+   }
+//  function fullName (city,contry){ // function declaretion
+//     console.log (`${this.fisrtName} ${this.lastName} ${this.age} ${city} ${contry}`);
+//    }
+
+let student1 = {
+    fisrtName :"Tausif",
+    lastName : 'qureshi',
+    age :25
+  
+} 
+
+let student2 = {
+    fisrtName :"Javed",
+    lastName : 'qureshi',
+    age :24
 }
 
-// myFun();
-// console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
+// fullName.apply(student1,["Mumbai","India"])//aisa bhi call kar sakte hai but return nhi console function me hi karna hoga?
+
+// console.log(fullName.apply(student2,["Mumbai","India",'hello'])); //Multipal Array lihk sakte hai yaha pe ?
+
+// console.log(fullName.apply(student2,[student2.age,],['Heydrabaad','India'])); //Apply me itna fark hai second argument Array me dena hota hai ? retrun wala function commit is tara se call tu undefiend aye ga?
+
+// console.log(fullName.apply(student2,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
 
 
-if (true) { 
-    var firstName = 'Tausif';
-    // console.log(firstName)
-  }
-  console.log(firstName)
-
-
-// let pro = prompt("Enter the Value");
-// document.write(pro)
-  
-
-
-// Hosting function.
-// console.log(arror());
-// var arror = ()=>{
-//   console.log("Arrow");  
-// };
-
-
-// Variable hosting.
-// console.log( firatName)
-// var firatName = "Hello wold";
-
-
-let myAge = 25;
-console.log(myAge) 
-
-
-
-
-
-
-
-
-
-
-
+// console.log(fullName.apply(student1,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
 
 
 

@@ -17,6 +17,7 @@
 
 function greet(name) {
     console.log("Hello, " + this.name + "" + name + "!");
+    // return ("Hello, " + this.name + " " + name + "!");
   }
   
   const person1 = {
@@ -29,6 +30,11 @@ function greet(name) {
   
  greet.call(person1,'nice'); // Output: Hello, John!
  greet.call(person2, 'sey'); // Output: Hello, Mary!
+
+ let save = greet.call(person1,'nice'); // return tu aise hi call kar karte hai.
+console.log(save)
+
+console.log( greet.call(person1,'nice')) //return tu aise bhi call kar sakte hai. return tu.
   
 
 
@@ -45,6 +51,7 @@ function greet(name) {
 
 function greet(name) { //parametar hai name ?
     console.log("Hello, " + this.name + " " + name + "!");
+    
   }
   
   const person4 = {
@@ -79,16 +86,18 @@ function greet(name) { //parametar hai name ?
 // Bind method humme event handlers me "this" keyword ko control karne me madad karta hai.
 
 
-const person = {
+const person = {  
   name: "John Doe",
   greet: function() {
     console.log(`Hello, my name is ${this.name}`);
+  //  return (`Hello, my name is ${this.name}`); //
+
   }
 };
 
 const boundGreet = person.greet.bind(person);
-boundGreet(); // Output: Hello, my name is John Doe
-
+boundGreet(); // console use upper function me tu aise call hoga.
+console.log(boundGreet()); //retrun use tu aisa call hoga. 
 
 
 
