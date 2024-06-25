@@ -1,35 +1,128 @@
-//===================================== block scope vs function scope ======================================//
-//global variablr ko hame function and function ke bher bhi call karwa sakte hai ? but local variable ko only function me hi call karwa sakte hai ?
+// ChatGPT Se liya hua Syntax ---> JavaScript me "scope" ka matlab hota hai variable aur functions ke liye us context ka area ya boundary jahan par wo accessible hote hain. Scope define karta hai ki aap kis variable ya function ko kahan se access kar sakte hain ya unhe modify kar sakte hain. JavaScript me mainly do tarah ke scopes hote hain:
 
-// let and const are block scope menas local scope onlye function me call ?
-// var is function scope means globle scope ?
+// ============================================= Global Scope ==================================================//
+//ChatGPT Se liya hua Syntax --->  1. Global Scope: Ye sabse bada scope hota hai aur poore script ya program ke liye accessible hota hai. Global scope me define kiye gaye variables ya functions ko aap kahin bhi script ke andar use kar sakte hain.
 
-let firstName1 = "Tausif"; // global variable ye fir ye koi bhi keyword se defiend ho let const var is ko function ke ander and bher dono jaga call kar sakten hai.
+// ChatGPT Se liya hua Syntax ---> Global Variables
+// Global variables ko kisi bhi function ke bahar declare kiya jata hai. Yeh poore code base mein kahin bhi available hoti hain.
 
-function myFun() {
-  let firstName = "Tausif"; //Local variable
-  //jo bhi varibel function ke ander defind o local hi variable ho fir o koi bhi veriable ho let const ya var agar ye local varibel me defind tu in ne ander hi call karna hoga local varible le bher call se error dega.
-
-  console.log(firstName); // local varoible access is ko only is function me hi access karna hoga.
-
-  // console.log(firstName1); //global varibel access function me.
+var globalVar = "I am a global variable"; //let const bhi use tobhi is se kahai bhi access kar sakte hai globaliy.
+function displayGlobalVar() {
+    console.log(globalVar); // I am a global variable
 }
-myFun();
 
-console.log(firstName); //local varible ko access nhi kar sakta bher error dega.
-
-
-// jab {} ye function ya if else ke sath ata hai is ko bolte hai scope. object alag hai. is liye const and let block scope hai.is let and const keyword ke variable ko {} is me hi access karna hoga. warna ye error dega upper function ka exmple hai ye if ka example hai.
-//   if (true) { //var ko block and block ke bher kahi bhi call karwa saktew hai ?
-//     var firstName = 'Tausif';
-//     console.log(firstName)
-//   }
-//   console.log(firstName)
+displayGlobalVar();
+console.log(globalVar); // I am a global variable
 
 
-//   if (true) {
-// //let and const ko block me hi call karwa sakte hai only ? {} is ke ander hi call karna hoga sirf.warna error dega.
-//     let firstName = 'Tausif';
-//     console.log(firstName);
-//   }
-//  console.log(firstName); //ye first name jo upper defind hai var se us ko access kar ra hai agar o var ko commint tu error aye ga.
+// ============================================= Local Scope ==================================================//
+// ChatGPT Se liya hua Syntax ---> 2. Local Scope: Ye scope typically functions ke andar hota hai. Jab aap kisi function ke andar ek variable declare karte hain, to wo variable us function ke local scope me hota hai. Iska matlab ye hai ki wo variable sirf us function ke andar hi accessible hoga aur baahar se use nahi kiya jaa sakta.
+
+// ChatGPT Se liya hua Syntax ---> Local Variables
+// Local variables ko kisi function ya block ke andar declare kiya jata hai. Yeh keval usi function ya block ke andar hi access ki ja sakti hain.
+
+function myFunction() {
+  let local= "I am a local variable";
+  console.log(local); // I am a local variable
+}
+myFunction();
+console.log(local); // ReferenceError: local is not defined
+
+
+
+// ============================================= Block Scope ==================================================//
+//ChatGPT Se liya hua Syntax --->  Block Scope: ES6 (ECMAScript 2015) me let aur const introduce hue jinki scope block level hota hai. Block level scope ka matlab hai ki variable ka scope us block ke andar hota hai jisme wo define kiya gaya hai, jaise ki loops ya if statements.
+
+// ChatGPT Se liya hua Syntax ---> Block scoped variables ka concept let aur const ke sath introduce kiya gaya hai. Yeh variables sirf unhi block ke andar accessible hote hain jahan unhein declare kiya gaya hai. JavaScript mein block ko {} curly braces se define kiya jata hai.
+
+if (true) {
+  let blockLet = "I am a block scoped variable";
+  const blockConst = "I am a block scoped constant";
+  var blockVar = "I am a block scoped var" ;
+
+  console.log(blockLet); // I am a block scoped variable
+  console.log(blockConst); // I am a block scoped constant
+  console.log(blockVar); // "I am a block scoped var
+}
+console.log(blockVar); // "I am a block scoped var. // Var ko Block ke bher bhi acees kar sakte hai q ke o block scope nhi function scope hote hau.
+console.log(blockLet); // ReferenceError: blockVar is not defined
+console.log(blockConst); // ReferenceError: blockConst is not defined
+
+
+
+// ChatGPT Se liya hua Syntax ---> Block Scope in Loops.
+// Loops mein bhi block scoped variables ka upyog kiya ja sakta hai.
+for (let i = 0; i < 3; i++) {
+  console.log(i); // 0, 1, 2
+}
+console.log(i); // ReferenceError: i is not defined
+
+
+
+// ============================================= Function Scope ==================================================//
+// ChatGPT Se liya hua Syntax ---> Function Scope: var keyword se declare kiye gaye variables ka scope function level ka hota hai. Iska matlab hai ki jo bhi variable var keyword se declare kiya gaya hai, wo function ke andar kahi bhi access kiya ja sakta hai, lekin function ke bahar nahi.
+function example() {
+  if (true) {
+      var x = 10;
+      console.log(x); // Output: 10
+  }
+  console.log(x); // Output: 10
+}
+example();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

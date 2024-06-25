@@ -122,18 +122,15 @@ return result.json();
 // // Promise chaining
 // promise
 //   .then((user) => { // Promise chaining is ko hi bolte hai ?
-
 //     console.log("UserName Return:", user);
 //     return user; // Passing the user object to the next .then()
 //     // pure user ko return means pura object retrun hoga fir next.then se ek ek value access kar sakte hai ?
 //   })
 //   .then((personUser) => { // Promise chaining is ko hi bolte hai ?
-
 //     console.log("UserName Access:", personUser.userName);
 //     return personUser.userEmail; // Passing userEmail to the next .then()
 //   })
 //   .then((userEmail) => { // Promise chaining is ko hi bolte hai ?
-
 //     console.log("Access UserEmail:", userEmail);
 //   })
 //   .catch((error) => {

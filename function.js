@@ -109,28 +109,6 @@
 // }
 // myFun();
 
-//===========================================lexical scope========================================//
-// lexical scope ? value 59 commaint hai agar ham myfun2 ke function me myvar print karwaye ge to value one print hoga q ke javascript fisrt apne function me dhake ga us me value mile gi to print kare ga warna js apne lexical scope means globle scope me se value peint kare ga Example Myvar globle scope me hai?
-// const myVar = "value1";    //ye ek variable hai
-// function myApp(){
-
-//     function myFunc(){
-//         // const myVar = "value59"; //variabl hai ek ye
-//         const myFunc2 = () =>{
-//             console.log("inside myFunc", myVar);
-//         }
-//         myFunc2();
-//     }
-
-//     console.log(myVar);
-//     myFunc();
-// }
-
-// myApp();
-
-
-
-
 
 
 // <------------------>function default parameter<------------------>
