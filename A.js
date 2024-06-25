@@ -20,7 +20,6 @@
 
 
 const loadingSpinner = document.querySelector(".loading-spinner");
-
 const showLoading = () => {
   loadingSpinner.style.display = "block";
 };
@@ -28,6 +27,7 @@ const showLoading = () => {
 const hideLoading = () => {
   loadingSpinner.style.display = "none";
 };
+
 let url = "https://jsonplaceholder.typicode.com/users";
 
 let xhr = new XMLHttpRequest();
@@ -52,6 +52,15 @@ xhr.onreadystatechange = function(){
 xhr.open("GET", url, true)
 showLoading ()
 xhr.send();
+
+
+
+
+
+
+
+
+
 
 
 
