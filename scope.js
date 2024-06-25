@@ -44,7 +44,7 @@ if (true) {
   console.log(blockConst); // I am a block scoped constant
   console.log(blockVar); // "I am a block scoped var
 }
-console.log(blockVar); // "I am a block scoped var. // Var ko Block ke bher bhi acees kar sakte hai q ke o block scope nhi function scope hote hau.
+console.log(blockVar); // "I am a block scoped var. // Var ko Block ke bher bhi acees kar sakte hai q ke o block scope nhi hota. function scope hote hai.
 console.log(blockLet); // ReferenceError: blockVar is not defined
 console.log(blockConst); // ReferenceError: blockConst is not defined
 
@@ -69,6 +69,17 @@ function example() {
   console.log(x); // Output: 10
 }
 example();
+
+
+function example() {
+  var x = 10;
+  console.log(x); // Output: 10
+}
+example();
+console.log(x);  //Error Create.
+
+
+
 
 
 
