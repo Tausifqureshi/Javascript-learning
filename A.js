@@ -55,6 +55,30 @@ xhr.send();
 
 
 
+let globalVariable = 'I am global!';
+
+function outerFunction() {
+    let outerVariable = 'I am outside!';
+    
+    function innerFunction() { //Scope chanin matlab hota hai function ke ander nestet function tu o scope chain banti hai.
+
+        let innerVariable = 'I am inside!';
+
+        function third(){
+          console.log("Third function called")
+          console.log(globalVariable);  // Accesses global scope
+          console.log(outerVariable);   // Accesses outer function scope
+          console.log(innerVariable);   // Accesses inner function scope
+        }
+        third();
+    }
+    
+    innerFunction();
+}
+
+outerFunction();
+
+
 
 
 
