@@ -15,6 +15,16 @@ displayGlobalVar();
 console.log(globalVar); // I am a global variable
 
 
+
+
+// Define a global function
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+// Call the global function
+greet('John'); // Output: Hello, John!
+
 // ============================================= Local Scope ==================================================//
 // ChatGPT Se liya hua Syntax ---> 2. Local Scope: Ye scope typically functions ke andar hota hai. Jab aap kisi function ke andar ek variable declare karte hain, to wo variable us function ke local scope me hota hai. Iska matlab ye hai ki wo variable sirf us function ke andar hi accessible hoga aur baahar se use nahi kiya jaa sakta.
 
