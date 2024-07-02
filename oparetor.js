@@ -136,7 +136,7 @@ console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
 
 // || logical or  ? // ye operator check karta hai ek condition bhi satisfy tohi true dono nhi match tohi false ata hai ?
 
-// ! logical not ?  // ye operator se ulta work karta hai true ko false me change karta hai ulta work ?
+// ! logical not ?  // ye operator ulta work karta hai true ko false me change karta hai ulta work ?
 
 
 // let condition1 = 10;
