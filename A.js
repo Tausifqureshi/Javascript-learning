@@ -56,20 +56,6 @@
 
 
 
-var job = "developer"
-// console.log(bar()); // Function Expression.is tara se call tu undefiend aye ga var use tu or koi ketword use let const tu before  before initialization aye ga.
-function bar () {
-    // return "Hello, World!";
-var job = "hello"
-console.log(job)
-};
-
-bar ()
-
-// console.log(bar1); // Function Expression.is tara se call tu undefiend aye ga var use tu or koi ketword use let const tu before  before initialization aye ga.
-// var bar1 = function() {
-//     return "Hello, World!";
-// };
 
 
 
