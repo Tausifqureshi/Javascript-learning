@@ -108,8 +108,8 @@ function greet(name) {
 }
 
 function processUserInput(callback) {
-    var name1 = prompt('Please enter your name.');
-    let save = callback(name1);
+    // var name1 = prompt('Please enter your name.');
+    let save = callback("name1");
     console.log(save)
 }
 
