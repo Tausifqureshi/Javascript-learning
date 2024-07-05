@@ -27,23 +27,19 @@
 
 
 // ChatGPT Se liya hua Syntax ---> 
-function outerFunction(outerVariable) {
-    // Outer function ke andar ek inner function define kiya jata hai
-    function innerFunction(innerVariable) {
-      console.log("Outer variable:", outerVariable);
-      console.log("Inner variable:", innerVariable);
-    }
-    
-    // Inner function ko return kiya jata hai
-    return innerFunction;
+function outerFunction() {
+  let outerVariable = 'I am outside!';
+  
+  function innerFunction() {
+      return outerVariable; // innerFunction can access outerVariable
   }
   
-  // Outer function ko call kiya jata hai aur uska output inner function mein store kiya jata hai
-  var closureFunc = outerFunction("Hello");
+  return innerFunction;
+}
 
-  // Inner function ko alag se call kiya jata hai
-  closureFunc("World");
-  
+const closureFunction = outerFunction();
+console.log(closureFunction()); // Output: I am outside!
+
 
 
 
