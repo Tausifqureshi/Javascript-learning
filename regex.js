@@ -4,6 +4,10 @@
 
 // ChatGPT Se liya hua Syntax --->
 
+let myName = "\nTausif \nQuraishi"; //coding me new line me jane ke liye aisa use karte hai.
+console.log(myName)
+
+
 
 
 
