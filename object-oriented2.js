@@ -254,7 +254,7 @@ class Child1 extends Parent1 {
 
   greet() {
     // Calls the greet method from the Parent class
-    let parentGreeting = super.greet(); //Parnet Class me same name ka function or child me bhi same name ka function greet tu hi ham uper keyword se access kar sakte hai method ko. warna Parent class me koi or name ka function tu ham getDetails() aisa koifunction tu ham chaild class me this.getDetails() kar ke access kar sakte hai koi error nhi aye ga. Parnet class ka greet function return kar ra hai is liye ham is se const me store kar re hai. agar Parent class me return ki jaga console tu store karne ki zarurt nhi hai fir direct child.greet() aisa bhi call kar sakte hai niche.
+    let parentGreeting = super.greet(); //Parnet Class me same name ka function or child me bhi same name ka function greet tu hi ham uper keyword se access kar sakte hai method ko. warna Parent class me koi or name ka function tu ham getDetails() aisa koi function tu ham chaild class me this.getDetails() kar ke access kar sakte hai koi error nhi aye ga. Parnet class ka greet function return kar ra hai is liye ham is se const me store kar re hai. agar Parent class me return ki jaga console tu store karne ki zarurt nhi hai fir direct child.greet() aisa bhi call kar sakte hai niche.
 
     return `${parentGreeting} You are ${this.age} years old.`;
   }

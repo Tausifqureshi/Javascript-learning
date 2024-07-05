@@ -60,17 +60,6 @@
 
 
 
-function myFun(){   //higyer order function
-
-    function hello (){
-    // console.log('hello world')
-      return 'hello world' //string retrun
-    }
-    return hello;   //function return
- }
-   let ans = myFun();
-//    console.log(ans)  //pura function retrun hoga aisa karne se ?
-   console.log(ans())  //Function retrun use karne se hello world aise hi print go jaye ga lin number 212 se ?
 
 
 
@@ -85,8 +74,8 @@ function myFun(){   //higyer order function
     return innerFunction;
 }
 
-const closureFunction = outerFunction();
-console.log(closureFunction()); // Output: I am outside!
+  const closureFunction = outerFunction();
+ console.log(closureFunction()); // Output: I am outside!
 
 
 
@@ -114,12 +103,6 @@ function processUserInput(callback) {
 }
 
 processUserInput(greet);
-
-
-
-
-
-
 
 
 

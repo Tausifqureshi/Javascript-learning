@@ -1,5 +1,5 @@
 // =========================================== static mrthod =====================================================//
-// Static method sirf or sirf Class ke sath hi call hota hai na ke object ke sath nhu hota hai ?
+// Static method sirf or sirf Class ke sath hi call hota hai na ke object ke sath nhi hota hai ?
 class StaticMethod {
   constructor() {}
 
@@ -81,7 +81,7 @@ console.log("Calling Private Method")
     this.#myName(); //
   }
 }
-
+  
 
 
 let encapsulation = new Encapsulation("Tausif");
