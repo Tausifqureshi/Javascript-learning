@@ -64,45 +64,78 @@
 
 
 
-   function outerFunction() {
-    let outerVariable = 'I am outside!';
-    
-    function innerFunction() {
-        return outerVariable; // innerFunction can access outerVariable
-    }
-    
-    return innerFunction;
-}
-
-  const closureFunction = outerFunction();
- console.log(closureFunction()); // Output: I am outside!
 
 
 
 
-function first(name){   //higyer order function
-    return name
-}
-function second(CallBack){ // ye jo hum pass kiye parameter me jab ham argument dege tu function ka naam dege
-  let result=  CallBack("tausif")// o function milra us se call bhi karna hota hai?    
-//   console.log(result)
-}
-
-// second(first,"qureshi");//pura function pass argument me?
 
 
 
-function greet(name) {
-    return('Hello ' + name);
-}
 
-function processUserInput(callback) {
-    // var name1 = prompt('Please enter your name.');
-    let save = callback("name1");
-    console.log(save)
-}
 
-processUserInput(greet);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -71,7 +71,36 @@
 //  console.log(Object.keys(person)) //person object ek array me value retrun kare ga is se?
 
 // <------------------------------>Object Speard oparetor chepter<-------------------------------->
-//object me ek key ek bar se jayda nhi ho sakti?
+// Speard oparetor object ko clone karne ke liya use hota hai .
+
+// is tara se clone kar re ge tu ek me change tu dusre me bhi change hoga q ke object reference type data hai.
+let myUser ={
+  firstName : "Qureshi",
+  email : "qureshi321@gmail.com",
+}
+
+let secondUser = myUser;
+console.log(myUser);
+
+console.log(secondUser);
+
+secondUser.firstName = "Tauisf";
+console.log(secondUser);
+console.log(myUser);
+// ================================= Speard oparetor clone object ==============================================//
+// Speard oparetor object clone karne se ek object me change tu dusre me nhi hota hai.
+let obj1={
+  key1: "value1",
+  key2: "value2"
+}
+const obj3={...obj1}; // speard hoge obje3 me jari value? new key bhi add kar sakte hai?
+console.log("Object 3 Clone" , obj3);
+
+obj3.key1 = "key13";
+console.log("Object 3 Value Change",obj3);
+console.log(obj1);
+
+//===================================== Example 2 ===========================================//
 // const obj1={
 //     key1: "value1",
 //     key2: "value2"
@@ -85,6 +114,7 @@
 
 // console.log(obj3)
 // console.log(typeof obj3) //types bhi check hora hai is se?
+
 
 
 

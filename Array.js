@@ -12,18 +12,35 @@
 // const numb = [1,2,3,4,]//Number Array
 // const mixed = [1,2,3, "string",null, nudefiend]//Array me ys sub bhi store kar sakte hai
 
-// let fruits = ["mango", "banana","apple"] //string Array
-// console.log(fruits)
-// console.log(fruits[1]) //kon se index ka item hona 
-// fruits [1] = "orange" // first index pe add hooga or ye original array ko change bhi kare ga?
-// console.log(fruits)
-// console.log(typeof fruits) //type cheking?
-// console.log(Array.isArray(fruits)) // Array cheking method Ture and false me answer aye ga?
-// console.log(fruits.length) // Array ki length cheking method?
+// let fruits = ["mango", "banana","apple"]; //string Array.
+// console.log(fruits);
+
+// console.log(fruits[1]); //kon se index ka item hona. 
+
+// fruits [1] = "orange"; // first index pe add hooga or ye original array ko change bhi kare ga.
+// console.log(fruits);
+// console.log(typeof fruits); //type cheking.
+
+// console.log(Array.isArray(fruits)); // Array cheking method Ture and false me answer aye ga.
+
+// console.log(fruits.length); // Array ki length cheking method.
 
  
 
 //===================================Array ko clone karne ke tarike===================================//?
+//Array ko is tara se clone karne se ek array me kuch add tu dusre me bhi hoga q ke array referance type hota hai.
+// let array1 = ["item1","item2"];
+// let array2 = array1;
+// console.log(array1);
+// console.log(array2);
+
+// array1.push("item3");
+// console.log(array1);
+// console.log(array2);
+
+
+
+//Array ko clone karne ke Tarike in sub ka use kar ke Array clone tu ek array me kcuh add tu dusre me add nhi hoga.
 // let array1 = ["item1","item2"]
 
 // let array2 = array1.slice(0); //first tarika clone kare ka sile method use 0 index means array1 ke item array2 me add hoge but dono array alag hoge is bolte hai clone ?
