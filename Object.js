@@ -76,6 +76,7 @@
 //     key1: "value1",
 //     key2: "value2"
 // }
+
 // const obj2={
 //     key3: "value3",
 //     key4: "value4"
@@ -84,6 +85,8 @@
 
 // console.log(obj3)
 // console.log(typeof obj3) //types bhi check hora hai is se?
+
+
 
 // const newObject = {..."abcdefgijklmnpqrstuvwxyz"} // agar khabi alpha bate ki index dhakna ho tu aisa use kar sakte hai?only string pe hi work karta hai number pe nhi q ke intiger number itarebal nhi hote hai agar{...1 2 3 } aisa speard kiye tu?
 // console.log(newObject)
