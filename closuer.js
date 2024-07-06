@@ -1,14 +1,21 @@
 // ChatGPT Se liya hua Syntax ---> JavaScript mein closure function kya hai?
 
-//Closure ek important concept hai JavaScript mein, jo function ke bahar ke variables ko access karne ki capability ko refer karta hai. 
+// ChatGPT Se liya hua Syntax ---> JavaScript mein closures ek advanced concept hai jo functions aur unke lexical environment ko relate karta hai. Closure tab banta hai jab ek function apne lexical scope ke bahar access karta hai aur uske sath environment ko "yaad" rakhta hai.
 
-// Closure function kaise kam karti hai.
-// Jab aap koi function define karte hain, to use function ko ek lexical environment assign kiya jata hai. Lexical environment mein woh sabhi variable shamil hote hain jo us function ke scope mein declare kiye gaye hain. Jab aap closure function ko call karte hain, to woh function apne lexical environment mein declare kiye gaye variable ko access kar sakti hai, jabki containing function execute ho chuka ho.
+// ChatGPT Se liya hua Syntax ---> Closure Ki Definition:
+// Closure ek function hai jo apne surrounding lexical environment ko yaad rakhta hai jahan pe wo define hua tha, chahe wo function us environment ke bahar hi kyun na execute ho.
+
+// ChatGPT Se liya hua Syntax --->Closure Kaise Kaam Karta Hai:
+// Closure ek combination hota hai function aur uske lexical environment ka. Lexical environment wo hota hai jahan pe variables aur functions defined hote hain. Jab ek inner function apne outer function ke scope se variables access karta hai, tab closure banta hai.
+
+// ChatGPT Se liya hua Syntax ---> Closures Ke Advantages:
+// 1. Data Encapsulation: Closure variables ko private rakhte hain aur direct access se protect karte hain.
+// 2. State Management: Functions ke andar state ko maintain karte hain bina global variables ka use kiye.
+// 3. Higher-order Functions: Functions ko argument ke roop mein pass karne ya return karne ki capability deta hai, jisse functional programming patterns follow kiye ja sakte hain.
 
 
 
-// Closuer in Javascript is ka matlab hota hai outter function ke variable ko inner function me use karna. but outter function inner function ke variable ko use nhi kar sakta hai.
-
+//Khud ka defiend kiya hau Example.
 // function fisrt(){
 //      let a = "Outer Function In Called Now"
 //      console.log(a);
@@ -26,7 +33,7 @@
 
 
 
-// ChatGPT Se liya hua Syntax ---> 
+// ChatGPT Se liya hua Syntax Example---> 
 function outerFunction() {
   let outerVariable = 'I am outside!';
   
@@ -39,7 +46,6 @@ function outerFunction() {
 
 const closureFunction = outerFunction();
 console.log(closureFunction()); // Output: I am outside!
-
 
 
 
