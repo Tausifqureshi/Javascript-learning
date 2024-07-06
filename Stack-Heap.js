@@ -15,6 +15,9 @@
 
 // Stack ka size fixed hota hai aur yah memory mein ek nishchit sthan par sthit hota hai. Agar stack overflow ho jata hai, to ek error aaega jise "stack overflow" kaha jata hai. Stack ka istemal memory management ke liye kiya jaata hai.
 
+//Dono ,me sub se bada fark yahi hai Stack and Call Stack me.
+// Stack ka istemal function calls ko track karne ke liye nahi kiya jaata hai. 
+// Call Stack: JavaScript engine mein function calls ko track karne ke liye istemal kiya jaane wala mechanism hai.
 
 
 // Examples.
@@ -32,20 +35,18 @@ console.log(newName);
 // ================================================ Heap Memory ===============================================//
 // ChatGPT Se liya hua Syntax ---> Heap Kya Hai.
 
-// Heap ek dynamic memory pool hai jo objects ko store karta hai. Objects mutable data structures hain jo properties aur methods ke sath hote hain. Heap mein objects ko manually allocate aur deallocate kiya ja sakta hai.
+//Heap memory dynamic memory allocation ke liye use hoti hai. Ye wo jagah hai jahan objects aur arrays ko allocate kiya jata hai, jinka size runtime pe determine hota hai. Heap memory non-linear hoti hai aur garbage collection ke through manage hoti hai.
 
-// Objects: Arrays, functions, aur objects jaise complex data structures ko heap mein store kiya jata hai.
+//Heap: Objects aur arrays jinka size runtime pe determine hota hai, store karta hai. Dynamic memory allocation aur garbage collection provide karta hai, lekin access relatively slow hota hai.
 
-// Large data structures: Agar koi data structure bahut bada hai aur stack mein fit nahin ho sakta hai, to usse heap mein allocate kiya ja sakta hai.
+// Characteristics of Heap Memory:
 
-// Dynamically allocated data: Agar aapko runtime mein memory allocate karne ki avashyakta hai, to aap heap ka upyog kar sakte hain.
-
-// Heap ka size dynamic hai aur yah memory mein kisi bhi sthan par sthit ho sakta hai. Heap mein memory leaks ho sakte hain agar objects ko sahi tarike se deallocate nahin kiya jata hai. Heap ka istemal memory management ke liye kiya jaata hai. 
+// 1. Dynamic Allocation: Memory dynamically allocate hoti hai aur runtime pe manage hoti hai.
+// 2. Larger Size: Heap memory usually stack se badi hoti hai.
+// 3. Garbage Collection: Heap memory garbage collector ke through manage hoti hai, jo unused memory ko free karta hai.
 
 
 // Examples.
-
-
 let myUser ={
     firstName : "Qureshi",
     email : "qureshi321@gmail.com",

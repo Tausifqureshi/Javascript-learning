@@ -27,7 +27,7 @@
 
  
 
-//===================================Array ko clone karne ke tarike===================================//?
+//===================================Array ko clone karne ke tarike========================================== //
 //Array ko is tara se clone karne se ek array me kuch add tu dusre me bhi hoga q ke array referance type hota hai.
 // let array1 = ["item1","item2"];
 // let array2 = array1;
@@ -39,7 +39,7 @@
 // console.log(array2);
 
 
-
+//===================================Array ko clone karne ke tarike=========================================== //
 //Array ko clone karne ke Tarike in sub ka use kar ke Array clone tu ek array me kcuh add tu dusre me add nhi hoga.
 // let array1 = ["item1","item2"]
 
