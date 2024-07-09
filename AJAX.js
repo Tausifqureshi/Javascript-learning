@@ -1,9 +1,8 @@
-//Asynchronous Programming me ata hai --->
-
+//Asynchronous Programming me ata hai ---> 
+// ChatGPT Se liya hua Syntax ---> 
 // AJAX ---> Is ka Full-Form hai  Asynchronous JavaScript And XML.? AJAX  Asynchronous hota hai ?  AJAX koi programming language nhi hai ye ek set of technologies hai Asynchronous JavaScript And XML ? AJAX me Page reloading kar re bina page update kar sakte hai mains koi button ko upadete karna hai us ka page refresh kar re bina upadate kar sate hai ? AJAX ka use kar ke ham fast and dynamic web page bana sakta hai ? Modern Website JSON ka use karti hai na ke XML---> is ka full-orm hoota hai Extensible Markup Language ? Javascript ka use kar ke HTTP-Request server ko karne ke liye new XMLHttpRequest(); use hota hai ?
 
 // HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
-
 //Status Code ?
 // Informational responses (100 – 199)
 // Successful responses (200 – 299)
@@ -12,10 +11,9 @@
 //404 ---> Not Found -> File ko request karne me server ko file nhi milti tab ye error ata hai ?
 // Server error responses (500 – 599)
 
+
 // Readystate Code ?
-
 // Value	   State	                Description
-
 // 0	     UNSENT	                   Client has been created. open() not called yet.
 // 1	     OPENED	                   open() has been called.
 // 2	     HEADERS_RECEIVED	       send() has been called, and headers and status are available.
