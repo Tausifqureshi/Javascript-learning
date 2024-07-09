@@ -9,7 +9,6 @@
 // 5. Symbol (ES6 mein introduce hua)
 // 6. BigInt (ES11 mein introduce hua)
 
-
 let num1 = 6;//primitive  data types hai ye num1 me change tu num2 me change nhi hoga only num1 me hi change hoga?   
 let num2 = num1;
 console.log(num1); 
@@ -17,7 +16,6 @@ console.log(num2);
 num1++;      //Num1 me ek Increment kar re hai but num2 me koi effect nhi hoga only num1 one hi chang hoga?
 console.log(num1); //primitive  data types hai ye num1 me change tu num2 me change nhi hoga only num1 me hi change hoga?  
 console.log(num2);
-
 
 
 //=================================================== Number =====================================================//
@@ -30,7 +28,6 @@ console.log(typeof num3);
 let num4 = 3.14;        // Floating point
 console.log(num4);
 console.log(typeof num4);
-
 
 
 //=================================================== String =====================================================//
@@ -175,7 +172,5 @@ console.log(today); // Current date and time
 let regex = /hello/i;
 let testStr = "Hello world!";
 console.log(regex.test(testStr)); // true
-
-
 
 
