@@ -127,13 +127,14 @@ let array1 = ['item1', 'item2','item3'];   //array hai
 
 //================================================== Object ===================================================//
 // ChatGPT Se liya hua Syntax --->  Objects key-value pairs ka collection hote hain.
+
 let person = {
   name: 'John',
   age: 30,
   isMarried: true
 };
 console.log(person.name); // John
-
+console.log(typeof person);
 
 
 
@@ -141,29 +142,26 @@ console.log(person.name); // John
 //================================================== Array ===================================================//
 // ChatGPT Se liya hua Syntax ---> Arrays ordered lists hote hain values ka, jo index se access ki jaati hain.
 
-
 let fruits = ['Apple', 'Banana', 'Cherry'];
 console.log(fruits[1]); // Banana
-
+console.log(typeof fruits);
 
 
 //================================================== Function ===================================================//
 // ChatGPT Se liya hua Syntax ---> Functions reusable blocks of code hote hain jo specific tasks perform karte hain.
 
-
 function greet(name) {
   return 'Hello ' + name;
 }
 console.log(greet('Alice')); // Hello Alice
+console.log(typeof greet);
 
-
-
-//================================================== Date ===================================================//
+//================================================== Date ======================================================//
 // ChatGPT Se liya hua Syntax ---> Date objects dates aur times ko represent karte hain.
 
 let today = new Date();
 console.log(today); // Current date and time
-
+console.log(typeof today);
 
 
 //================================================== RegExp ===================================================//
@@ -172,5 +170,6 @@ console.log(today); // Current date and time
 let regex = /hello/i;
 let testStr = "Hello world!";
 console.log(regex.test(testStr)); // true
-
+console.log(typeof testStr);
+console.log(typeof regex);
 
