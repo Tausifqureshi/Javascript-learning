@@ -1,4 +1,5 @@
-// primitive data type in javascript ? means hota hai ek variabe me chang value to dusre me chang nhi hoga primitive data types me 
+// // ChatGPT Se liya hua Syntax ---> 
+// primitive data type in javascript ? means hota hai ek variabe me chang value to dusre me chang nhi hoga primitive data types me .
 //String, Number, Booleans, Undefiend, Null, Bigint, Smybol.
  
 let num1 = 6;    

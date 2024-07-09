@@ -20,7 +20,7 @@
     <input type="text" id="inputBox" placeholder="Email">
     <script>
 //input box pe click karne se placehold me jo hoga o out ho jaye ga or bher kahi click tu value set ho jaye gi jaisa google me hota hai jab ham kuch serch kar te hai ?
-
+let inputBox = document.getElementById('inputBox');
 inputBox.addEventListener("focus", () => {
   // Clear placeholder on focus
   inputBox.placeholder = "";
@@ -35,27 +35,27 @@ inputBox.addEventListener("blur", () => {
 
 
 // refractor code hai ye jo eyse pade ohi use ka ke karo.
-document.addEventListener("DOMContentLoaded",()=>{
-    const inputBox = document.getElementById("box");
+// document.addEventListener("DOMContentLoaded",()=>{
+//     const inputBox = document.getElementById("box");
 
-    inputBox.addEventListener("focus", focusHandle);
-    inputBox.addEventListener("blur", blurHandle);
-
-
-    function focusHandle(){
-        if (inputBox.value === '') {
-            inputBox.placeholder = ""
-        }
-    };
+//     inputBox.addEventListener("focus", focusHandle);
+//     inputBox.addEventListener("blur", blurHandle);
 
 
-    function blurHandle(){
-        if (inputBox.value === "") {
-             inputBox.placeholder = "My name"
-        }
-    }
+//     function focusHandle(){
+//         if (inputBox.value === '') {
+//             inputBox.placeholder = ""
+//         }
+//     };
 
-})
+
+//     function blurHandle(){
+//         if (inputBox.value === "") {
+//              inputBox.placeholder = "My name"
+//         }
+//     }
+
+// })
 
 
 

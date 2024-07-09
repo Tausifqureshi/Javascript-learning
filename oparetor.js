@@ -165,11 +165,21 @@ console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
 // ===================================== Ternary Operators ==========================================//
 // Ternary Operators ---> ham is se condition operator bhi bolte hai ? ye operetor bhi true and false return karta hai ?
 
-// let age = 5;  //5 bada nhi hai 6 se is liye milk aye ga ? 5 kar re ke >= 5 is ke sath tu coffe aye ga ?
-// let store = age >= 6 ? "coffe" : "milk";
-// console.log(store);
+let age = 5;  //5 bada nhi hai 6 se is liye milk aye ga ? 5 kar re ke >= 5 is ke sath tu coffe aye ga ?
+let store = age >= 6 ? "coffe" : "milk";
+console.log(store);
 
 
+
+// and or operator and && or||
+let Name = "Tausif";
+let ages = 24;
+if(Name[0]==='T' && ages >= 23){   
+    console.log("name and age valid");
+
+}else{
+    console.log("name and age not valid")
+}
 
 
 
