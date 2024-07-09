@@ -4,7 +4,7 @@
 // ============================================ Variable Declaration =========================================//
 //  ChatGPT Se liya hua Syntax ---> Variable Declaration.
 //JavaScript me, variables ko declare kiya gaya code ke starting me "hoist" kar diya jata hai. Matlab, aap ek variable ko uske declare hone se pehle bhi access kar sakte hain. Par, var keyword ke sath hoisting thoda different hota hai kyunki usse variable ko undefined value milta hai jab tak wo actual assignment nahi milta. Let aur const ke sath hoisting hoti hai, par wo temporal dead zone (TDZ) me hota hai, jahan tak wo actual declare nahi hote.
-
+ 
 console.log(a); // undefined
 var a = 10;
 console.log(a); // 10
