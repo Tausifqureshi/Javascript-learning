@@ -107,12 +107,12 @@ console.log(typeof bigInt)
 
 // Reference data-type. means ek variable me chang to dusre me chang hoga.
 let array1 = ['item1', 'item2','item3'];   //array hai
-    let array2 = array1 //aisa karne se  array1 me add tu array 2 me bhi hoga q ke Array reference ?
-    console.log(array1)
-    console.log(array2)
-    array1.push('item4')  //array1 one me push lekin array2 me bhi effect hoga is se q ke ye reference type hai
-    console.log(array1)
-    console.log(array2)
+let array2 = array1; //aisa karne se  array1 me add tu array 2 me bhi hoga q ke Array reference ?
+console.log(array1);
+console.log(array2);
+array1.push('item4');  //array1 one me push lekin array2 me bhi effect hoga is se q ke ye reference type hai
+console.log(array1);
+console.log(array2);
 
 
  // let array1 = ['item1', 'item2','item3'];  //aisa karne se reference types me bhi add nhi hoga alag Array banane se?
