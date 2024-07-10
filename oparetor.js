@@ -1,5 +1,5 @@
 // ================================================= JS Operator ===============================================//
-
+// ChatGPT Se liya hua Syntax ---> 
 //whats is the operator ---> js me jab ham kisi value ya variable me store ki value par jis special symbol ka use kar ke oppression parform karte hai us se operator bolte hai ? Javascript operators are used to perform different types of mathematical and logical computations.
 
 //================================ JS me itne operators hote hai =====================================?
