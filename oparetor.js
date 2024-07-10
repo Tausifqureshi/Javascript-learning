@@ -1,29 +1,32 @@
 // ================================================= JS Operator ===============================================//
-// ChatGPT Se liya hua Syntax ---> 
-//whats is the operator ---> js me jab ham kisi value ya variable me store ki value par jis special symbol ka use kar ke oppression parform karte hai us se operator bolte hai ? Javascript operators are used to perform different types of mathematical and logical computations.
+// ChatGPT Se liya hua Syntax ---> JavaScript me operators ka use expressions banane ke liye kiya jata hai. Ye expressions kisi value ko manipulate ya evaluate karte hain. JavaScript me operators ke alag-alag types hote hain:
 
-//================================ JS me itne operators hote hai =====================================?
 
-// Arithmetic Operators
-// Assignment Operators
-// Comparison Operators
-// String Operators
-// Logical Operators
-// Bitwise Operators
-// Ternary Operators
-// Type Operators
+// ChatGPT Se liya hua Syntax ---> Types of Operators.
+
+// 1. Arithmetic Operators (Aankdon par calculations ke liye).
+// 2. Assignment Operators (Values ko variables me assign karne ke liye).
+// 3. Comparison Operators (Do values ko compare karne ke liye).
+// 4. Logical Operators (Logical operations perform karne ke liye).
+// 5. Bitwise Operators (Bitwise operations perform karne ke liye).
+// 6. String Operators (Strings ko concatenate karne ke liye).
+// 7. Conditional (Ternary) Operator (Ek shorthand conditional statement ke liye).
+// 8. Type Operators (Types ko check karne ke liye).
 
 
 // ======================================== Arithmetic Operators ====================================//
-// Arithmetic consept ---> 
-// +	Addition
-// -	Subtraction
-// *	Multiplication
-// **	Exponentiation (ES2016) //ES 2016 me aya ye verions javascript ?
-// /	Division
-// %	Modulus (Remainder)
-// ++	Increment
-// --	Decrement
+//Arithmetic consept. 
+// ChatGPT Se liya hua Syntax ---> Arithmetic operators basic mathematical operations ke liye use hote hain.
+
+// Addition (+): Do numbers ko jodhta hai.
+// Subtraction (-): Ek number ko dusre se ghata deta hai.
+// Multiplication (*): Do numbers ko guna karta hai.
+// Division (/): Ek number ko dusre se divide karta hai.
+// Modulus (%): Division ke baad remainder return karta hai.
+// Exponentiation ()**: Ek number ko dusre number ke power tak raise karta hai.
+// Increment (++): Ek number ko 1 se badhata hai.
+// Decrement (--): Ek number ko 1 se ghata deta hai.
+
 
 // let a = 6;
 // let b = 50;
@@ -40,7 +43,7 @@
 
 
 
-
+// ChatGPT Se liya hua Syntax --->
 let x = 3;
 const y = x++; //Postfix increment
 
@@ -67,15 +70,17 @@ console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
 
 
 // ======================================== Assignment Operators ====================================//
-// Assignment Operators ---> ye o operator hai jis ki help se kisi variable me new value ko Assign kiya jata hai ?
+// Assignment Operators.
+// ChatGPT Se liya hua Syntax ---> Assignment operators variables ko values assign karne ke liye use hote hain.
 
-// =	Assignment Operators
-// +=	 Assignment Addition Operators ?
-// -=	 Assignment  Subtraction Operators ?
-// *=	 Assignment Multiplication Operators ?
-// /=	 Assignment Division  Operators ?
-// %=	 Assignment Modulus (Remainder)  Operators ?
-// **=  Assignment Exponentiation Operators (ES2016) //ES 2016 me aya ye verions javascript ?
+// Assignment (=): Value assign karta hai.
+// Addition assignment (+=): Value ko add kar ke assign karta hai.
+// Subtraction assignment (-=): Value ko subtract kar ke assign karta hai.
+// Multiplication assignment (*=): Value ko multiply kar ke assign karta hai.
+// Division assignment (/=): Value ko divide kar ke assign karta hai.
+// Modulus assignment (%=): Remainder ko assign karta hai.
+// Exponentiation assignment (=)**: Power ko assign karta hai.
+
 
 // let c = 10;
 // let z = c += 5;  //is se hora hai c me jo purani value ti us c me ham fir 5 += assign kar re hai is ka answer 15 hoga ? sortcut bolte hai is ko ?
@@ -86,20 +91,39 @@ console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
 // console.log(z);
 
 
+// ChatGPT Se liya hua Syntax --->
+let c = 20;
+
+c += 5;  // c = c + 5
+console.log(c); // 25
+
+c -= 10; // c = c - 10
+console.log(c); // 15
+
+c *= 2;  // c = c * 2
+console.log(c); // 30
+
+c /= 3;  // c = c / 3
+console.log(c); // 10
+
+c %= 4;  // c = c % 4
+console.log(c); // 2
+
+
 
 
 // ===================================== Comparison Operators ==========================================//
-//Comparison Operator ---> jab ham 2 value ko compaire karte hai us se comparison operator bolte hai ? ye operator true and false deta hai comparison jab karta hai 2 value ko ?
-// ==	equal to
-// ===	equal value and equal type
-// !=	not equal
-// !==	not equal value or not equal type
-// >	greater than
-// <	less than
-// >=	greater than or equal to
-// <=	less than or equal to
-// ?	ternary operator
+// Comparison Operator.
+// ChatGPT Se liya hua Syntax ---> Comparison operators do values ko compare karte hain aur result true ya false me dete hain.
 
+// Equal to (==): Dono values equal hain ya nahi.
+// Equal value and type (===): Dono values aur type equal hain ya nahi.
+// Not equal (!=): Dono values equal nahi hain.
+// Not equal value or type (!==): Dono values ya type equal nahi hain.
+// Greater than (>): Ek value dusri value se badi hai ya nahi.
+// Less than (<): Ek value dusri value se chhoti hai ya nahi.
+// Greater than or equal to (>=): Ek value dusri value se badi ya equal hai ya nahi.
+// Less than or equal to (<=): Ek value dusri value se chhoti ya equal hai ya nahi.
 
 // let x = 5;
 // let z = 5;
@@ -129,14 +153,26 @@ console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
 // console.log(z < x); // is me check kar re hai less than is ka jab bhi use hota hai left value ko hemsa chotti hona chaciye is condision me ham checkm kar re hai kay 7 chotta hai 6 se q ke 7 chotta nhi hota hai 6 is liye ye false aye gi value q ke less than left ki  value hamsa chotti rehna chaciye ? 
 
 
+// ChatGPT Se liya hua Syntax --->
+let d = 10;
+let e = 20;
+
+console.log(d == e);  // false
+console.log(d === e); // false
+console.log(d != e);  // true
+console.log(d !== e); // true
+console.log(d > e);   // false
+console.log(d < e);   // true
+console.log(d >= e);  // false
+console.log(d <= e);  // true
+
+
 // ============================================= logical Operator ==============================================//	
 // logical Operator ---> 
-
-//&&  logical and  ? //ye operatort check kartra hai dono condition match tohi true aye ga warna false deta hai ?
-
-// || logical or  ? // ye operator check karta hai ek condition bhi satisfy tohi true dono nhi match tohi false ata hai ?
-
-// ! logical not ?  // ye operator ulta work karta hai true ko false me change karta hai ulta work ?
+// ChatGPT Se liya hua Syntax ---> Logical operators logical operations perform karte hain.
+// AND (&&): Dono operands true hain to true hi ye.
+// OR (||): Kisi ek operand true hai to true data hai ye.
+// NOT (!): Operand true hai to false, aur false hai to true data hai ulta work hai iska.
 
 
 // let condition1 = 10;
@@ -161,9 +197,51 @@ console.log(f) // is me increment hota hai. baad me value ati print hoti hai.
 // }
 
 
+// ============================================ Bitwise Operators =============================================//
+// Bitwise Operators.
+// ChatGPT Se liya hua Syntax ---> Bitwise operators values par bit-by-bit operations perform karte hain.
+
+// AND (&)
+// OR (|)
+// NOT (~)
+// XOR (^)
+// Left shift (<<)
+// Right shift (>>)
+// Zero fill right shift (>>>)
+
+
+
+// ChatGPT Se liya hua Syntax --->
+let h = 5;  // 0101 in binary
+let i = 1;  // 0001 in binary
+
+console.log(h & i); // 0001 -> 1
+console.log(h | i); // 0101 -> 5
+console.log(h ^ i); // 0100 -> 4
+console.log(~h);    // 1010 -> -6
+console.log(h << 1); // 1010 -> 10
+console.log(h >> 1); // 0010 -> 2
+console.log(h >>> 1); // 0010 -> 2
+
+
+
+
+// ===================================== String Operators ==========================================//
+// String Operators.
+// ChatGPT Se liya hua Syntax ---> String operators strings ke sath operations perform karte hain.
+// Concatenation (+): Do strings ko jodne ke liye.
+
+// ChatGPT Se liya hua Syntax ---> 
+let firstName = "Tausif";
+let lastName = "Qureshi";
+
+console.log(firstName + " " + lastName); // Tausif Qureshi
+
+
 
 // ===================================== Ternary Operators ==========================================//
-// Ternary Operators ---> ham is se condition operator bhi bolte hai ? ye operetor bhi true and false return karta hai ?
+// Ternary Operators --->
+// ChatGPT Se liya hua Syntax --->  ham is se condition operator bhi bolte hai ? ye operetor bhi true and false return karta hai ?
 
 let age = 5;  //5 bada nhi hai 6 se is liye milk aye ga ? 5 kar re ke >= 5 is ke sath tu coffe aye ga ?
 let store = age >= 6 ? "coffe" : "milk";
