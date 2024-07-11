@@ -1,4 +1,6 @@
-//Date ----> Javascript me Date ek inbuilt keyword hai ? Javascript me date bhi ek object hai ? date bhi ek referance data-type hai ?  Replit me bhi hai code is ka or ?
+// ChatGPT Se liya hua Syntax ---> JavaScript me Date object bahut important hai, jisse hum current date and time ko access kar sakte hain aur date/time calculations bhi kar sakte hain. Main aapko ek example ke sath samjha deta hu.
+
+//Date ----> Javascript me Date ek inbuilt keyword hai ? Javascript me date bhi ek object hai ? date bhi ek referance data-type hai ?  Replit me bhi hai code is ka or.
 
 
 // 3 types of JavaScript date input formats hai ?

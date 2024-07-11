@@ -95,7 +95,7 @@ console.log(typeof bool); // Output: boolean
 
 // ================================== Methods for Type Conversion.============================================//
 // ChatGPT Se liya hua Syntax ---> Common Methods for Type Conversion.
-
+ 
 // ChatGPT Se liya hua Syntax ---> 1. String(): Converts a value to a string.
 
 // let value = 123;
