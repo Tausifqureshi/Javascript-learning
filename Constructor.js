@@ -193,7 +193,7 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 //     this.id= id;
 //     this.selery= selery;
 //    this.hello = function(){    //function add bhi kar sate constructor me
-// return this.name + "" + this.id
+//    return this.name + "" + this.id
 //}
 
 //  }
