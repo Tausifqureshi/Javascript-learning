@@ -1,11 +1,11 @@
-// Function --->  function bhi referance type hote hai ? function ek block off the code hota hai jo ek particular taks ko parform karne use kiya jata hai ?  function ko ek bar create kar ke reuse bhi kar sakte hai ? ap function me aisa code defind kar sakte hai jis ka use bar bar kiya ja sakta hai ? same code ko kahi bar use kar sakte hai alag alag argument ke sath or us me ek new result execute karwa sakte hai ?  
+// ChatGPT Se liya hua Syntax ---> JavaScript me functions ka use code ko modular, reusable, aur organized banane ke liye kiya jata hai. Functions kuch specific tasks ko perform karte hain aur values return kar sakte hain. Functions define aur invoke (call) kiye ja sakte hain.
 
+// ChatGPT Se liya hua Syntax ---> Additional Points:
+// Functions ko parameters ke sath define kiya jata hai, jo function ke andar use ho sakte hain.
 
-// // ChatGPT Se liya hua Syntax ---> JavaScript me functions ka use code ko modular, reusable, aur organized banane ke liye kiya jata hai. Functions kuch specific tasks ko perform karte hain aur values return kar sakte hain. Functions define aur invoke (call) kiye ja sakte hain.
+// Function kisi bhi jagah pe define kiya ja sakta hai, aur usko baar-baar call kiya ja sakta hai.
 
-
-
-
+// Functions flexibility aur code readability ko badhate hain, especially jab aapko ek hi task ko baar-baar perform karna ho.
 
 // <------------------------------------>function declaretion<------------------------------------------->
 // return ---> jab ham javascript me return ka use karte hai tab us ke baad functiom ka execution stop ho jata hai ? Return keyword ke baad koi statement hame lihkte hai tu waha pe o us ko print nhi kar re ga ? jab bhi ham javacsript me invoke karte hai menas function ko call karte hai tab javascript kuch na kuch value return karta hai jo return karta hai o value function me bajta hai exmple function ka name hai sumNumber () us me num1 and num1 value k plus kar ke return ka re hai j bhi return hoga is sumNumber wale function mw jaye ga us ke baad  us ko ek varible me store kar re ke ham ge us ka function ko call kare ge fir hame value mili gi jo plus hoe ari hai.
