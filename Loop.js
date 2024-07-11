@@ -1,4 +1,7 @@
-console.log('Tausif')
+// ChatGPT Se liya hua Syntax ---> JavaScript mein loops bahut hi important hote hain, jo hume ek ya multiple statements ko baar-baar execute karne ki anumati dete hain jab ek condition true hoti hai. Yahaan main aapko do mukhya loop structures ke baare mein bataunga: for loop aur while loop.
+
+
+
 // <------------------------------>for loop<-------------------------------->
 //Progrmming language  me loop ka use kisi action ya procese ko bar bar repit karne ke liye use kar te hai ? iterate mens hota hai repit karna bar bar us ko hi loop bolte hai ?
 
