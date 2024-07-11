@@ -1,10 +1,23 @@
 
 // OOPs in  me hi ata hai Constructore bhi
 
-//prototype ---> Prototype ka use ham consturctor ya jaavscript ki class me use kar te hai ?  prototype ka use kar ke Constructor me propertry and method add kar sakte hai ? prototype ka use kar ke onlye object me hi property and method change add kar sakte hai ? 
+// ChatGPT Se liya hua Syntax ---> Prototype JavaScript mein ek fundamental concept hai jo object-oriented programming mein bahut important hai. Prototype ka use karke hum objects ko inherit kar sakte hain aur ek object se dusre object ko create kar sakte hain, jo ki JavaScript mein bahut flexible aur powerful feature hai.
 
 
-// prototype-inheritance ---> is matlab hota hai hamne 2 constructor function banaye hai ek constructor function me hamne jo bhi property and method defind kiye hai o dusre wale constructor function ko use kar re property and method  manms hamne ek Peron ka constructor banye or dusra Student constructor function banye but ham code repit na ho Preson me jo bhi property and method hai o Student use kar re is ko bolte hai Prototype-Inheritance is ko use karne ke liye ham tab hi __proto__ ka use kar te hai ? 
+// ChatGPT Se liya hua Syntax ---> Prototype in JavaScript.
+// JavaScript me har ek object ke paas ek prototype hota hai, jo use inheritance ka mechanism provide karta hai. Har object ek prototype object se inherit karta hai, aur ye prototype chain ke through linked hota hai.
+
+ 
+// ChatGPT Se liya hua Syntax ---> Understanding Prototype Chain
+// Prototype chain me har ek object apne prototype object se properties aur methods inherit karta hai. Jab aap kisi property ya method ko access karte hai, JavaScript pehle current object me dekhta hai, fir uska prototype object me jaata hai, aur isi tarah se chain ke through upar jaata hai jab tak property mil jaati hai ya prototype chain khatam na ho jaaye.
+
+
+// ChatGPT Se liya hua Syntax ---> Prototype inheritance JavaScript mein object-oriented programming ka ek important concept hai, jiske through hum ek object ko dusre object se inherit kar sakte hain. Ismein ek object dusre object ke properties aur methods ko use kar sakta hai, jo ki JavaScript mein bahut flexible aur powerful feature hai.
+
+// ChatGPT Se liya hua Syntax ---> Prototype Inheritance in JavaScript.
+// Prototype inheritance ka concept prototype chaining par based hai. Har ek object JavaScript me ek prototype property rakhta hai, jo ek reference hota hai dusre object ka. Jab bhi aap kisi object ka property ya method access karte hai, JavaScript pehle current object me dekhta hai, fir uska prototype object me jaata hai, aur isi tarah se chain ke through upar jaata hai jab tak property mil jaati hai ya prototype chain khatam na ho jaaye.
+
+
 
 
 // __proto__  ----> is use hota hai ek object se other object ki property and method ko link kar ke use karne ke liye ?
