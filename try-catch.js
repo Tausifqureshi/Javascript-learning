@@ -1,4 +1,4 @@
-// ChatGPT Se liya hua Syntax --->  JavaScript me try-catch block ka upyog errors ko handle karne ke liye kiya jata hai. Yeh block aapko allow karta hai ki aap apne code me errors ko detect kar sake aur unhe graceful tarike se handle kar sake, jisse ki aapka program crash na ho.
+// ChatGPT Se liya hua Syntax ---> JavaScript me try-catch block ka upyog errors ko handle karne ke liye kiya jata hai. Yeh block aapko allow karta hai ki aap apne code me errors ko detect kar sake aur unhe graceful tarike se handle kar sake, jisse ki aapka program crash na ho.
 
 // ChatGPT Se liya hua Syntax ---> Try Block: Ye block wo code contain karta hai jisme error expect ho sakta hai. Jab bhi aap koi risky operation perform karte hain (jaise ki file read, network request, ya complex calculations), aap ise try block me daal sakte hain.
 

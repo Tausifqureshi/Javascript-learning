@@ -1,4 +1,13 @@
-//Map ---> Maps object ki tara hote hai Key value pairs store karte hai ?  but ham is me kisi bhi tara ki key ya value add kar sakte hai Exmple Function String Ek blank object bhi use kar sakte hai key ki tara ? Maps javascript ES6 me aya hai ? Maps pe for of loop se bhi key value paris get kar sakte hai ? Map bhi ek itareble hai ? Map me bhi duplicate kay nhi allow hai? Object or Map me  different  Map me Key ki bhi type ki rahk sakte hai string number 
+// ChatGPT Se liya hua Syntax ---> JavaScript me Map ek built-in data structure hai jo key-value pairs ko store karta hai, jahaan ek key unique hoti hai aur us key ke saath associated value hota hai. Yeh ek flexible way hai data ko store aur access karne ka.
+
+// ChatGPT Se liya hua Syntax ---> Map ki kuch important characteristics hai:
+
+// 1. Unique Keys: Har ek key unique hoti hai, yani ek hi Map me do entries nahi ho sakti jinke keys same ho.
+
+// 2. Ordering: Entries Map me insert kiye gaye order me rakhte hain, yani jab aap entries ko iterate karte hain to woh insert kiye gaye order me milte hain.
+
+// 3. Key-Value Pairs: Har entry ek key aur us key se associated value ka combination hota hai.
+
 
 //  ===================================== Harsiht Chepter ================================================//
 // object literal me key string ya symbole me hoti hai jayda tara 99 presnt string me hi key hoti hai ?
