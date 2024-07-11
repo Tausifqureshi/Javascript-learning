@@ -1,26 +1,28 @@
 // OOPs in  me hi ata hai Constructore bhi
 
-//  ES5 (ECMAScript 2014) OOP ka old Concept ab is ki jaga new OOP ne liya jis se ham Class and Object Constructor bolte hai ?
-//=========================================JS Function Object Constructor=======================================//
-//Is se hi ham Constructor function ya Constructor object dono same hi hai ? Constructor used kar ke Main object se new object bana sakte hai or new object ko Multipal time alag alag object property ke sath print kar sakte hai ? Jab bhi ham object Constructor Function bante hai us ka First letter Captital hota hai ? ek se jayda bar obejct ko copy na kar re is liye ham object Constructor banaya gaya hai Javascript me ? Ye bhi Object oriented programming me hi ata hai ? 
+//========================================= JS Function Object Constructor =======================================//
+// ChatGPT Se liya hua Syntax ---> JavaScript me Constructor functions ka use naya objects banane ke liye hota hai. Constructor functions ko capital letter se start kiya jata hai taaki unko normal functions se differentiate kiya ja sake. Constructor functions ka use karte samay new keyword ka istemal hota hai.
 
-// ChatGPT Se liya hua Syntax ---> Constructor functions JavaScript mein classes introduce hone se pehle objects create karne ke liye use kiye jate the. Ek constructor function banane ke liye, aap function keyword ka use karte hain aur new keyword ke sath ise call karte hain.
+// ChatGPT Se liya hua Syntax ---> Constructor Function Kya Hai.
+//Constructor Function ek normal function hota hai jo new keyword ke saath call kiya jata hai. Jab new keyword ka use kiya jata hai, 4 steps follow karta hai.
+
+// 1. Naya khali object banata hai.
+// 2. Naye object ko this refer karta hai.
+// 3. this object ko properties aur methods assign karta hai.
+// 4. Finally, naye object ko return karta hai.
+
+
+// ChatGPT Se liya hua Syntax ---> Constructor Functions Ki Details.
+// 1. this Keyword: Constructor function ke andar this keyword ka use hota hai. this naya object ko refer karta hai jo banaya ja raha hai.
+
+// 2. roperties Aur Methods: Constructor function ke andar properties aur methods define kiye ja sakte hain jo naya object inherit karega.
+
+// 3. new Keyword: Jab new keyword ke saath constructor function call kiya jata hai, ye 4 steps follow karta hai.
 
 // ChatGPT Se liya hua Syntax ---> Constructor functions mein methods ko prototype pe define karna padta hai, jo thoda complex aur verbose ho sakta hai.
 
-// ChatGPT Se liya hua Syntax ---> Constructor functions mein inheritance ko implement karna thoda complex hota hai aur manually prototype ko set karna padta hai.
-
-
-
-
-// New keyword ----> is kyeword ka use hota hai Consturctor ko call karne ke liye kisi object ko create  karne ke liye use kiya jata hai ? is ka ham use karte hai constructor function se object banane ke liye javascript me ?
-
 // ChatGPT Se liya hua Syntax ---> JavaScript me new keyword ka istemal objects create karne ke liye kiya jata hai. Yeh keyword ek constructor function ko call karta hai aur ek naya object return karta hai. new keyword ke sath, JavaScript internals kuch specific steps follow karta hai:
 
-
-
-
- 
 // =========================================== Glowvia Teac Chaneal Chaptert =================================//
 //Simple Object Create ? Object  Literals bhi bolte hai is ko ?
 // let car = { 
