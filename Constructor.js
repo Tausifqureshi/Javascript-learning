@@ -21,7 +21,8 @@
 
 // ChatGPT Se liya hua Syntax ---> Constructor functions mein methods ko prototype pe define karna padta hai, jo thoda complex aur verbose ho sakta hai.
 
-// ChatGPT Se liya hua Syntax ---> JavaScript me new keyword ka istemal objects create karne ke liye kiya jata hai. Yeh keyword ek constructor function ko call karta hai aur ek naya object return karta hai. new keyword ke sath, JavaScript internals kuch specific steps follow karta hai:
+// ChatGPT Se liya hua Syntax ---> JavaScript me new keyword ka istemal objects create karne ke liye kiya jata hai. Yeh keyword ek constructor function ko call karta hai aur ek naya object return karta hai. new keyword ke sath, JavaScript internals kuch specific steps follow karta hai.
+
 
 // =========================================== Glowvia Teac Chaneal Chaptert =================================//
 //Simple Object Create ? Object  Literals bhi bolte hai is ko ?
