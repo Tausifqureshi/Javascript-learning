@@ -1,4 +1,12 @@
-// Switch Statement ----> switch statemamnt use hota hai alag alag situations actions me use karte hai? bhut share code me se ek code jis ki value right ati hai us ke liye switch use hota hai? switch statement ka Overview ek bar kiya jata hai?
+// ChatGPT Se liya hua Syntax ---> Switch statements JavaScript me conditional statements hote hain jo ek variable ke value ke basis par multiple conditions ko evaluate karte hain. Ye conditions ek sath compare karke ek specific block of code ko execute karte hain. Switch statements ka basic structure ye hota hai.
+
+// ChatGPT Se liya hua Syntax ---> Explanation.
+// switch (day): Yaha day variable ka value evaluate kiya jata hai.
+// case 1: se case 7: tak alag-alag cases hain jo day ke value ke saath match karte hain.
+// Har case ke baad break; ka use kiya jata hai taaki switch statement se bahar nikla ja sake.
+// default: agar koi bhi case match nahi hota hai to default case execute hota hai.
+
+
 
 let day = 2;
 switch (day) {
