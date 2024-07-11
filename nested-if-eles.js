@@ -1,3 +1,10 @@
+// ChatGPT Se liya hua Syntax ---> if-else statements JavaScript mein conditions ko evaluate karne aur unke anusaar code ko execute karne ke liye istemal hota hai. Yeh bahut hi basic aur important part hai JavaScript programming ka.
+
+// ChatGPT Se liya hua Syntax ---> Detailed Explanation.
+
+// if block: Yadi condition true hai, to yeh block execute hota hai.
+// else block: Yadi condition false hai, to yeh block execute hota hai.
+
 // ========================================if else if Conditional ====================================== //
 // if, else, and else if ---> js me Conditional statements 3 type ki hoti hai ? A.HTML File me bhi hai ?
 // [1] ----> if 
