@@ -186,17 +186,7 @@ console.log(car2.carInfo()); // car2 ke sath bhi method use kar sakte hai jitne 
 
 
 
-
-
-
-
-
-
-
-
-
 // ==================================Tech Gun Chanel ka Capter ================================//
-// 
 
 // function Show (name,id,selery,){ // Constructor Show ka first capital is se bolte hai Constructor function ?
 //     this.name = name;   //this matlab us object ka refer lena
