@@ -1,5 +1,6 @@
-//string ki last index lena hai bhut sahri string hai hame nhi malum tu hame aisse aise  access karte hai?
+// // ChatGPT Se liya hua Syntax ---> JavaScript me strings ka use textual data ko represent karne ke liye hota hai. Strings quotes ke beech me likhe jate hain, jaise ki single quotes (') ya double quotes ("). Y
 
+//string ki last index lena hai bhut sahri string hai hame nhi malum tu hame aisse aise  access karte hai?
 
 // let firstName = "Tausif qureshi in web Developer Engineer";
 
