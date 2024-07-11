@@ -1,3 +1,12 @@
+// ChatGPT Se liya hua Syntax ---> JavaScript me "Set" ek data structure hai jo unique values (ek hi value ko ek baar hi store karta hai) ko store karne ke liye use hota hai. Yeh values kisi bhi order me store nahi hote hai aur Set me ek value sirf ek baar hi exist kar sakti hai. Set object JavaScript me pre-defined hai aur yeh iterable bhi hota hai, jisse ki aapko Set ke elements ke saath loop karne me help milti hai.
+
+
+// ChatGPT Se liya hua Syntax ---> Set ka Istemal
+// Set ka istemal jab aata hai jab aapko unique values ki collection ko manage karna hota hai, jaise ki:
+
+// 1. Duplicate Values ko Avoid karna: Set automatically duplicate values ko store nahi karta hai.
+// 2. Values ki Uniqueness Check karna: Set me ek value sirf ek baar hi ho sakti hai, isliye aap values ki uniqueness check karne ke liye Set ka istemal kar sakte hain.
+
 
 //Sets --->data structure me ata hai ?sets object hai ?  sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubara nhi aye example 1 aya tu dubra nhi aye ga ?
 
