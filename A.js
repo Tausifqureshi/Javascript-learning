@@ -69,7 +69,10 @@
 
 
 
-
+// let age  = 3;  //number hai ye ?
+// console.log(typeof age)
+// age = toString(age);
+// console.log(typeof age);
 
 
 
