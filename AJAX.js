@@ -1,6 +1,26 @@
 //Asynchronous Programming me ata hai ---> 
-// ChatGPT Se liya hua Syntax ---> 
-// AJAX ---> Is ka Full-Form hai  Asynchronous JavaScript And XML.? AJAX  Asynchronous hota hai ?  AJAX koi programming language nhi hai ye ek set of technologies hai Asynchronous JavaScript And XML ? AJAX me Page reloading kar re bina page update kar sakte hai mains koi button ko upadete karna hai us ka page refresh kar re bina upadate kar sate hai ? AJAX ka use kar ke ham fast and dynamic web page bana sakta hai ? Modern Website JSON ka use karti hai na ke XML---> is ka full-orm hoota hai Extensible Markup Language ? Javascript ka use kar ke HTTP-Request server ko karne ke liye new XMLHttpRequest(); use hota hai ?
+
+// ChatGPT Se liya hua Syntax ---> AJAX (Asynchronous JavaScript and XML) ke bare me detail se samajhte hain. AJAX ka istemal asyncronous web requests ko handle karne ke liye hota hai, jisse page reload bina data fetch ya send kiya ja sakta hai.
+
+// ChatGPT Se liya hua Syntax ---> AJAX kya hai.
+// AJAX ek web development technique hai jo allow karta hai web pages ko asynchronously communicate karne ke liye with server without reloading the entire page. Iska matlab hai ki aap data ko background mein fetch ya send kar sakte hain, aur web page ko dynamically update kar sakte hain bina page ko reload kiye.
+
+// ChatGPT Se liya hua Syntax ---> asic AJAX Workflow
+// 1. XMLHttpRequest object create karna.
+// 2. Server ke saath connection establish karna.
+// 3. Request send karna.
+// 4. Server se response receive karna.
+// 5. Response ko handle karna.
+
+
+// ChatGPT Se liya hua Syntax ---> Important Points.
+// Asynchronous: AJAX asynchronous hota hai jiska matlab hai ki request send karne ke baad JavaScript code execution continue hota hai aur jab response milta hai tab callback function execute hota hai.
+
+// JSON: Aajkal AJAX requests me data format ke liye JSON (JavaScript Object Notation) ka use hota hai kyunki ye lightweight aur easy to parse hai.
+
+// Error Handling: AJAX requests me error handling important hai taaki agar server se koi error response aaye to use handle kiya ja sake.
+
+
 
 // HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 //Status Code ?
