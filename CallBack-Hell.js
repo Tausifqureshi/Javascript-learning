@@ -2,7 +2,15 @@
 
 //Asynchronous Programming me ata hai CallBacks --->
 
-// Call-Backs ---> jab bhi ham kisi function ke argument ke ander dusra function pass karte hai us se call-back bolte hai ?
+// ChatGPT Se liya hua Syntax ---> Callback hell JavaScript mein tab hota hai jab multiple nested callbacks hoti hain, jo code ko samajhna aur maintain karna mushkil bana deti hain. Yeh zyadatar asynchronous operations ko handle karte waqt hota hai, jaise ke AJAX requests, setTimeout, ya file reading operations.
+
+
+// ChatGPT Se liya hua Syntax ---> Callback Hell ko Avoid Karne ke Fayde.
+// 1. Code Readability Improve hoti hai: Named functions, promises aur async/await se code readable aur maintainable hota hai.
+// 2. Error Handling Better hoti hai: Promises aur async/await better error handling mechanisms provide karte hain.
+// 3. Code Reusability: Named functions aur modular code reuse aur testing ko easy banata hai.
+
+
 
 // function calculator1(a,b){
 //     // console.log(a+b);
