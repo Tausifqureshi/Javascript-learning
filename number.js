@@ -1,5 +1,4 @@
-//Number ---> Javscript me number bhi ek object hai ? Number ko 2 tara se create kar sakte hai ?
-
+// ChatGPT Se liya hua Syntax ---> JavaScript mein Number ek primitive data type hai jo numeric values ko represent karta hai. 
 
 //Number Creating karne ke tarike ?
 var x = 2;                               //creating integer value
@@ -9,277 +8,64 @@ var a = new Number(16);                //integer value by number object
 
 
 
-// document.writeln("<h3>Javascript Constants</h3>");
 
-// document.writeln("<h4>MIN_VALUE: " + + Number.MIN_VALUE +"</h4>");//minimum value print hogi
+// ========================================= Number Properties ================================================//
+// ChatGPT Se liya hua Syntax ---> Number object ke kuch important properties hain:
 
-// document.writeln("<h4>MAX_VALUE: " + + Number.MAX_VALUE +"</h4>");//maximum value print
+// Number.MAX_VALUE: Sabse bada representable number.
+// Number.MIN_VALUE: Sabse chhota representable number (0 se zyada).
+// Number.NEGATIVE_INFINITY: Negative infinity ka representation.
+// Number.POSITIVE_INFINITY: Positive infinity ka representation.
+// Number.NaN: "Not-a-Number", jo tab milta hai jab calculation invalid ho.
 
-// document.writeln("<h4>POSITIVE_INFINITY: " + + Number.POSITIVE_INFINITY +"</h4>");//
-// document.writeln("<h4>NEGATIVE_INFINITY: " + + Number.NEGATIVE_INFINITY +"</h4>");//
+console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+console.log(Number.MIN_VALUE); // 5e-324
+console.log(Number.NEGATIVE_INFINITY); // -Infinity
+console.log(Number.POSITIVE_INFINITY); // Infinity
+console.log(Number.NaN); // NaN
 
 
-// document.writeln("<h4>NAN: " + + Number.isNaN +"</h4>");//NOT A Number 
-// document.writeln("to check 'g' is a number: " + Number.isNaN('g') + "<br>");//true false answer[g]number hai ya nhi 
-// document.writeln("to check '2' is a number: " + Number.isNaN('2')+ "<br>");//true false answer[2]number hai ya nhi 
+// ========================================= Number Method ================================================//
+// ChatGPT Se liya hua Syntax ---> Number Methods.
 
-// document.writeln("to check '2' is a number: " + isNaN("hello") + "<br>");// number ke alwa koi or pass to true aye ga
-// document.writeln("to check '2' is a number: " + isNaN("g") + "<br>");//
-// document.writeln("to check '2' is a number: " + isNaN(2) + "<br>");//
-	
+// ========================================= isInteger Method ================================================//
+// ChatGPT Se liya hua Syntax ---> 1. Number.isInteger(value): Check karta hai ki value integer hai ya nahi.
+console.log(Number.isInteger(5)); // true
+console.log(Number.isInteger(5.5)); // false
 
 
+// ========================================= isNaN Method ================================================//
+// ChatGPT Se liya hua Syntax ---> 2. Number.isNaN(value): Check karta hai ki value NaN hai ya nahi.
+console.log(Number.isNaN(NaN)); // true
+console.log(Number.isNaN(5)); // false
 
 
-//Number Methods in js
 
-//creating isFinite() jo number ham pass karte hai agar o number isfinite hai to true and false me answer return hoga
-// document.writeln("is 2 a finite? : " + Number.isFinite(2));
-// document.writeln("<br>is h a finite? : " + Number.isFinite("h"));
-// document.writeln("<br>is -5 a finite? : " + Number.isFinite(-5));
-// document.writeln("<br>is NaN a finite? : " + Number.isFinite(NaN));
-// document.writeln("<br>is (0,10) a finite? : " + Number.isFinite((0,10)));//renge means o se 10 ke bich me number hona
-// document.writeln("<br>is (10,0) a finite? : " + Number.isFinite((10,0)));
+// ========================================= parseFloat Method ================================================//
+// ChatGPT Se liya hua Syntax ---> Number.parseFloat(string): String ko floating-point number me convert karta hai.
+console.log(Number.parseFloat("10.5")); // 10.5
 
 
 
-//creating isInteger ()
-// document.writeln("is 2 an Integer? : " + Number.isInteger(2)); //integer number
-// document.writeln("<br>is 2.56 an Integer? : " + Number.isInteger(2.56));// not integer number
-// document.writeln("<br>is infinity an Integer? : " + Number.isInteger(Infinity));//not integer number
-// document.writeln("<br>is -infinity an Integer? : " + Number.isInteger(-Infinity));
-// document.writeln("<br>is NaN an Integer? : " + Number.isInteger(NaN));
+// ========================================= parseInt Method ================================================//
+// ChatGPT Se liya hua Syntax ---> Number.parseInt(string): String ko integer me convert karta hai.
+console.log(Number.parseInt("10.5")); // 10
 
 
 
 
-//creating parseFloat() number string me pass to conveart ho jaye ga number me is method se
-// document.writeln("Convert '85' to Float 85 : " + Number.parseFloat("85"));//floting number me print hora hai ye
-// document.writeln("<br>Convert 'Hello' to Float : " + Number.parseFloat("Hello"));
-// document.writeln("<br>Convert '55Hello' to Float : " + Number.parseFloat("55Hello"));
+// ========================================= Number Formatting ================================================//
+// ChatGPT Se liya hua Syntax ---> Numbers ko format karne ke liye toFixed(), toPrecision(), aur toExponential() methods ka use hota hai.
 
+// toFixed(digits): Number ko fixed number of decimal places tak round karta hai.
+let num = 2.34567;
+console.log(num.toFixed(2)); // "2.35"
 
 
 
+// ChatGPT Se liya hua Syntax --->  toPrecision(precision): Total digits ki specific count tak number ko round karta hai.
+console.log(num.toPrecision(3)); // "2.35"
 
-//creating parseInt () jo number pe ye method use integer me chang ho gaye ga number me hi coveart hoga 
-// document.writeln("Convert '85' to Int 85 : " + Number.parseInt("85"));//integer me chang ho gaye ga
-// document.writeln("<br>Convert 'Hello' to Int : " + Number.parseInt("Hello"));
-// document.writeln("<br>Convert '55Hello' to Int : " + Number.parseInt("Hello"));
 
-
-
-
-//creating toExponential ()
-// var a = 2;
-// var b = 5;
-// document.writeln("Convert '2' to Exponential Number with base 2 : " + a.toExponential(2));
-// document.writeln("<br>Convert '2' to Exponential Number with base 5 : " + b.toExponential(2));
-
-
-
-//creating toFixed () bhut jayda digt me value us se kam karne ke liye ye use hota hai method
-// document.writeln("value of PI is : " + Math.PI.toFixed(2));
-
-
-
-//creating toPrecision () number string me conveart ho jata hai is method se
-// document.writeln("value of PI is in string : " + Math.PI.toPrecision(3));//string me value ari hai is se
-
-		
-
-//creating toString () 
-// var a = 2;
-// document.writeln("value of '2' in string : " + a.toString())//string me change
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ChatGPT Se liya hua Syntax ---> toExponential(): Number ko exponential notation me represent karta hai.
+console.log(num.toExponential(2)); // "2.35e+0"
