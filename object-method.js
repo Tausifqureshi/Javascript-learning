@@ -37,15 +37,10 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 // person2.about();
 // person3.about();
 
-
-
-
-
-
-// <------------------------------>Object Creating Method<-------------------------------->
-
+//=============================================== Object Method ==============================================//
 //=============================================== Object.keys ==============================================//
-// Object.keys();  ---> itared karne ke liye use hota hai ?
+// Object.keys();  ---> itared karne ke liye use hota hai .
+
 // ChatGPT Se liya hua Syntax ---> JavaScript me, Object.keys() ek built-in method hai jo ek object ke sabhi enumerable property names ek array me return karta hai. Enumerabe property names woh properties hain jinhe ek for-in loop se iterate kiya ja sakta hai.
 
 // const person = {
@@ -129,7 +124,6 @@ const obj = {
   
 
 //=============================================== Object.entries ==============================================//
-
 //  ChatGPT Se liya hua Syntax --->  Object.entries() method JavaScript ka ek built-in method hai jo kisi object ke saare enumerable property [key, value] pairs ko ek array of arrays me return karta hai. Ye method mainly tab use hota hai jab hume kisi object ke saare properties ko iterate karna hota hai.
 
 
@@ -158,7 +152,8 @@ console.log(userMap);
 // Output: Map(3) { 'name' => 'Alice', 'age' => 25, 'city' => 'New York' }
 
 
-// <------------------------------>Object Cloning object assing <-------------------------------->
+
+//========================================= Object Cloning object assing ========================================//
 // ChatGPT Se liya hua Syntax ---> Object.assign() JavaScript ka ek built-in method hai jo ek ya adhik sources objects se properties ko ek target object me copy karta hai. Yeh method mostly cloning objects ya multiple objects ko merge karne ke liye use hota hai.
 
 // ChatGPT Se liya hua Syntax --->  Basic Example.
@@ -185,74 +180,121 @@ console.log(obj2);  // Output: { a: 0, b: { c: 0 }}
 
 
 
-// ChatGPT Se liya hua Syntax --->  Use Case: Default Settings.
-// Yeh method default settings ke saath user settings ko merge karne ke liye useful hai.
-const defaultSettings = {
-    theme: "light",
-    showNotifications: true,
-    shortcuts: {
-        save: "Ctrl+S",
-        find: "Ctrl+F"
+//======================================= Object Property Getter and Setter =======================================//
+
+//============================================ Object Property Getter ============================================//
+// ChatGPT Se liya hua Syntax ---> JavaScript mein, Object getters ek tareeka hain jisse aap object properties ko dynamically retrieve kar sakte hain. Getters aapko ek property ke value ko calculate karne ka facility dete hain jab bhi us property ko access kiya jata hai.
+
+const persons = {
+    firstName: 'John',
+    lastName: 'Doe',
+    // Define a getter for fullName
+    get fullName() {
+      return `${this.firstName} ${this.lastName}`;
     }
-};
+  };
+  
+  console.log(persons.fullName); // Output: John Doe
+  
 
-const userSettings = {
-    theme: "dark",
-    shortcuts: {
-        find: "Alt+F"
+
+
+//============================================ Object Property Setter ============================================//
+// ChatGPT Se liya hua Syntax ---> JavaScript mein, Object ki properties ko set karne ke liye aap alag-alag tareekon ka istemal kar sakte hain. In methods ko samajhna zaroori hai kyunki yeh aapko Object ki properties ko dynamically update karne mein madad karte hain. Yahaan main Object setter methods ke baare mein detail se batane jaa raha hoon.Object me proprty set karne ke kuch tarike hai.
+
+//============================================  Object.defineProperty ============================================//
+// ChatGPT Se liya hua Syntax ---> 1. Using Object.defineProperty
+// Object.defineProperty method ka use karke aap ek Object ki property ko define aur set kar sakte hain. Yeh method aapko property ki attributes specify karne ki flexibility deta hai, jaise ki enumerable, configurable, aur writable.
+
+let student = {};
+
+// Define a property with a specific descriptor
+Object.defineProperty(student, 'name', {
+  value: 'Alice',
+  writable: true, // Can be changed
+  enumerable: true, // Will be listed in for...in loop
+  configurable: true // Can be deleted or reconfigured
+});
+
+console.log(student.name); // Alice
+
+// Changing the property value
+student.name = 'Bob';
+console.log(student.name); // Bob
+
+
+
+//============================================  Object.definePropertys ============================================//
+// ChatGPT Se liya hua Syntax ---> 2.  Using Object.definePropertiesObject.defineProperties method aapko ek Object ke multiple properties ko ek sath define aur set karne ki suvidha deta hai.
+
+
+let per = {};
+
+Object.defineProperties(per, {
+  'name': {
+    value: 'Alice',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  'age': {
+    value: 25,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  }
+});
+
+console.log(per.name); // Alice
+console.log(per.age);  // 25
+
+// Changing the properties
+per.name = 'Bob';
+per.age = 30;
+console.log(per.name); // Bob
+console.log(per.age);  // 30
+
+
+
+
+
+//============================================ Getters and Setters ============================================//
+// ChatGPT Se liya hua Syntax ---> 3. Using Accessor Properties (Getters and Setters)
+// Accessors get aur set methods ka use karke aap ek property ke values ko dynamically compute aur modify kar sakte hain.
+
+
+let proson = { 
+    firstName: 'Tausif',
+    lastName: 'Qureshi',
+    color: "Brown",
+
+    // Getter method
+    get getfullDetails() {
+        return `${this.firstName}, ${this.lastName}`;
+    },
+
+    // Setter method
+    set setFullDetails(para) { // Set Propert ek hi parameter leti hai. agar multiple parameter tu bar bar para ko hi use karna hoga.
+        this.firstName = para.fn;  // Set firstName
+        this.lastName = para.ln;   // Set lastName
+        this.old = para.age;       // Set age
     }
-};
+}
 
-const settings = Object.assign({}, defaultSettings, userSettings);
+// Setting values using the setter
+proson.setFullDetails = { fn: "Iqbal", ln: "English", age: 25 }; //multipal value ko aise add karte hai.
 
-console.log(settings);
-// Output: 
-// {
-//   theme: "dark",
-//   showNotifications: true,
-//   shortcuts: {
-//     find: "Alt+F"
-//   }
-// }
-
-// Is example me, userSettings ko defaultSettings ke saath merge kiya gaya hai. theme property overwrite ho gayi hai aur shortcuts property bhi userSettings ke corresponding value se update ho gayi hai.
+// Accessing the getter
+console.log(proson.getfullDetails);  // Outputs: "Iqbal, English" Property add hone ke baad Checking.
 
 
+// Printing the entire object
+console.log(proson);  // Outputs the entire object with updated values
 
-//<------------------------------>   Object Property Getter and Setter  <-------------------------------->
-// Getter and Setter ---> Function Jaisa hi hota hai ye Getter and Setter ? ye propeter object ki value ko read and set karne ke liye use hoti hai ? is jayda tara use obejct-constructor me use hota hai ? getter se value set karte hai ? setter se value ko set karte hai ?
+// Accessing a specific property
+console.log(proson.lastName);  // Outputs: "English" //
 
-// let proson = { 
-//     firstName : 'Tausif',
-//     lastName : 'Qureshi',
-//     color : " Brown",
+console.log(proson.getfullDetails) //get use tu aise console se call karwate hai ?
 
-//     // fullDetails : function() { //is ko method bolte hai ?
-//     //     return `${this.firstName},${this.lastName}`;
-//     //}
 
-//    get getfullDetails(){ //is ko method bolte hai ?jab get ka use tu functio aisa banate hai ?getter ka use hota hai property ko read karne ke liye ?
-//         return `${this.firstName}, ${this.lastName}`;
-//     },
 
-//     set setFullDetails (para){  //set ek hi parameter leta hai? agar multiple parameter tu bar bar para ko hi use karna hoga ?
-//      this.firstName = para.fn, //fn firstName
-//     this.lastName = para.ln; //ln lastName ,
-//     }
-    
-// }
-// proson.setFullDetails = {fn: "Iqbal", ln : "English"} //multipal parameter hai tu value aise add karte hai ?
-
-//proson.setFullDetails = 'Javed' //aise add ? 
-
-// console.log(proson.getfullDetails)//property add hone ke baad console lineNumber 265 and 267 dono same hi call joge?
-
-// console.log(proson) //pura object print hoga aise ?
-
-// console.log(proson.lastName) //use Dot notetion ?
-
-// console.log(proson['firstName']) ///aise bhi access kar sakte breaket notation se javascript me key string me hi hoti hai ?
-
-// console.log(proson.fullDetails()) ?  //pura function aye ga is ?
-
-// console.log(proson.getfullDetails) //get use tu aise console se call karwate hai ?
