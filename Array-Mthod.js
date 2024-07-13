@@ -46,8 +46,6 @@
 
 
 //  ============================================= Array fill Method =============================================//
-//Fill method --->  is method se array ke element ko ek value se overwright kar sakte hai means rejact kar ke dusri value add karta hai ? ye method original array ko overwrites karta hai ? is method se start and end position se value change kar sakte hai ? start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga ? is method me 3 parametar hote hai first value kon si add karna hai second start postion kon se index se start karna hai 3position hoti hai end kon si index tak value change karna overwites karna hai ? //ye method jab ham end position dete hai us se count nhim karta hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga 'Lemon' tak nhi jaye ga ye is ka roll hai ? array ki lenght bhi deta hai kitne array hai is me.
-
 // ChatGPT Se liya hua Syntax ---> fill() Array.fill() method ek aisa method hai jiska use karke hum kisi bhi array ke elements ko ek specific value se fill kar sakte hain. Ye method array ko modify karta hai aur ek modified array return karta hai.
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango","Lemon"];
@@ -65,68 +63,35 @@
 
 
 
-//<------------------------------>Array Filter Method<-------------------------------->
-//Filter Method----> ye method use hota hai ek element me se kuch bada ya chhote number nikalne keliye ? ye method new array deta hai ? ye method bhi ek callback function leta hai ? ye method original array ko change nhi karta hai ? ye method bhi 3 parameter leta hai currentValue index or array jo hamne defiend kiya hoga ? ye method higher oder function hai means hota hai aisa function jo kisi or function ko argument accpet karte hai ? kuch bade number nilak na ya odd even number nikalne ke liye use hota hai ? Array deta hai pura us ki lenght ke sath ?
-
+//  ============================================= Array filter Method =============================================//
 // ChatGPT Se liya hua Syntax ---> Array filter() method JavaScript mein ek bahut hi powerful method hai jo hume ek naya array banane mein madad karta hai, jisme sirf woh elements shamil hote hain jo di gayi condition ko satisfy karte hain. Yeh method ek callback function ko lekar kaam karta hai, jo har array element ke liye ek baar chala jata hai. Agar callback function true return karta hai, toh woh element naye array mein shamil hota hai, nahi toh nahi.
 
+//Is example me, filter method sirf even numbers ko filter karta hai.
+const numbers = [1,2,3,4,5,6,7,8,9,10];
 
-//Normal Exapmle kuch big number ko 18 > se bada tu new array me store karna?
-// let arr = [34,45,56,2,5,7,8,23,15] //jo number Greater-than 18 se bada number jitne ohi aye ge is method se or o sahre element new array me store hoge  ye method new array deta hai ?
-// let arr1 = arr.filter((val , index)=>{
-//        return val > 18 ,index; //index bhi print karwa sakte hai hamare pe hai ?
-// })
-// console.log(arr1)
+const evenNumbers = numbers.filter((number)=>{  //arrow function ye?
+    return number % 2 === 0;
+});
+console.log(evenNumbers);
 
 
-// let arr = [] //kuch nhi tu empty array ayeg ga console se ?
-// let arr1 = arr.filter((val)=>{
-//        return val > 18
+//Example array object me se only potion nikalna filter use kar ke.
+const students = [
+  { name: 'John', grade: 8 },
+  { name: 'Jane', grade: 10 },
+  { name: 'Jim', grade: 9 }
+];
 
-// })
+const topStudents = students.filter(student => student.grade >= 9);
 
-// console.log(arr1)
-
-// const numbers = [1,2,3,4,5,6,7,8,9,10];
-
-// const evenNumbers = numbers.filter((number)=>{  //arrow function ye?
-//     return number % 2 === 0;
-// });
-// console.log(evenNumbers);
-
-//Example array object me se only potion nikalna filter use kar ke ?
-// let tem =[
-//           {
-//             name:'Tausif',
-//             position: 'developer'
-//           },
-//           {
-//             name:'Qureshi',
-//             position: 'developer'
-//           },
-//           {
-//             name:'1qbal',
-//             position: 'developer'
-//           },
-//           {
-//             name:'Abdul',
-//             position: 'developer'
-//           },
-// ]
-//  let devloper = tem.filter((val)=>{
-//      return val.name === 'Tausif';
-//     })
-//     console.log(devloper)
-
+console.log(topStudents);
+// Output: [ { name: 'Jane', grade: 10 }, { name: 'Jim', grade: 9 } ]
 
 
 
 //=========================================== Array find Method ==================================================//
-//Find Method ---> ye method array ke koi bhi first index ki value milti hai us value ko hi return kar deta hai aage badta hi nhi hai ? koi value nhi milta tu ye method undefind deta hai agar milta hai tu us ki value deta hai 'cate','lion' aisa deta hai? ya method value hai ya nhi hai dhakta hai ? ye method bhi ek call back function leta hai? ye method original array ko change nhi karta hai ?
+// ChatGPT Se liya hua Syntax ---> Array.find() method array ke pehle element ko return karta hai jo provided test function (callback function) ko pass karta hai. Agar koi element test ko pass nahi karta, to undefined return hota hai. Ye method un scenarios ke liye useful hai jahan aapko array me se koi specific element search karna ho jo condition ko satisfy karta ho.
 
-// ChatGPT Se liya hua Syntax ---> Array.find() method ek aisi shaktishali array method hai jo aapko kisi bhi array mein pahle element ko khojne aur use nikalne mein madad karti hai jo ek nirdhaariit shart ko pura karta hai. Yah method ek callback function leta hai jo array ke har element ko check karta hai aur agar koi element shart ko pura karta hai to usse wapas return karta hai.   
-
-//find method
 // const numArray = [1,3,4,5,7,9,10];
 
 // let saveNumber = numArray.find(findFuncion); //Ek function hai ye findFunction ?
@@ -138,15 +103,6 @@
 // console.log(saveNumber)
 
 
-
-// const myArray = ["Hello", "cat", "lion"];
-
-// function isLength3(string){
-//     return string.length === 3;
-// }
-
-// const ans = myArray.find((string)=>string.length === 3); //ye method bata ra hai 3 word ki length cat ki  hai ?
-// console.log(ans);
 
 // const users = [
 //   { userId: 1, userName: "harshit" },
@@ -168,9 +124,7 @@
 
 
 //============================================== Array ForEach Mthod =============================================//
-// ForEach Method ----> ye method ek call-back input leta hai means ek function leta hai ? parametar me current value index or array leta hai means hame currnt VALIBLE KA NAAM? foreach first parameter hemsa number fir index leta hai ?ye method  new array nhi deta hai ? forech ek loop ki tara work karti hai ? ye method array ke share element ko run karta hai ya access ya get karta hai ? dusre sabdo me bol sakte hai foreach method array ke har ek element ke liye call-back function arenge karta hai jo array ki har ek value ko user defind call-back function set karta hai jis se ham har ek element ko apne coding me accoding koi bhi taks karwa sakte hai ? foreach ko Map and set object me bhi use kar sakte hai ? ye method higher order function hai means hota hai aisa function jo kisi or function ko argument accpet karte hai.
-
-// ChatGPT Se liya hua Syntax ---> Array.forEach() method ek aisa method hai jo array ke har ek element ke liye ek callback function ko execute karta hai. Yeh method array ko modify nahi karta hai aur yeh hamesha undefined return karta hai. 
+// ChatGPT Se liya hua Syntax ---> Array.forEach() method ek array ke har element par specified callback function ko execute karta hai. Ye method array ke elements ko iterate karta hai aur callback function ko un elements ke liye execute karta hai. Ye method array ko modify nahi karta; sirf elements ke upar operation perform karta hai.
 
 
 // let fruits = ["Apple","Banana","Mango","Orange" ];
@@ -178,7 +132,7 @@
 //     console.log("currentvalue-" + cuurentvalue + "  index-" + index+ "    array1-" + array)
 // })
 
-// // Example 2 ForEach?
+// Example 2 ForEach?
 // let numbers = [5,6,7,8,]
 // function myfun(currnetValue,index,array){
 // console.log(`index of ${index} currnentvalue:${currnetValue} array:${array}`)
@@ -207,8 +161,8 @@
 
 
 
-//======================================= Array Form Method =============================================//
-// Form Method ---> ye method array me convearting karta hai string ko  ek ek word tod ke deta hai ye method ?  arary ki lenght bhi deta hai kitne array hai us me ?
+//======================================= Array From Method =============================================//
+// ChatGPT Se liya hua Syntax ---> Array.forEach()ek static method hai jo ek array-like ya iterable object ko ek naya array banane ke liye use hota hai. Iska matlab hai ki aap kisi bhi object jo ek array jaisa behave karta hai ya jo iterate ho sakta hai (jaise strings, NodeLists, etc.) ko ek array mein convert kar sakte hain.
 
 // let firstName = "Tausif";
 // console.log(firstName);
@@ -588,9 +542,9 @@ console.log(ret)
 //     return value.price > 100000
 // })
 // console.log(ans);
-// ========================================= Array sort Method ==============================================//
-// Sort Method ---> is method ka use kar ke array ke elmement ko sort kar ke sortet array ko retrun karna sort ka use hai ? default asending hota hai ? ye method bhi ek call back function leta hai ? ye method origan array ko change karta hai?
 
+ 
+// ========================================= Array sort Method ==============================================//
 // ChatGPT Se liya hua Syntax ---> Array sort() method ka upyog kisi array ke elements ko sort karne ke liye kiya jata hai. Yah elements ko default mein ascending order mein sort karta hai, jo ki chhote se bade tak hota hai. Aap custom compare function ka use karke elements ko kisi bhi order mein sort kar sakte hain.
 
 // A,B,C,D,E,F,G ---->  asending order hota hai ?
@@ -745,36 +699,6 @@ console.log(ret)
 // console.log(valueOf)
 // const myArray1 = valueOf.valueOf();
 // console.log(myArray1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
