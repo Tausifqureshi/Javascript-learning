@@ -4,7 +4,7 @@
 
 // ChatGPT Se liya hua Syntax ---> Catch Block: Agar try block me koi error aata hai, to catch block execute hota hai. Is block me aap error ko catch kar sakte hain, aur usko handle ya report kar sakte hain. Error object catch block ke parameter me available hota hai, jisse aap uske details access kar sakte hain (jaise ki error message).
 
-// ChatGPT Se liya hua Syntax ---> inally Block (Optional).
+// ChatGPT Se liya hua Syntax ---> Finally Block (Optional).
 // Aap try-catch ke sath finally block bhi use kar sakte hain. Ye block hamesha execute hota hai, chahe try block me error aaye ya na aaye. Ye cleanup operations ke liye useful hota hai, jaise ki resource release.
 
 
