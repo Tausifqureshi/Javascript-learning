@@ -1,4 +1,3 @@
-
 // number-object example
 // let number = new Number(100);
 // console.log(typeof number.toPrecision())
@@ -57,6 +56,7 @@
 
 // let myName = "\nTausif \nQuraishi";
 // console.log(myName);
+
 
 
 
