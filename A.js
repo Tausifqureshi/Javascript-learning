@@ -57,11 +57,21 @@
 // let myName = "\nTausif \nQuraishi";
 // console.log(myName);
 
+let heading = document.getElementById("heading");
+// console.log(heading.innerText);
+// heading.innerText = heading.innerText +  "Tausif Quraishi"
 
 
+let fru = document.querySelectorAll(".box");
+// console.log(fru[0])
 
+// let index = 1;
+// for (div of fru) {
+//     // console.log(div.innerText);
+//  div.innerText = `Exchange Value ${index}`
+// index++;
 
-
+// }
 
 
 
