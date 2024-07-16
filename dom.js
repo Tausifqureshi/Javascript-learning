@@ -234,13 +234,10 @@ function changeContent() {
 // 4. after method ek ya zyada nodes ya strings ko ek element ke baad, uske sibling ke roop me insert karta hai.
 
 
-const container = document.getElementById('container');
-const newParagraph = document.createElement('p');
-newParagraph.textContent = 'This is a new paragraph added using append.';
-container.append(newParagraph); // Adds new paragraph as the last child of the container
-
-
-
+// const container = document.getElementById('container');
+// const newParagraph = document.createElement('p');
+// newParagraph.textContent = 'This is a new paragraph added using append.';
+// container.append(newParagraph); // Adds new paragraph as the last child of the container
 
 
 // ============================================= insertAdjacentHTML ===============================================//
