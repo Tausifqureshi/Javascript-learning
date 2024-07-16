@@ -4,3 +4,8 @@
 .bold {
   font-weight: bold;
 }
+
+/* TextContaint Property pe use */
+.hidden {
+    display: none;
+}

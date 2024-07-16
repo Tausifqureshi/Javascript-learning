@@ -73,6 +73,16 @@ elements.forEach((element) => {
 
 // ============================================ Modifying Elements ================================================//
 
+// ================================================= innerText ===================================================//
+// ChatGPT Se liya hua Syntax ---> innerText: JavaScript me innerText ek property hai jo kisi HTML element ke text content ko set ya retrieve karne ke liye use ki jaati hai. Is property ke madhyam se hum ek element ke andar ke text ko badal sakte hain bina kisi HTML tag ko effect kiye. innerText ko rendering layout ko consider karna padta hai jo isse thoda slow banata hai.
+
+// const myDiv = document.getElementById("myDiv");
+// const changeTextBtn = document.getElementById("changeTextBtn");
+
+// changeTextBtn.addEventListener("click", () => {
+//   myDiv.innerText = "Text has been changed!";
+// });
+
 // ================================================= innerHTML ===================================================//
 // ChatGPT Se liya hua Syntax ---> innerHTML: ek DOM element ki property hai jo aapko element ke andar ka HTML ya XML markup get ya set karne ki suvidha deti hai. Ye JavaScript me element ka content dynamically manipulate karne ke liye sabse common tareeka hai.
 
@@ -82,13 +92,11 @@ function changeContent() {
 }
 
 // ================================================= textContent ==================================================//
-// ChatGPT Se liya hua Syntax ---> textContent: ek DOM property hai jo ek element ke text content ko represent karti hai. Is property se aap element ke andar ke text ko read (padhen) aur write (likhen) kar sakte hain..
+// ChatGPT Se liya hua Syntax ---> textContent : JavaScript me textContent ek property hai jo kisi HTML element ke text content ko set ya retrieve karne ke liye use ki jaati hai. Ye property poora text content return karti hai, chahe wo visible ho ya hidden. Chaliye textContent property ko detail me samjhte hain. zyada fast hoti hai, kyunki wo poora DOM tree ko traverse karke text content ko return karti hai bina rendered text ko consider kiye.
 
-// var example2 = document.getElementById("example2");
-// console.log(example2.innerHTML); // Output: "Hello, <b>World!</b>"
-
-// example2.textContent = "New Text Content <b>Bold</b>";
-// console.log(example2.textContent);
+// const myDiv = document.getElementById('myDiv');
+// console.log(myDiv.textContent); // Output: Hello, Invisible Text World!
+// console.log(myDiv.innerText); // Output: Hello,  World!
 
 // ================================================ setAttribute ==================================================//
 // ChatGPT Se liya hua Syntax ---> setAttribute:  method DOM elements ke attributes ko dynamically set karne ke liye use hota hai. Yeh method ek attribute name aur uski corresponding value ko accept karta hai aur specified element par us attribute ko set karta hai.
@@ -103,8 +111,6 @@ function changeContent() {
 //   // Update using property
 //   input.value = "New Value using property";
 // });
-
-
 
 // ================================================ classList ==================================================//
 // ChatGPT Se liya hua Syntax ---> classList: classList property ek DOMTokenList object return karti hai jo element ke classes ko represent karta hai. Yeh property methods aur properties ka ek set provide karti hai jo classes ko manipulate karna aasan banata hai.
@@ -147,21 +153,33 @@ function changeContent() {
 //     paragraph.classList.replace('bold','highlight');
 // });
 
+// ============================================== style.property ==================================================//
+// ChatGPT Se liya hua Syntax ---> style.property :  property DOM elements ka ek property hai jo ek object return karti hai. Yeh object element ke inline styles ko represent karta hai aur aapko specific CSS properties ko get ya set karne ki suvidha deta hai.
+
+// var div = document.getElementById("myDiv");
+// var button = document.getElementById("toggleStyle");
+
+// button.addEventListener("click", function () {
+//   if (div.style.color === "blue") {
+//     div.style.color = "black";
+//     div.style.backgroundColor = "white";
+//   } else {
+//     div.style.color = "blue";
+//     div.style.backgroundColor = "yellow";
+//   }
+// });
+
 
 
 
 // ============================================== style.property ==================================================//
-// ChatGPT Se liya hua Syntax --->style.property :  property DOM elements ka ek property hai jo ek object return karti hai. Yeh object element ke inline styles ko represent karta hai aur aapko specific CSS properties ko get ya set karne ki suvidha deta hai.
+// ChatGPT Se liya hua Syntax --->
 
-var div = document.getElementById('myDiv');
-var button = document.getElementById('toggleStyle');
 
-button.addEventListener('click', function() {
-    if (div.style.color === 'blue') {
-        div.style.color = 'black';
-        div.style.backgroundColor = 'white';
-    } else {
-        div.style.color = 'blue';
-        div.style.backgroundColor = 'yellow';
-    }
-});
+
+
+
+
+
+
+
