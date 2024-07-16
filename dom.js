@@ -169,16 +169,55 @@ function changeContent() {
 //   }
 // });
 
+// ====================================== Creating and Appending Elements =========================================//
+// ChatGPT Se liya hua Syntax ---> Creating and Appending Elements.
 
+// ChatGPT Se liya hua Syntax --->  document.createElement: JavaScript mein DOM (Document Object Model) ke through elements create karne ke liye, aapko kuch basic steps follow karne hote hain. Yeh process aapko HTML document mein naye elements dynamically add karne ki suvidha deta hai. Chaliye, iske steps aur examples ko detail mein samajhte hain.
 
+// ChatGPT Se liya hua Syntax ---> JavaScript mein appendChild() method ek node ko parent node ke end mein add karta hai. Ye method pure node ko append karta hai aur agar node already DOM me present hai, to ye node ko apne purane parent se remove karke naye parent me append kar deta hai. ye method sirf ek node ko append karta hai. ye method ko ek node pass karna hota hai aur ye node ko parent se remove karke naya parent me add karta hai. ye method newly appended child node ko return karta hai.
 
-// ============================================== style.property ==================================================//
-// ChatGPT Se liya hua Syntax --->
+// var newItem = document.createElement("li");
+// newItem.textContent = "Item 3";
 
+// var list = document.getElementById("myList");
+// list.appendChild(newItem);
 
+// ============================================== insertBefore ====================================================//
+// ChatGPT Se liya hua Syntax ---> insertBefore: JavaScript me DOM (Document Object Model) ke insertBefore method ka upayog ek vishesh parent element ke andar kisi any specified element se pahle ek new child element insert karne ke liye kiya jata hai. Yeh method bahut upayogi hai jab aapko kisi existing element ke pahle dynamically content insert karne ki avashyakta hoti hai.
 
+//  var list = document.getElementById('myList');
+//  var newItem = document.createElement('li');
+//  newItem.textContent = 'New Item';
 
+//  var referenceItem = document.getElementById('item2');
+//  console.log( referenceItem)
+//  list.insertBefore(newItem, referenceItem);
 
+//  // ChatGPT Se liya hua Syntax ---> insertBefore method ka upayog karte samay yeh dhyan rakhein ki yeh method return karta hai inserted node ko, jisse aap aage usi node par additional manipulations kar sakte hain.
+//  var insertedNode = list.insertBefore(newItem, referenceItem);
+// console.log(insertedNode); // logs the newly inserted node
+
+// ============================================== removeChild ====================================================//
+// ChatGPT Se liya hua Syntax ---> removeChild: JavaScript me DOM (Document Object Model) ko manipulate karne ke liye removeChild() method ka upayog kiya jata hai. Ye method kisi parent node se uske child node ko hatane ke liye upayog kiya jata hai.
+
+// document.getElementById("removeBtn").addEventListener("click", function () {
+//   const list = document.getElementById("myList");
+//   // console.log(list.children[1]);
+//   const itemToRemove = list.children[1];
+//   list.removeChild(itemToRemove);
+// });
+
+// ============================================== replaceChild ====================================================//
+// ChatGPT Se liya hua Syntax ---> replaceChild: javaScript me DOM (Document Object Model) ko manipulate karne ke liye replaceChild() method ka upayog kiya jata hai. Ye method kisi parent node ke ek existing child node ko naye child node se replace karne ke liye upayog hota hai. Chaliye ise vistaar se samajhte hain.
+
+// document.getElementById("replaceBtn").addEventListener("click", function () {
+//   const list = document.getElementById("myList");
+//   // console.log(list.children[1]);
+//   const newItem = document.createElement("li");
+//   newItem.textContent = "New Item 2";
+//   const oldItem = list.children[1];
+//   list.replaceChild(newItem, oldItem);
+// });
 
 
 
