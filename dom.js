@@ -205,6 +205,7 @@ function changeContent() {
 //   // console.log(list.children[1]);
 //   const itemToRemove = list.children[1];
 //   list.removeChild(itemToRemove);
+//   alert("Remove itme")
 // });
 
 // ============================================== replaceChild ====================================================//
@@ -222,3 +223,5 @@ function changeContent() {
 
 
 
+// ============================================== replaceChild ====================================================//
+// ChatGPT Se liya hua Syntax --->
