@@ -243,7 +243,47 @@ function changeContent() {
 
 
 
+// ============================================= insertAdjacentHTML ===============================================//
+// ChatGPT Se liya hua Syntax ---> JavaScript me insertAdjacentElement method ka use HTML document me naye elements ko insert karne ke liye kiya jata hai. Yeh method humein flexibility deta hai taaki hum nayi elements ko specific positions par insert kar sakein. 
+
+// // ChatGPT Se liya hua Syntax --->  targetElement: Yeh wo element hai jismein naya element insert kiya jayega.
+// position: Yeh ek string hai jo specify karti hai ki naya element kahan insert hoga. Iske kuch valid values hain:
+// "beforebegin": targetElement se pehle
+// "afterbegin": targetElement ke andar, sabse pehle
+// "beforeend": targetElement ke andar, sabse aakhri mein
+// "afterend": targetElement ke baad
+
+// const newDiv = document.createElement('div');
+// newDiv.textContent = 'This is a new div inserted using insertAdjacentElement';
+// // Target element ko select kar rahe hain
+// const parentDiv = document.getElementById('parentDiv');
+// // Naye element ko parentDiv ke andar sabse pehle insert kar rahe hain
+// parentDiv.insertAdjacentElement('afterbegin', newDiv);
 
 
 
 
+// ============================================= cloneNode ===============================================//
+// ChatGPT Se liya hua Syntax ---> cloneNode() :method JavaScript DOM (Document Object Model) ka ek method hai jo kisi element ka duplicate banane ke liye use hota hai. Yeh method asli element ke saath saath uske saare child elements ko bhi clone kar sakta hai agar hum usse kahen.
+
+// Is method ko use karte waqt hume do tarikon ka option milta hai:
+// 1. Shallow Clone: Yeh sirf parent node ko hi copy karta hai, child nodes ko nahi.
+// 2. Deep Clone: Yeh parent node ke saath saath uske saare child nodes ko bhi copy karta hai.
+
+
+// ChatGPT Se liya hua Syntax ---> Shallow Clone
+var originalElement = document.getElementById("original");
+var shallowClone = originalElement.cloneNode(false);
+document.body.appendChild(shallowClone);
+
+
+// ChatGPT Se liya hua Syntax --->  Deep Clone
+var originalElement = document.getElementById("original");
+var deepClone = originalElement.cloneNode(true);
+document.body.appendChild(deepClone);
+
+
+
+
+// ============================================= cloneNode ===============================================//
+// ChatGPT Se liya hua Syntax ---> 
