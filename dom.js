@@ -224,6 +224,25 @@ function changeContent() {
 // ============================================= Elements ko Insert ===============================================//
 // Elements ko Insert all tarike.
 
+
+// ================================================== Insert ===================================================//
+// ChatGPT Se liya hua Syntax ---> JavaScript me append, prepend, before, aur after methods DOM (Document Object Model) ko manipulate karne ke kaam aate hain. Ye methods naye nodes (elements) ko existing nodes ke andar ya bahar insert karne me madad karte hain. Inhe istamaal karne ke tareeke aur unke code examples niche diye gaye hain:
+
+// 1. append method ek ya zyada nodes ya strings ko ek element ke last child ke roop me insert karta hai.
+// 2. prepend method ek ya zyada nodes ya strings ko ek element ke first child ke roop me insert karta hai.
+// 3. before method ek ya zyada nodes ya strings ko ek element ke pehle, uske sibling ke roop me insert karta hai.
+// 4. after method ek ya zyada nodes ya strings ko ek element ke baad, uske sibling ke roop me insert karta hai.
+
+
+const container = document.getElementById('container');
+const newParagraph = document.createElement('p');
+newParagraph.textContent = 'This is a new paragraph added using append.';
+container.append(newParagraph); // Adds new paragraph as the last child of the container
+
+
+
+
+
 // ============================================= insertAdjacentHTML ===============================================//
 // ChatGPT Se liya hua Syntax ---> insertAdjacentHTML:  method JavaScript me DOM (Document Object Model) ke sath use hoti hai. Ye method ek HTML string ko ek specified position par ek existing element ke relative insert karne ke liye use hoti hai. Ye method existing elements ko parse karti hai aur phir naya content DOM me bina existing elements ko remove ya re-create kiye insert karti hai.
 
@@ -272,18 +291,22 @@ function changeContent() {
 
 
 // ChatGPT Se liya hua Syntax ---> Shallow Clone
-var originalElement = document.getElementById("original");
-var shallowClone = originalElement.cloneNode(false);
-document.body.appendChild(shallowClone);
+// var originalElement = document.getElementById("original");
+// var shallowClone = originalElement.cloneNode(false);
+// document.body.appendChild(shallowClone);
 
 
 // ChatGPT Se liya hua Syntax --->  Deep Clone
-var originalElement = document.getElementById("original");
-var deepClone = originalElement.cloneNode(true);
-document.body.appendChild(deepClone);
+// var originalElement = document.getElementById("original");
+// var deepClone = originalElement.cloneNode(true);
+// document.body.appendChild(deepClone);
 
 
 
 
-// ============================================= cloneNode ===============================================//
-// ChatGPT Se liya hua Syntax ---> 
+
+
+
+
+
+
