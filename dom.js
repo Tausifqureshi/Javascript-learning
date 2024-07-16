@@ -221,7 +221,29 @@ function changeContent() {
 // });
 
 
+// ============================================= Elements ko Insert ===============================================//
+// Elements ko Insert all tarike.
+
+// ============================================= insertAdjacentHTML ===============================================//
+// ChatGPT Se liya hua Syntax ---> insertAdjacentHTML:  method JavaScript me DOM (Document Object Model) ke sath use hoti hai. Ye method ek HTML string ko ek specified position par ek existing element ke relative insert karne ke liye use hoti hai. Ye method existing elements ko parse karti hai aur phir naya content DOM me bina existing elements ko remove ya re-create kiye insert karti hai.
+
+// ChatGPT Se liya hua Syntax --->  Parameters.
+// position: Ye string hoti hai jo specify karti hai ki HTML text ko element ke relative kaha insert karna hai. Iske kuch valid values hain:
+
+// 1. "beforebegin": Target element se pehle.
+// 2. "afterbegin": Target element ke first child ke roop me.
+// 3. "beforeend": Target element ke last child ke roop me.
+// 4. "afterend": Target element ke baad.
+
+// document.getElementById("myDiv").insertAdjacentHTML("beforebegin", "<p>This is inserted before the div.</p>");
+// document.getElementById("myDiv").insertAdjacentHTML("afterbegin", "<p>This is inserted at the beginning of the div.</p>");
+// document.getElementById("myDiv").insertAdjacentHTML("beforeend", "<p>This is inserted at the end of the div.</p>");
+// document.getElementById("myDiv").insertAdjacentHTML("afterend", "<p>This is inserted after the div.</p>");
 
 
-// ============================================== replaceChild ====================================================//
-// ChatGPT Se liya hua Syntax --->
+
+
+
+
+
+
