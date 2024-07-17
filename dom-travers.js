@@ -47,3 +47,4 @@ var second = document.getElementById("second");
 var previous = second.previousSibling;
 var previous = second.previousElementSibling;
 console.log(previous); // Output: <p id="first">First</p>
+ 
