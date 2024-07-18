@@ -31,14 +31,15 @@ console.log(firstChild); // Output: <p>First</p>
 
 var parent = document.getElementById("parent");
 var lastChild = parent.lastChild;
-var lastChild = parent.lastElementChild;
+var lastChild = parent.lastElementChild; // First aur last child elements ko return karte hain.
 console.log(lastChild); // Output: <p>Second</p>
 
 // ================================================ nextSibling ================================================== //
 // ChatGPT Se liya hua Syntax ---> 6. nextSibling: Yeh property aapko current node ka agla sibling node return karti hai.
 var first = document.getElementById("first");
 var next = first.nextSibling;
-var next = first.nextElementSibling;
+var next = first.nextElementSibling; //Ye adjacent sibling elements ko return karte hain (ye .nextSibling aur .previousSibling se thoda specific hote hain).
+
 console.log(next); // Output: <p id="second">Second</p>
 
 // ============================================== previousSibling ================================================ //
