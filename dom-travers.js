@@ -57,3 +57,4 @@ const paragraph = document.getElementById('myParagraph');
 const closestAncestor = paragraph.closest('.ancestor');
 console.log(closestAncestor); // <div class="ancestor">...</div>
 
+

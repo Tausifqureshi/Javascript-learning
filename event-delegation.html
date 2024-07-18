@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+    // HTML
+<div id="parent">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+</div>
+
+<script>
+//  ChatGPT Se liya hua Syntax ---> vent delegation ek technique hai jo JavaScript mein use hoti hai event handling ke liye, especially jab hum dynamic elements ke liye events handle karna chahte hain, jaise ki un elements jo runtime mein generate hote hain ya phir bahut saare similar elements jo ek parent container ke andar hote hain. Yeh technique kaafi powerful hai kyunki isse hum repetitive event listeners avoid kar sakte hain aur performance bhi improve hoti hai, khaas karke jab hum bahut saare elements ke liye events handle kar rahe hote hain.
+
+// ChatGPT Se liya hua Syntax ---> Kaise Event Delegation Kaam Karta Hai:
+// 1. Parent Element Select karna: Event delegation mein sabse pehle hum ek parent element ko select karte hain, jiska andar humare dynamic ya multiple elements hain jinhe handle karna hai.
+
+// 2. Event Type Decide karna: Fir hum decide karte hain ki kaun sa event type handle karna hai, jaise click, hover, etc.
+
+// 3. Event Listener Lagana: Ab hum is parent element par ek event listener lagate hain, jisme hum event object ko capture karte hain.
+
+// 4. Event Target Check karna: Jab event trigger hota hai, to hum event object ke target property se dekhte hain ki kaun sa specific element event ko trigger kiya hai.
+
+// 5. Conditional Logic: Is target element ko dekh kar hum conditional logic use karte hain jisme hum check karte hain ki kya yeh element hai jiske liye hum event handle karna chahte hain.
+
+
+const parent = document.getElementById('parent');
+
+parent.addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+        console.log('Button clicked:', event.target.textContent);
+    }
+});
+</script>
+
+</body>
+</html>
