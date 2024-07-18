@@ -30,7 +30,7 @@
 
         // Event Bubbling (Bubbling Phase)---> Event bubbling mein, event sabse nichle element se shuru hokar upar ki taraf propagate hota hai. Yani, agar aapne ek element par event trigger kiya hai, toh sabse pehle us element par trigger hoga, phir uske parent elem
 
-
+ 
 
         // Exmple Bubbling.
         // Bubbling event handler for "button" element
@@ -57,19 +57,19 @@
 
         // Capturing.
         // Capturing event handler for "parent" element
-        document.getElementById('parent').addEventListener('click', function (event) {
-            console.log('Capturing: Parent clicked!');
-        }, true);
+        // document.getElementById('parent').addEventListener('click', function (event) {
+        //     console.log('Capturing: Parent clicked!');
+        // }, true);
 
-        // Capturing event handler for "child" element
-        document.getElementById('child').addEventListener('click', function (event) {
-            console.log('Capturing: Child clicked!');
-        }, true);
+        // // Capturing event handler for "child" element
+        // document.getElementById('child').addEventListener('click', function (event) {
+        //     console.log('Capturing: Child clicked!');
+        // }, true);
 
-        // Capturing event handler for "button" element
-        document.getElementById('button').addEventListener('click', function (event) {
-            console.log('Capturing: Button clicked!');
-        }, true);
+        // // Capturing event handler for "button" element
+        // document.getElementById('button').addEventListener('click', function (event) {
+        //     console.log('Capturing: Button clicked!');
+        // }, true);
 
         // Agar hum "button" element par click karte hain, toh yeh output milega:
         // Capturing: Parent clicked!
