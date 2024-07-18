@@ -48,3 +48,12 @@ var previous = second.previousSibling;
 var previous = second.previousElementSibling;
 console.log(previous); // Output: <p id="first">First</p>
  
+
+// ================================================== closest =================================================== //
+// ChatGPT Se liya hua Syntax ---> closest method JavaScript me DOM traversal ka ek powerful tool hai jo elements ko locate karne me madad karta hai. Yeh method kisi element se uske ancestor (parents, grandparents, etc.) ko find karta hai jo specified selector ke sath match karta hai. Agar match milta hai, toh yeh us ancestor --> matlab is ka apne grandparents ko retrun karta hai. agar nahi milta, toh yeh null return karta hai.
+
+
+const paragraph = document.getElementById('myParagraph');
+const closestAncestor = paragraph.closest('.ancestor');
+console.log(closestAncestor); // <div class="ancestor">...</div>
+
