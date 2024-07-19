@@ -57,19 +57,19 @@
 
         // Capturing.
         // Capturing event handler for "parent" element
-        // document.getElementById('parent').addEventListener('click', function (event) {
-        //     console.log('Capturing: Parent clicked!');
-        // }, true);
+        document.getElementById('parent').addEventListener('click', function (event) {
+            console.log('Capturing: Parent clicked!');
+        }, true);
 
-        // // Capturing event handler for "child" element
-        // document.getElementById('child').addEventListener('click', function (event) {
-        //     console.log('Capturing: Child clicked!');
-        // }, true);
+        // Capturing event handler for "child" element
+        document.getElementById('child').addEventListener('click', function (event) {
+            console.log('Capturing: Child clicked!');
+        }, true);
 
-        // // Capturing event handler for "button" element
-        // document.getElementById('button').addEventListener('click', function (event) {
-        //     console.log('Capturing: Button clicked!');
-        // }, true);
+        // Capturing event handler for "button" element
+        document.getElementById('button').addEventListener('click', function (event) {
+            console.log('Capturing: Button clicked!');
+        }, true);
 
         // Agar hum "button" element par click karte hain, toh yeh output milega:
         // Capturing: Parent clicked!
