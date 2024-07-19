@@ -6,95 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouseover Event Example</title>
 </head>
+<style>
+    #myButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
 
 <body>
-    <!-- mouse Event  -->
-    <button id="myButton">Click me!</button>
-    <!-- mouse Event  -->
-
-
-    <button id="myButton">Hover over me!</button>
-    <p id="message"></p>
-
-    <!-- KeyboardEvent  -->
-    <input type="text" id="myInput" placeholder="Type something...">
-    <!-- KeyboardEvent  -->
+    <button id="myButton">Click Me!</button>
 
     <script>
-        // // ChatGPT Se liya hua Syntax ---> JavaScript me event handling ek important concept hai, jo aapko user interactions ko handle karne ka tareeka deta hai. Chaliye ek simple example ke saath isko samjhate hain.
+        //ChatGPT Se liya hua Syntax ---> JavaScript mein, events woh actions hote hain jo web page pe user ya browser ke interaction se trigger hote hain. Jaise ki, ek button ko click karna, form submit karna, mouse ka move hona, ya page load hona—all of these are events. Events ki help se, aap dynamic interactions aur functionality add kar sakte hain web pages mein.
 
-        // Javascript all event
-        // Mouse Events: click, dblclick, mouseover, mouseout, mousedown, mouseup, mousemove .
+        //ChatGPT Se liya hua Syntax ---> Events ke Basic Concepts
+        // 1. Event: Ek event kisi bhi specific action ko refer karta hai jo user ya browser ke actions se hota hai.Examples include click, keypress, mousemove, etc.
 
-        // Keyboard Events: keydown, keyup, keypress.
+        // 2. Event Listener: Yeh ek function hota hai jo specific event ke trigger hone par execute hota hai.Aap isse kisi HTML element ke saath bind kar sakte hain.
 
-        // Form Events: submit, focus, blur, change.
+        // 3. Event Handler: Yeh function ya code block hota hai jo event ke occurrence ke baad execute hota hai.Event listener aur event handler often ek hi cheez refer karte hain, lekin event listener isko set karta hai aur event handler isko execute karta hai.
 
-        // Window Events: load, resize, scroll.
+        //ChatGPT Se liya hua Syntax ---> Common Event Types
+        // Mouse Events:
+        // click: Jab user mouse click karta hai.
+        // dblclick: Jab user double-click karta hai.
+        // mousedown: Jab mouse button press kiya jata hai.
+        // mouseup: Jab mouse button release kiya jata hai.
+        // mousemove: Jab mouse move hota hai.
 
-        // Clipboard Events: copy, cut, paste.
+        // Keyboard Events:
+        // keydown: Jab keyboard key press hoti hai.
+        // keypress: Jab key press hoti hai aur character generate hota hai.
+        // keyup: Jab key release hoti hai.
+
+        // Form Events:
+        // submit: Jab form submit hota hai.
+        // change: Jab form element ka value change hota hai.
+        // focus: Jab form element focus hota hai.
+        // blur: Jab form element lose focus karta hai.
+
+        // Window Events:
+        // load: Jab page load hota hai.
+        // resize: Jab window resize hoti hai.
+        // scroll: Jab page scroll hota hai.
 
 
-        // Button element ko grab karna
+        // Get the button element
         const button = document.getElementById('myButton');
 
-        // Message element ko grab karna
-        const message = document.getElementById('message');
+        // Define the event handler function
+        function handleClick() {
+            alert('Button was clicked!');
+        }
 
-        // Event listener add karna button ke mouseover event par
-        button.addEventListener('mouseover', function () {
-            // Message ko update karna
-            message.textContent = 'Mouse is over the button!';
+        // Add an event listener to the button
+        button.addEventListener('click', handleClick);
+
+
+        // 3. Event Object
+        // Jab ek event occur hota hai, JavaScript ek event object create karta hai jo event se related information ko hold karta hai, jaise ki event type, target element, etc.
+        document.getElementById('myButton').addEventListener('click', function (event) {
+            console.log(event.type); // 'click'
+            console.log(event.target); // <button id="myButton">Click me</button>
         });
-
-        // Event listener add karna button ke mouseout event par
-        button.addEventListener('mouseout', function () {
-            // Message ko update karna
-            message.textContent = '';
-        });
-
-
-
-        //======================================= Mouse event ================================================//
-        const butto = document.getElementById('myButton');
-
-        // Click event
-        butto.addEventListener('click', function(event) {
-            console.log('Button clicked at coordinates: ', event.clientX, event.clientY);
-        });
-
-        // Mouseover event
-        butto.addEventListener('mouseover', function(event) {
-            console.log('Mouse over button');
-        });
-
-        // Mouseout event
-        butto.addEventListener('mouseout', function(event) {
-            console.log('Mouse out of button');
-        });
-
-
-
-        //====================================== KeyboardEvent==========================================//
-        // Keydown event
-        const input = document.getElementById('myInput');
-
-        input.addEventListener('keydown', function(event) {
-            console.log('Key down: ', event.key);
-        });
-
-        // Keyup event
-        input.addEventListener('keyup', function(event) {
-            console.log('Key up: ', event.key);
-        });
-
-        // Keypress event
-        input.addEventListener('keypress', function(event) {
-            console.log('Key press: ', event.key);
-        });
+        
     </script>
 
-    </script>
+
 </body>
 
 </html>
