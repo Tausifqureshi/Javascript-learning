@@ -1,51 +1,52 @@
 // ================================================== WeakMap ==================================================== //
-// ChatGPT Se liya hua Syntax ---> What is a WeakSet.
-// A WeakSet is a collection of objects where each object can only be added once. Unlike Set, WeakSet does not prevent its elements (objects) from being garbage-collected if there are no other references to them. This makes WeakSet useful for scenarios where you want to store a collection of objects without preventing their garbage collection.
+// ChatGPT Se liya hua Syntax ---> JavaScript mein WeakMap ek special type ka collection hai jo key-value pairs ko store karta hai. Yeh Map se similar hai, lekin kuch important differences ke saath. Chaliye, WeakMap ke features aur use cases ko detail mein samajhte hain.
+
+// ChatGPT Se liya hua Syntax ---> WeakMap Kya Hai.
+// Key-Value Storage: WeakMap key-value pairs ko store karta hai, jahan keys objects hote hain aur values kisi bhi data type ki ho sakti hain.
+
+// Weak References: WeakMap mein keys weakly referenced hoti hain. Iska matlab hai ki agar key object ke references kahin aur nahi hain, toh garbage collector us object ko remove kar sakta hai bina WeakMap ko affect kiye.
+
+// ============================================ WeakMap Ke Features ============================================== //
 
 // ChatGPT Se liya hua Syntax ---> WeakSet ki Key Features.
-// 1. Sirf Objects: WeakSet mein sirf objects ho sakte hain, primitive values jaise numbers ya strings nahi.
-// 2. Weak References: WeakSet mein objects ke references weak hote hain, matlab agar kisi object par aur koi references nahi hain, to object garbage collected ho sakta hai.
-// 3. Non-Enumerable: WeakSet ke elements ko enumerate nahi kiya ja sakta, iska matlab aap WeakSet ke elements par iterate nahi kar sakte.
-// 4. No Size Property: Set ke unlike, WeakSet mein size property ya clear method nahi hoti.
+// 1.Weak References: WeakMap mein stored keys ka weak reference hota hai, iska matlab garbage collector ke liye objects ki lifetime ke sath linked nahi hota. Jab object ka reference khatam hota hai, toh woh automatically garbage collect ho jata hai.
+
+// 2. Non-enumerable: WeakMap ka content enumerate nahi kiya ja sakta. ska matlab hai ki Aap for-of loop ya forEach method ka use karke WeakMap ko iterate nahi kar sakte.
+
+// 3. Keys Must Be Objects: WeakMap ki keys sirf objects honi chahiye. Primitive types (jaise number, string) as keys use nahi kiye ja sakte.
 
 // ============================================ WeakSet ke Methods =============================================== //
-// ChatGPT Se liya hua Syntax ---> WeakSet ke Methods.
-// 1. add(value): Ek object ko WeakSet mein add karta hai.
-// 2. delete(value): Ek object ko WeakSet se remove karta hai.
-// 3. has(value): Check karta hai ki ek object WeakSet mein hai ya nahi.
+
+// ChatGPT Se liya hua Syntax ---> WeakMap ke Methods.
+// 1. set(key, value): WeakMap mein ek key-value pair set karta hai.
+// 2. get(key): Agar key exist karti hai, toh uski value return karta hai. Agar key nahi hai, toh undefined return karta hai.
+// 3. has(key): Check karta hai ki key WeakMap mein hai ya nahi. Return value true ya false hoti hai.
+// 4. delete(key): Agar key exist karti hai, toh us key-value pair ko delete karta hai. Return value true ya false hoti hai depending on success.
+
 
 // ChatGPT Se liya hua Syntax ---> Example.
-// WeakSet banana
-let weakset = new WeakSet();
+// Create a new WeakMap
+let weakMap = new WeakMap();
 
-let obj1 = { name: "Tausif" };
-let obj2 = { name: "JavaScript" };
+// Create some objects to use as keys
+let obj1 = {};
+let obj2 = {};
 
-// Objects ko WeakSet mein add karna
-weakset.add(obj1);
-weakset.add(obj2);
+// Set values in the WeakMap
+weakMap.set(obj1, "Value for obj1");
+weakMap.set(obj2, "Value for obj2");
 
-console.log(weakset.has(obj1)); // true
-console.log(weakset.has(obj2)); // true
+// Get values from the WeakMap
+console.log(weakMap.get(obj1)); // Output: "Value for obj1"
+console.log(weakMap.get(obj2)); // Output: "Value for obj2"
 
-// Ek object ko WeakSet se remove karna
-weakset.delete(obj2);
+// Check if a key exists
+console.log(weakMap.has(obj1)); // Output: true
+console.log(weakMap.has(obj2)); // Output: true
 
-console.log(weakset.has(obj2)); // false
+// Delete a key-value pair
+weakMap.delete(obj1);
+console.log(weakMap.has(obj1)); // Output: false
 
-// Garbage collection ka example
-let obj3 = { name: "Garbage" };
-weakset.add(obj3);
-
-console.log(weakset.has(obj3)); // true
-
-// obj3 ke aur koi references nahi hain, ye garbage collected ho sakta hai
-obj3 = null;
-
-// Kuch samay baad, obj3 ko JS engine garbage collect kar sakta hai
-console.log(weakset.has(obj3)); // false (ya true, depend karta hai ki GC run hua ya nahi)
-
-// ============================================= Important Points ================================================ //
-// ChatGPT Se liya hua Syntax ---> WeakMap Ke Kuch Important Points.
-//No Iteration: WeakMap iterable nahi hoti. Aap for-of loop ya forEach method ka use karke WeakMap ko iterate nahi kar sakte.
-//Weak References: WeakMap ki keys weakly referenced hoti hain. Agar key object ka koi aur reference nahi hota to woh garbage collected ho jata hai, aur corresponding entry WeakMap se automatically remove ho jati hai.
+// Garbage collection
+// If no other references to obj1 exist, it will be garbage collected and removed from WeakMap
