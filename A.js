@@ -56,7 +56,7 @@
 // const fruits = new Map(); //Empty Maps Creates;
 // console.log(fruits)
 
-// fruits.set("apples", 500);   //Value add maps me ?
+// fruits.set("apples", 500);   //Value add maps me ? 
 
 // let key1 ='Tauisf', key2 = {name: "Qureshi"} ,key3 = function(){}, key4 = {},key5 = ['age', 24]; //Maps constructor ye is me kuch bhi key value use kar sakte hai?
 // fruits.set(key1, 'String Hai');  //Value add maps me  Aise bhi kar sakte hai ?
