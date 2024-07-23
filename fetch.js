@@ -125,7 +125,7 @@ async function main() {
 
 //   main();
 
-// ========================Fetch API .then use post request ========================================= ?
+// ======================== Fetch API .then use post request ========================================= ?
 // const url = 'https://jsonplaceholder.typicode.com/posts'; // Replace this with your API endpoint
 
 const postData = async () => {

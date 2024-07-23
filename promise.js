@@ -32,7 +32,6 @@ let AccessButton = document.getElementById("ajax");
 AccessButton.addEventListener("click", myPromise);
 
 function myPromise() {
-  //
   // document.getElementById("ajax").addEventListener("click",()=>{
   // console.log('Clicked');
 
@@ -69,7 +68,7 @@ function myPromise() {
 
 
 //============================================ Chai and Code  =================================================//
-// promise use API call ?
+// promise use API call ? 
 
 fetch("https://jsonplaceholder.typicode.com/posts")
 .then((result)=>{
