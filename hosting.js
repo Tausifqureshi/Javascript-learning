@@ -52,7 +52,7 @@ var bar = function() {
 
 
 
-// ========================================= Temporal Dead Zone=======================================//
+// ================================================ Temporal Dead Zone============================================ //
 //  ChatGPT Se liya hua Syntax ---> JavaScript me "temporal dead zone" (TDZ) ek concept hai jo hoisting ke sath juda hua hai aur let aur const keywords ke use ke sath aata hai. TDZ ka concept ye hai ki, ek variable declared (declare kiya gaya) hai let ya const ke sath, lekin uss variable ko access karne se pahle, uska initialization (shuruat me value dena) hona zaroori hai.
 
 // ChatGPT Se liya hua Syntax ---> TDZ ka matlab hai wo area jaha variables exist toh karte hain, lekin unhe access karna legal nahi hota, kyunki unka initialization ab tak nahi hua hota. TDZ tab tak rahta hai jab tak variable ka declaration line aur initialization line ke beech ka samay hota hai.

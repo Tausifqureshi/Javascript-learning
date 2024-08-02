@@ -37,8 +37,7 @@ console.log(Math.ceil(4.2)); // 5
 
 // ========================================= Math.floor =================================================//
 // ChatGPT Se liya hua Syntax ---> 3. Math.floor.
-//Ye method kisi bhi sankhya ko uske nikatam nyuntam purnank (nearest lower integer) me round down karti hai.
-
+// Math.floor() JavaScript mein ek built-in function hai jo ek diya gaya number leta hai aur usse chhoti ya barabar sabse kareeb integer (poora ank) return karta hai. Yeh function aksar tab use hota hai jab kisi number ka integer part chahiye hota hai, bina round off kiye. Matlab yeh number ko niche ki taraf round karta hai.
 console.log(Math.floor(4.8)); // 4
 
 
