@@ -3,7 +3,7 @@
 // console.log(typeof number.toPrecision())
 
 // let myNum = 100000000000;
-// console.log(myNum.toLocaleString("en-IN")) //india me defualvalue lw sakte.
+// console.log(myNum.toLocaleString("en-IN")) //india me defualvalue le sakte.
 
 // date and time.
 // let newDate = new Date();
