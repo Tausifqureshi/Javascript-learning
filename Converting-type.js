@@ -50,7 +50,7 @@ console.log(typeof result2); // Output: number
 
 
 
-// number se string me change but koi character nhi hona numbre hi hona chachye?
+// number se string me change but koi character nhi hona numbre hi hona chachye.
 let age  = 3;  //number hai ye ?
 console.log(typeof age)
 age = toString(age);
@@ -58,7 +58,7 @@ console.log(typeof age);
 // console.log(typeof (age + "" )) //aisa bhi number me change kar sakte hai ?
 
 
-// ========================================= String to Number================================================//
+// ========================================= String to Number ================================================//
 // String ko Number me Change Karna.
 // ChatGPT Se liya hua Syntax --->
 
@@ -67,6 +67,10 @@ console.log(typeof age);
 // let num = Number(str);
 // console.log(num); // Output: 123
 // console.log(typeof num); // Output: number
+
+
+// console.log(typeof str); // is tara se bhi string ko number me change kar sakte hai.
+// console.log(typeof +str); // is tara se bhi string ko number me change kar sakte hai.
 
 
 // ========================================= Boolean to Number ================================================//
