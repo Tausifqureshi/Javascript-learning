@@ -6,10 +6,10 @@
 // ChatGPT Se liya hua Syntax ---> Falsy Values.
 // JavaScript me kuch values ko "falsy" mana jata hai, matlab inka boolean context me value false hoti hai. Ye values hain.
 
-// 1. false - Boolean false value.
-// 2. 0 - Number 0.
-// 3. -0 - Number negative 0.
-// 4. 0n - BigInt 0.
+// 1. false.
+// 2. 0 
+// 3. -0 
+// 4. 0n 
 // 5. "" - Empty string.
 // 6. null - Null value.
 // 7. undefined - Undefined value.
@@ -33,8 +33,8 @@ if (null) {
 // ChatGPT Se liya hua Syntax ---> Truthy Values
 // Inke alawa, jo bhi value hoti hai wo "truthy" hoti hai, matlab inka boolean context me value true hoti hai. Kuch examples hain:
 
-// 1. true - Boolean true value.
-// 2.  1 - Number 1.
+// 1. true 
+// 2.  1
 // 3. "hello" - Non-empty string.
 // 4. [] - Empty array.
 // 5. {} - Empty object.
@@ -59,7 +59,7 @@ if ([]) {
 
 // ============================================== Conversion Rules ================================================//
 // ChatGPT Se liya hua Syntax ---> Conversion Rules.
-// JavaScript implicit type conversion ke through values ko boolean mein convert karti hai:
+// JavaScript implicit type conversion ke through values ko boolean mein convert karta hai:
 
 // Falsy values ko false mein convert karti hai.
 // Truthy values ko true mein convert karti hai.

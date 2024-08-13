@@ -189,7 +189,8 @@ console.log(d <= e);  // true
 // let condition1 = 10;
 // let condition2 = 5;
 
-// // ye operator ulta work karta hai ? ye dono condition true hai but ! ye operator lagne se ulta work hota hai false return karta hai
+// ye operator ulta work karta hai. ye dono condition true hai but ! ye operator lagne se ulta work hota hai false return karta hai,
+
 // if (!(condition1 > 5) && condition2 < 10) { 
 //   console.log("true");
 // } else {
