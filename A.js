@@ -52,3 +52,5 @@
 // xhr.send();  
 
 
+// let timing  = Date.now()
+// console.log(timing.toFixed(2));
