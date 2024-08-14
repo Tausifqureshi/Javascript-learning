@@ -1,4 +1,4 @@
-// OOPs in  me hi ata hai Constructore bhi /
+// OOPs me hi ata hai Constructore bhi /
 
 
 // ChatGPT Se liya hua Syntax ---> Classes ES6 (ECMAScript 2015) mein introduce hui thi aur ye object-oriented programming ko JavaScript mein implement karne ka ek naya aur simpler tarika hai. Classes syntax sugar hai jo constructor functions aur prototype inheritance ko simplify karta hai.
