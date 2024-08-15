@@ -457,7 +457,7 @@ console.log(reverse1) //original array ko change karta hai ye method ?
 
 
 // ======================================== Array slice Method ===================================================//
-// Slice-Method ---> ye method use hota hai ap ko kaha se kaha tak value chahye jaise muje 'banana',se 'Apple' tak hona lekin onlye 'lemon' tak hi print hoga,q ke ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai ?  start or end position dena padta hai kaha se kaha tak value hona ? ye method two value leta hai start and end wali position ? ye method original Array ko change bhi nhi karta hai? ye method new array bhi deta hai ? 
+// Slice-Method ---> ye method use hota hai ap ko kaha se kaha tak value chahye jaise muje 'banana',se 'Apple' tak hona lekin onlye 'lemon' tak hi print hoga,q ke ye method end wali position ko count nhi karta us se phele ka hi ek word return karta hai ?  start or end position dena padta hai kaha se kaha tak value hona ? ye method two value leta hai start and end wali position ? ye method original Array ko change nhi karta hai. ye method new array bhi deta hai ? 
 
 // ChatGPT Se liya hua Syntax ---> slice() method ek bahut hi useful function hai, jo Arrays ke saath istemal hota hai. Ye method ek naya Array banata hai jo original Array se kuch elements ko include karke banaya jata hai, ya phir kuch elements ko exclude karke banaya jata hai.
 
@@ -634,7 +634,7 @@ console.log(ret)
 
 
 // ====================================== Array spilce Method ===================================================//
-// splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai ? ye method new array nhi deta hai ?
+// splice method --->  add ya remove karta hai array ke element ko ? ye method bhi overwirte karta hai orioginal array ko change karta hai ? array ke biche me element ko remove ya add karna hota hai tab ham spile method use karte hai ? ye method se ham arry ke kisi bhi position me add ya remove kar skate hai ? ye method 2  parameter leta hai  start position leta hai last end position leta hai.
 
 // ChatGPT Se liya hua Syntax ---> Array splice() method ka upyog kisi array mein elements ko add, remove, aur replace karne ke liye kiya jata hai. Yah original array ko modify karta hai aur ek naya array return karta hai jismein changes kiye gaye hain. original array ko change karta hai ye method.
 
