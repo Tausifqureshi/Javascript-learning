@@ -43,6 +43,9 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 
 // ChatGPT Se liya hua Syntax ---> JavaScript me, Object.keys() ek built-in method hai jo ek object ke sabhi enumerable property names ek array me return karta hai. Enumerabe property names woh properties hain jinhe ek for-in loop se iterate kiya ja sakta hai.
 
+
+// Youtubete Chanle se liya hua Syntex ---> Object.keys(). aray me is ki keys milti hai fir ham us pe array ke koi bhi method use kar sakte hai.
+
 // const person = {
 //     name: "John Doe",
 //     age: 30,
@@ -71,6 +74,7 @@ const person = {
 
 // ChatGPT Se liya hua Syntax ---> Non-Enumerable Properties.
 // Object.keys() sirf enumerable properties ko return karta hai. Agar kisi property ko explicitly non-enumerable banaya gaya hai, toh wo Object.keys() ke result me nahi aayegi.
+
 
 const book = {
     title: 'JavaScript Guide',
@@ -115,7 +119,7 @@ const obj = {
   };
   Object.defineProperty(obj, 'c', {
     value: 3,
-    enumerable: false
+    enumerable: false // is ko false karne se 3 value pe loop use nhi ho paye ga
   });
   
   const values1 = Object.values(obj);
@@ -126,9 +130,10 @@ const obj = {
 //=============================================== Object.entries ==============================================//
 //  ChatGPT Se liya hua Syntax --->  Object.entries() method JavaScript ka ek built-in method hai jo kisi object ke saare enumerable property [key, value] pairs ko ek array of arrays me return karta hai. Ye method mainly tab use hota hai jab hume kisi object ke saare properties ko iterate karna hota hai.
 
-
-
 // ChatGPT Se liya hua Syntax --->  Object.entries() ko hum commonly loops ke sath use karte hain, jaise for...of loop ke sath. Isse hum easily object ke key-value pairs ko iterate kar sakte hain.
+
+// Youtubete Chanle se liya hua Syntex ---> Object.entries() object ko convert karti hai array me. fir us pe ham array ke sahre method use kar sakte hai.
+
 const use = {
     name: 'Alice',
     age: 25,
@@ -206,13 +211,15 @@ const persons = {
 // ChatGPT Se liya hua Syntax ---> 1. Using Object.defineProperty
 // Object.defineProperty method ka use karke aap ek Object ki property ko define aur set kar sakte hain. Yeh method aapko property ki attributes specify karne ki flexibility deta hai, jaise ki enumerable, configurable, aur writable.
 
-let student = {};
+let student = {
+  name : 'Alice',
+};
 
 // Define a property with a specific descriptor
 Object.defineProperty(student, 'name', {
   value: 'Alice',
-  writable: true, // Can be changed
-  enumerable: true, // Will be listed in for...in loop
+  writable: true, // Can be changed // is ko false karne se value change nhi hogi.
+  enumerable: true, // Will be listed in for...in .loop is ko false se for in loop nhi lage gi.
   configurable: true // Can be deleted or reconfigured
 });
 
@@ -241,7 +248,7 @@ Object.defineProperties(per, {
     value: 25,
     writable: true,
     enumerable: true,
-    configurable: true
+    configurable: true //koi value ko delete nhi kar sakte configurable use tu.
   }
 });
 
@@ -262,7 +269,7 @@ console.log(per.age);  // 30
 // ChatGPT Se liya hua Syntax ---> 3. Using Accessor Properties (Getters and Setters)
 // Accessors get aur set methods ka use karke aap ek property ke values ko dynamically compute aur modify kar sakte hain.
 
-
+  
 let proson = { 
     firstName: 'Tausif',
     lastName: 'Qureshi',

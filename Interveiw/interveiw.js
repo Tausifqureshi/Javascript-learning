@@ -71,7 +71,7 @@ Object.defineProperty(person, "firstName", {
   // jitne bhi true sub ko false karna hoga fir koi firstname ki value change nhi kar sakta hai math.pi ki tara ek bar value defiend next time change nhi hoti hai ?
 
   //   configurable: false,
-  enumerable: false, //is ko false karte hi name pe loop karna ban ho jaye ga jo niche hame for of loop use kiya hai true tu loop work kar re ga false tu nhi kar re ga ?
+  enumerable: false, //is ko false karte hi name pe loop karna band ho jaye ga jo niche hame for of loop use kiya hai true tu loop work kar re ga false tu nhi kar re ga ?
   //   writable: false,
 });
 
