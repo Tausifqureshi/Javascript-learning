@@ -33,7 +33,7 @@ const person2 = {
   const showSkillsArrow = () => {
       return(this.name); // Error: this is not defined
     };
-    return showSkillsArrow()
+    return showSkillsArrow() // arrow function showskills me call hora hai is liye ye arrow function this showskill wale functionm se lera hai.
   }
 };
 console.log(person2.showSkills())

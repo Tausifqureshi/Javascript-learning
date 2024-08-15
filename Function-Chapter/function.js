@@ -77,16 +77,48 @@
 //     console.log(retrunvalue);
 
 //=============================================== Arrow function ================================================= //
-// const findTarget = (arr,target) =>{
-//     for(let i =0; i<arr.length; i++){
-//         if(arr[i]=== target){
-//             return [i];
-//         }
-//     }return -1;
-// }
-// let arr = [3,7,8,9,10,];
-// const retrunValue = findTarget(arr,10)
-// console.log(retrunValue)
+// ChatGPT Se liya hua Syntax ---> Arrow functions JavaScript ES6 (ECMAScript 2015) me introduce kiye gaye the aur ye traditional function expressions ka ek concise aur simpler alternative provide karte hain. Arrow functions ko "fat arrow" functions bhi kaha jaata hai.
+
+// ChatGPT Se liya hua Syntax ---> Arrow Functions Kya Hain.
+// Arrow functions ka syntax traditional function expressions se kaafi concise hai aur inme kuch fundamental differences bhi hain:
+
+// 1. Arrow functions function keyword ka use nahi karte.
+// 2. Ye this ka alag se binding nahi banate, jisse context issues solve hote hain.
+// 3. Single expression arrow functions me curly braces {} aur return keyword nahi likhna padta.
+
+
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(5, 3)); // Output: 8
+
+
+
+
+// ChatGPT Se liya hua Syntax ---> Single Parameter aur Single Expression (Curly Braces aur Return Statement ki zaroorat nahi).
+const square = x => x * x;
+
+console.log(square(4)); // Output: 16
+
+
+
+// this Binding
+// Arrow Functions ka ek khas feature hai this binding. Arrow Functions surrounding scope ka this use karte hain, jabki traditional functions apna khud ka this binding create karte hain.
+
+function Person() {
+  this.age = 0;
+
+  setInterval(() => {
+      this.age++;
+      console.log(this.age);
+  }, 1000);
+}
+
+let p = new Person();
+// Output: 1, 2, 3, ... har second ke baad
+
+
 
 //======================================== Arrow function This keyword ========================================== //
 // Arrow function Oriented-programing file ka chapter.
