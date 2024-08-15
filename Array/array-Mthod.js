@@ -162,14 +162,14 @@ console.log(topStudents);
 
 
 //======================================= Array From Method =============================================//
-// ChatGPT Se liya hua Syntax ---> Array.forEach()ek static method hai jo ek array-like ya iterable object ko ek naya array banane ke liye use hota hai. Iska matlab hai ki aap kisi bhi object jo ek array jaisa behave karta hai ya jo iterate ho sakta hai (jaise strings, NodeLists, etc.) ko ek array mein convert kar sakte hain.
+// ChatGPT Se liya hua Syntax ---> Array.from()ek static method hai jo ek array-like ya iterable object ko ek naya array banane ke liye use hota hai. Iska matlab hai ki aap kisi bhi object jo ek array jaisa behave karta hai ya jo iterate ho sakta hai (jaise strings, NodeLists, etc.) ko ek array mein convert kar sakte hain.
 
 // let firstName = "Tausif";
 // console.log(firstName);
 // console.log(typeof firstName); //types check object ya string kya hai ?
 // console.log(Array.isArray(firstName)); //Cheking array hai ya nhi 
 
-// let converingArray = Array.from(firstName); //Array me conering hua ye string se ye method ki waza se ?
+// let converingArray = Array.from(firstName); //Array me converting hua ye string is ye method ki waza se.
 // console.log(converingArray);
 // console.log(typeof converingArray); //array ka types check object aye ga is se ?
 // console.log(Array.isArray(converingArray)); //Array hai is liye ab true aye ga is se ?
@@ -188,7 +188,7 @@ console.log(topStudents);
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Orange"];
 // console.log(fruits)
-// // // let includingMethod = fruits.includes("Banana", 0); // aise index dal ke bhi check kar sakte hai is index pe value hai ya nhi kon si index ke baad fir se "Orange", hai ya nhi?
+// let includingMethod = fruits.includes("Banana", 0); // aise index dal ke bhi check kar sakte hai is index pe value hai ya nhi kon si index ke baad fir se "Orange", hai ya nhi?
 
 // let includingMethod = fruits.includes("orange", 2); // true aye ga q ke 2 index ke baad fir se 4index pe 'Mango hai' ya method aise work karta hai ?
 // // console.log('Checking Includes Method valuse Exist and not Exist',includingMethod)

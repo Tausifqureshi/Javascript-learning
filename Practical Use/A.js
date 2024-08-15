@@ -56,24 +56,3 @@
 // console.log(timing.toFixed(2));
 
 
-
-let student = {
-    name: "Alice",
-    age
-};
-
-// Define a property with a specific descriptor
-Object.defineProperty(student, 'name', {
-  value: 'Alice',
-  writable: false, // Can be changed
-  enumerable: false, // Will be listed in for...in loop
-  configurable: false // Can be deleted or reconfigured
-});
-
-console.log(student.name); // Alice
-
-// Changing the property value
-student.name = 'Bob';
-console.log(student.name); // Bob
-
-

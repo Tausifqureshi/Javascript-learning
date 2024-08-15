@@ -37,17 +37,46 @@ const items = ['item1', 'item2', 'item3'];
 // }
 
 
-// ================================array like object ==============================//
-// jinke pas length property hoti hai 
-// aur jiko hum index se access kar sakte hai
-// example :- string,Array 
-
-// const firstName = "tausif";
-// console.log(firstName.length);
-// console.log(firstName[2]);
+// ============================================= array like object ================================================//
+// ChatGPT Se liya hua Syntax ---> Array-like objects JavaScript me aise objects hote hain jo arrays jaise dikhte hain aur unka behavior bhi kuch had tak arrays jaise hota hai, lekin ve real arrays nahi hote. In objects ki kuch khas visheshtayen hoti hain jo unhe array-like banati hain, jaise.
 
 
+// 1. Length Property: Array-like objects me ek length property hoti hai, jo unke elements ki sankhya ko darshati hai.
+
+// 2. Indexed Elements: Unke elements numeric indices dwara access kiye jaate hain, jaise arrays me hota hai.
+
+// 3. Absence of Array Methods: Ve native array methods jaise push, pop, map, filter adi ka upyog nahi kar sakte.
 
 
 
-//iterator ---> means iterator ye ek protocol hai menas set of rules  
+// ChatGPT Se liya hua Syntax ---> Examples of Array-like Objects
+// 1.  Arguments Object.
+// Jab bhi aap koi function call karte hain, JavaScript ek special object banata hai jise arguments kehte hain. Ye function me pass kiye gaye sabhi arguments ko store karta hai aur array-like behavior exhibit karta hai.
+
+function example() {
+    console.log(arguments);
+    console.log(arguments.length); // Length property
+    console.log(arguments[0]);     // Indexed access
+}
+
+example(1, 2, 3);
+// Output:
+// [Arguments] { '0': 1, '1': 2, '2': 3 }
+// 3
+// 1
+
+
+
+
+// 2. Strings
+// Strings bhi array-like hoti hain kyonki aap individual characters ko index se access kar sakte hain aur unki length property hoti hai.
+
+const str = "hello";
+console.log(str.length); // Length property
+console.log(str[1]);     // Indexed access
+// Output:
+// 5
+// e
+
+
+
