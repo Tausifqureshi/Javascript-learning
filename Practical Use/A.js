@@ -56,3 +56,30 @@
 // console.log(timing.toFixed(2));
 
 
+
+
+
+
+// const users= [          
+
+//     {userId: 1, firstName: "Tausif", gender:"Male"},
+//     {userId: 2, firstName: "Qureshi", gender:"simple" },
+//     {userId: 3, firstName: "Iqbal", gender:"hello"}
+//   ]
+
+//   const [{firstName},{firstName},{firstName}] = users;
+// const [{ firstName: firstName1 }, { firstName: firstName2 }, { firstName: firstName3 }] = users;
+
+//   const [,,{userId ,firstName,gender}] = users; //is se hora userid1 se name same us se id or userid3 ka gender is ko bolte hai nested destrcturing.
+
+//   console.log(firstName1);        
+//   console.log(firstName2);        
+//   console.log(firstName3);  
+
+//   console.log(userId);
+//   console.log(firstName);         
+//   console.log(gender);   
+  
+
+
+

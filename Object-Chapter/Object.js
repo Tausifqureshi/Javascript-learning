@@ -123,22 +123,25 @@ console.log(obj1);
 // const newObject = {..."abcdefgijklmnpqrstuvwxyz"} // agar khabi alpha bate ki index dhakna ho tu aisa use kar sakte hai?only string pe hi work karta hai number pe nhi q ke intiger number itarebal nhi hote hai agar{...1 2 3 } aisa speard kiye tu?
 // console.log(newObject)
 
-// <------------------------------>Object destructuring chepter<-------------------------------->
+// ======================================= Object destructuring chepter ========================================== //
 
 // const person = {
-//         name: 'Tauisf',
-//         age: 24,
-//         address: "Mumbai",
-//         hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"]
-//     }
+//   name: 'Tauisf',
+//   age: 24,
+//   address: "Mumbai",
+//   hobbies:["Crickect" ,"Bookread" ,"coding" ,"Game"]
+// }
 
-//const{name:var1 ,age:var2,...var3}=person; //destructurin hora yaha se alag alag variabal ban re hai ? varibal ka naam aise change karate hai [var1:] kar ke ? ...sperad oparetor use kar ke bachi hohi value var3 me jaye gi
-//   console.log(var1);
+//simple destructuring ye.
+// const{name ,age:var2, address:var3, ...var4} = person; //destructurin hora yaha se alag alag variabal ban re hai. varibal ka naam aise change bhi kar sakte hai [var2:] kar re hai warna change nhi karna tu name jo object me property hai same [name] aisa bhi access kar sakte hai? ...sperad oparetor use kar ke bachi hohi value var3 me jaye gi.
 
-//   console.log(var3)// speard oparetot use bachi hohi value is me aye gi adress hobbies?
+// console.log(name);
+// console.log(var2);
+// console.log(var3);
+// console.log("Speard oparetor use",var4); // speard oparetot use bachi hohi value is me aye gi hobbies.
 
-//==============================nested destructuring object==========================================?
-//nested destructuring object only
+// =========================================== nested destructuring ============================================== //
+//nested destructuring object only.
 const person1 = {
   name: 'Alice',
   age: 30,
@@ -148,37 +151,27 @@ const person1 = {
   }
 };
 
-// Extracting nested properties using destructuring
 const { name, age, address: { city, postalCode } } = person1;
 console.log(name); // Output: Alice
 console.log(age); // Output: 30
 console.log(city); // Output: New York
 console.log(postalCode)
 
+// =========================================== nested destructuring ============================================== //
+//nested destructuring object only array of object. ek array me kuch object store kar re hai.
 
-//nested destructuring object only array of object...........................
-
-// const users= [             // ek array me kuch object store user ke ?
-
+// const users= [  
 //           {userId: 1, firstName: "Tausif", gender:"Male"},
 //           {userId: 2, firstName: "Qureshi", gender:"simple" },
 //           {userId: 3, firstName: "Iqbal", gender:"hello"}
 // ]
+const [ user1,user2,user3]= users // is tara se destructuring karte hai tu pura ke pura object mile ga ander ki property ke liye {} use karana hoga jaise niche kar re hai.
 
-// const [ user1,user2,user3]= users
-// console.log(user1) //simple destructuring ye
-
-// const [{firstName, userId},{gender}] = users // is ko bolte hai nested destructuring ham object ke ander se lere hai ? firstName index[0]ka hai or gender index[2] ka hai  q ke hai ham ek hi use kar re hai is ko , user  kar re hai  simple wala aye ga ,, use tu hello aye ga kuch nhi use to male hi aye ga.
+console.log(user1) //simple destructuring ye.
 
 
-// const [,{firstName},{userId,gender}] = users; //aisa bhi kar sakte hai userid2 ka firstName le rehai. 
-// console.log(firstName) //
-// console.log(userId) //first wali user id print hogi is se?
-// console.log(gender)
 
-
-// const users= [        // ek array me kuch object store user ke ?
-
+// const users= [
 //           {userId: 1, firstName: "Tausif", gender:"Male"},
 //           {userId: 2, firstName: "Qureshi", gender:"simple" },
 //           {userId: 3, firstName: "Iqbal", gender:"hello"}
@@ -189,10 +182,19 @@ console.log(postalCode)
 // console.log(firstName3) //
 
 
-const users= [             // ek array me kuch object store user ke ?
+const users= [ 
+  {
+    userId: 1, 
+    firstName: "Tausif", 
+    gender:"Male"
+  },
 
-  {userId: 1, firstName: "Tausif", gender:"Male"},
-  {userId: 2, firstName: "Qureshi", gender:"simple" },
+  {
+    userId: 2,
+    firstName: "Qureshi",
+    gender:"simple" 
+  },
+
   {userId: 3, firstName: "Iqbal", gender:"hello"}
 ]
 const [,{firstName,userId},{gender}] = users; //is se hora userid1 se name same us se id or userid3 ka gender is ko bolte hai nested destrcturing.
