@@ -44,6 +44,7 @@
 // sumNumber()
 
 //============================================== odd even function =============================================== //
+
 // function isEven(number){
 //     if(number %2 ===0){
 //         return true;
@@ -54,7 +55,7 @@
 // console.log(isEven(8))
 
 
-//Aisa function agar value milti hai tu number index retrun warna -1 aye ga?
+//Aisa function agar value milti hai tu number index retrun warna -1 a ye ga?
 // function findTarget(arr,target){
 //         if(arr[i]=== target){
 //     for(let i =0; i<arr.length; i++){
