@@ -25,7 +25,9 @@ console.log(saveValue) //aisa bhi print karwa sakte return ke time aise hi store
 
 
 
-// is tara  se object me this ki value access kar sakte hai q ke arrow function ka apna this nhi hota hai o jo this leta hai Saruonding se leta hai jaha function call hota hai .
+//ChatGPT Se liya hua Syntax ---> Object Method Context.
+// Agar arrow function ek object ke method ke taur par likha gaya hai, toh usme bhi this lexical scope ke hisab se hoga, yaani, us object ke outer scope ka this jo bhi hai, wahi arrow function ke andar bhi this hoga.
+
 const person2 = { 
   name: "John Doe",
   showSkills: function() {
@@ -57,7 +59,7 @@ function greet() {
   console.log(this.name); // Output: undefined
 }
 greet();
-
+3
 //=========================================== Events mein ============================================//
 //ChatGPT Se liya hua Syntax ---> Jab ek event trigger hota hai, toh "this" keyword us element ko refer karta hai jisne event trigger kiya hai.
 var button = document.getElementById("ajax");
@@ -109,34 +111,36 @@ console.log(greet()); // Output: John Doe 30
 
 
 //======================================= Arrow function This keyword ==========================================//
-// Arrow function ka this nhi hota hai ? Arrow function jo this leta hai apne surrounding se means Arrow function ka This jo hota hai window object hota hai globle bhi bolte hai ? Arrow Function ka This Change nhi kar sakte hai ?
-
 // ChatGPT Se liya hua Syntax ---> Arrow functions mein this ki value fixed hoti hai aur badli nahi ja sakti hai.
 // call, apply, aur bind methods arrow functions ke saath useful nahi hain.
 // Agar aapko this ki value ko control karne ki zarurat hai, to regular functions ka use karein.
 
-//ChatGPT Se liya hua Syntax --->  Arrow functions me, 'this' keyword us object ko refer karta hai jismein arrow function ko define kiya gaya hai. Isliye, agar aap arrow function ko kisi object ke method ke taur par define karte hain, toh 'this' keyword us object ko refer karega. Ye ES6 me introduce kiye gaye the aur unhone code ko zyada readable aur maintainable banane me madad ki hai.
-
+// ChatGPT Se liya hua Syntax ---> 1. Object Method Context.
+// Agar arrow function ek object ke method ke taur par likha gaya hai, toh usme bhi this lexical scope ke hisab se hoga, yaani, us object ke outer scope ka this jo bhi hai, wahi arrow function ke andar bhi this hoga.
 const person = {
-  name: "John Doe",
-  showSkills() {
-    console.log(this.name); // Output: John Doe
+  name: 'Tausif',
+  greet: function() {
+      const innerFunc = () => {
+          console.log(`Hello, ${this.name}`);
+      };
+      innerFunc();
   }
 };
 
-person.showSkills(); // Output: John Doe
+person.greet(); // Output: Hello, Tausif
 
-const showSkills = () => {
-  console.log(this.name); // Error: this is not defined
+
+
+// ChatGPT Se liya hua Syntax ---> 2. this in Arrow Functions Within Objects
+// Agar hum arrow function ko directly ek object property ke taur par define karte hain, toh ye surrounding global scope se this inherit karega, na ki object se.
+const person = {
+  name: 'Tausif',
+  greet: () => {
+      console.log(`Hello, ${this.name}`);
+  }
 };
 
-showSkills(); // Error: this is not defined
-
-//ChatGPT Se liya hua Syntax --->  Yeh Example Kya Batata Hai ?
-// Pehle example me, 'showSkills' method ek arrow function hai jo 'person' object me define kiya gaya hai. Isliye, 'this' keyword 'person' object ko refer karta hai aur 'name' property ko access karta hai.
-// Dusre example me, 'showSkills' ek standalone arrow function hai. Isliye, 'this' keyword defined nahi hai aur error aata hai.
-
-
+person.greet(); // Output: Hello, undefined (in non-strict mode)
 
 
 

@@ -120,21 +120,34 @@ let p = new Person();
 
 
 
-//======================================== Arrow function This keyword ========================================== //
-// Arrow function Oriented-programing file ka chapter.
-// Arrow function ka this nhi hota hai ? Arrow function jo this leta hai apne surrounding se means Arrow function ka This jo hota hai window object hota hai globle bhi bolte hai ? Arrow Function ka This Change nhi kar sakte hai ? 
+// ChatGPT Se liya hua Syntax ---> 1. Object Method Context.
+// Agar arrow function ek object ke method ke taur par likha gaya hai, toh usme bhi this lexical scope ke hisab se hoga, yaani, us object ke outer scope ka this jo bhi hai, wahi arrow function ke andar bhi this hoga.
+const person = {
+  name: 'Tausif',
+  greet: function() {
+      const innerFunc = () => {
+          console.log(`Hello, ${this.name}`);
+      };
+      innerFunc();
+  }
+};
 
-// const user1 = {
-//   firstName : "harshit",  
-//   age: 8,
-//   about: () => {
-//     // console.log(this) //Window object aye ga? Arrow function ka This Window hota hai?
-//     console.log(this.firstName + " " + this.age);
-//   }   
-// }
+person.greet(); // Output: Hello, Tausif
 
-// user1.about(user1);
-// user1.about.call(user1); //Arrow Function ka This Change nhi kar sakte hai ? 
+
+
+// ChatGPT Se liya hua Syntax ---> 2. this in Arrow Functions Within Objects
+// Agar hum arrow function ko directly ek object property ke taur par define karte hain, toh ye surrounding global scope se this inherit karega, na ki object se.
+const person1 = {
+  name: 'Tausif',
+  greet: () => {
+      console.log(`Hello, ${this.name}`);
+  }
+};
+
+person1.greet(); // Output: Hello, undefined (in non-strict mode)
+
+
 
 
 //======================================== Function inside function =========================================== //
