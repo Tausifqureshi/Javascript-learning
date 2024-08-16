@@ -82,5 +82,10 @@
   
 
 
-
+function firstCharcter(string){
+    return string[0]
+  }
+  
+  console.log(firstCharcter("Tausif"));
+  
 

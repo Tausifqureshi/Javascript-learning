@@ -36,12 +36,14 @@
 // console.log(retrunvalue1);
 
 
-// without parametar function create.
 
-// function sumNumber(){
-//     console.log(2+3)
-// }
-// sumNumber()
+// Aisa function hai ye jo Zero index pe firstCharcter hoga us se return kar re ga.
+function firstCharcter(string){
+  return string[0]
+}
+
+console.log(firstCharcter("Tausif"));
+
 
 //============================================== odd even function =============================================== //
 
