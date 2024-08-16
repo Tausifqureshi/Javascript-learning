@@ -95,7 +95,6 @@ console.log(add(5, 3)); // Output: 8
 
 
 
-
 // ChatGPT Se liya hua Syntax ---> Single Parameter aur Single Expression (Curly Braces aur Return Statement ki zaroorat nahi).
 const square = x => x * x;
 

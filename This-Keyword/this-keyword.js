@@ -115,6 +115,16 @@ console.log(greet()); // Output: John Doe 30
 // call, apply, aur bind methods arrow functions ke saath useful nahi hain.
 // Agar aapko this ki value ko control karne ki zarurat hai, to regular functions ka use karein.
 
+
+// ChatGPT Se liya hua Syntax ---> Key Points.
+// 1. No Binding: Arrow functions ka this kabhi bhi call, apply, ya bind methods se change nahi kiya ja sakta. Arrow functions ko kabhi bhi traditional functions ki tarah this binding ke liye use nahi kar sakte.
+
+// 2. No new: Arrow functions ko new keyword ke saath constructor ke roop me instantiate nahi kiya ja sakta.
+
+// 3. Inheritance: Arrow functions ka this hammesha apne surrounding lexical scope se inherit hota hai, jo unhe bahut hi predictable aur stable banata hai in terms of this binding.
+
+
+
 // ChatGPT Se liya hua Syntax ---> 1. Object Method Context.
 // Agar arrow function ek object ke method ke taur par likha gaya hai, toh usme bhi this lexical scope ke hisab se hoga, yaani, us object ke outer scope ka this jo bhi hai, wahi arrow function ke andar bhi this hoga.
 const person = {
