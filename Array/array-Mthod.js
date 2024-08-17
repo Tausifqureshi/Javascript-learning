@@ -67,7 +67,7 @@
 // ChatGPT Se liya hua Syntax ---> JavaScript me filter method ek array method hai jo ek naya array return karta hai. Isme woh elements include hote hain jo callback function dwara provide kiye gaye condition ko satisfy karte hain.
 
 // ChatGPT Se liya hua Syntax ---> filter Method Ka Introduction.
-// filter method ek callback function ko array ke har element par apply karta hai. Callback function boolean value (true ya false) return karta hai. Jitne bhi elements ke liye callback function true return karta hai, unko lekar filter method ek naya array banata hai.
+// filter method ek callback function ko array ke har element par apply karta hai. Callback function boolean value (true ya false) return karta hai. Jitne bhi elements ke liye callback function true return karta hai, unko lekar filter method ek naya array banata hai. original array ko change nhi karta hai
 
 
 //Is example me, filter method sirf even numbers ko filter karta hai.
@@ -93,17 +93,34 @@ console.log(topStudents);
 
 
 //=========================================== Array find Method ==================================================//
-// ChatGPT Se liya hua Syntax ---> Array.find() method array ke pehle element ko return karta hai jo provided test function (callback function) ko pass karta hai. Agar koi element test ko pass nahi karta, to undefined return hota hai. Ye method un scenarios ke liye useful hai jahan aapko array me se koi specific element search karna ho jo condition ko satisfy karta ho.
+// ChatGPT Se liya hua Syntax ---> JavaScript me find method ek array method hai jo array ke elements me se pehla element return karta hai jo provided condition ko satisfy karta hai. Ye method ek callback function use karta hai jisme condition define ki jati hai. Agar koi element condition satisfy nahi karta, to find method undefined return karta hai.
 
-// const numArray = [1,3,4,5,7,9,10];
 
-// let saveNumber = numArray.find(findFuncion); //Ek function hai ye findFunction ?
+// ChatGPT Se liya hua Syntax ---> find Method Ka Introduction.
+// find method array ke elements me se us pehle element ko return karta hai jo provided callback function ki condition ko true karta hai. Agar aapko sirf ek hi element ki zaroorat hai jo condition match kare, to find method ka use best hota hai.
 
-// function findFuncion(value){ //Ek parameter hai ye is se hi check hogi shari value jo hame oppression karna hai ?
+// ChatGPT Se liya hua Syntax ---> Example.
+// const numbers = [1, 2, 3, 4, 5];
 
-//     return value > 7 //check kar re hai 7 se bada koi number hai 9 aye ga q ke ye method ko jaise first value match ho jati hai us ko return kar deta hai baad me kitne bar bhi 9 aye us se nhi consider karta ye function ?
-// }
-// console.log(saveNumber)
+// const found = numbers.find(function(number) {
+//     return number > 3;
+// });
+
+// console.log(found); // Output: 4
+
+// ChatGPT Se liya hua Syntax ---> Example.
+// const people = [
+//   { name: 'Alice', age: 25 },
+//   { name: 'Bob', age: 20 },
+//   { name: 'Charlie', age: 30 }
+// ];
+
+// const person = people.find(function(person) {
+//   return person.age === 20;
+// });
+
+// console.log(person); // Output: { name: 'Bob', age: 20 }
+
 
 
 
@@ -121,7 +138,7 @@ console.log(topStudents);
 // console.log(myUser);
 
 
-// const myUser = users.find((user) => user.userId === 3);//ye method bata ra hai 3 length pe userId: 3,ayi gi ? sort arrow function hai ye ?
+// const myUser = users.find((user) => user.userId === 3);//ye method bata ra hai 3 length pe userId: 3,ayi gi. sort arrow function hai ye.
 // console.log(myUser);
 
 
@@ -398,7 +415,7 @@ console.log(topStudents);
 // ChatGPT Se liya hua Syntax ---> JavaScript me reduce method ek bahut hi powerful array method hai jo ek single value ko calculate karne ke liye array ke har element par ek callback function ko apply karta hai. Ye method complex calculations jaise sum, product, average, aur complex data structures ko generate karne me madad karta hai.
 
 // ChatGPT Se liya hua Syntax ---> reduce Method Ka Introduction.
-// reduce method array ke elements ko ek single value me reduce karta hai. Ye method har element ke liye ek callback function ko call karta hai, jo ek accumulator value aur current element ko input leta hai aur ek updated accumulator value return karta hai.
+// reduce method array ke elements ko ek single value me reduce karta hai. Ye method har element ke liye ek callback function ko call karta hai, jo ek accumulator value aur current element ko input leta hai aur ek updated accumulator value return karta hai. ye method original array ko change nhi karta hai.
 
 // ChatGPT Se liya hua Syntax ---> Example.
 // const numbers = [1, 2, 3, 4, 5];
@@ -552,7 +569,11 @@ console.log(ret)
 
  
 // ========================================= Array sort Method ==============================================//
-// ChatGPT Se liya hua Syntax ---> Array sort() method ka upyog kisi array ke elements ko sort karne ke liye kiya jata hai. Yah elements ko default mein ascending order mein sort karta hai, jo ki chhote se bade tak hota hai. Aap custom compare function ka use karke elements ko kisi bhi order mein sort kar sakte hain.
+// ChatGPT Se liya hua Syntax ---> JavaScript me sort method ek built-in array method hai jo array ke elements ko sort (arrange) karne ke liye use hota hai. Defaultly, ye method elements ko string ke hisaab se lexicographical order me sort karta hai, lekin aap custom sort order ke liye ek compare function bhi provide kar sakte hain. 
+
+// ChatGPT Se liya hua Syntax ---> sort Method Ka Introduction.
+// sort method array ke elements ko sort karta hai aur same array ko modify karke (mutate karke) return karta hai. Ye method elements ko ascending (chhote se bade) ya descending (bade se chhote) order me arrange kar sakta hai, jaisa aap chahte hain. ye method original array ko change karta hai.
+
 
 // A,B,C,D,E,F,G ---->  asending order hota hai ?
 // G,F,E,D,C,B,A ---> desending order hai ye ?
@@ -560,23 +581,20 @@ console.log(ret)
 // let arrayCharctter = ['a','f','g','b','c','d'];  //asending order hota hai 
 // console.log(arrayCharctter);
 
-// let sortArray = arrayCharctter.sort(); //aisa bhi kar sakte hai print ?
-// console.log(sortArray);
 
 
 //3000, 1200, 400, 9, 5 // desending sort bolte hai is se?
 // 5,9,400, 1200, 3000     //asending sort bolte hai is se?
 
-//Number Sort Example
+//Number Sort Example.
 //js me jab ham sort method use karte tu js us se number samaj ke sort nhi karta hai string samaj ke sort karta hai?
 // const number = [5,9,1200, 400, 3000]
 // number.sort()
 // console.log(number)
 
-//["5", "9", "1200", "400", "3000"] //js first sub element ko aisa string me karta hai?string ko sort karne ke liye js ACSII use karta hai google search karo? agar 1200 hai tu js 1200 nhi dheka ga only 1 dheyke ga us ke ACSII code jo hoga o print hoke aye ga?
+//["5", "9", "1200", "400", "3000"] //js first sub element ko aisa string me karta hai. string ko sort karne ke liye js ACSII use karta hai google search karo. agar 1200 hai tu js 1200 nhi dheka ga only 1 dheyke ga us ke ACSII code jo hoga o print hoke aye ga.
 
-//Charachter Sort Example? is me jo first ata hai word us se first rahkta hai example? cde or bca but ye sort method first bca ko rahke ga fir cde ko?
-//agar capital letter ho ga firt o aye ga q ke ACSII code me ciptal letter kam number ke position kam hote hai?
+//Charachter Sort Example.is me jo first ata hai word us se first rahkta hai example. cde or bca but ye sort method first bca ko rahke ga fir cde ko.agar capital letter ho ga first o aye ga q ke ACSII code me ciptal letter kam number ke position kam hote hai?
 
 // const userNames = ['harshit', 'abcd', 'mohit', 'nitish', 'aabc', 'ABC', 'Harshit'];
 // userNames.sort();
@@ -585,7 +603,7 @@ console.log(ret)
 // const nam = ["cde", "bca"];
 // console.log(nam.sort());
 
-// expected output example in sort method in numbers?
+// expected output example in sort method in numbers.
 // const numbers = [5, 9, 1200, 410, 3000];
 // numbers.sort((a, b) => {
 //   //return a-b //asendin me sort ye
@@ -593,12 +611,10 @@ console.log(ret)
 // });
 // console.log(numbers);
 
-// numbers.sort((a, b) => a - b);  //sort arrow function ye ?
-// console.log(numbers);
 
+// Real use case array-object. Example jab ham ecommerce website pe jate hai tu ham opetion ata hai kam price ya low price wale.
 
-// Real use case array-object? Example jab ham ecommerce website pe jate hai tu ham opetion ata hai kam price ya low price wale?
-// price lowToHigh HighToLow
+// price lowToHigh HighToLow.
 // const products = [
 //   { productId: 1, produceName: "p1", price: 300 },
 //   { productId: 2, produceName: "p2", price: 3000 },
@@ -609,16 +625,17 @@ console.log(ret)
 
 // lowToHigh
 // const lowToHigh = products.slice(0).sort((a, b) => {
-//   //slice use kaha se hame apni value start karna hai clone ke liye use?
+//   //slice use kaha se hame apni value start karna hai clone ke liye use.
 //   return a.price - b.price; //kam price wale ke liye use
 // });
 
+// highToLow.
 // const highToLow = products.slice(0).sort((a, b) => {
 //   return b.price - a.price; //jayda price wale ke liye use
 // });
-// // console.log(products) // slic use se produts clone hoge is se pure products upper nice nhi hoge jais hai line bye line ayeb ge
+// console.log(products) // slic use se produts clone hoge is se pure products upper nice nhi hoge jais hai line bye line aye ge.
 
-//sort method charachter example? jo word first ata hai us se phle rahke ga jaise garima first aye ga q ke teble me g ki position jaldi ati hai is liye garima jaldi aye ga us baad harshit aise hi word two word work kare ge?
+//sort method charachter example. jo word first ata hai us se phle rahke ga jaise garima first aye ga q ke teble me g ki position jaldi ati hai is liye garima jaldi aye ga us baad harshit aise hi word two word work kare ge?
 // const users = [
 //     {firstName: "harshit", age: 23},
 //     {firstName: "mohit", age: 21},
