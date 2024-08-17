@@ -1,15 +1,19 @@
-// ChatGPT Se liya hua Syntax ---> hoisting
-// JavaScript me "hosting" ek concept hai jisse JavaScript engine code ko execute karne se pehle interpret karta hai. Hosting ka matlab hai ki JavaScript me declare ki gayi sabhi variables aur functions ko unki actual declaration se pehle hi memory me allocate kar diya jata hai.
+// ChatGPT Se liya hua Syntax ---> hoisting.
+// JavaScript mein hoisting ek aisa mechanism hai jisme variables aur function declarations ko unke actual execution se pehle memory mein allocate kar diya jata hai. Iski wajah se, aap un variables ya functions ko unke define hone se pehle bhi use kar sakte hain.
 
 // ============================================ Variable Declaration =========================================//
 //  ChatGPT Se liya hua Syntax ---> Variable Declaration.
-//JavaScript me, variables ko declare kiya gaya code ke starting me "hoist" kar diya jata hai. Matlab, aap ek variable ko uske declare hone se pehle bhi access kar sakte hain. Par, var keyword ke sath hoisting thoda different hota hai kyunki usse variable ko undefined value milta hai jab tak wo actual assignment nahi milta. Let aur const ke sath hoisting hoti hai, par wo temporal dead zone (TDZ) me hota hai, jahan tak wo actual declare nahi hote.
- 
+//1. Var Variable Hoisting
+// JavaScript mein, variable declarations ko unke scope ke shuru mein move kar diya jata hai, lekin unki values assign nahi ki jati hai. Iska matlab hai ki variables ko declare hone se pehle bhi access kiya ja sakta hai, lekin unki value undefined hogi.
+
 console.log(a); // undefined
 var a = 10;
 console.log(a); // 10
 
 
+
+// 2. Let and Const Hoisting.
+// Variables jo let aur const keywords se declare kiye jate hain, wo bhi hoist hote hain lekin unki value unki actual declaration line tak access nahi ki jati hai. Is concept ko "Temporal Dead Zone" (TDZ) kaha jata hai.
 // ChatGPT Se liya hua Syntax --->  Example (let and const);
 console.log(b); // ReferenceError: Cannot access 'b' before initialization
 let b = 10;
@@ -25,8 +29,7 @@ console.log(c); // 10
 //  ChatGPT Se liya hua Syntax ---> JavaScript me functions bhi hosting ka concept follow karte hain. Function declaration aur function expressions me antar hota hai.
 
 // Function Declaration.
-// Function declaration ka matlab hai function ko declare kar diya jata hai, aur isse pehle bhi use kar sakte hain.
-
+// Function declarations ko bhi hoist kiya jata hai, aur unhe unke declare hone se pehle bhi call kiya ja sakta hai. Yeh feature JavaScript ke execution context ka ek part hai.
 // Example.
 hoistedFunc();  // Output: "Hello, World!"
 function hoistedFunc() {

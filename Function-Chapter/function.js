@@ -267,20 +267,19 @@ fetchData(processData);
 // //    console.log(ans)
  
 
-// function myFun(){   //higyer order function
-
-//     function hello (){
-//     // console.log('hello world')
-//       return 'hello world' //string retrun
-//     }
-//     return hello;   //function return
-//  }
-//    let ans = myFun();
-  //  console.log(ans)  //pura function retrun hoga aisa karne se ?
-  //  console.log(ans())  //Function retrun use karne se hello world aise hi print go jaye ga lin number 212 se ?
 
 
-
+  function myFun(){   //higyer order function
+    function hello (){
+    // console.log('hello world')
+      return 'hello world' //string retrun
+    }
+    return hello; //function retuen is tara se return tu hame ans() ko aise call karna hoga
+    // return hello();   //function return
+ }
+   let ans = myFun();
+  //  console.log(ans)  // return hello() function tu hame aise call ans ko
+   console.log(ans())
 
 
 

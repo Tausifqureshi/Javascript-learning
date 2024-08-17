@@ -27,7 +27,7 @@ function multiply(a) {
 
 console.log(multiply(2)(3)(4)); // Output: 24 best tarika call karne ka curring function.
 
-let multiplyByTwo = multiply(2); // is tara se bhi kar sakte hai but memory space is se jayda hota hai.
+let multiplyByTwo = multiply(2); // is tara se bhi call kar sakte hai but memory space is se jayda hota hai.
 let multiplyByTwoAndThree = multiplyByTwo(3);
 console.log(multiplyByTwoAndThree(4)); // Output: 24
 

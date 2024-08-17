@@ -64,7 +64,11 @@
 
 
 //  ============================================= Array filter Method =============================================//
-// ChatGPT Se liya hua Syntax ---> Array filter() method JavaScript mein ek bahut hi powerful method hai jo hume ek naya array banane mein madad karta hai, jisme sirf woh elements shamil hote hain jo di gayi condition ko satisfy karte hain. Yeh method ek callback function ko lekar kaam karta hai, jo har array element ke liye ek baar chala jata hai. Agar callback function true return karta hai, toh woh element naye array mein shamil hota hai, nahi toh nahi.
+// ChatGPT Se liya hua Syntax ---> JavaScript me filter method ek array method hai jo ek naya array return karta hai. Isme woh elements include hote hain jo callback function dwara provide kiye gaye condition ko satisfy karte hain.
+
+// ChatGPT Se liya hua Syntax ---> filter Method Ka Introduction.
+// filter method ek callback function ko array ke har element par apply karta hai. Callback function boolean value (true ya false) return karta hai. Jitne bhi elements ke liye callback function true return karta hai, unko lekar filter method ek naya array banata hai.
+
 
 //Is example me, filter method sirf even numbers ko filter karta hai.
 const numbers = [1,2,3,4,5,6,7,8,9,10];
@@ -81,9 +85,8 @@ const students = [
   { name: 'Jane', grade: 10 },
   { name: 'Jim', grade: 9 }
 ];
-
 const topStudents = students.filter(student => student.grade >= 9);
-
+// const topStudents = students.filter(student => student.grade < 9);
 console.log(topStudents);
 // Output: [ { name: 'Jane', grade: 10 }, { name: 'Jim', grade: 9 } ]
 
@@ -124,30 +127,44 @@ console.log(topStudents);
 
 
 //============================================== Array ForEach Mthod =============================================//
-// ChatGPT Se liya hua Syntax ---> Array.forEach() method ek array ke har element par specified callback function ko execute karta hai. Ye method array ke elements ko iterate karta hai aur callback function ko un elements ke liye execute karta hai. Ye method array ko modify nahi karta; sirf elements ke upar operation perform karta hai.
+// ChatGPT Se liya hua Syntax ---> forEach Method Ka Introduction.
+// forEach method ek array method hai jo har element ke liye ek function execute karta hai, aur ye function ek callback function hota hai. Isme hum har element, uski index, aur puri array ko access kar sakte hain. Ye method kuch return nahi karta, matlab ye hamesha undefined return karta hai.
+
+// ChatGPT Se liya hua Syntax --->
+// 1. currentValue: Array ka current element jiske liye function execute ho raha hai.
+// 2. index (optional): Current element ka index.
+// 3. arr (optional): Original array jispar forEach method lagaya gaya hai.
 
 
-// let fruits = ["Apple","Banana","Mango","Orange" ];
-// fruits.forEach((cuurentvalue,index,array)=>{
-//     console.log("currentvalue-" + cuurentvalue + "  index-" + index+ "    array1-" + array)
-// })
+// const fruits = ['apple', 'banana', 'mango', 'orange'];
+// fruits.forEach(function(item, index, array) {
+//     console.log(`${index}: ${item}`);
+// });
 
-// Example 2 ForEach?
-// let numbers = [5,6,7,8,]
-// function myfun(currnetValue,index,array){
-// console.log(`index of ${index} currnentvalue:${currnetValue} array:${array}`)
-// // console.log("index-" + index + "  number-" + currnetValue + "    array-" + array)
-// }
-// numbers.forEach(myfun)
 
-//Example 3 se multuplay kar ke dega har element ko ye function forEach use hora hai?
-// let numbers = [5,6,7,8,]
-// numbers.forEach(function(number,index,array){
-// console.log(number*3 ,index,array)
+//Eaxmple 2.
+// const numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
 
-// })
+// numbers.forEach(function(number) {
+//     sum += number;
+// });
 
-//Real LIfe Example?
+// console.log(sum); // Output: 15
+
+
+//Eaxmple 3. multiply function.
+// const numbers = [ 2, 3, 4, 5];
+// let sum = 0;
+
+// numbers.forEach(function(number, index) {
+    
+//     console.log(number*2, index);
+// });
+
+
+
+//Real LIfe Example.
 // const users = [
 //   { firstName: "Tausif", age: 23 },
 //   { firstName: "Qureshi", age: 21 },
@@ -158,7 +175,6 @@ console.log(topStudents);
 // console.log(user.firstName,index,array)//parameter yaha se print hora?//hamre marzhi index value print karwana?
 
 // })
-
 
 
 //======================================= Array From Method =============================================//
@@ -320,9 +336,7 @@ console.log(topStudents);
 
 
 
-// ================================================ Array Map Method ========================================//
-//Map Method----> ye paramert me currentValue, index, arr ? map method me empty element hai function nhi chale ga ? map array ke har element ko sirf ek bar hi execute karta hai o bhi index order me ?
-
+// ============================================== Array Map Method ================================================//
 // ChatGPT Se liya hua Syntax ---> map() method ek naya array return karta hai, jo ki original array ke har element par ek specified function ko apply karne ke baad banta hai. Ye method asli array ko modify nahi karta, balki ek naya array banata hai.ye method ES6 me aya js me. ye method bhi ek call back function leta hai. 
 
 //  const numbers = [3, 4, 6, 1, 8];
@@ -332,7 +346,8 @@ console.log(topStudents);
 //   console.log (number*number);
 //  console.log(square2)
 
-//Example 2 Real life Use Map object?
+
+//Example 2 Real life Use Map object.
 // const users = [
 //   { firstName: "Tausif", age: 23 },
 //   { firstName: "Qureshi", age: 21 },
@@ -346,8 +361,7 @@ console.log(topStudents);
 // console.log(returnValue)
 
 
-// const returnValue = users.map(user =>(  //value shari object me aye gi is tara se karne se 4 object aye ge is se?
-//    {   Name: user.firstName,
+// const returnValue = users.map(user =>( // array map method ki value object me lene ka tarika hai ye.
 //       Age : user.age
 // }));
 //  console.log(returnValue);
@@ -381,30 +395,23 @@ console.log(topStudents);
 
 
 // ====================================== Array Reduce Method ====================================================//
-//Reduce Method----> Reduce Method bhi ek callback function leta hai ? ye method array ke har ek element ke sath ek function run karta hai jis se array ko reduce kar ke single value me return karwana reduce method ka kaam hota hai ? ye method array ko ek new array me return karwta hai ? ye method original array ko change nhi karta hai ?
+// ChatGPT Se liya hua Syntax ---> JavaScript me reduce method ek bahut hi powerful array method hai jo ek single value ko calculate karne ke liye array ke har element par ek callback function ko apply karta hai. Ye method complex calculations jaise sum, product, average, aur complex data structures ko generate karne me madad karta hai.
 
+// ChatGPT Se liya hua Syntax ---> reduce Method Ka Introduction.
+// reduce method array ke elements ko ek single value me reduce karta hai. Ye method har element ke liye ek callback function ko call karta hai, jo ek accumulator value aur current element ko input leta hai aur ek updated accumulator value return karta hai.
 
-// ChatGPT Se liya hua Syntax ---> Array reduce() method ek aisi method hai jo array ke har element par ek callback function ko apply karti hai aur ek single value return karti hai. Is method ka use data aggregation, filtering, aur transformation ke liye kiya ja sakta hai.
+// ChatGPT Se liya hua Syntax ---> Example.
+// const numbers = [1, 2, 3, 4, 5];
 
-// const numbers = [1,2,3,4,5, 10];
-// // in sub ka  : sum of all the numbers in array ?
-
-// const sum = numbers.reduce((accumulator, currentValue)=>{//pure reduce me de ek value dera hai? sub ka sum dera hai ye reduce method ? accumulator inital value agar jo hamne di hai nhi di tu koi issu nhi ? accumulator work karta hai inital value waha se start karta hai or ya har ek element ko run karne ke baad apne pass store kar leta hai ?
-
+// const sum = numbers.reduce(function(accumulator, currentValue) {
 //     return accumulator + currentValue;
-// }, 100);      //inital  value ye 100?means hamne apni taraf se value di us se bolte initial value?
-// console.log(sum);
+// }, 0);
 
-// accumulator , currentValue,  return //ab accumulator ki value hogi 100 first q q ka hamne 100 initial value de hai
-// 100              1             101        ab current ki value 1 hogi 100 nhi?
-// 101              2             103
-// 103              3             106
-// 106              4             110
-// 110              5             115
-// 115             10             125   total sum value 125 aye gi?
+// console.log(sum); // Output: 15
 
 
-//object exmple ?
+
+//Object Example.
 // const userCart = [
 //   { productId: 1, productName: "mobile", price: 12000 },
 //   { productId: 2, productName: "laptop", price: 22000 },
@@ -420,7 +427,7 @@ console.log(topStudents);
 // total price      currentValue     return
 // 0                {}                  12000   //current value first time pura object hoga
 // 12000            22000                34000
-// 34000            15000                49000
+// 34000            15000                49000 ---> output ye aye ga.
 
 
 
