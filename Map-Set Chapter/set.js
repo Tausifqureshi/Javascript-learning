@@ -8,8 +8,6 @@
 // 2. Values ki Uniqueness Check karna: Set me ek value sirf ek baar hi ho sakti hai, isliye aap values ki uniqueness check karne ke liye Set ka istemal kar sakte hain.
 
 
-//Sets --->data structure me ata hai ?sets object hai ?  sets bhi kuch array ki tara hai but toda fark hai ? sets hai collection of unique values means unique value sets ke ander duplicate value nhi a sakti hai koi avlue ek bar aya dubara nhi aye example 1 aya tu dubra nhi aye ga ?
-
 //set method
 // new set() --> is se set crete karte hai ?
 //add() --> set me value  add karne ke liye use hota hai ?
@@ -34,7 +32,7 @@
 // numbers.add(4);
 // numbers.add(5);
 // numbers.add(6);
-// numbers.add(items);
+// numbers.add(items); // set me items naam ke array bhi store kar sakte hai.
 
 // if(numbers.has(1)){  //if  else condition use sets pe 
 //     console.log("1 is present")
@@ -47,14 +45,14 @@
 // }
 
 const myArray = [1,2,4,4,5,6,5,6];  
-const uniqueElements = new Set(myArray);  //Array ko Sets me conveart karna ka tarika  ?
+const uniqueElements = new Set(myArray); //Array ko Sets me conveart karna ka tarika.
 let length = 0;
 for(let element of uniqueElements){
     length++;
 }
 
 console.log(length);
-//===================================================//end harsit==========================//
+// ================================================ end harsit =================================================== //
 
 
 let mySet1 = new Set([1,2,3, 'Tausif',{name:'qureshi'}, true]); //set constructor bolte hai is me string array object boolean value sub dal ,sakte hai;

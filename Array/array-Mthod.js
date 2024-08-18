@@ -23,7 +23,7 @@
 
 
 // let school = ['Hindi', "Urdu","English", 'Hindi','Urdu'];
-// let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi']; //is tara se check tu hi ture aye ga share element same hona chaiye ?
+// let school = ['Hindi', "Hindi","Hindi", 'Hindi','Hindi']; //is tara se check tu hi ture aye ga share element same hona chaiye.
 
 // const allHindi = school.every(function(student){
 //   return student === "Hindi";
@@ -40,7 +40,7 @@
 // ]
 
 
-// const ans = userCart.every((cartItem)=>cartItem.price < 30000);//check kar ra hai har itme 30000 hazar ka hai ya nhi? q ke har item  har itme 30000 hazar ka nhi hai is liye false aye gi value ?
+// const ans = userCart.every((cartItem)=>cartItem.price < 30000);//check kar ra hai har itme 30000 hazar ka hai ya nhi. q ke har item 30000 hazar ka nhi hai is liye false aye gi value.
 // console.log(ans)
 
 
@@ -54,7 +54,7 @@
 // fruits.fill("Kiwi"); //start and value nhi dege tu share fruits ki jaga 'kiwi' ay ajye ga?
 // console.log(fruits)  //original array change hoga is se tara se check karta hai ?
 
-//fruits.fill("Kiwi",2,4); //ye method jab ham end position dete hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga ?
+//fruits.fill("Kiwi",2,4); //ye method jab ham end position dete hai Example hamne end postion 4 di hai but ye 4 position tak ko nhi print kar re ga ye 'Mango' tak hi print kar re ga.
 // console.log(fruits)
 
 // const myArray = [1,2,3,4,5,6,7,8];

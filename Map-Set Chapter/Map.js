@@ -1,4 +1,4 @@
-// ChatGPT Se liya hua Syntax ---> JavaScript me Map ek built-in data structure hai jo key-value pairs ko store karta hai, jahaan ek key unique hoti hai aur us key ke saath associated value hota hai. Yeh ek flexible way hai data ko store aur access karne ka.
+// ChatGPT Se liya hua Syntax ---> JavaScript me Map ek aisi built-in object type hai jo key-value pairs ko store karta hai. Map me keys aur values dono kisi bhi type ke ho sakte hain: primitive values (jaise numbers, strings) ya objects. Map objects ko unki entries ke order me iterate kar sakte hain, jisme entries wahi order maintain karte hain jisme wo insert kiye gaye the.
 
 // ChatGPT Se liya hua Syntax ---> Map ki kuch important characteristics hai:
 
@@ -9,7 +9,7 @@
 // 3. Key-Value Pairs: Har entry ek key aur us key se associated value ka combination hota hai.
 
 
-//  ===================================== Harsiht Chepter ================================================//
+// ============================================== Harsiht Chepter ================================================ //
 // object literal me key string ya symbole me hoti hai jayda tara 99 presnt string me hi key hoti hai ?
 // Simple Object Create ye ?
 
@@ -26,7 +26,7 @@
 //     console.log(typeof key);
 // }
 
-//======================================= key value pair  Create Maps======================//
+// ======================================= key value pair Create Maps ============================================ //
 // store data in ordered fashion
 
 // store key value pair (like object)
@@ -65,7 +65,7 @@
 let cosArray = new Map([["fisrtName", "Tausif"],['age',24]]) //Maps me arary me array bhi use kar sakte hai?
 console.log(cosArray.values('firstName')) //FisrtName Key hai
 
-//================================Real Stick Exampel===============================//
+// ============================================ Real Stick Exampel =============================================== //
 const person1 = {
     id: 1,
     firstName: "harshit"
@@ -78,29 +78,25 @@ const person2 = {
 
 const extraInfo = new Map(); 
 console.log(extraInfo);
-extraInfo.set(person1, {age: 8, gender: "male"}); //Map use kar ke object 1 me add value ?
-extraInfo.set(person2, {age: 9, gender: "female"}); //Map use kar ke object 2 me add value ?
-console.log(person1.id); // dono object me se kuch bhi console karwa sakte hai ?
+extraInfo.set(person1, {age: 8, gender: "male"}); //Map use kar ke object 1 me value add kar re hai.
+extraInfo.set(person2, {age: 9, gender: "female"}); //Map use kar ke object 2 me value add kar re hai.
+console.log(person1.id); // dono object me se kuch bhi console karwa sakte hai.
 console.log(extraInfo.get(person1)); //Pura object aye ga is se
-console.log(extraInfo.get(person1).gender); //Map use kar ke object 1 grender Print ?
-console.log(extraInfo.get(person2).gender); //Map use kar ke object 2 gender print?
+console.log(extraInfo.get(person1).gender); // Map use kar ke object 1 grender Print.
+console.log(extraInfo.get(person2).gender); // Map use kar ke object 2 gender print.
 
 
 
-//===============================End Hirshit =====================///
+//================================================= End Hirshit ================================================== //
+// Maps Methos use.
 
-
-// Maps Methos use
-
-//new Map() --->	Creates a new Map object ?
-//get() --->	Gets the value for a key in a Map ?
-//set() ---> Maps me Value Add karne ke liye use hota hai ?
-//clear() --->	Removes all the elements from a Map ? 
-// delete() --->	Removes a Map element specified by a key
-// has() --->	koi key hai ya nhi check karne ke liye use hota hai ?
-//size() ---> Maps ki length Check karne ke liye use hota hai ?
-
-
+//new Map() --->	Creates a new Map object.
+//get() --->	Gets the value for a key in a Map.
+//set() ---> Maps me Value Add karne ke liye use hota hai.
+//clear() --->	Removes all the elements from a Map.
+// delete() --->	Removes a Map element specified by a key.
+// has() --->	koi key hai ya nhi check karne ke liye use hota hai.
+//size() ---> Maps ki length Check karne ke liye use hota hai.
 
 
 
@@ -117,7 +113,8 @@ console.log(extraInfo.get(person2).gender); //Map use kar ke object 2 gender pri
 // fruits.set(key5, 'Array Add');
 // console.log(fruits);
 
-//=========Gets Method se value lere hai kon si key ki value hona get method use =======?
+
+//========= Gets Method se value lere hai kon si key ki value hona get method use ======= //
 // let value = fruits.get(key4); 
 // console.log(value);
 
