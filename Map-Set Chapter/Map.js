@@ -156,6 +156,31 @@ console.log(extraInfo.get(person2).gender); // Map use kar ke object 2 gender pr
 // let myArrayValues = Array.from(fruits.values()); 
 // console.log(myArrayValues, 'Converting Array Values');
 
+// ChatGPT Se liya hua Syntax ---> Map ke Iteration ke liye Available Methods:
+// keys(): Sirf keys ko iterate karta hai.
+// values(): Sirf values ko iterate karta hai.
+// entries(): Key-value pairs ko iterate karta hai. Ye default iteration behavior hai Map ka.
+// Example: keys(), values(), aur entries() ka use
+
+let myMap = new Map();
+myMap.set('name', 'Tausif');
+myMap.set('age', 25);
+
+for (let key of myMap.keys()) {
+    console.log(key); // name, age
+}
+
+for (let value of myMap.values()) {
+    console.log(value); // Tausif, 25
+}
+
+for (let [key, value] of myMap.entries()) {
+    console.log(key + ' = ' + value);
+}
+
+// Output:
+// name = Tausif
+// age = 25
 
  //================code white Harry end =========//
 
