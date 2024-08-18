@@ -2,7 +2,7 @@
 // Object-Oriented-Programing is ko Potptypal-inheritance bolte hai ?
 
 
-//=====================================Method Chapter ========================================//
+//===================================== Method Chapter ========================================//
 // Method ---> method bolte hai kisi object ke ander function Create hai us se method bolte hai ?
 
 // this keyword --->  ka matlab hota hai us object ya variable ka reference this.firstName means object me jo firstName hai us se firstName lega us ka reference lege this ye hota hai ?

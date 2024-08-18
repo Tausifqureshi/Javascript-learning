@@ -161,6 +161,8 @@ console.log(userMap);
 //========================================= Object Cloning object assing ========================================//
 // ChatGPT Se liya hua Syntax ---> Object.assign method JavaScript ka ek powerful method hai jo ek ya ek se zyada objects ki properties ko ek target object me copy karne ke liye use hota hai. Ye method shallow copy perform karta hai, yani sirf reference values ko copy karta hai, na ki deeply nested values ko.
 
+// ChatGPT Se liya hua Syntax ---> Object.assign JavaScript me ek built-in method hai jo ek ya usse zyada source objects ke properties ko ek target object me copy karta hai. Yeh method shallow copy perform karta hai, aur source objects me jitni properties hoti hain, unhe target object me overwrite ya add karta hai.
+
 // ChatGPT Se liya hua Syntax --->  Basic Example.
 // const target = { a: 1, b: 2 };
 // const source = { b: 4, c: 5 };
@@ -187,7 +189,7 @@ console.log(obj2);  // Output: { a: 0, b: { c: 0 }}
 
 //======================================= Object Property Getter and Setter =======================================//
 
-//============================================ Object Property Getter ============================================//
+//============================================= Object Property Getter ============================================//
 // ChatGPT Se liya hua Syntax ---> JavaScript mein, Object getters ek tareeka hain jisse aap object properties ko dynamically retrieve kar sakte hain. Getters aapko ek property ke value ko calculate karne ka facility dete hain jab bhi us property ko access kiya jata hai.
 
 const persons = {

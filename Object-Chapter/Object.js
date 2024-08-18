@@ -276,14 +276,34 @@ console.log(person.hobbies); //pura array aye ga is se ?
 
 console.log(person); //pura object print hoga is se ?
 
-// <-------------------------------->Object option chaining<-------------------------------->
 
-// let user ={
-//     firstName: "Tausif",
-//     // address: {houseNumber: 12334}, //object ke ander object hai ye ?
-// }
-// console.log(user.firstName);
-// console.log(user?.address?.houseNumber)//line number 233 comment karne se bhi error nhi aye ga undefined q keis liye ham is se use kar re hai react me kafi use hota hai jab ham usestate ya useeffect karte hai ? is ka use hota hai nested object ke liye is hi option chaining bolte hai ?
+// ========================================== Object option chaining ============================================= //
+// ChatGPT Se liya hua Syntax ---> JavaScript me optional chaining (?.) ek aisi feature hai jo aapko complex nested objects me properties ya methods ko safely access karne ki suvidha deta hai bina errors ka samna kiye. Iska fayda ye hai ki agar kisi bhi level pe property ya method undefined ya null ho, to TypeError throw karne ke bajaye undefined return karega.
 
-// console.log(user.address.houseNumber) //object ke ander ki value aise milti hai ?
-// console.log(user['firstName']) //aise bhi print karwa sakte hai ?
+
+// ChatGPT Se liya hua Syntax ---> Example: Nested Object Property Access.
+const user = {
+  name: 'Tausif',
+  address: {
+    city: 'Mumbai',
+    zip: '400001'
+  }
+};
+
+console.log(user?.address?.city); // 'Mumbai'
+console.log(user?.address?.street); // undefined
+console.log(user?.contact?.phone); // undefined
+
+
+
+// Example: Array Index Access.
+// const users = [{ name: 'Tausif' }, { name: 'Rahul' }];
+// console.log(users?.[0]?.name); // 'Tausif'
+// console.log(users?.[5]?.name); // undefined
+
+
+
+
+
+
+

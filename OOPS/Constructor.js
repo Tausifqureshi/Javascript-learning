@@ -15,7 +15,7 @@
 // ChatGPT Se liya hua Syntax ---> Constructor Functions Ki Details.
 // 1. this Keyword: Constructor function ke andar this keyword ka use hota hai. this naya object ko refer karta hai jo banaya ja raha hai.
 
-// 2. roperties Aur Methods: Constructor function ke andar properties aur methods define kiye ja sakte hain jo naya object inherit karega.
+// 2. properties Aur Methods: Constructor function ke andar properties aur methods define kiye ja sakte hain jo naya object inherit karega.
 
 // 3. new Keyword: Jab new keyword ke saath constructor function call kiya jata hai, ye 4 steps follow karta hai.
 
