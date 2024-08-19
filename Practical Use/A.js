@@ -65,4 +65,31 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
 
 
+  let myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let error = false;
+       if(!error){
+        resolve({name:"Tausif",age:25})
+       }else{
+        reject("promise is reject");
+       }
+    }, 2000);
+
+    
+  })
+
+
+  myPromise.then((data)=>{
+    console.log(data);
+    return data
+  }).then((accessName)=>{
+    console.log('acchessName', accessName.name);
+    return accessName
+
+  }).then((accessAge)=>{
+    console.log("Acess Age",accessAge.age)
+  })
   
+  .catch((er)=>{
+    console.log(er)
+  })
