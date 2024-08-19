@@ -23,14 +23,15 @@
 
 // ============================================  Execution code =========================================//
 //  ChatGPT Se liya hua Syntax ---> Javascript Execution code ke bare me ab.
-//  Code execution start hone par ek global execution context create hota hai. Isme global objects aur functions include hote hain.
+//  Code execution start hone par ek global execution context create hota hai. Isme global objects aur functions include hote hain. global execution hota hai tu ek window object hota hai ek this hota hai jo window object ke eqval hota hai browser me this window hi hota hai.
 
 // Execution Context Creation Phases ---> Execution context create hota hai do phases me: Memory Creation Phase aur Execution Phase.
 // 1. Memory Creation Phase
-// Memory Creation Phase: Is phase mein, JavaScript engine variables aur functions ke liye memory allocate karta hai. Hoisting ke through, function declarations aur variable declarations ko memory mein allocate kiya jaata hai, lekin variables ko undefined value assign hoti hai.
+// Memory Creation Phase: Is phase mein, JavaScript engine variables aur functions ke liye memory allocate karta hai. Hoisting ke through, function declarations aur variable declarations ko memory mein allocate kiya jaata hai, lekin variables ko undefined value assign hoti hai.memory creation ke time pe var se varible bane huye varible ko value undifiend value milti hai. but let and const se variable create tu us se value uninitialization milti hai
 
 // 2. Execution Phase
 // Execution Phase: Is phase mein, code line-by-line execute hota hai. Variables ko assigned values milti hain aur functions ko execute kiya jaata hai. Agar koi function call hota hai, to ek naya execution context create hota hai aur call stack mein push kiya jaata hai.
+
 
 // ============================================ Call Stack =========================================//
 // ChatGPT Se liya hua Syntax ---> Call Stack. Execution Stack bhi bolte hai.
