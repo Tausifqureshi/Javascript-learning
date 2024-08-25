@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart with Pop-up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    text-align: center;
+}
+
+.horizontal-line {
+    width: 0;
+    height: 4px;
+    background-color: #007bff;
+    margin-top: 20px;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="add-to-cart-btn" onclick="showPopup()">Add to Cart</button>
+
+        <div class="popup" id="cartPopup">
+            <div class="popup-content">
+                <h2>Item Added to Cart</h2>
+                <div class="horizontal-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+// script.js
+
+function showPopup() {
+    const popup = document.getElementById('cartPopup');
+    const line = document.querySelector('.horizontal-line');
+
+    // Show the popup
+    popup.style.display = 'block';
+
+    // Start the horizontal line animation
+    setTimeout(() => {
+        line.style.width = '100%';
+    }, 100);
+
+    // Hide the popup after 3 seconds
+    setTimeout(() => {
+        line.style.width = '0';
+        popup.style.display = 'none';
+    }, 3000);
+}
+
+    </script>
+</body>
+</html>
