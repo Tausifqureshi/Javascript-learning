@@ -179,7 +179,7 @@ for (let i = array.length - 1; i >= 0; i--) {
 //     console.log(cars[i]);
 // }
 
-//contineu ye ji number pe contineu use hota hai us se block nhi karta us se ignor kar ke aage badta hai
+// Continue statement loop mein execution ko skip karne ke liye use hota hai, lekin sirf current iteration ke liye. Yeh specific condition par ignore karte hue loop ke agle iteration par chala jata hai, bina loop ko block kiye. Isse aap specific values ya conditions ko chhod kar loop ko aage badhane ki flexibility milti hai.
 //The continue statement "jumps over" one iteration in the loop.
 
 // for(let b = 0; b<=10; b++){
@@ -199,7 +199,7 @@ for (let i = array.length - 1; i >= 0; i--) {
 
       // }
 
-      // or (let i = 0; i < cars.length; i++) {
+      // for (let i = 0; i < cars.length; i++) {
       //   if (cars[i] === "Saab") {
       //     break; // Exit the loop when "Saab" is found
       //   }
@@ -215,6 +215,8 @@ for (let i = array.length - 1; i >= 0; i--) {
 
 // for(let i=0; i < array1.length; i++){
 // //console.log(array1[i].toUpperCase())  //upper lower or bhi method use kar sakte hai aisa?
+
+// console.log(`Index ${i} Value ${fruits[i]}`);
 
 // newArray.push( array1[i].toUpperCase()) //newArray jo ban raha us me jara
 // }
@@ -240,6 +242,7 @@ for (let i = array.length - 1; i >= 0; i--) {
 // let fruits = ["apple","mango","banana","orange","kiwi"];
 // for(let i in fruits){
 //     console.log(fruits[i])// items bhi chahiye to aise print warna ye sirf index deti hai first?
+// console.log(`Index ${i} Value ${fruits[i]}`);
 // }
 
 ///================== string use fir in loop =========================//
