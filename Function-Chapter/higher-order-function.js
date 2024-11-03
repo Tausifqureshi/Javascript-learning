@@ -24,7 +24,7 @@
   }
   
   let numbers = [1, 2, 3, 4, 5];
-  let squaredNumbers = operateOnArray(numbers, square);
+  let squaredNumbers = operateOnArray(numbers, square); // jo upper ham operateOnArray ke parameter  me dere hai array and opration us ko hai ham niche argument me lere hai number and square me is ko bolte hai Higher Orderm Function.
   console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
   
 
