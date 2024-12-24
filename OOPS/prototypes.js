@@ -64,7 +64,7 @@ console.log(studentOlder);
 Object.setPrototypeOf(Person.prototype, Student.prototype); //same kam hi hora hai line number 49 wala .
 
 Person.prototype.madein = 'india'; //proptotype me property bhi add kar sakte hai means constructor ke ander ? Preson wale me add hora hai ?
-// Object.setPrototypeOf(Person, {
+// Object.setPrototypeOf(Person, { 
 //   prototype: {
 //     madein: 'India'
 //   }
