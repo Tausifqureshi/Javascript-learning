@@ -26,6 +26,25 @@ class Person {
 
 
 
+//================================================ Constructor ==================================================//
+// Constructor ===== JavaScript me constructor ek special method hai jo class ka object banate waqt automatically call hoti hai. Iska kaam hota hai object ki properties initialize karna.
+
+// Short Explanation:
+// 1. Constructor ka naam hamesha constructor hota hai.
+// 2. Ye class ke andar define hota hai aur object create hote hi run karta hai.
+// 3. Iska kaam hota hai object ko initial values dena.
+// 4. Agar koi constructor define na karein, to JavaScript ek default constructor provide karta hai.
+
+class Car {
+  constructor(brand, speed) {
+      this.brand = brand;
+      this.speed = speed;
+  }
+}
+
+const car1 = new Car("Toyota", 120); // Constructor automatically runs
+console.log(car1); // Output: { brand: 'Toyota', speed: 120 }
+
 
 //================================================ Object ==================================================//
 // Object ===== ChatGPT Se liya hua Syntax ---> Object ek instance hota hai class ka. Har object ka apna state (properties) aur behavior (methods) hota hai.
