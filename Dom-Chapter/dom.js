@@ -82,7 +82,7 @@ elements.forEach((element) => {
 // changeTextBtn.addEventListener("click", () => {
 //   myDiv.innerText = "Text has been changed!";
 // });
-
+  
 // ================================================= innerHTML ===================================================//
 // ChatGPT Se liya hua Syntax ---> innerHTML: ek DOM element ki property hai jo aapko element ke andar ka HTML ya XML markup get ya set karne ki suvidha deti hai. Ye JavaScript me element ka content dynamically manipulate karne ke liye sabse common tareeka hai.
 

@@ -30,7 +30,7 @@
 
         // Event Bubbling (Bubbling Phase)---> Event bubbling mein, event sabse nichle element se shuru hokar upar ki taraf propagate hota hai. Yani, agar aapne ek element par event trigger kiya hai, toh sabse pehle us element par trigger hoga, phir uske parent elem
 
- 
+
 
         // Exmple Bubbling.
         // Bubbling event handler for "button" element
@@ -77,7 +77,42 @@
         // Capturing: Button clicked!
 
 
-        
+
+
+
+
+        // yaha GTP se liya hua syntax hai, jismein event propagation ke alag-alag stages ko samjhaya gaya hai. agar ham parent pe lagte hai tu yaha last event kaaha tak jaye ga yaha example hai is me 
+
+        document.getElementById("child").addEventListener("click", function (e) {
+            console.log("Child clicked");
+        });
+
+        document.getElementById("parent").addEventListener("click", function (e) {
+            console.log("Parent clicked");
+        });
+
+        document.getElementById("grandParent").addEventListener("click", function (e) {
+            console.log("GrandParent clicked");
+        });
+
+        document.body.addEventListener("click", function (e) {
+            console.log("Body clicked");
+        });
+
+        // GTP se liya hua syntax----> 1. document.documentElement
+        //  Jab tu document.documentElement.addEventListener(...) likhta hai, tu directly <html> element pe event listener laga raha hai.
+        // ya represent karta hai <html> tag ko .
+        document.documentElement.addEventListener("click", function (e) {
+            console.log("HTML (documentElement) clicked");
+        });
+
+        // GTP se liya hua syntax----> 2. document 2. document
+        // Ye pura HTML document object hai — including DOM structure, metadata, etc.
+        // Iska event listener sabse last me fire hota hai bubbling chain me, jab koi aur element handle nahi karta.
+
+        document.addEventListener("click", function (e) {
+            console.log("Document clicked");
+        });
 
 
     </script>
