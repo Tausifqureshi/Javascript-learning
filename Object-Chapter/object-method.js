@@ -39,6 +39,8 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 
 
 
+// ========================== bject ke ander ========================== //
+// ChatGPT Se liya hua Syntax ---> 1.  jab object me function me return use karte hai call karte time function ko undefind q ata hai normal function ke sath niche ha waza
 
 // const person = {
 //   name: "Tausif",
@@ -52,7 +54,7 @@ person1.about(); //function call hore jis bhi object ke sath function ke sath de
 
 // person.innerFunc(); // Output: Hello, Tausif // console use upper function me tu aise call hoga.
 
-// const innerFunc = person.innerFunc; // function extract kiya // retun ke sath aiss tu 
+// const innerFunc = person.innerFunc; // function extract kiya // retun ke sath aiss tu undefined q ara hai 
 // console.log(innerFunc()); // ❌ Output: Hello, undefined
 
 //  Problem: this context lost ho gaya

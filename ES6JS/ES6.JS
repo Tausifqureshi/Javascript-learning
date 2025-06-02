@@ -103,20 +103,20 @@ const arr2 = [...arr1, 3, 4]; // [1, 2, 3, 4]
 
 // 8. Classes
 
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-  greet() {
-    // console.log(`Hello ${this.name}`);
-    return `Hello ${this.name}`;
-  }
-}
+//   greet() {
+//     // console.log(`Hello ${this.name}`);
+//     return `Hello ${this.name}`;
+//   }
+// }
 
-const p = new Person("Ravi");
-// p.greet(); // Hello Ravi
-console.log(p.greet()); // Hello Ravi //Return statement use aise call karte hai.
+// const p = new Person("Ravi");
+// p.greet(); // Hello Ravi //console use tu is tara se call kar sakta hai.
+// console.log(p.greet()); // Hello Ravi //Return statement use aise call karte hai.
 
 // class is syntactic sugar over prototype-based inheritance.
 
@@ -152,18 +152,28 @@ console.log(p.greet()); // Hello Ravi //Return statement use aise call karte hai
 
 
 
-
 const person = {
   name: "John",
   age: 30,
+
+  // ✅ YAHI SE arrow function `this` le raha hai
+  // Kyunki `greet` ek normal function hai,
+  // To iska `this` point karta hai `person` object ko is liye is arrow function ke value bhi sahi se ari hai is liye is tara se object ke andar arrow function use karte hai.
+  // Aur andar ka arrow function `about` isi `this` ko use karta hai
   greet: function () {
+
     const about = () => {
-      return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    //   return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
     };
+
     return about();
   }
 };
 
-console.log(person.greet());
-// Output: Hello, my name is John and I am 30 years old.
+// console.log(person.greet()); ;//return statement use tu is tara se call kar sakta hai.
+person.greet(); // console use tu is tara se call kar sakta hai.
+
+
+
 
