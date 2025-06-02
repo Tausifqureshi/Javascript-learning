@@ -8,7 +8,7 @@
 // }
 
 const person1 = {
-    firstName : "Tausif",
+    firstName : "Tausif", 
     age: 24,
     // about: personInfo, // object ke ander jo about hai o key hai or personInfo () ye function hai jo value ki tara set kar re hai personInfo upper jo bher function ki tara use hora hai line number 6 me ?
 
@@ -36,6 +36,35 @@ const person3 = {
 person1.about(); //function call hore jis bhi object ke sath function ke sath defiend hai us se sath call hore hai ?
 // person2.about();
 // person3.about();
+
+
+
+
+// const person = {
+//   name: "Tausif",
+
+//   innerFunc: function () {
+//     return `Hello, ${this.name}`;
+//     //  console.log(`Hello, ${this.name}`);
+//   },
+// };
+// console.log(person.innerFunc()); // ✅ Hello, Tausif //return use tu aise call hoga.
+
+// person.innerFunc(); // Output: Hello, Tausif // console use upper function me tu aise call hoga.
+
+// const innerFunc = person.innerFunc; // function extract kiya // retun ke sath aiss tu 
+// console.log(innerFunc()); // ❌ Output: Hello, undefined
+
+//  Problem: this context lost ho gaya
+// Jab tum function ko object se nikal ke alag variable me daalte ho:
+
+// To us waqt function ka this object (person) se detach ho jaata hai.
+// Ab innerFunc() jab run hota hai, wo this ko refer karta hai to:
+// Browser me: window object
+// Strict mode me: undefined
+// Aur window.name kuch set nahi kiya to this.name ban jaata hai undefined.
+
+
 
 //=============================================== Object Method ==============================================//
 //=============================================== Object.keys ==============================================//

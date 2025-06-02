@@ -85,7 +85,7 @@ function greet(name) { //parametar hai name ?
 // Bind method humme partial function application karne me madad karta hai.
 // Bind method humme event handlers me "this" keyword ko control karne me madad karta hai.
 
-
+ 
 const person = {  
   name: "John Doe",
   greet: function() {

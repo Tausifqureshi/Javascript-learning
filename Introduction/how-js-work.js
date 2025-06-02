@@ -10,7 +10,6 @@
 
 
 // 2. Phases of JavaScript Execution is me two part hote hai.
-
 // 1. Parsing.
 // Jab browser ek JavaScript file load karta hai, sabse pehle wo source code ko parse karta hai. Parsing ka matlab hai code ko parts mein todna (tokens), aur ek Abstract Syntax Tree (AST) banana.
 // AST ek tree structure hota hai jo code ka logical structure represent karta hai.

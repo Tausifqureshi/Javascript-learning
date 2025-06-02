@@ -151,6 +151,21 @@ person1.greet(); // Output: Hello, undefined (in non-strict mode)
 
 
 
+// Ye outer (global ya function) scope hai
+// Yahi se arrow function `this` lega, na ke person object se
+const person3 = {
+  name: "John",
+  age: 30,
+  greet: () => {
+    // Yahan `this` ka matlab hai: outer scope ka `this`, na ke `person`
+    // Isliye `this.name` aur `this.age` undefined aayenge
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+};
+
+console.log(person3.greet());
+// Output: Hello, my name is undefined and I am undefined years old.
+
 
 //======================================== Function inside function =========================================== //
 // function ke ander function defiend.
