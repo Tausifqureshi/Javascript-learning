@@ -152,27 +152,27 @@ const arr2 = [...arr1, 3, 4]; // [1, 2, 3, 4]
 
 
 
-const person = {
-  name: "John",
-  age: 30,
+// const person = {
+//   name: "John",
+//   age: 30,
 
-  // ✅ YAHI SE arrow function `this` le raha hai
-  // Kyunki `greet` ek normal function hai,
-  // To iska `this` point karta hai `person` object ko is liye is arrow function ke value bhi sahi se ari hai is liye is tara se object ke andar arrow function use karte hai.
-  // Aur andar ka arrow function `about` isi `this` ko use karta hai
-  greet: function () {
+//   // ✅ YAHI SE arrow function `this` le raha hai
+//   // Kyunki `greet` ek normal function hai,
+//   // To iska `this` point karta hai `person` object ko is liye is arrow function ke value bhi sahi se ari hai is liye is tara se object ke andar arrow function use karte hai.
+//   // Aur andar ka arrow function `about` isi `this` ko use karta hai
+//   greet: function () {
 
-    const about = () => {
-console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
-    //   return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
-    };
+//     const about = () => {
+// console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//     //   return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+//     };
 
-    return about();
-  }
-};
+//     return about();
+//   }
+// };
 
-// console.log(person.greet()); ;//return statement use tu is tara se call kar sakta hai.
-person.greet(); // console use tu is tara se call kar sakta hai.
+// // console.log(person.greet()); ;//return statement use tu is tara se call kar sakta hai.
+// person.greet(); // console use tu is tara se call kar sakta hai.
 
 
 
