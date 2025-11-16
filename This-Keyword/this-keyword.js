@@ -136,7 +136,7 @@ const person = {
       innerFunc();
   }
 };
-
+ 
 person.greet(); // Output: Hello, Tausif
 
 

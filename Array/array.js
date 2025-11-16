@@ -95,7 +95,7 @@
 
 // array destructuring 
 // const myArray = ["value1", "value2", "value3","value4"];
-// let myvar1 = myArray[0]; //is tara se bhi kar sakte hau destructuring array ko 'Value1'?
+// let myvar1 = myArray[0]; //is tara se bhi kar sakte hai destructuring array ko 'Value1'?
 // let myvar2 = myArray[1]; //value2 aye gi is me
 
 // console.log("value of myvar1", myvar1);
@@ -106,7 +106,7 @@
 
 
 // const myArray = ["value1", "value2", "value3","value4"];
-// let [myvar1, , ,myvar2,] = myArray;  //jitne ,, is ki dege utni value skipe hoke variable me jaye gi.
+// let [myvar1, , ,myvar2,] = myArray;  //jitne ,, is ko dege utni value skipe hoke variable me jaye gi.
 // let [myvar1, myvar2, ...myNewArray] = myArray; //myvar1 me value1 jaye gi mayvar2 me value2 aye gi or myNewArray me jaye gi "value3","value4" sperad oparetor use hore hai?
 // console.log("value of myvar1", myvar1);
 // console.log("value of myvar2", myvar2);

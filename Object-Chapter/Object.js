@@ -197,10 +197,22 @@ const users= [
 
   {userId: 3, firstName: "Iqbal", gender:"hello"}
 ]
-const [,{firstName,userId},{gender}] = users; //is se hora userid1 se name same us se id or userid3 ka gender is ko bolte hai nested destrcturing.
-console.log(firstName);        
-console.log(userId);            
-console.log(gender);   
+// const [,{firstName,userId},{gender}] = users; //is se hora userid1 se name same us se id or userid3 ka gender is ko bolte hai nested destrcturing.
+// console.log(firstName);        
+// console.log(userId);            
+// console.log(gender);   
+
+const [
+  { firstName, userId: person1Id },       
+  { firstName: person2, userId: person2Id }, 
+  { gender }                         
+] = users;
+
+console.log(firstName);  // "Tausif"
+console.log(person1Id);      // 1
+console.log(person2);      // "Qureshi"
+console.log(person2Id);    // 2
+console.log(gender); 
 
 // <------------------------------>Object inside Array<-------------------------------->
 //object ke ander Array create karen matlab ya fir array ke ander bhut share object create karan ye hota hai object inside array ? React me kafi use full hai ye method or real world application me bhi?

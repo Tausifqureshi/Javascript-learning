@@ -115,14 +115,42 @@
     
 
     <script>
-        // script.js
-        document.getElementById('add-to-cart').addEventListener('click', function() {
-            document.getElementById('popup').style.display = 'flex';
-        });
+        // // script.js
+        // document.getElementById('add-to-cart').addEventListener('click', function() {
+        //     document.getElementById('popup').style.display = 'flex';
+        // });
 
-        document.getElementById('close-popup').addEventListener('click', function() {
-            document.getElementById('popup').style.display = 'none';
-        });
+        // document.getElementById('close-popup').addEventListener('click', function() {
+        //     document.getElementById('popup').style.display = 'none';
+        // });
+
+
+    const users= [ 
+  {
+    userId: 1, 
+    firstName: "Tausif", 
+    gender:"Male"
+  },
+
+  {
+    userId: 2,
+    firstName: "Qureshi",
+    gender:"simple" 
+  },
+
+  {userId: 3, firstName: "Iqbal", gender:"hello"}
+]
+const [
+  { firstName, userId: user1 },       
+  { firstName: user2, userId: user2Id }, 
+  { gender }                          
+] = users;
+
+console.log(firstName);  // "Tausif"
+console.log(user1);      // 1
+console.log(user2);      // "Qureshi"
+console.log(user2Id);    // 2
+console.log(gender);     // "hello"
     </script>
 </body>
 </html>

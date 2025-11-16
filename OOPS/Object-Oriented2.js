@@ -58,50 +58,65 @@ person2.introduce(); // Hi! My name is Jane Doe and I am 25 years old.
 
 //============================================ Inheritance =====================================================//
 // Inheritance ===== ChatGPT Se liya hua Syntax --->  Inheritance se ek class dusre class ki properties aur methods ko inherit kar sakta hai.
-class Student extends Person {
-  constructor(name, age, grade) {
-    super(name, age);
-    this.grade = grade;
-  }
 
-  study() {
-    console.log(`${this.name} is studying for the exam.`);
+// “Doctor” → inherits from “Person”
+// “Car” → inherits from “Vehicle”
+
+class Person {
+  constructor(name) {
+    this.name = name;
   }
 }
 
-const student1 = new Student('Alice', 18, 12);
-student1.introduce(); // Hi! My name is Alice and I am 18 years old.
-student1.study(); // Alice is studying for the exam.
+class Doctor extends Person {
+  constructor(name, specialization) {
+    super(name); // parent ka constructor
+    this.specialization = specialization;
+  }
+}
+
+const d = new Doctor("Ahmed", "Cardiology");
+console.log(d.name); // Ahmed
 
 
 
 //============================================ Encapsulation =====================================================//
 
-// Encapsulation ====== ChatGPT Se liya hua Syntax ---> Encapsulation ka matlab hota hai data ko hide karna aur methods ke through access dena.
-class Person {
-  #name; // Private property
+// Encapsulation ====== ChatGPT Se liya hua Syntax ---> Encapsulation (Data ko Lock karna)
+// 📌 SIMPLE Meaning:// Object ke data ko protect karna… direct access na mile.
 
-  constructor(name) {
-    this.#name = name;
+// Jaise:
+// Bank account balance ko koi bhi bahar se change na kar sake
+// Tumhara password kisi ko directly nahi mil sakta
+// Car ka engine kaam to karta hai but tum direct engine ke parts ko modify nahi kar sakte
+
+class BankAccount {
+  #balance = 0; // private, bahar se access nahi hoga
+
+  deposit(amount) {
+    this.#balance += amount;
   }
 
-  getName() { // Public method to get the name
-    return this.#name;
-  }
-
-  setName(name) { // Public method to set the name
-    this.#name = name;
+  getBalance() {
+    return this.#balance;
   }
 }
 
-const person = new Person('John Doe');
-console.log(person.getName()); // John Doe
-person.setName('Jane Doe');
-console.log(person.getName()); // Jane Doe
+const acc = new BankAccount();
+acc.deposit(500);
+console.log(acc.getBalance()); // 500
 
 
 //============================================ Polymorphism =====================================================//
-// Polymorphism ====== ChatGPT Se liya hua Syntax ---> Polymorphism ke through ek method ko different ways se use kiya ja sakta hai.
+// Polymorphism ====== ChatGPT Se liya hua Syntax ---> Ek hi function ka alag-alag objects me different behaviour hona. 
+
+// Real life examples:
+// “speak()”
+// Dog → barks
+// Cat → meows
+// Cow → moos
+
+
 class Animal {
   makeSound() {
     console.log('Generic animal sound');
