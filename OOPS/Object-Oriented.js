@@ -199,8 +199,6 @@ console.log(student1.fullName.call(student2)) //Call Method ka use kar ke ek obj
 // console.log(fullName.apply(student2,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
 
 
-// console.log(fullName.apply(student1,[student2.age,'Heydrabaad','India']));//retrun wala function commit is tara se call tu undefiend nhi aye ga ? Multipal Array lihk sakte hai yaha pe ?
-
 //==============================harshi Start Apply Method=============================================//
 
 // function about(hobby, favMusician){
